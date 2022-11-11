@@ -1,0 +1,76 @@
+{
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "header-row#container--desktop",
+      "header-row#header__top--desktop",
+      "header-row#header__middle"
+    ]
+  },
+
+  "header-row#header__top--desktop": {
+    "title": "Header superior (desktop)",
+    "children": [
+      "logo#header__top--logo",
+      "rich-text#test",
+      //"login",
+      "modal-trigger#header__top--login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header__top"
+    }
+  },
+  "logo#header__top--logo": {
+    "title": "Logo",
+    "props": {
+      "url": "assets/logo.svg",
+      "width": 180,
+      "href": "/"
+    }
+  },
+  "modal-trigger#header__top--login": {
+    "children": [
+      "rich-text#header__top--login",
+      //"modal-layout#header__top--login"
+      "login"
+    ]
+  },
+  "rich-text#header__top--login": {
+    "props": {
+      "text": "Login"
+    }
+  },
+  "modal-layout#header__top--login": {
+    "children": ["login-content"]
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Access Code Log-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true
+    }
+  },
+  "header-row#header__middle": {
+    "title": "Header medio",
+    "children": [
+      /*"header-force-center#header__middle"*/
+      /*"rich-text#test",
+          "header-spacer",
+          "rich-text#test"*/
+    ],
+    "props": {
+      "blockClass": "header__middle"
+    }
+  }
+  /* Para aprender a centrar un texto/imagen
+      "header-force-center#header__middle": {
+        "children" : [
+          //"rich-text#test"
+          "logo#header__top--logo"
+        ]
+      }*/
+}

@@ -1,0 +1,44 @@
+{
+  "modal-trigger#home__modal--children": {
+    "children": [
+      "rich-text#home__modal--trigger",
+      "modal-layout#home__modal--layout"
+    ]
+  },
+  "rich-text#home__modal--trigger": {
+    "props": {
+      "text": "Terminos y condiciones."
+    }
+  },
+  "modal-layout#home__modal--layout": {
+    "children": ["rich-text#home__modal--content"]
+  },
+  "rich-text#home__modal--content": {
+    "props": {
+      "text": "# Terminos y condiciones al comprar en Coolbox. \n Lorem ipsum dolor sit amet. Rem suscipit dolores rem laboriosam quibusdam qui pariatur quis eos dolorum quia. Et perspiciatis unde et dolore molestiae ut sint asperiores. Vel minima maxime sed quos dolore ut galisum dolor id doloribus molestiae vel labore ratione. Ut voluptatem dignissimos sed magni deleniti aut voluptatibus sint.Aut recusandae dolore et maiores assumenda non corrupti illo ut aperiam enim nam natus omnis. Vel enim sequi 33 quae sunt et unde odio in delectus quia et quis excepturi. \n"
+    }
+  },
+  "modal-trigger#home__modal--event": {
+    "children": ["modal-layout#home__modal--event"],
+    "props": {
+      "trigger": "event",
+      "customPixelEventName": "pageView"
+    }
+  },
+  "modal-layout#home__modal--event": {
+    "children": [
+      "modal-header#home__modal--event",
+      "rich-text#home__modal--event-content"
+    ]
+  },
+  "rich-text#home__modal--event-content": {
+    "props": {
+      "text": "Evento de DOM loaded."
+    }
+  },
+  "modal-header#home__modal--event": {
+    "props": {
+      "showCloseButton": true
+    }
+  }
+}

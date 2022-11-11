@@ -1,0 +1,20 @@
+{
+  "header-row#container--desktop": {
+    "children": ["image#header__container--image--desktop"],
+    "props": {
+      "blockClass": "header__top__mobile"
+    }
+  },
+  "image#header__container--image--desktop": {
+    "title": "Imagen de Home",
+    "props": {
+      "src": "assets/img/BannerTopDesk.webp",
+      "title": "Foto image container desktop",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/ofertas",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.headerRowBackground--header__top {
+  background-color: rgb(0, 0, 0);
+}
+
+.headerRowBackground--header__middle {
+  background-color: green;
+
+}
+
+.headerRowBackground--header__top__mobile {
+  background-color: rgb(226, 29, 29);
+}
