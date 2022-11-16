@@ -1,11 +1,5 @@
 {
-  "header-row#container--mobile": {
-    "children": ["image#header__container--image--mobile"],
-    "props": {
-      "blockClass": "header__top__mobile"
-    }
-  },
-  "image#header__container--image--mobile": {
+  "image#header__containerImg--image--mobile": {
     "title": "Imagen header mobile",
     "props": {
       "src": "assets/img/BannerTopMob.webp",

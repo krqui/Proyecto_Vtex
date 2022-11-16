@@ -1,0 +1,46 @@
+{
+  "flex-layout.row#home__section--one--mobile": {
+    "children": [
+      "flex-layout.col#section__two--item1",
+      "flex-layout.col#section__two--item2",
+      "flex-layout.col#section__two--item3",
+      "flex-layout.col#section__two--item4"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#home__section--two--mobile": {
+    "children": [
+      "flex-layout.col#section__two--item5",
+      "flex-layout.col#section__two--item6",
+      "flex-layout.col#section__two--item7",
+      "flex-layout.col#section__two--item8"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#home__section--three--mobile": {
+    "children": [
+      "flex-layout.col#section__three--item9",
+      "flex-layout.col#section__three--item10",
+      "flex-layout.col#section__three--item11",
+      "flex-layout.col#section__three--item12"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#home__section--four--mobile": {
+    "children": [
+      "flex-layout.col#section__three--item13",
+      "flex-layout.col#section__three--item14",
+      "flex-layout.col#section__three--item15",
+      "flex-layout.col#section__three--item16"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  }
+}

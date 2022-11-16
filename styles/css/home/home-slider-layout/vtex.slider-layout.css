@@ -1,17 +1,31 @@
 .sliderLayoutContainer--home__slider {
   width: 100vw;
   /*margin-left: 10px;*/
-  margin-bottom: 50px;
-  background-color: rgb(138, 138, 138);
+  margin-bottom: 2px;
+  background-color: rgb(242, 242, 242);
 }
 
 .paginationDotsContainer--home__slider {
-  transform: translateY(-16px);
+  transform: translateY(-14px);
 } /*este es el contenedor de los 3 puntos debajo de los slides*/
 
 .paginationDot {
   background-color: white;
 }
+
+.paginationDot--home__slider--isActive {
+  background-color: rgb(220, 35, 115);
+}
+
 .imageElement--home__slider {
   max-height: initial !important;
 }
+
+.caretIcon--home__slider {
+  color:white;
+  background-color: rgba(255, 255, 255, 0.498)
+}
+
+/*.sliderArrows--home__slider{
+  background-color: green;
+}*/

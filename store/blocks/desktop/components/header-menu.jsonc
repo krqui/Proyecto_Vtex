@@ -3,8 +3,8 @@
     "title": "Header Desktop",
     "children": [
       "header-row#container--desktop",
-      "header-row#header__top--desktop",
-      "header-row#header__middle"
+      "header-row#header__top--desktop"/*,
+      "header-row#header__middle"*/
     ]
   },
 
@@ -12,13 +12,14 @@
     "title": "Header superior (desktop)",
     "children": [
       "logo#header__top--logo",
-      "rich-text#test",
+      "search-bar#header__search",
+      /*en desktop tenemos que achicar la barra ↑*/
       //"login",
       "modal-trigger#header__top--login",
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "header__top"
+      "blockClass": "header__top--mobile"
     }
   },
   "logo#header__top--logo": {
@@ -31,7 +32,7 @@
   },
   "modal-trigger#header__top--login": {
     "children": [
-      "rich-text#header__top--login",
+      
       //"modal-layout#header__top--login"
       "login"
     ]
@@ -46,26 +47,29 @@
   },
   "login": {
     "props": {
-      "emailAndPasswordTitle": "LOG-IN",
-      "accessCodeTitle": "Access Code Log-IN",
+      "accessCodeTitle": "Access Code to log-in",
       "emailPlaceholder": "e-mail",
+      "emailAndPasswordTitle": "LOG-IN",
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,
-      "showIconProfile": true
+      "showIconProfile": true,
+      "hideIconLabel":true,
+      "termsAndConditions": "Al registrarte estas aceptando nuestros Términos y Condiciones y nuestras Políticas de Privacidad.",
+      "blockClass":"loginn"
     }
   },
-  "header-row#header__middle": {
+  /*"header-row#header__middle": {
     "title": "Header medio",
     "children": [
-      /*"header-force-center#header__middle"*/
-      /*"rich-text#test",
+      "header-force-center#header__middle",
+      "rich-text#test",
           "header-spacer",
-          "rich-text#test"*/
+          "rich-text#test"
     ],
     "props": {
       "blockClass": "header__middle"
     }
-  }
+  },*/
   /* Para aprender a centrar un texto/imagen
       "header-force-center#header__middle": {
         "children" : [
@@ -73,4 +77,14 @@
           "logo#header__top--logo"
         ]
       }*/
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon#home__link--text",
+      //"MinicartIcon": "icon-search",
+      //"variation": "popup",
+      "itemCountMode":"total",
+      "quantityDisplay":"always",
+      "customPixelEventName":"pageview"
+    }
+  }
 }

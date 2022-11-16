@@ -1,0 +1,7 @@
+.minicartIconContainer::after {
+    color: #fff!important;
+    content: "Mi Carrito";
+    font-size: 12px;
+    text-transform: none;
+    white-space: nowrap;
+}

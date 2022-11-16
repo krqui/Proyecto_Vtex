@@ -1,12 +1,24 @@
-.headerRowBackground--header__top {
-  background-color: rgb(0, 0, 0);
-}
 
 .headerRowBackground--header__middle {
-  background-color: green;
+  background-color: rgb(90, 255, 90);
+}
+/*Si borro esto se me quita el fondo rojo de abajo, WTF,
+ el cual pertenece a los banners en rojo de arribita*/
 
+.headerRowBackground--containerImg--mobile {
+  background-color: rgb(226, 29, 29);
 }
 
-.headerRowBackground--header__top__mobile {
-  background-color: rgb(226, 29, 29);
+
+
+.headerRowContentContainer--header__top--mobile {
+  background-color: rgb(0, 0, 0);
+  padding: 0;
+}
+/*.headerRowContainer--header__top--mobile {
+  background-color: orange;
+}*/
+
+.styledLinkContent--department__two{
+  background-color:blue
 }

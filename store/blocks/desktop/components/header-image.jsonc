@@ -2,7 +2,7 @@
   "header-row#container--desktop": {
     "children": ["image#header__container--image--desktop"],
     "props": {
-      "blockClass": "header__top__mobile"
+      "blockClass": "containerImg--mobile"
     }
   },
   "image#header__container--image--desktop": {

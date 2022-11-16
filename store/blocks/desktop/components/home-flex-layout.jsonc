@@ -1,14 +1,4 @@
 {
-  "flex-layout.row#home__section--one": {
-    "title": "Seccion uno",
-    /*"children": [
-      "flex-layout.col#section__one--image",
-      "flex-layout.col#section__one--text"
-    ],*/
-    "props": {
-      "blockClass": "home__section--one"
-    }
-  },
   /*"flex-layout.col#section__one--image": {
     "title": "Imagen de seccion uno.",
     "children": ["image#home__image"],
@@ -39,11 +29,31 @@
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   },*/
-  "flex-layout.row#home__section--two": {
+  "flex-layout.row#home__section--one": {
     "children": [
       "flex-layout.col#section__two--item1",
       "flex-layout.col#section__two--item2",
-      "flex-layout.col#section__two--item3"
+      "flex-layout.col#section__two--item3",
+      "flex-layout.col#section__two--item4",
+      "flex-layout.col#section__two--item5",
+      "flex-layout.col#section__two--item6",
+      "flex-layout.col#section__two--item7",
+      "flex-layout.col#section__two--item8"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#home__section--two": {
+    "children": [
+      "flex-layout.col#section__three--item9",
+      "flex-layout.col#section__three--item10",
+      "flex-layout.col#section__three--item11",
+      "flex-layout.col#section__three--item12",
+      "flex-layout.col#section__three--item13",
+      "flex-layout.col#section__three--item14",
+      "flex-layout.col#section__three--item15",
+      "flex-layout.col#section__three--item16"
     ],
     "props": {
       "preserveLayoutOnMobile": true
@@ -52,98 +62,98 @@
   "flex-layout.col#section__two--item1": {
     "children": ["image#home__slider--one"],
     "props": {
-      "width": "33%"
+      "width": "20px"
     }
   },
-  /*"flex-layout.col#section__two--item2": {
-    "children": ["rich-text#test", "link#home__link--boton"],
-    "props": {
-      "blockClass": "section__two--item",
-      "width": "50%"
-    }
-  },*/
   "flex-layout.col#section__two--item2": {
     "children": ["image#home__slider--two"],
     "props": {
-      "width": "33%",
+      "width": "20px",
       "blockClass": "section__two--item"
     }
   },
   "flex-layout.col#section__two--item3": {
     "children": ["image#home__slider--three"],
     "props": {
-      "width": "33%"
+      "width": "20px"
     }
   },
-  "rich-text#test": {
-    "props": {
-      "text": "Coolbox in Desktop"
-    }
-  },
-  "rich-text#test2": {
-    "props": {
-      "text": "# Resolucion Mobile."
-    }
-  },
-  "flex-layout.row#home__section--three": {
-    "children": [
-      "flex-layout.col#section__three--item1",
-      "flex-layout.col#section__three--item2",
-      "flex-layout.col#section__three--item3",
-      "flex-layout.col#section__three--item4",
-      "flex-layout.col#section__three--item5",
-      "flex-layout.col#section__three--item6",
-      "flex-layout.col#section__three--item7",
-      "flex-layout.col#section__three--item8"
-    ],
-    "props": {
-      "preserveLayoutOnMobile": true
-    }
-  },
-  "flex-layout.col#section__three--item1": {
+  "flex-layout.col#section__two--item4": {
     "children": ["image#home__slider--four"],
     "props": {
       "width": "20px"
     }
   },
-  "flex-layout.col#section__three--item2": {
+  
+  "flex-layout.col#section__two--item5": {
     "children": ["image#home__slider--five"],
     "props": {
       "width": "20px"
     }
   },
-  "flex-layout.col#section__three--item3": {
+  "flex-layout.col#section__two--item6": {
     "children": ["image#home__slider--six"],
     "props": {
       "width": "20px"
     }
   },
-  "flex-layout.col#section__three--item4": {
+  "flex-layout.col#section__two--item7": {
     "children": ["image#home__slider--seven"],
     "props": {
       "width": "20px"
     }
   },
-  "flex-layout.col#section__three--item5": {
+  "flex-layout.col#section__two--item8": {
     "children": ["image#home__slider--eight"],
     "props": {
       "width": "20px"
     }
   },
-  "flex-layout.col#section__three--item6": {
+  
+  "flex-layout.col#section__three--item9": {
     "children": ["image#home__slider--nine"],
     "props": {
       "width": "20px"
     }
   },
-  "flex-layout.col#section__three--item7": {
+  "flex-layout.col#section__three--item10": {
     "children": ["image#home__slider--ten"],
     "props": {
       "width": "20px"
     }
   },
-  "flex-layout.col#section__three--item8": {
+  "flex-layout.col#section__three--item11": {
     "children": ["image#home__slider--eleventh"],
+    "props": {
+      "width": "20px"
+    }
+  },
+  "flex-layout.col#section__three--item12": {
+    "children": ["image#home__slider--twelve"],
+    "props": {
+      "width": "20px"
+    }
+  },
+  "flex-layout.col#section__three--item13": {
+    "children": ["image#home__slider--thirteen"],
+    "props": {
+      "width": "20px"
+    }
+  },
+  "flex-layout.col#section__three--item14": {
+    "children": ["image#home__slider--fourteen"],
+    "props": {
+      "width": "20px"
+    }
+  },
+  "flex-layout.col#section__three--item15": {
+    "children": ["image#home__slider--fifteen"],
+    "props": {
+      "width": "20px"
+    }
+  },
+  "flex-layout.col#section__three--item16": {
+    "children": ["image#home__slider--sixteen"],
     "props": {
       "width": "20px"
     }
