@@ -55,13 +55,6 @@
       "width": "33%"
     }
   },
-  /*"flex-layout.col#section__two--item2": {
-    "children": ["rich-text#test", "link#home__link--boton"],
-    "props": {
-      "blockClass": "section__two--item",
-      "width": "50%"
-    }
-  },*/
   "flex-layout.col#section__two--item2": {
     "children": ["image#home__slider--two"],
     "props": {
