@@ -5,3 +5,20 @@
     text-transform: none;
     white-space: nowrap;
 }
+
+.closeIconButton {
+    background-color: black
+}
+
+.closeIcon {
+    color:white
+}
+
+.closeIconButton:hover {
+    transition: 0.3s;
+    transform: scale(1.28)
+}
+
+.minicartEmptyStateContainer--minicart-empty-state{
+    background-color: rgb(143, 143, 143);
+}
