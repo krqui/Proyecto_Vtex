@@ -50,7 +50,14 @@
     "vtex.iframe": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
-    "vtex.add-to-cart-button": "0.x"
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.checkout-summary": "0.x",
+    "vtex.product-price": "1.x",
+    "vtex.format-currency": "0.x",
+    "vtex.disclosure-layout": "1.x"
   },
-  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "peerDependencies": {
+    "vtex.mega-menu": "2.x"
+  }
 }
