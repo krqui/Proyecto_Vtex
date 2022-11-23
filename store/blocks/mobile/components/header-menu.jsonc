@@ -1,155 +1,263 @@
 {
-  "header-row#containerImg--mobile": {
-    "children": ["image#header__containerImg--image--mobile"],
+  "header-row#mobile__container-Img": {
+    "children": ["image#mobile__header__container-img"],
     "props": {
-      "blockClass": "containerImg--mobile"
+      "blockClass": "mobile__container-Img"
     }
   },
-  "header-row#header__top--mobile": {
-    "title": "Header superior (mobile)",
+
+  "header-row#mobile&tablet__header": {
+    "title": "Header superior (mobile and tablet)",
     "children": [
-      "logo#header__top__mobile--logo",
-      "search-bar#header__search",
-      "drawer#header__mobile--menu"
+      "responsive-layout.mobile#mobile__header-info",
+      "responsive-layout.tablet#tablet__header-info",
+      "search-bar#global__search",
+      "modal-trigger#example"
     ],
     "props": {
       "blockClass": "header__top--mobile"
     }
   },
-  "logo#header__top__mobile--logo": {
+  "responsive-layout.mobile#mobile__header-info": {
+    "children": [
+      "logo#mobile__header-info--logo"
+    ]
+  },
+  "logo#mobile__header-info--logo": {
     "title": "Logo",
     "props": {
       "url": "assets/logoMob.svg",
-      "width": 38,
+      "width": 33.46,
       "href": "/",
-      "blockClass":"header__top__mobile--logo"
+      "blockClass":"mobile__header-info--logo"
     }
   },
-  
-  "drawer#header__mobile--menu": {
-    "children": ["menu#header__menu"],
-    "blocks": ["drawer-trigger"]
-  },
-  "drawer-trigger": {
-    "children": ["logo#header__top__mobile--threedots"]
-  },
-  "logo#header__top__mobile--threedots": {
-    "title": "three dots",
-    "props": {
-      "url": "assets/threeDots.svg",
-      "width": 7
-    }
-  },
-  "menu#header__menu": {
+
+  "modal-trigger#example": {
     "children": [
-      "menu-item#department__one",
-      "menu-item#department__two",
-      "menu-item#department__three",
-      "menu-item#department__four",
-      "menu-item#department__five",
-      "menu-item#department__six",
-      "menu-item#department__seven"      
+      "logo#mobile&tablet__header-threedots",
+      "modal-layout#threedots"
+    ]
+  },
+
+  "image#threeDots":{
+    "title":"tres puntos",
+    "props": {
+      "src":"assets/threeDots.svg"
+    }
+
+  },
+  "modal-layout#threedots": {
+    "children": [
+      "flex-layout.row#global__ofertas",
+      "flex-layout.row#global__delivery",
+      "flex-layout.row#global__smarthome",
+      "flex-layout.row#global__bicisyscooters",
+      "flex-layout.row#global__chatea",
+      "flex-layout.row#global__zonaoutlet",
+      "flex-layout.row#global__tracking"
     ],
     "props": {
-      "orientation": "vertical"
+      "blockClass":"threedots"
     }
   },
-  "menu-item#department__one": {
+  "flex-layout.row#global__ofertas": {
+    "children": [
+      "link#global__ofertas"
+    ]
+  },
+  "flex-layout.row#global__delivery":{
+    "children": [
+      "link#global__delivery"
+    ]
+  },
+  "flex-layout.row#global__smarthome":{
+    "children": [
+      "link#global__smarthome"
+    ]
+  },
+  "flex-layout.row#global__bicisyscooters":{
+    "children": [
+      "link#global__bicisyscooters"
+    ]
+  },
+  "flex-layout.row#global__chatea":{
+    "children": [
+      "link#global__chatea"
+    ]
+  },
+  "flex-layout.row#global__zonaoutlet":{
+    "children": [
+      "link#global__zonaoutlet"
+    ]
+  },
+  "flex-layout.row#global__tracking": {
+    "children": [
+      "link#global__tracking"
+    ]
+  },
+  "link#global__ofertas": {
     "props": {
-      "id": "department__one",
-      "type": "custom",
-      "itemProps": {
-        "type": "external",
-        "href": "https://diegoantonio--itgloberspartnercl.myvtex.com/ofertas-destacadas",
-        "noFollow": true, // desactivar link a externos,
-        "tagTitle": "Ofertas destacadas",
-        "text": "Ofertas destacadas"
-      }
+      "href": "/ofertas/",
+      "blockClass":"global__ofertas"
     },
-    "blocks": ["submenu.accordion#department__one"]
+    "children": [
+      "image#global__ofertas",
+      "rich-text#global__ofertas"
+    ]
   },
-  "submenu.accordion#department__one": {
-    "children": ["menu#department__one"]
-  },
-  "menu#department__one": {
-    "children": ["menu-item#category__one", "menu-item#category__two"],
+  "image#global__ofertas":{
     "props": {
-      "orientation": "vertical"
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669091665/coolb/cufcwxayi6tfda0vmsqj.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_oferta"
     }
   },
-  "menu-item#category__one": {
+  "rich-text#global__ofertas": {
     "props": {
-      "id": "category-one",
-      "type": "custom",
-      "itemProps": {
-        "type": "external",
-        "href": "/",
-        "noFollow": true,
-        "tagTitle": "Google Drive",
-        "text": "Google Drive"
-      }
+      "text": "Ofertas destacadas",
+      "font":"t-body",
+      "blockClass":"global__ofertas"
     }
   },
+  "link#global__delivery": {
+    "props": {
+      "href": "/delivery/",
+      "blockClass":"global__delivery"
+    },
+    "children": [
+      "image#global__delivery",
+      "rich-text#global__delivery"
+    ]
+  },
+  "image#global__delivery":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099177/coolb/xkqoon2qqjzd8piwchkw.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_delivery"
 
-  "menu-item#category__two": {
-    "props": {
-      "id": "category-two",
-      "type": "custom",
-      "itemProps": {
-        "type": "external",
-        "href": "/",
-        "noFollow": true,
-        "tagTitle": "Google Meet",
-        "text": "Google Meet"
-      }
     }
   },
-
-  "menu-item#department__two": {
+  "rich-text#global__delivery": {
     "props": {
-      "id": "department__two",
-      "type": "custom",
-      "itemProps": {
-        "type": "external",
-        "href": "https://diegoantonio--itgloberspartnercl.myvtex.com/delivery-gratis",
-        "noFollow": true, // desactivar link a externos,
-        "tagTitle": "Delivery gratis",
-        "text": "Delivery gratis"
-      },
-      "blockClass": "holaa"
+      "text": "Delivery gratis",
+      "blockClass":"global__delivery"
     }
   },
-  "menu-item#department__three": {
+  "link#global__smarthome": {
     "props": {
-      "text": "Smart Home"
+      "href": "/smarthome/",
+      "blockClass":"global__smarthome"
+    },
+    "children": [
+      "image#global__smarthome",
+      "rich-text#global__smarthome"
+    ]
+  },
+  "image#global__smarthome":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099255/coolb/hh2jwxedmeom8jl114gy.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_smarthome"
     }
   },
-  "menu-item#department__four": {
+  "rich-text#global__smarthome": {
     "props": {
-      "text": "Bicis y Scooters."
+      "text": "Smart Home",
+      "blockClass":"global__smarthome"
     }
   },
-  "menu-item#department__five": {
+  "link#global__bicisyscooters": {
     "props": {
-      "text": "Chatea con nosotros"
+      "href": "/bicisyscooters/",
+      "blockClass":"global__bicisyscooters"
+    },
+    "children": [
+      "image#global__bicisyscooters",
+      "rich-text#global__bicisyscooters"
+    ]
+  },
+  "image#global__bicisyscooters":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099332/coolb/wzwgulqc8sryuxgckt1q.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_bicisyscooters"
     }
   },
-  "menu-item#department__six": {
+  "rich-text#global__bicisyscooters": {
     "props": {
-      "text": "Zona Outlet"
+      "text": "Bicis y Scooters",
+      "blockClass":"global__bicisyscooters"
     }
   },
-  "menu-item#department__seven": {
+  "link#global__chatea": {
     "props": {
-      "text": "Sigue tu pedido"
+      "href": "/chatea/",
+      "blockClass":"global__chatea"
+    },
+    "children": [
+      "image#global__chatea",
+      "rich-text#global__chatea"
+    ]
+  },
+  "image#global__chatea":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099407/coolb/tmrgkdks3kqi9otyrqvo.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_chatea"
+    }
+  },
+  "rich-text#global__chatea": {
+    "props": {
+      "text": "Chatea con Nosotros",
+      "blockClass":"global__chatea"
+    }
+  },
+  "link#global__zonaoutlet": {
+    "props": {
+      "href": "/zonaoutlet/",
+      "blockClass":"global__zonaoutlet"
+    },
+    "children": [
+      "image#global__zonaoutlet",
+      "rich-text#global__zonaoutlet"
+    ]
+  },
+  "image#global__zonaoutlet":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099547/coolb/wrn9ox3p97zdomc4pmm5.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_zonaoutlet"
+    }
+  },
+  "rich-text#global__zonaoutlet": {
+    "props": {
+      "text": "Zona Outlet",
+      "blockClass":"global__chatea"
+    }
+  },
+  "link#global__tracking": {
+    "props": {
+      "href": "/tracking",
+      "blockClass":"global__tracking"
+    },
+    "children": [
+      "image#global__tracking",
+      "rich-text#global__tracking"
+    ]
+  },
+  "image#global__tracking": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669140163/coolb/phsjurlvlampk4lcrgxv.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_tracking"
+    }
+  },
+  "rich-text#global__tracking":{
+    "props": {
+      "text":"Sigue tu pedido",
+      "blockClass":"global__tracking"
     }
   }
   /*TENGO QUE HACER EL BANNER CON LAS IMAGENES PARA CELULAR*/
-  /*"header-row#header__topDos--mobile": {
-    "title": "Header superior 2 (mobile)",
-    "children": [
-      "rich-text#test2"
-      //, "drawer#header__mobile--menu"
-    ]
-  }*/
 }

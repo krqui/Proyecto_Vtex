@@ -2,47 +2,177 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
-      "header-row#container--desktop",
-      "header-row#header__top--desktop" /*,
-      "header-row#header__middle"*/
+      "header-row#desktop__container-Img",
+      "header-row#header__top--desktop",
+      "header-row#desktop__threedots"
+      /*"header-row#header__middle"*/
     ]
+  },
+
+  "header-row#desktop__threedots": {
+    "children": [
+      "flex-layout.row#global__ofertas",
+      "flex-layout.row#global__delivery",
+      "flex-layout.row#global__smarthome",
+      "flex-layout.row#global__bicisyscooters",
+      "flex-layout.row#global__chatea",
+      "flex-layout.row#global__zonaoutlet",
+      "flex-layout.row#global__tracking"
+    ],
+    "props":{
+      "blockClass":"header__top--desktop"
+    }
+
+  },
+  "header-row#desktop__container-Img": {
+    "children": ["image#header__container--image--desktop"],
+    "props": {
+      "blockClass": "mobile__container-Img"
+    }
   },
 
   "header-row#header__top--desktop": {
     "title": "Header superior (desktop)",
     "children": [
-      "logo#header__top--logo",
-      "search-bar#header__search",
-      /*en desktop tenemos que achicar la barra ↑*/
-      //"login",
-      "modal-trigger#header__top--login",
+      "responsive-layout.desktop#desktop__header-info",
+      "responsive-layout.desktop#desktop__header-categories",
+      "search-bar#global__search",
+      "menu#desktop__websites",
       "minicart.v2"
     ],
     "props": {
       "blockClass": "header__top--mobile"
     }
   },
+  "responsive-layout.desktop#desktop__header-info": {
+    "children": ["logo#header__top--logo"]
+  },
   "logo#header__top--logo": {
     "title": "Logo",
     "props": {
       "url": "assets/logo.svg",
       "width": 180,
-      "href": "/"
+      "href": "/",
+      "blockClass": "header__top--logo"
+    }
+  },
+  "responsive-layout.desktop#desktop__header-categories": {
+    "children": ["menu#desktop__header-categories--button"]
+  },
+  "menu#desktop__header-categories--button": {
+    "children": [
+      //"logo#desktop__header--threelines",
+      //"flex-layout.row#mega-menu"//,
+      "mega-menu#desktop",
+      "mega-menu-trigger-btn"
+      //aqui tengo que crear uno, pero con las tres rayas.
+    ],
+    "props": {
+      "items": [
+        {
+          "id": "menu-categories-button",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Categorías",
+            "text": "Categorías"
+          }
+        }
+      ],
+      "blockClass": "desktop__header-categories--button"
+    }
+  },
+  "logo#desktop__header--threelines": {
+    "title": "three lines",
+    "props": {
+      "url": "assets/threeLines.svg",
+      "height": "24px",
+      "blockClass": "header__top--mobile-threelines"
+    }
+  },
+  "mega-menu#desktop": {
+    "props": {
+      "openOnly": "horizontal"
+    }
+  },
+  "mega-menu-trigger-btn": {
+    "props": {
+      "Drawer": "drawer",
+      "blockClass":"lines"
+    }
+  },
+
+  "menu#desktop__websites": {
+    "children": [
+      "menu-item#desktop__websites-tienda",
+      "menu-item#desktop__websites-ventas",
+      "menu-item#desktop__websites-ayuda",
+      "menu-item#desktop__websites-login"
+    ]
+  },
+  "menu-item#desktop__websites-tienda": {
+    "props": {
+      "id": "menu-tiendas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "/localizador-tiendas",
+        "noFollow": false,
+        "tagTitle": "Tiendas",
+        "text": "Tiendas"
+      },
+      "iconToTheRight": true,
+      "blockClass": "desktop__websites-tienda"
+    }
+  },
+  "menu-item#desktop__websites-ventas": {
+    "props": {
+      "id": "menu-ventas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Venta Corp.",
+        "text": "Venta Corp."
+      },
+      "blockClass": "desktop__websites-ventas"
+    }
+  },
+  "menu-item#desktop__websites-ayuda": {
+    "props": {
+      "id": "menu-ayuda",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "¿Ayuda?",
+        "text": "¿Ayuda?"
+      },
+      "blockClass": "desktop__websites-ayuda"
+    }
+  },
+
+  "menu-item#desktop__websites-login": {
+    "children": ["modal-trigger#header__top--login"],
+    "props": {
+      "blockClass": "desktop__websites-login"
     }
   },
   "modal-trigger#header__top--login": {
-    "children": [
-      //"modal-layout#header__top--login"
-      "login"
-    ]
+    "children": ["login"
+    , "rich-text#header__top--login"
+  ],
+    "props": {
+      "blockClass": "header__top--login"
+    }
   },
   "rich-text#header__top--login": {
     "props": {
-      "text": "Login"
+      "text": "Inicia sesión",
+      "blockClass":"header__top--login"
     }
-  },
-  "modal-layout#header__top--login": {
-    "children": ["login-content"]
   },
   "login": {
     "props": {
@@ -124,7 +254,7 @@
   },
   "flex-layout.row#minicart__footer": {
     "children": [
-      "minicart-summary"/*,
+      "minicart-summary" /*,
       "rich-text#promo"*/,
       "minicart-checkout-button" //, "drawer-close-button"
     ]

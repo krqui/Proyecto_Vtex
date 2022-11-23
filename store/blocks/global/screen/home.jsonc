@@ -2,14 +2,9 @@
   "store.home": {
     "blocks": [
       /* no se porque luego comenta todo esto*/
-      /*"rich-text#home__container--texto",
-        //"image#home__container--image",
-        //"link#home__link--ancla",/*
-        "link#home__link--boton",
-        //"link#home__link--info",*/
-      "responsive-layout.mobile#home__info--mobile",
-      "responsive-layout.tablet#home__info--tablet",
-      "responsive-layout.desktop#home__info--desktop",
+      "responsive-layout.mobile#mobile__home",
+      "responsive-layout.tablet#tablet__home",
+      "responsive-layout.desktop#desktop__home",
       "search-result-layout.customQuery#home__search",
       "modal-trigger#home__modal--children",
       "modal-trigger#home__modal--event"
@@ -34,9 +29,10 @@
     "props": {
       "hiddenFacets": {
         "brands":true
-      }
+      },
+      "blockClass":"home__search--desktop"
     },
-    "children": ["rich-text#home__link--text"]
+    "children": ["rich-text#home__link--text","flex-layout.row#home__results"]
   },
   "search-result-layout.mobile#home__search--mobile": {
     "children": ["flex-layout.row#home__results"]
@@ -48,9 +44,15 @@
     "children": ["search-content#home__results--search"]
   },
   "search-content#home__results--search": {
-    "blocks": ["gallery", "not-found"]
+    "blocks": ["gallery", "not-found"],
+    "props": {
+      "blockClass":"home__results--search"
+    }
   },
   "gallery": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass":"gallery"
+    }
   }
 }

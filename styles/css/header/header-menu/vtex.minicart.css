@@ -1,7 +1,13 @@
+.minicartIconContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .minicartIconContainer::after {
     color: #fff!important;
+    margin-top: 4px;
     content: "Mi Carrito";
-    font-size: 12px;
+    font-size: 13px;
     text-transform: none;
     white-space: nowrap;
 }

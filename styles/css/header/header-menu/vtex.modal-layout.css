@@ -1,0 +1,35 @@
+.paper--threedots {
+    position: absolute;
+    top: 110px;
+    right: 24px;
+    overflow: initial;
+    gap: 15px;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+    margin: 0;
+    max-height: calc(100%-4rem);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    background-color: #fbfbfb;
+}
+
+.triggerContainer--header__top--login {
+    /*margin-top: 10px;*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*.triggerContainer--header__top--login::after {
+    content: "Log-in";
+    color: white;
+}*/
+.paper--threedots{
+    padding-left: 11px;
+}
+
+@media screen and (max-width:640px) {
+    .paper--threedots {
+        top:75px
+    }
+    
+}
