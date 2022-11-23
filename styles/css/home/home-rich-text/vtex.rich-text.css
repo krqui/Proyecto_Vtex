@@ -1,3 +1,21 @@
+/*.paragraph {
+  margin:0
+}*/
+.paragraph--header__top--login {
+  margin: 0;
+  color: #fff;
+  font-size: 13px;
+}
+
 .paragraph--section__one--title {
   color: white;
+  /*margin: 0 10px*/
 }
+
+.container--global__ofertas, .container--global__delivery, .container--global__smarthome, .container--global__bicisyscooters, .container--global__chatea, .container--global__zonaoutlet, .container--global__tracking {
+  display: inline-block;
+}
+
+/*.paragraph--global__ofertas {
+  top:10px
+}*/

@@ -1,17 +1,40 @@
 {
-  "responsive-layout.desktop#home__info--desktop": {
+  "responsive-layout.desktop#desktop__home": {
     "title": "Componente Desktop",
     "children": [
-      "list-context.image-list#home__slider--desktop",
+      //"list-context.image-list#home__slider--desktop",
+      "flex-layout.row#desktop__home",
       "flex-layout.row#home__section--one",
-      "flex-layout.row#home__section--two",
-      "rich-text#home__info--desktop"
+      "flex-layout.row#home__section--two"//,
+      //"list-context.image-list#desktop__slider--products"
       //"slider-layout#home__slider--children"
     ]
   },
-  "rich-text#home__info--desktop": {
-    "props": {
-      "text": "# Resolución de Escritorio."
+  /*"flex-layout.column#desktop-home":{
+    "children":[
+      "list-context.image-list#home__slider--desktop",
+      "flex-layout.row#home__section--one",
+      "flex-layout.row#home__section--two"
+    ]
+  },*/
+  "flex-layout.row#desktop__home":{
+    "children":[
+      "list-context.image-list#home__slider--desktop"
+    ]
+  },
+  "list-context.image-list#desktop__slider--products":{
+    "title": "Slider de productos",
+    "children": ["slider-layout#desktop__slider--products"]
+  },
+  "slider-layout#desktop__slider--products": {
+    "props":{
+      "title":"Slider de productos",
+      "itemsPerPage": {
+        "desktop":1
+      },
+      "infinite":true,
+      "blockClass":"desktop__slider",
+      "fullWidth":false
     }
   }
 }

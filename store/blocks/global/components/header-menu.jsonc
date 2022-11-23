@@ -2,12 +2,10 @@
   "autocomplete-result-list.v2": {
     "blocks": ["product-summary"]
   },
-  "search-bar#header__search": {
+  "search-bar#global__search": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      "openAutocompleteOnFocus": true,
-      "blockClass": "header__search"
+      "openAutocompleteOnFocus": true
     }
-    //"openAutocompleteOnFocus":true
   }
 }

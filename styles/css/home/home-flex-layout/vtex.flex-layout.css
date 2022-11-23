@@ -11,3 +11,6 @@
   background-color: rgb(255, 155, 61);
 } /*global solo se puede usar cuando haya un vtex por delante.*/
 /* pudeen haber varios global. No se recomienda usar global" */
+.flexColChild--minicart__empty--icon{
+  background-color: black;
+}

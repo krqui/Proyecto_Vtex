@@ -1,15 +1,23 @@
 
-.headerRowBackground--header__middle {
-  background-color: rgb(90, 255, 90);
-}
-/*Si borro esto se me quita el fondo rojo de abajo, WTF,
- el cual pertenece a los banners en rojo de arribita*/
-
-.headerRowBackground--containerImg--mobile {
-  background-color: rgb(226, 29, 29);
+.headerRowBackground--mobile__container-Img {
+  padding: 0;
 }
 
+.headerRow--header__top__mobile {
+  margin-right: 10px;
+}
 
+.headerRowContainer--header__top--mobile {
+  justify-content: center;
+}
+
+.headerRowContainer--header__top--desktop {
+  justify-content: space-around;
+}
+
+.headerRowContainer--mobile__container-Img {
+  background-color: rgb(227, 34, 34);
+}
 
 .headerRowContentContainer--header__top--mobile {
   background-color: rgb(0, 0, 0);
@@ -17,10 +25,16 @@
   margin-left: 0;
   max-width: 100%;
 }
-/*.headerRowContainer--header__top--mobile {
-  background-color: orange;
-}*/
+
+.headerRowContentContainer--header__top--desktop {
+  padding: 0;
+  margin-left: 0;
+  max-width: 100%;
+}
 
 .styledLinkContent--department__two{
   background-color:blue
 }
+
+/* cesar arango*/
+/*https://docs.google.com/forms/d/1GWQuGKoo1l49p5nskLaEG2cYM_8UKxTGBPH73SzcT2Y/edit?authuser=4*/

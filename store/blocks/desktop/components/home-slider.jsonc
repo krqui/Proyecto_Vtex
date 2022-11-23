@@ -103,7 +103,7 @@
       "src": "assets/img/pic16.png"
     }
   },
-  
+
   "rich-text": {
     "props": {
       "text": "VTEX Store Framework",
@@ -119,7 +119,7 @@
   }*/
   "list-context.image-list#home__slider--desktop": {
     "title": "Lista de imágenes",
-    "children": ["slider-layout#home__slider--list"],
+    "children": ["slider-layout#global__home__slider--list"],
     "props": {
       "preload": true,
       "images": [
@@ -166,7 +166,7 @@
       ]
     }
   },
-  "slider-layout#home__slider--list": {
+  "slider-layout#global__home__slider--list": {
     "props": {
       "title": "Slider con lista",
       "itemsPerPage": {
@@ -176,10 +176,10 @@
       },
       "infinite": true,
       "blockClass": "home__slider",
-      "fullWidth":true
+      "fullWidth": true
     }
   },
-  "slider-layout#home__sliderB--list": {
+  "slider-layout#global__home--slider-B": {
     "props": {
       "title": "Slider con lista B",
       "itemsPerPage": {
@@ -189,10 +189,10 @@
       },
       "infinite": true,
       "blockClass": "home__slider",
-      "fullWidth":false
+      "fullWidth": false
     }
   },
-  "slider-layout#home__sliderC--list": {
+  "slider-layout#global__home__sliderC--list": {
     "props": {
       "title": "Slider con lista C",
       "itemsPerPage": {
@@ -202,7 +202,7 @@
       },
       "infinite": true,
       "blockClass": "home__slider",
-      "fullWidth":false
+      "fullWidth": false
     },
     "children": [
       /*Mi tarea pendiente aqui es crear "cards" de items con imagen, descripcion, precio, etc con las imagenes de slider 4 mobile*/

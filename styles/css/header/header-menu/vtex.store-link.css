@@ -1,0 +1,8 @@
+.label--butttoncategorias {
+    background-color: black;
+}
+
+.childrenContainer--global__ofertas {
+    display: flex;
+    align-items: center;
+}

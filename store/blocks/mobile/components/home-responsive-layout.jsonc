@@ -1,20 +1,18 @@
 {
-  "responsive-layout.mobile#home__info--mobile": {
+  "responsive-layout.mobile#mobile__home": {
     "title": "Componente Movil",
     "children": [
-      "list-context.image-list#home__slider--mobile",
-      "list-context.image-list#home__slider2--mobile",
-      "flex-layout.row#home__section--container--mobile",
-      "list-context.image-list#home__slider3--mobile",
-      //"list-context.image-list#home__slider4--mobile",
-      "slider-layout#home__sliderC--list",
-      "rich-text#home__info--mobile",
+      "list-context.image-list#mobile__home-slider",
+      "list-context.image-list#mobile__home-slider2",
+      "flex-layout.row#mobile__container",
+      "list-context.image-list#mobile__home-slider3",
+      "slider-layout#global__home__sliderC--list",
       "minicart.v2"
     ]
   },
-  "list-context.image-list#home__slider--mobile": {
+  "list-context.image-list#mobile__home-slider": {
     "title": "Lista de imágenes",
-    "children": ["slider-layout#home__slider--list"],
+    "children": ["slider-layout#global__home__slider--list"],
     "props": {
       "preload": true,
       "images": [
@@ -61,62 +59,53 @@
       ]
     }
   },
-  "list-context.image-list#home__slider2--mobile": {
+  "list-context.image-list#mobile__home-slider2": {
     "title": "Lista de imágenes2",
-    "children": ["slider-layout#home__slider--list"],
+    "children": ["slider-layout#global__home__slider--list"],
     "props": {
-      "preload":true,
+      "preload": true,
       "images": [
         {
-          "image":"assets/img/disc1.png",
-          "description":"Slide 1m"
+          "image": "assets/img/disc1.png",
+          "description": "Slide 1m"
         },
         {
-          "image":"assets/img/disc2.png",
-          "description":"Slide 2m"
+          "image": "assets/img/disc2.png",
+          "description": "Slide 2m"
         },
         {
-          "image":"assets/img/disc3.png",
-          "description":"Slide 3m"
+          "image": "assets/img/disc3.png",
+          "description": "Slide 3m"
         }
       ]
     }
-
   },
-  "flex-layout.row#home__section--container--mobile": {
-    "children":[
-      "flex-layout.col#home__section--container--mobile"
+  "flex-layout.row#mobile__container": {
+    "children": ["flex-layout.col#mobile__container"]
+  },
+  "flex-layout.col#mobile__container": {
+    "children": [
+      "flex-layout.row#mobile__home-section--one",
+      "flex-layout.row#mobile__home-section--two",
+      "flex-layout.row#mobile__home-section--three",
+      "flex-layout.row#mobile__home-section--four"
     ]
   },
-  "flex-layout.col#home__section--container--mobile": {
-    "children":[
-      "flex-layout.row#home__section--one--mobile",
-      "flex-layout.row#home__section--two--mobile",
-      "flex-layout.row#home__section--three--mobile",
-      "flex-layout.row#home__section--four--mobile"
-    ]
-  },
-  "list-context.image-list#home__slider3--mobile": {
+  "list-context.image-list#mobile__home-slider3": {
     "title": "Lista de imágenes3",
-    "children": ["slider-layout#home__sliderB--list"],
+    "children": ["slider-layout#global__home--slider-B"],
     "props": {
-      "preload":true,
+      "preload": true,
       "images": [
         {
-          "image":"assets/img/slider3m-pic1.webp",
-          "description":"Slider 3 picture 1 mobile"
+          "image": "assets/img/slider3m-pic1.webp",
+          "description": "Slider 3 picture 1 mobile"
         },
         {
-          "image":"assets/img/slider3m-pic2.webp",
-          "description":"Slider 3 picture 2 mobile"
+          "image": "assets/img/slider3m-pic2.webp",
+          "description": "Slider 3 picture 2 mobile"
         }
       ]
-    }
-
-  },
-  "rich-text#home__info--mobile": {
-    "props": {
-      "text": "# Resolucion Móvil."
     }
   }
 }
