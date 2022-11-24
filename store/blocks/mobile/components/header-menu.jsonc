@@ -55,7 +55,8 @@
       "flex-layout.row#global__bicisyscooters",
       "flex-layout.row#global__chatea",
       "flex-layout.row#global__zonaoutlet",
-      "flex-layout.row#global__tracking"
+      "flex-layout.row#global__tracking",
+      "flex-layout.row#global__sorteo"
     ],
     "props": {
       "blockClass":"threedots"
@@ -94,6 +95,11 @@
   "flex-layout.row#global__tracking": {
     "children": [
       "link#global__tracking"
+    ]
+  },
+  "flex-layout.row#global__sorteo": {
+    "children": [
+      "link#global__sorteo"
     ]
   },
   "link#global__ofertas": {
@@ -257,6 +263,29 @@
     "props": {
       "text":"Sigue tu pedido",
       "blockClass":"global__tracking"
+    }
+  },
+  "link#global__sorteo": {
+    "props": {
+      "href": "/sorteo",
+      "blockClass":"global__sorteo"
+    },
+    "children": [
+      "image#global__sorteo",
+      "rich-text#global__sorteo"
+    ]
+  },
+  "image#global__sorteo": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669235916/coolb/arusmvidohvjhy5zmtw9.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_sorteo"
+    }
+  },
+  "rich-text#global__sorteo": {
+    "props":{
+      "text": "SORTEO - Vive el Mundial",
+      "blockClass":"global__sorteo"
     }
   }
   /*TENGO QUE HACER EL BANNER CON LAS IMAGENES PARA CELULAR*/

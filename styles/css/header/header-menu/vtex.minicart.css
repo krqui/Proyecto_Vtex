@@ -1,30 +1,30 @@
 .minicartIconContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .minicartIconContainer::after {
-    color: #fff!important;
-    margin-top: 4px;
-    content: "Mi Carrito";
-    font-size: 13px;
-    text-transform: none;
-    white-space: nowrap;
+  color: #fff !important;
+  margin-top: 9px;
+  content: "Mi Carrito";
+  font-size: 13px;
+  text-transform: none;
+  white-space: nowrap;
 }
 
 .closeIconButton {
-    background-color: black
+  background-color: black;
 }
 
 .closeIcon {
-    color:white
+  color: white;
 }
 
 .closeIconButton:hover {
-    transition: 0.3s;
-    transform: scale(1.28)
+  transition: 0.3s;
+  transform: scale(1.28);
 }
 
-.minicartEmptyStateContainer--minicart-empty-state{
-    background-color: rgb(143, 143, 143);
+.minicartEmptyStateContainer--minicart-empty-state {
+  background-color: rgb(143, 143, 143);
 }

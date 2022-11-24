@@ -12,7 +12,7 @@
   },
   "list-context.image-list#mobile__home-slider": {
     "title": "Lista de imágenes",
-    "children": ["slider-layout#global__home__slider--list"],
+    "children": ["slider-layout#desktop__slider-main--list"],
     "props": {
       "preload": true,
       "images": [
@@ -61,7 +61,7 @@
   },
   "list-context.image-list#mobile__home-slider2": {
     "title": "Lista de imágenes2",
-    "children": ["slider-layout#global__home__slider--list"],
+    "children": ["slider-layout#desktop__slider-main--list"],
     "props": {
       "preload": true,
       "images": [

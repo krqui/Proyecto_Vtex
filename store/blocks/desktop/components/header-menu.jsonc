@@ -11,16 +11,33 @@
 
   "header-row#desktop__threedots": {
     "children": [
+      "header-row#desktop__threedots-A",
+      "header-row#desktop__threedots-B"
+    ],
+    "props":{
+      "blockClass":"header__top--desktop"
+    }
+  },
+  "header-row#desktop__threedots-A":{
+    "children": [
       "flex-layout.row#global__ofertas",
       "flex-layout.row#global__delivery",
       "flex-layout.row#global__smarthome",
       "flex-layout.row#global__bicisyscooters",
-      "flex-layout.row#global__chatea",
+      "flex-layout.row#global__sorteo"
+    ],
+    "props": {
+      "blockClass":"destop__threedots-A"
+    }
+
+  },
+  "header-row#desktop__threedots-B":{
+    "children": [
       "flex-layout.row#global__zonaoutlet",
       "flex-layout.row#global__tracking"
     ],
-    "props":{
-      "blockClass":"header__top--desktop"
+    "props": {
+      "blockClass":"destop__threedots-B"
     }
 
   },
