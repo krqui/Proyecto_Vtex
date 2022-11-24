@@ -117,56 +117,86 @@
       "text": "Mi call to action es muy genial."
     }
   }*/
-  "list-context.image-list#home__slider--desktop": {
-    "title": "Lista de imágenes",
-    "children": ["slider-layout#global__home__slider--list"],
+  "list-context.image-list#desktop__slider-main": {
+    "title": "Preloaded list of images for desktop",/*EL CONTENEDOR MAYOR EN HTML ES EL QUE tiene DATA-TEST-id*/
+    "children": ["slider-layout#desktop__slider-main--list"],
     "props": {
       "preload": true,
       "images": [
         {
           "image": "assets/img/banner1.webp",
-          "description": "Slide 1"
+          "description": "Slide 1",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
+          }
         },
         {
           "image": "assets/img/banner2.webp",
-          "description": "Slide 2"
+          "description": "Slide 2",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/listos-para-el-mundial"
+          }
         },
         {
           "image": "assets/img/banner3.webp",
-          "description": "Slide 3"
+          "description": "Slide 3",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/celulares-y-accesorios/celulares"
+          }
         },
         {
           "image": "assets/img/banner4.webp",
-          "description": "Slide 4"
+          "description": "Slide 4",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/coleccion-renueva-tu-pc"
+          }
         },
         {
           "image": "assets/img/banner5.webp",
-          "description": "Slide 5"
+          "description": "Slide 5",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/laptops-monitores-y-tablets"
+          }
         },
         {
           "image": "assets/img/banner6.webp",
-          "description": "Slide 6"
+          "description": "Slide 6",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/blackweek-smarthome"
+          }
         },
         {
           "image": "assets/img/banner7.webp",
-          "description": "Slide 7"
+          "description": "Slide 7",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/vmps-y-accesorios"
+          }
         },
         {
           "image": "assets/img/banner8.webp",
-          "description": "Slide 8"
+          "description": "Slide 8",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
+          }
         },
         {
           "image": "assets/img/banner9.webp",
-          "description": "Slide 9"
+          "description": "Slide 9",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
+          }
         },
         {
           "image": "assets/img/banner10.webp",
-          "description": "Slide 10"
+          "description": "Slide 10",
+          "link": {
+            "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
+          }
         }
       ]
     }
   },
-  "slider-layout#global__home__slider--list": {
+  "slider-layout#desktop__slider-main--list": {
     "props": {
       "title": "Slider con lista",
       "itemsPerPage": {
@@ -175,7 +205,7 @@
         "mobile": 1
       },
       "infinite": true,
-      "blockClass": "home__slider",
+      "blockClass": "desktop__slider-main--list",
       "fullWidth": true
     }
   },

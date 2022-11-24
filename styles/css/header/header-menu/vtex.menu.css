@@ -11,6 +11,7 @@
   display: flex;
 }
 .styledLinkContent--desktop__header-categories--button {
+  font-size: 14px;
   margin-top: 2px;
 }
 .styledLink--desktop__header-categories--button {
@@ -33,6 +34,7 @@
   height: 26px;
   width: 26px;
   margin-left: 10px;
+  margin-bottom: 2.5px;
 }
 .styledLink--desktop__websites-ventas ::before {
   content: "";
@@ -43,6 +45,7 @@
   height: 26px;
   width: 26px;
   margin-left: 10px;
+  margin-bottom: 2.5px;
 }
 .styledLink--desktop__websites-ayuda ::before {
   content: "";
@@ -53,9 +56,10 @@
   height: 26px;
   width: 26px;
   margin-left: 10px;
+  margin-bottom: 2.5px;
 }
 .styledLink--desktop__websites-tienda, .styledLink--desktop__websites-ventas, .styledLink--desktop__websites-ayuda {
-  font-size: 12px;
+  font-size: 13px;
   color: #fff;
   align-items: center;
   font-weight: 600;

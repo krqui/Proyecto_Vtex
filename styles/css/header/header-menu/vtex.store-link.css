@@ -2,7 +2,15 @@
     background-color: black;
 }
 
-.childrenContainer--global__ofertas {
+.childrenContainer--global__ofertas, .childrenContainer--global__delivery, .childrenContainer--global__smarthome, .childrenContainer--global__bicisyscooters, .childrenContainer--global__chatea, .childrenContainer--global__zonaoutlet, .childrenContainer--global__tracking, .childrenContainer--global__delivery, .childrenContainer--global__smarthome, .childrenContainer--global__bicisyscooters, .childrenContainer--global__chatea, .childrenContainer--global__zonaoutlet, .childrenContainer--global__sorteo {
     display: flex;
     align-items: center;
+    padding-left: 14px;
 }
+
+.link {
+    text-decoration: none;
+}
+/*.link--global__ofertas {
+    text-decoration: none;
+}*/

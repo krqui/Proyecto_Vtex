@@ -1,12 +1,14 @@
-/*.profileIcon--login::before {
-    content: "hdfas"
+.profileIcon--loginn {
+    margin-top: 12px;
+    margin-left: 10px;
+}
 
-}*/
 
-/*.label {
-    display: none;
-}*/
 /*.container ::after{
     content: "Iniciar sesión";
     color: #fff
+}*/
+/*.button {
+    display: flex;
+    flex-direction: column;
 }*/

@@ -20,14 +20,8 @@
   "flex-layout.row#home__link--info" : {
     "children":[
       "icon#home__link--text",
-      "rich-text#home__link--text",
       "image#home__image"
     ]
-  },
-  "rich-text#home__link--text" : {
-    "props" : {
-      "text" : "Mi boton"
-    }
   },
   "icon#home__link--text":{
     "props": {

@@ -4,7 +4,6 @@
 
 .flexColChild--section__one--image {
   max-width: 600px;
-  /*background-color: green;*/
 }
 
 .flexCol--section__two--item :global(.vtex-store-link-0-x-buttonLink) {
@@ -13,4 +12,21 @@
 /* pudeen haber varios global. No se recomienda usar global" */
 .flexColChild--minicart__empty--icon{
   background-color: black;
+}
+
+.flexRow--desktop__home-section--products {
+  max-width: 1440px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.flexRow--desktop__home-blockcontent-white {
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 7%);
+
+}
+
+.flexRowContent--desktop__home-blockcontent-white {
+  -webkit-box-pack:justify;
+  justify-content: space-between;
 }

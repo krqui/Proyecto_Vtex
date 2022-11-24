@@ -24,7 +24,7 @@
     color: white;
 }*/
 .paper--threedots{
-    padding-left: 11px;
+    padding-right: 6px;
 }
 
 @media screen and (max-width:640px) {

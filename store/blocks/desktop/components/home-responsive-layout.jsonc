@@ -2,39 +2,148 @@
   "responsive-layout.desktop#desktop__home": {
     "title": "Componente Desktop",
     "children": [
-      //"list-context.image-list#home__slider--desktop",
-      "flex-layout.row#desktop__home",
+      "list-context.image-list#desktop__slider-main",
+
       "flex-layout.row#home__section--one",
-      "flex-layout.row#home__section--two"//,
+      "flex-layout.row#home__section--two", //,
+      "flex-layout.row#desktop__home-section--products"
       //"list-context.image-list#desktop__slider--products"
       //"slider-layout#home__slider--children"
-    ]
+    ],
+    "props": {
+      "blockClass": "desktop__home"
+    }
   },
-  /*"flex-layout.column#desktop-home":{
-    "children":[
-      "list-context.image-list#home__slider--desktop",
-      "flex-layout.row#home__section--one",
-      "flex-layout.row#home__section--two"
-    ]
-  },*/
-  "flex-layout.row#desktop__home":{
-    "children":[
-      "list-context.image-list#home__slider--desktop"
-    ]
-  },
-  "list-context.image-list#desktop__slider--products":{
+
+  "list-context.image-list#desktop__slider--products": {
     "title": "Slider de productos",
     "children": ["slider-layout#desktop__slider--products"]
   },
   "slider-layout#desktop__slider--products": {
-    "props":{
-      "title":"Slider de productos",
+    "props": {
+      "title": "Slider de productos",
       "itemsPerPage": {
-        "desktop":1
+        "desktop": 1
       },
-      "infinite":true,
-      "blockClass":"desktop__slider",
-      "fullWidth":false
+      "infinite": true,
+      "blockClass": "desktop__slider",
+      "fullWidth": false
+    }
+  },
+  "flex-layout.row#desktop__home-section--products": {
+    "children": ["flex-layout.col#desktop__home-section--products"],
+    "props": {
+      "blockClass": "desktop__home-section--products"
+    }
+  },
+
+  "flex-layout.col#desktop__home-section--products": {
+    "children": ["flex-layout.row#desktop__home-section-subproducts"],
+    
+    "props": {
+      "blockClass": "desktop__home-section--products"
+    }
+  },
+  "flex-layout.row#desktop__home-section-subproducts": {
+    "children":["flex-layout.col#desktop__home-section-subproducts"]
+    
+  },
+  "flex-layout.col#desktop__home-section-subproducts": {
+    /*conste que el search es el tercer children. aun faltan los dos restantes anteriores.*/
+    "children": ["flex-layout.row#desktop__home-blockcontent-white"],
+    "props": {
+      "blockClass": "desktop__home-section-subproducts"
+    }
+  },
+  "flex-layout.row#desktop__home-blockcontent-white": {
+    "children": ["flex-layout.col#desktop__home-carousel"],
+    "props": {
+      "blockClass": "desktop__home-blockcontent-white"
+    }
+  },
+  "flex-layout.col#desktop__home-carousel":{
+    //ACA DEBEMOS IMPLEMENTAR EL SLIDER
+    //"children": ["product-summary.shelf"],
+    "children": ["search-result-layout.customQuery#home__search"],
+    "props": {
+      "blockClass": "desktop__home-carousel"
+    }
+  },
+  "list-context.image-list#demoo": {
+
+  },
+  "search-result-layout.customQuery#home__search": {
+    "props": {
+      "querySchema": {
+        //"skusFilter": "ALL",
+        "skusFilter": "ALL_AVAILABLE",
+        //"simulationBehavior": "skip"
+        "simulationBehavior": "default"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home__search--desktop",
+      "search-result-layout.mobile#home__search--mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#home__search--desktop": {
+    "props": {
+      "hiddenFacets": {
+        "brands": true
+      },
+      "blockClass": "home__search--desktop"
+    },
+    "children": ["flex-layout.row#home__results"]
+  },
+  "search-result-layout.mobile#home__search--mobile": {
+    "children": ["flex-layout.row#home__results"]
+  },
+  "flex-layout.row#home__results": {
+    "children": ["flex-layout.col#home__results--search"]
+  },
+  "flex-layout.col#home__results--search": {
+    "children": ["search-content#home__results--search"]
+  },
+  "search-content#home__results--search": {
+    "blocks": ["gallery", "not-found"],
+    "props": {
+      "blockClass": "home__results--search"
+    }
+  },
+  "gallery": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass": "gallery"
+    }
+  },
+  "product-summary.shelf": {
+    "children": ["flex-layout.row#desktop__productsummary"]
+  },
+  "flex-layout.row#desktop__productsummary": {
+    "children": [
+      "flex-layout.col#desktop__productsummary-image",
+      "flex-layout.col#desktop__productsummary-details"
+    ]
+  },
+  "flex-layout.col#desktop__productsummary-image":{
+    "children": ["product-summary-image#shelf"]
+  },
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": true,
+      "aspectRatio": "1:1",
+      "maxHeight":300
+    }
+  },
+  "flex-layout.col#desktop__productsummary-details": {
+    "children": [
+      "product-summary-name",
+      "product-installments"
+    ],
+    "props": {
+      "marginLeft":4
     }
   }
+
 }
