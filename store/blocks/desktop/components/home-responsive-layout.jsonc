@@ -3,10 +3,11 @@
     "title": "Componente Desktop",
     "children": [
       "list-context.image-list#desktop__slider-main",
-
       "flex-layout.row#home__section--one",
       "flex-layout.row#home__section--two", //,
+      "list-context.product-list#demo1",
       "flex-layout.row#desktop__home-section--products"
+      
       //"list-context.image-list#desktop__slider--products"
       //"slider-layout#home__slider--children"
     ],
@@ -106,25 +107,50 @@
     "children": ["search-content#home__results--search"]
   },
   "search-content#home__results--search": {
-    "blocks": ["gallery", "not-found"],
+    "blocks": ["gallery",
+    //"list-context.product-list#demo1",
+     "not-found"],
     "props": {
       "blockClass": "home__results--search"
     }
   },
   "gallery": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#demo1"],
     "props": {
       "blockClass": "gallery"
     }
   },
-  "product-summary.shelf": {
-    "children": ["flex-layout.row#desktop__productsummary"]
+  "list-context.product-list#demo1": {
+    "blocks":["product-summary.shelf#demo1"],
+    "children":[//"slider-layout#desktop__slider--products"
+    "slider-layout#demoo-images"
+  ]
+  },
+  "product-summary.shelf#demo1": {
+    "children": ["flex-layout.row#desktop__productsummary"
+    
+  ]
+  },
+  "slider-layout#demoo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass":"demoo-images"
+    }
   },
   "flex-layout.row#desktop__productsummary": {
     "children": [
       "flex-layout.col#desktop__productsummary-image",
       "flex-layout.col#desktop__productsummary-details"
-    ]
+    ],
+    "props":{
+      "blockClass":"desktop__productsummary"
+    }
   },
   "flex-layout.col#desktop__productsummary-image":{
     "children": ["product-summary-image#shelf"]
@@ -139,7 +165,8 @@
   "flex-layout.col#desktop__productsummary-details": {
     "children": [
       "product-summary-name",
-      "product-installments"
+      "product-installments",
+      "product-list-price"
     ],
     "props": {
       "marginLeft":4
