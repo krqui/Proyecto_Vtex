@@ -54,6 +54,17 @@
   border-radius: 12px;
 }
 
+.imageElementLink--desktop__section-discountsOne--one, .imageElementLink--desktop__section-discountsOne--two, .imageElementLink--desktop__section-discountsOne--three, .imageElementLink--desktop__section-discountsTwo--one, .imageElementLink--desktop__section-discountsTwo--two {
+  display:flex;
+  justify-content:center
+}
+
+.imageElement--desktop__section-discountsOne--one, .imageElement--desktop__section-discountsOne--two, .imageElement--desktop__section-discountsOne--three, .imageElement--desktop__section-discountsTwo--one, .imageElement--desktop__section-discountsTwo--two {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
 @media (min-width: 639px) {
   .logoContainer--mobile__header-info--logo 
   {
