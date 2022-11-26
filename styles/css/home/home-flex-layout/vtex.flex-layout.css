@@ -30,3 +30,14 @@
   -webkit-box-pack:justify;
   justify-content: space-between;
 }
+
+.flexRow--desktop__section-discountsOne, .flexRow--desktop__section-discountsTwo {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-bottom: 10px;
+}
+
+.flexRowContent--desktop__section-discountsOne, .flexRowContent--desktop__section-discountsTwo {
+  justify-content: center;
+  gap: 5px;
+}

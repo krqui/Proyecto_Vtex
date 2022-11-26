@@ -1,34 +1,4 @@
 {
-  /*"flex-layout.col#section__one--image": {
-    "title": "Imagen de seccion uno.",
-    "children": ["image#home__image"],
-    "props": {
-      //"width":"60%" //comentado1
-      "blockClass": "section__one--image",
-      "colSizing": "auto"
-    }
-  },
-  "flex-layout.col#section__one--text": {
-    "title": "Texto de seccion uno.",
-    "children": [
-      "rich-text#section__one--title",
-      "rich-text#section__one--paragraph"
-    ],
-    "props": {
-      "verticalAlign": "middle"
-      //"width":"grow" //comentado1
-    }
-  },
-  "rich-text#section__one--title": {
-    "props": {
-      "text": "# Bienvenidos a VTEX U" //el michi agranda el texto
-    }
-  },
-  "rich-text#section__one--paragraph": {
-    "props": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    }
-  },*/
   "flex-layout.row#home__section--one": {
     "children": [
       "flex-layout.col#global__section-two--item1",
@@ -156,6 +126,102 @@
     "children": ["image#home__slider--sixteen"],
     "props": {
       "width": "20px"
+    }
+  },
+
+  "flex-layout.row#desktop__section-discountsOne": {
+    "children": [
+      "image#desktop__section-discountsOne--one",
+      "image#desktop__section-discountsOne--two",
+      "image#desktop__section-discountsOne--three"
+    ],
+    "props": {
+      "blockClass":"desktop__section-discountsOne"
+    }
+  },
+  "image#desktop__section-discountsOne--one": {
+    "props": {
+      "src": "assets/img/desktop__section-discountsOne--one.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsOne-one",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass":"desktop__section-discountsOne--one"
+    }
+  },
+  "image#desktop__section-discountsOne--two": {
+    "props": {
+      "src": "assets/img/desktop__section-discountsOne--two.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsOne-two",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass":"desktop__section-discountsOne--two"
+    }
+  },
+  "image#desktop__section-discountsOne--three": {
+    "props": {
+      "src": "assets/img/desktop__section-discountsOne--three.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsOne-three",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass":"desktop__section-discountsOne--three"
+    }
+  },
+  "flex-layout.row#desktop__section-discountsTwo": {
+    "children": [
+      "image#desktop__section-discountsTwo--one",
+      "image#desktop__section-discountsTwo--two"
+    ],
+    "props": {
+      "blockClass":"desktop__section-discountsTwo"
+    }
+  },
+  "image#desktop__section-discountsTwo--one": {
+    "props": {
+      "src":"assets/img/desktop__section-discountsTwo--one.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsTwo-one",
+        "attributeTitle":"",
+        "newTab":true
+      },
+      "blockClass":"desktop__section-discountsTwo--one"
+    }
+  },
+  "image#desktop__section-discountsTwo--two": {
+    "props": {
+      "src":"assets/img/desktop__section-discountsTwo--two.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsTwo-two",
+        "attributeTitle":"",
+        "newTab":true
+      },
+      "blockClass":"desktop__section-discountsTwo--two"
+    }
+  },
+  "flex-layout.row#desktop__section-smartphones": {
+    "children": [
+      "flex-layout.col#desktop__section-smartphones--title"
+    ],
+    "props":{
+      "blockClass":"desktop__section-smartphones"
+    }
+  },
+  "flex-layout.col#desktop__section-smartphones--title": {
+    "children":[
+      "rich-text#desktop__section-smartphones--title"
+      /*Aqui deber ir un boton con link. Que contenga rich text en html*/
+    ]
+  },
+
+  "rich-text#desktop__section-smartphones--title":{
+    "props": {
+      "text": "Celulares:",
+      "blockClass":"desktop__section-smartphones--title"
     }
   }
 }

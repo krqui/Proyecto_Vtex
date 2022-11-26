@@ -4,7 +4,10 @@
     "children": [
       "list-context.image-list#desktop__slider-main",
       "flex-layout.row#home__section--one",
-      "flex-layout.row#home__section--two", //,
+      "flex-layout.row#home__section--two",
+      "flex-layout.row#desktop__section-discountsOne",
+      "flex-layout.row#desktop__section-discountsTwo",
+      "flex-layout.row#desktop__section-smartphones",
       "list-context.product-list#demo1",
       "flex-layout.row#desktop__home-section--products"
       
@@ -15,7 +18,6 @@
       "blockClass": "desktop__home"
     }
   },
-
   "list-context.image-list#desktop__slider--products": {
     "title": "Slider de productos",
     "children": ["slider-layout#desktop__slider--products"]
@@ -70,9 +72,7 @@
       "blockClass": "desktop__home-carousel"
     }
   },
-  "list-context.image-list#demoo": {
-
-  },
+  
   "search-result-layout.customQuery#home__search": {
     "props": {
       "querySchema": {
