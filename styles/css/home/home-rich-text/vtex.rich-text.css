@@ -17,6 +17,14 @@
   display: inline-block;
 }
 
-/*.paragraph--global__ofertas {
-  top:10px
-}*/
+.wrapper--desktop__section-smartphones--title {
+  display: flex;
+}
+
+.container--desktop__section-smartphones--title {
+  justify-content: center;
+}
+
+.paragraph--desktop__section-smartphones--title {
+  line-height: 0.3;
+}

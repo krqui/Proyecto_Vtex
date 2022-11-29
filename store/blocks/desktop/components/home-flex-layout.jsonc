@@ -1,5 +1,5 @@
 {
-  "flex-layout.row#home__section--one": {
+  "flex-layout.row#desktop__section-temporal--one": {
     "children": [
       "flex-layout.col#global__section-two--item1",
       "flex-layout.col#global__section-two--item2",
@@ -11,7 +11,8 @@
       "flex-layout.col#global__section-two--item8"
     ],
     "props": {
-      "preserveLayoutOnMobile": true
+      "preserveLayoutOnMobile": true,
+      "blockClass":"desktop__section-temporal--one"
     }
   },
   "flex-layout.row#home__section--two": {
@@ -26,7 +27,8 @@
       "flex-layout.col#global__section-three--item16"
     ],
     "props": {
-      "preserveLayoutOnMobile": true
+      "preserveLayoutOnMobile": true,
+      "blockClass":"desktop__section-temporal--two"
     }
   },
   "flex-layout.col#global__section-two--item1": {
@@ -54,7 +56,7 @@
       "width": "20px"
     }
   },
-  
+
   "flex-layout.col#global__section-two--item5": {
     "children": ["image#home__slider--five"],
     "props": {
@@ -79,7 +81,7 @@
       "width": "20px"
     }
   },
-  
+
   "flex-layout.col#global__section-three--item9": {
     "children": ["image#home__slider--nine"],
     "props": {
@@ -136,7 +138,7 @@
       "image#desktop__section-discountsOne--three"
     ],
     "props": {
-      "blockClass":"desktop__section-discountsOne"
+      "blockClass": "desktop__section-discountsOne"
     }
   },
   "image#desktop__section-discountsOne--one": {
@@ -147,7 +149,7 @@
         "attributeTitle": "", // disables the title option of the anchor tag
         "newTab": true // the only way to open in new tab
       },
-      "blockClass":"desktop__section-discountsOne--one"
+      "blockClass": "desktop__section-discountsOne--one"
     }
   },
   "image#desktop__section-discountsOne--two": {
@@ -158,7 +160,7 @@
         "attributeTitle": "", // disables the title option of the anchor tag
         "newTab": true // the only way to open in new tab
       },
-      "blockClass":"desktop__section-discountsOne--two"
+      "blockClass": "desktop__section-discountsOne--two"
     }
   },
   "image#desktop__section-discountsOne--three": {
@@ -169,7 +171,7 @@
         "attributeTitle": "", // disables the title option of the anchor tag
         "newTab": true // the only way to open in new tab
       },
-      "blockClass":"desktop__section-discountsOne--three"
+      "blockClass": "desktop__section-discountsOne--three"
     }
   },
   "flex-layout.row#desktop__section-discountsTwo": {
@@ -178,50 +180,142 @@
       "image#desktop__section-discountsTwo--two"
     ],
     "props": {
-      "blockClass":"desktop__section-discountsTwo"
+      "blockClass": "desktop__section-discountsTwo"
     }
   },
   "image#desktop__section-discountsTwo--one": {
     "props": {
-      "src":"assets/img/desktop__section-discountsTwo--one.webp",
+      "src": "assets/img/desktop__section-discountsTwo--one.webp",
       "link": {
         "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsTwo-one",
-        "attributeTitle":"",
-        "newTab":true
+        "attributeTitle": "",
+        "newTab": true
       },
-      "blockClass":"desktop__section-discountsTwo--one"
+      "blockClass": "desktop__section-discountsTwo--one"
     }
   },
   "image#desktop__section-discountsTwo--two": {
     "props": {
-      "src":"assets/img/desktop__section-discountsTwo--two.webp",
+      "src": "assets/img/desktop__section-discountsTwo--two.webp",
       "link": {
         "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsTwo-two",
-        "attributeTitle":"",
-        "newTab":true
+        "attributeTitle": "",
+        "newTab": true
       },
-      "blockClass":"desktop__section-discountsTwo--two"
+      "blockClass": "desktop__section-discountsTwo--two"
     }
   },
   "flex-layout.row#desktop__section-smartphones": {
     "children": [
-      "flex-layout.col#desktop__section-smartphones--title"
+      "flex-layout.col#desktop__section-smartphones--title",
+      "flex-layout.col#desktop__section-smartphones--xiaomi",
+      "flex-layout.col#desktop__section-smartphones--apple",
+      "flex-layout.col#desktop__section-smartphones--samsung",
+      "flex-layout.col#desktop__section-smartphones--motorola",
+      "flex-layout.col#desktop__section-smartphones--huawei"
     ],
-    "props":{
-      "blockClass":"desktop__section-smartphones"
+    "props": {
+      "blockClass": "desktop__section-smartphones"
     }
   },
   "flex-layout.col#desktop__section-smartphones--title": {
-    "children":[
+    "children": [
       "rich-text#desktop__section-smartphones--title"
-      /*Aqui deber ir un boton con link. Que contenga rich text en html*/
-    ]
+    ],
+    "props": {
+      "blockClass": "desktop__section-smartphones--title"
+    }
+  },
+  "flex-layout.col#desktop__section-smartphones--xiaomi": {
+    "children": ["link#desktop__section-smartphones--xiaomi"],
+    "props": {
+      "blockClass":"desktop__section-smartphones--column"
+    }
+  },
+  "flex-layout.col#desktop__section-smartphones--apple": {
+    "children": ["link#desktop__section-smartphones--apple"],
+    "props": {
+      "blockClass":"desktop__section-smartphones--column"
+    }
+  },
+  "flex-layout.col#desktop__section-smartphones--samsung": {
+    "children": ["link#desktop__section-smartphones--samsung"],
+    "props": {
+      "blockClass":"desktop__section-smartphones--column"
+    }
+  },
+  "flex-layout.col#desktop__section-smartphones--motorola": {
+    "children": ["link#desktop__section-smartphones--motorola"],
+    "props": {
+      "blockClass":"desktop__section-smartphones--column"
+    }
+  },
+  "flex-layout.col#desktop__section-smartphones--huawei": {
+    "children": ["link#desktop__section-smartphones--huawei"],
+    "props": {
+      "blockClass":"desktop__section-smartphones--column"
+    }
   },
 
-  "rich-text#desktop__section-smartphones--title":{
+  "rich-text#desktop__section-smartphones--title": {
     "props": {
       "text": "Celulares:",
-      "blockClass":"desktop__section-smartphones--title"
+      "blockClass": "desktop__section-smartphones--title"
+    }
+  },
+  "link#desktop__section-smartphones--xiaomi": {
+    "props": {
+      "href": "/xiaomi",
+      "label": "Xiaomi",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      },
+      "blockClass": "desktop__section-smartphones-link"
+    }
+  },
+  "link#desktop__section-smartphones--apple": {
+    "props": {
+      "href": "/apple",
+      "label": "Apple",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      },
+      "blockClass": "desktop__section-smartphones-link"
+    }
+  },
+  "link#desktop__section-smartphones--samsung": {
+    "props": {
+      "href": "/samsung",
+      "label": "Samsung",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      },
+      "blockClass": ["desktop__section-smartphones-link", "desktop__section-smartphones-samsung" 
+    ]}
+  },
+  "link#desktop__section-smartphones--motorola": {
+    "props": {
+      "href": "/motorola",
+      "label": "Motorola",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      },
+      "blockClass": ["desktop__section-smartphones-link", "desktop__section-smartphones-samsung"]
+    }
+  },
+  "link#desktop__section-smartphones--huawei": {
+    "props": {
+      "href": "/huawei",
+      "label": "Huawei",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      },
+      "blockClass": "desktop__section-smartphones-link"
     }
   }
 }

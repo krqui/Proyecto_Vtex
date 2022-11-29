@@ -112,11 +112,7 @@
       "font": "t-heading-1"
     }
   },
-  /*"rich-text#test":{
-    "props": {
-      "text": "Mi call to action es muy genial."
-    }
-  }*/
+
   "list-context.image-list#desktop__slider-main": {
     "title": "Preloaded list of images for desktop",/*EL CONTENEDOR MAYOR EN HTML ES EL QUE tiene DATA-TEST-id*/
     "children": ["slider-layout#desktop__slider-main--list"],
@@ -206,9 +202,15 @@
       },
       "infinite": true,
       "blockClass": "desktop__slider-main--list",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover":true
+      },
       "fullWidth": true
     }
   },
+
+  
   "slider-layout#global__home--slider-B": {
     "props": {
       "title": "Slider con lista B",

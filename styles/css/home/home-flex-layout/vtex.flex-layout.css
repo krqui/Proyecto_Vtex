@@ -1,5 +1,5 @@
-.flexRowContent--home__section--one {
-  background-color: brown;
+.flexRowContent--desktop__section-temporal--one, .flexRowContent--desktop__section-temporal--two {
+  justify-content: center;
 }
 
 .flexColChild--section__one--image {
@@ -19,18 +19,15 @@
   margin: auto;
   padding-bottom: 10px;
 }
-
 .flexRow--desktop__home-blockcontent-white {
   background-color: #fff;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 7%);
 
 }
-
 .flexRowContent--desktop__home-blockcontent-white {
   -webkit-box-pack:justify;
   justify-content: space-between;
 }
-
 .flexRow--desktop__section-discountsOne, .flexRow--desktop__section-discountsTwo {
   margin: 0 auto;
   max-width: 1440px;
@@ -40,4 +37,42 @@
 .flexRowContent--desktop__section-discountsOne, .flexRowContent--desktop__section-discountsTwo {
   justify-content: center;
   gap: 5px;
+}
+.flexRow--desktop__section-smartphones {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
+  margin: 0 auto;
+  cursor: pointer;
+  width: 1440px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.flexRowContent--desktop__section-smartphones {
+  height: 40px;
+  justify-content: center;
+}
+
+.flexColChild--desktop__section-smartphones--column {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.flexCol--desktop__section-smartphones--title {
+  justify-content: flex-end;
+}
+
+.flexRow--desktop__slider-product--one {
+  
+  width: 1440px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
+  margin: 40px auto;
+}
+
+.flexCol--global__shelf-details {
+  height: auto!important;
+  border: 2px solid transparent;
 }
