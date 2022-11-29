@@ -14,3 +14,24 @@
 /*.link--global__ofertas {
     text-decoration: none;
 }*/
+.label--desktop__section-smartphones-link {
+    color:#1d1d1d;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.link--desktop__section-smartphones-link {
+    background-color: #f0f0f0;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius:50px
+}
+
+.link--desktop__section-smartphones-samsung {
+    padding-right: 25px;
+    padding-left: 25px;
+}
