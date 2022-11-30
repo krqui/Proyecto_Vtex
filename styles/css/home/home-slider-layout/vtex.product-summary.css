@@ -9,3 +9,9 @@
     font-size: medium;
     color:black
 }
+
+.imageContainer {
+    
+    height: 200px;
+    width: 200px;
+}

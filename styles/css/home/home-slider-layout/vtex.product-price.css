@@ -1,3 +1,17 @@
+.currencyContainer--global__price {
+    margin-left: 50px;
+}
+
+.sellingPrice--hasUnitMultiplier, .sellingPrice--hasListPrice, .sellingPrice {
+    text-align: start;
+}
+
 .currencyCode , .currencyLiteral , .currencyInteger, .currencyGroup {
-    color:red
+    color:#d70d27
+}
+
+.currencyCode--global__price, .currencyLiteral--global__price, .currencyInteger--global__price, .currencyGroup--global__price, .currencyInteger--global__price {
+    font-family:Montserrat;
+    font-size:18px;
+    color:#000
 }

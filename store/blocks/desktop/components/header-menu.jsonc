@@ -54,8 +54,7 @@
       "responsive-layout.desktop#desktop__header-info",
       "responsive-layout.desktop#desktop__header-categories",
       "search-bar#global__search",
-      "menu#desktop__websites",
-      "minicart.v2"
+      "menu#desktop__websites"
     ],
     "props": {
       "blockClass": "header__top--mobile"
@@ -78,47 +77,34 @@
   },
   "menu#desktop__header-categories--button": {
     "children": [
-      //"logo#desktop__header--threelines",
-      //"flex-layout.row#mega-menu"//,
       "mega-menu#desktop",
-      "mega-menu-trigger-btn"
-      //aqui tengo que crear uno, pero con las tres rayas.
-    ],
-    "props": {
-      "items": [
-        {
-          "id": "menu-categories-button",
-          "type": "custom",
-          "highlight": true,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Categorías",
-            "text": "Categorías"
-          }
-        }
-      ],
-      "blockClass": "desktop__header-categories--button"
-    }
-  },
-  "logo#desktop__header--threelines": {
-    "title": "three lines",
-    "props": {
-      "url": "assets/threeLines.svg",
-      "height": "24px",
-      "blockClass": "header__top--mobile-threelines"
-    }
+      "mega-menu-trigger-btn#lines"
+    ]
   },
   "mega-menu#desktop": {
     "props": {
       "openOnly": "horizontal"
     }
   },
-  "mega-menu-trigger-btn": {
+  "mega-menu-trigger-btn#lines": {
     "props": {
       "Drawer": "drawer",
       "blockClass":"lines"
+    }
+  },
+  "mega-menu-trigger-btn#extra": {
+    "props": {
+      "Drawer": "drawer",
+      "blockClass":"extra"
+    }
+  },
+
+  "rich-text#bbb": {
+    "props":{
+      "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "Categories",
+    "textColor": "c-on-emphasis"
     }
   },
 
@@ -127,7 +113,8 @@
       "menu-item#desktop__websites-tienda",
       "menu-item#desktop__websites-ventas",
       "menu-item#desktop__websites-ayuda",
-      "menu-item#desktop__websites-login"
+      "login",
+      "minicart.v2"
     ]
   },
   "menu-item#desktop__websites-tienda": {
@@ -165,32 +152,12 @@
       "highlight": false,
       "itemProps": {
         "tagTitle": "¿Ayuda?",
-        "text": "¿Ayuda?"
+        "text": "Necesitas ayuda"
       },
       "blockClass": "desktop__websites-ayuda"
     }
   },
-
-  "menu-item#desktop__websites-login": {
-    "children": ["modal-trigger#header__top--login"],
-    "props": {
-      "blockClass": "desktop__websites-login"
-    }
-  },
-  "modal-trigger#header__top--login": {
-    "children": ["login"
-    , "rich-text#header__top--login"
-  ],
-    "props": {
-      "blockClass": "header__top--login"
-    }
-  },
-  "rich-text#header__top--login": {
-    "props": {
-      "text": "Inicia sesión",
-      "blockClass":"header__top--login"
-    }
-  },
+  
   "login": {
     "props": {
       "accessCodeTitle": "Access Code to log-in",
@@ -198,8 +165,9 @@
       "emailAndPasswordTitle": "LOG-IN",
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,
-      "showIconProfile": true,
-      "hideIconLabel": true,
+      "showIconProfile": false,
+      "iconLabel":"Inicia sesión",
+      "hideIconLabel": false,
       "termsAndConditions": "Al registrarte estas aceptando nuestros Términos y Condiciones y nuestras Políticas de Privacidad.",
       "blockClass": "loginn"
     }
@@ -225,12 +193,13 @@
       }*/
   "minicart.v2": {
     "props": {
-      "MinicartIcon": "icon#home__link--text",
+      //"MinicartIcon": "icon#home__link--text",
       //"MinicartIcon": "icon-search",
       //"variation": "popup",
       "itemCountMode": "total",
       "quantityDisplay": "always",
-      "customPixelEventName": "pageview"
+      "customPixelEventName": "pageview",
+      "blockClass":"global__minicart"
     }, // hasta esta linea, tenemos lo basico para un minicart,
     // De aqui para abajo, ya es un minicart#customizado
     "children": ["minicart-base-content"]

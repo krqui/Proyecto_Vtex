@@ -72,7 +72,20 @@
   margin: 40px auto;
 }
 
+.flexColChild--global__shelf-details:nth-child(2n) {
+  height: 78px!important;
+}
+
+.flexColChild--global__shelf-details:nth-child(4n) {
+  height: 20px!important;
+}
+
 .flexCol--global__shelf-details {
   height: auto!important;
   border: 2px solid transparent;
+  margin: 0;
+}
+
+.flexCol--global__shelf-details:hover {
+  border: 2px solid rgba(225, 225, 225, 0.559);
 }

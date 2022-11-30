@@ -28,3 +28,16 @@
 .paragraph--desktop__section-smartphones--title {
   line-height: 0.3;
 }
+
+.wrapper--global__price {
+  color:rgb(255, 4, 4)
+}
+.paragraph--global__ofertas, .paragraph--global__delivery, .paragraph--global__smarthome, .paragraph--global__bicisyscooters, .paragraph--global__chatea, .paragraph--global__zonaoutlet, .paragraph--global__tracking, .paragraph--global__sorteo  {
+  line-height: 0.5;
+}
+.paragraph--global__price {
+  margin:0;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+}

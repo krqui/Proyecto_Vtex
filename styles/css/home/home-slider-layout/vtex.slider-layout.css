@@ -36,3 +36,20 @@
   border-radius: 4px;
 }
 
+.caretIcon--desktop__slider-product--one {
+  background: #fff;
+  padding:8px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+}
+
+.paginationDotsContainer--desktop__slider-product--one {
+  /*margin-top: 14px;*/
+  transform: translateY(-16px);
+  /*padding-top: 10px;*/
+  /*padding: bottom;*/
+}
+
+.sliderTrackContainer--desktop__slider-product--one {
+  height: 444px;
+}

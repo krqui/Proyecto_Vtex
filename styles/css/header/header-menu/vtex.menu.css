@@ -11,7 +11,7 @@
   display: flex;
 }
 .styledLinkContent--desktop__header-categories--button {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 2px;
 }
 .styledLink--desktop__header-categories--button {
@@ -21,6 +21,12 @@
   display: flex;
   align-items: center;
 }
+
+.styledLinkContainer--desktop__websites-tienda, .styledLinkContainer--desktop__websites-ventas, .styledLinkContainer--desktop__websites-ayuda {
+  margin-left: 0.8rem;
+  margin-right: 0.3rem;
+}
+
 .styledLinkContainer--desktop__websites-login {
   display: none;
 }
@@ -42,9 +48,9 @@
   background-size: contain;
   background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1669065629/coolb/nbjzlql0smez5tqvqfz8.svg);
   background-repeat: no-repeat;
-  height: 26px;
+  height: 26.1px;
   width: 26px;
-  margin-left: 10px;
+  margin-left: 24px;
   margin-bottom: 2.5px;
 }
 .styledLink--desktop__websites-ayuda ::before {
@@ -53,9 +59,9 @@
   background-size: contain;
   background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1669066536/coolb/jnwfvgijs8tnta13hhan.svg);
   background-repeat: no-repeat;
-  height: 26px;
+  height: 26.1px;
   width: 26px;
-  margin-left: 10px;
+  margin-left: 39px;
   margin-bottom: 2.5px;
 }
 .styledLink--desktop__websites-tienda, .styledLink--desktop__websites-ventas, .styledLink--desktop__websites-ayuda {
