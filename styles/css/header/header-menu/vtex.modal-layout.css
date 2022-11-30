@@ -17,6 +17,7 @@
     /*margin-top: 10px;*/
     display: flex;
     flex-direction: column;
+    margin-left: 8px;
 }
 
 /*.triggerContainer--header__top--login::after {

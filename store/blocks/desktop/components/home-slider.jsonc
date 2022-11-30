@@ -239,7 +239,7 @@
     "children": [
       /*Mi tarea pendiente aqui es crear "cards" de items con imagen, descripcion, precio, etc con las imagenes de slider 4 mobile*/
       /*"flex-layout.row#home__slider--zero",*/
-      "rich-text#header__top--login",
+      /*"rich-text#header__top--login",*/
       "image#home__slider--one",
       "image#home__slider--two",
       "image#home__slider--three",

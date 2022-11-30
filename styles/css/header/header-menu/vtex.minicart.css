@@ -1,6 +1,12 @@
+.openIconContainer {
+  padding: 0
+}
+
 .minicartIconContainer {
+  color: #fff!important;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .minicartIconContainer::after {
@@ -11,6 +17,12 @@
   text-transform: none;
   white-space: nowrap;
 }
+
+/*.cartIcon {
+  width: 100px;
+  height: 100px;
+
+}*/
 
 .closeIconButton {
   background-color: black;
