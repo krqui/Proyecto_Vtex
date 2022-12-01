@@ -71,6 +71,32 @@
   right:auto
 }
 
+.imageElement--imagen_oferta, .imageElement--imagen_delivery, .imageElement--imagen_smarthome, .imageElement--imagen_bicisyscooters, .imageElement--imagen_sorteo {
+  margin-right: 6px;
+}
+
+.logoContainer--desktop__footer-b1--colOne {
+  padding: 0 16px 0 0;
+}
+
+
+.imageElement--desktop__footer-b1--colOne-facebook {
+
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.imageElement--desktop__footer-b1--colOne-instagram {
+
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.imageElement--desktop__footer-b1--colOne-youtube {
+  margin-top: 3px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
 
 @media (min-width: 639px) {
   .logoContainer--mobile__header-info--logo 

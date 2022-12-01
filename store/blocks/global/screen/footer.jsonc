@@ -4,30 +4,159 @@
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
-    "children": ["flex-layout.row#footer__container"],
+    "children": ["flex-layout.row#desktop__footer-b1", "flex-layout.row#desktop__footer-b2"]
+  },
+  "flex-layout.row#desktop__footer-b1":{
+    "children":["flex-layout.row#desktop__footer-b1--block"],
     "props": {
-      "blockClass":"desktop__footer"
+      "blockClass":"desktop__footer-b1"
     }
   },
-  "flex-layout.row#footer__container": {
+  "flex-layout.row#desktop__footer-b1--block": {
     "children": [
-      "flex-layout.col#footer__container--col-one",
-      "flex-layout.col#footer__container--col-two",
-      "flex-layout.col#footer__container--col-three",
-      "flex-layout.col#footer__container--col-four"
+      "flex-layout.col#desktop__footer-b1--colOne",
+      "flex-layout.col#desktop__footer-b1--colTwo",
+      "flex-layout.col#desktop__footer-b1--colThree"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-b1--block"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--colOne": {
+    "children": [
+      "logo#desktop__footer-b1--colOne",
+      "flex-layout.row#desktop__footer-b1--colOne-social"
+    ],
+    "props": {
+      "blockClass":"desktop__footer-b1--colOne"
+    }
+  },
+  "logo#desktop__footer-b1--colOne": {
+    "props":{
+      "title":"logo",
+      "url":"https://res.cloudinary.com/dby5zzxin/image/upload/v1669849568/coolb/bslhzwp47m2wbe23rj8h.svg",
+      "href":"/",
+      "width":200,
+      "blockClass":"desktop__footer-b1--colOne"
+    }
+  },
+  "flex-layout.row#desktop__footer-b1--colOne-social":{
+    "children":[
+      "image#desktop__footer-b1--colOne-facebook",
+      "image#desktop__footer-b1--colOne-instagram",
+      "image#desktop__footer-b1--colOne-youtube"
+    ],
+    "props": {
+      "blockClass":"desktop__footer-b1--colOne-social"
+    }
+  },
+  "image#desktop__footer-b1--colOne-facebook": {
+    "title": "Footer facebook",
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669850644/coolb/fs95jtauj9pq0f7mlf75.svg",
+      "title": "Footer facebook image",
+      "link": {
+        "url": "https://www.facebook.com/",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass":"desktop__footer-b1--colOne-facebook"
+    }
+  },
+  "image#desktop__footer-b1--colOne-instagram": {
+    "title": "Footer instagram",
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669850850/coolb/njjz6gr9zb3dtzhzynd4.svg",
+      "title": "Footer instagram image",
+      "link": {
+        "url": "https://www.instagram.com/",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass":"desktop__footer-b1--colOne-instagram"
+    }
+  },
+  "image#desktop__footer-b1--colOne-youtube": {
+    "title": "Footer youtube",
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669851874/coolb/xsoa4hqzdzhnwjfizomb.png",
+      "title": "Footer youtube image",
+      "link": {
+        "url": "https://www.youtube.com/",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass":"desktop__footer-b1--colOne-youtube"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--colTwo": {
+    "children":["rich-text#desktop__footer-b1--colTwo-text"],
+    "props":{
+      "blockClass":"desktop__footer-b1--colTwo"
+    }
+  },
+  "rich-text#desktop__footer-b1--colTwo-text":{
+    "props":{
+      "text":"¡Suscríbete a nuestro newsletter \n y recibe las mejores ofertas!",
+      "blockClass":"desktop__footer-b1--colTwo-text"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--colThree":{
+    "children":[
+      "flex-layout.row#form"
     ]
   },
-  "flex-layout.col#footer__container--col-one": {
-    "children": ["rich-text#about-us-title", "menu#about-us"]
+  "flex-layout.row#form": {
+    "children": [
+      "flex-layout.col#form"
+    ]
   },
-  "flex-layout.col#footer__container--col-two": {
-    "children": ["rich-text#policies-title", "menu#policies"]
+  "flex-layout.col#form": {
+    "children": [
+      "form"
+    ]
+  },
+  "form": {
+    "props": {
+      "entity": "clients",
+      "schema": "person"
+    }
+  },
+
+
+
+  "flex-layout.row#desktop__footer-b2": {
+    "children": ["flex-layout.row#desktop__footer-b2--block"],
+    "props": {
+      "blockClass":"desktop__footer-b2"
+    }
+  },
+  "flex-layout.row#desktop__footer-b2--block": {
+    "children":[
+      "flex-layout.col#desktop__footer-b2--colOne",
+      "flex-layout.col#footer__container--col-three",
+      "flex-layout.col#footer__container--col-four"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-b2--block"
+    }
+  },
+  "flex-layout.col#desktop__footer-b2--colOne": {
+    "children": [
+      // aqui en vez del rich text, debe ir un menu container nav
+      //"rich-text#policies-title" 
+    //"menu#policies"
+  ],
+    "props": {
+      "blockClass":"desktop__footer-b2--colOne"
+    }
   },
   "flex-layout.col#footer__container--col-three":{
     "children": ["rich-text#atencion-title", "menu#client"] 
   },
   "flex-layout.col#footer__container--col-four": {
-    "children": ["social-networks", "accepted-payment-methods"]
+    "children": [//"social-networks",
+     "accepted-payment-methods"]
   },
 
   "rich-text#about-us-title": {
@@ -233,7 +362,7 @@
     }
   },
 
-  "social-networks": {
+  /*"social-networks": {
     "props": {
       "socialNetworks": [
         {
@@ -250,7 +379,7 @@
         }
       ]
     }
-  },
+  },*/
   "accepted-payment-methods": {
     "props": {
       "paymentMethods": ["mastercard", "visa", "diners club"]

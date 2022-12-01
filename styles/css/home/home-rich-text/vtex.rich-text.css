@@ -33,11 +33,49 @@
   color:rgb(255, 4, 4)
 }
 .paragraph--global__ofertas, .paragraph--global__delivery, .paragraph--global__smarthome, .paragraph--global__bicisyscooters, .paragraph--global__chatea, .paragraph--global__zonaoutlet, .paragraph--global__tracking, .paragraph--global__sorteo  {
-  line-height: 0.5;
+  font-size: 13px;
+  line-height: 1;
 }
 .paragraph--global__price {
   margin:0;
   font-weight: 500;
   font-size: 12px;
   text-decoration: none;
+}
+
+
+.container--desktop__producttwo-title--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.paragraph--desktop__producttwo-title--container {
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d1d1d;
+  font-family: Montserrat;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.paragraph--desktop__producttwo-title--container::before {
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  content: "";
+  display: block;
+  float: left;
+  background-size: contain;
+  margin-right: 10px;
+  background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1669832207/coolb/r7zamfjzkjpywdsokoek.svg);
+}
+
+.paragraph--desktop__footer-b1--colTwo-text {
+  line-height: 1;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
 }

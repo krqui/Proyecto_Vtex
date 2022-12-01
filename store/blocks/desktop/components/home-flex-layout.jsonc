@@ -205,6 +205,54 @@
       "blockClass": "desktop__section-discountsTwo--two"
     }
   },
+  "flex-layout.row#desktop__section-discountsThree": {
+    "children": [
+      "image#desktop__section-discountsThree--one",
+      "image#desktop__section-discountsThree--two",
+      "image#desktop__section-discountsThree--three"
+    ],
+    "props": {
+      "blockClass": "desktop__section-discountsOne"
+    }
+  },
+  "image#desktop__section-discountsThree--one": {
+    "props": {
+      "src": "assets/img/desktop__section-discountsThree--one.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsTwo-two",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "blockClass": "desktop__section-discountsOne--one"
+    }
+  },
+  "image#desktop__section-discountsThree--two": {
+    "props": {
+      "src": "assets/img/desktop__section-discountsThree--two.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsTwo-two",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "blockClass": "desktop__section-discountsOne--two"
+    }
+  },
+  "image#desktop__section-discountsThree--three": {
+    "props": {
+      "src": "assets/img/desktop__section-discountsThree--three.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/discountsTwo-two",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "blockClass": "desktop__section-discountsOne--three"
+    }
+  },
+
+
+
+
+
   "flex-layout.row#desktop__section-smartphones": {
     "children": [
       "flex-layout.col#desktop__section-smartphones--title",
