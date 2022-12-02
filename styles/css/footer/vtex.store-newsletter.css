@@ -1,0 +1,17 @@
+
+
+.newsletterForm--desktop__footer-form{
+    flex-direction: column;
+}
+
+
+/*:global(.vtex-button){
+    background-color: red;
+}*/
+
+:global(.vtex-button__label){
+    color:#fff
+}
+:global(.vtex-checkbox__label){
+    color:#fff
+}

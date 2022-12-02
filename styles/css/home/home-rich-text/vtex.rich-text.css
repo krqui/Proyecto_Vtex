@@ -13,7 +13,14 @@
   /*margin: 0 10px*/
 }
 
-.container--global__ofertas, .container--global__delivery, .container--global__smarthome, .container--global__bicisyscooters, .container--global__chatea, .container--global__zonaoutlet, .container--global__tracking,.container--global__sorteo {
+.container--global__ofertas,
+.container--global__delivery,
+.container--global__smarthome,
+.container--global__bicisyscooters,
+.container--global__chatea,
+.container--global__zonaoutlet,
+.container--global__tracking,
+.container--global__sorteo {
   display: inline-block;
 }
 
@@ -30,19 +37,25 @@
 }
 
 .wrapper--global__price {
-  color:rgb(255, 4, 4)
+  color: rgb(255, 4, 4);
 }
-.paragraph--global__ofertas, .paragraph--global__delivery, .paragraph--global__smarthome, .paragraph--global__bicisyscooters, .paragraph--global__chatea, .paragraph--global__zonaoutlet, .paragraph--global__tracking, .paragraph--global__sorteo  {
+.paragraph--global__ofertas,
+.paragraph--global__delivery,
+.paragraph--global__smarthome,
+.paragraph--global__bicisyscooters,
+.paragraph--global__chatea,
+.paragraph--global__zonaoutlet,
+.paragraph--global__tracking,
+.paragraph--global__sorteo {
   font-size: 13px;
   line-height: 1;
 }
 .paragraph--global__price {
-  margin:0;
+  margin: 0;
   font-weight: 500;
   font-size: 12px;
   text-decoration: none;
 }
-
 
 .container--desktop__producttwo-title--container {
   display: flex;
@@ -50,7 +63,8 @@
   margin-top: 0;
 }
 
-.paragraph--desktop__producttwo-title--container {
+.paragraph--desktop__producttwo-title--container,
+.paragraph--desktop__productfour-title--container {
   line-height: 1;
   font-size: 24px;
   font-weight: 700;
@@ -73,9 +87,59 @@
   background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1669832207/coolb/r7zamfjzkjpywdsokoek.svg);
 }
 
+.paragraph--desktop__productfour-title--container::before {
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  content: "";
+  display: block;
+  float: left;
+  background-size: contain;
+  margin-right: 10px;
+  background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1669912073/coolb/d9inqg9ux2osluyq0j4m.svg);
+}
+
 .paragraph--desktop__footer-b1--colTwo-text {
   line-height: 1;
   color: #fff;
   font-size: 20px;
   margin: 0;
 }
+
+.paragraph--desktop__footer-b2--colOne--title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.link--desktop__footer-b2--colOne--searchtiendas {
+  background-color: #e40521;
+  color: #fff;
+  font-weight: 700;
+
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 220px;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.container--desktop__footer-b2--colOne--book-two {
+  margin-left: 60px;
+}
+
+.paragraph--desktop__footer-b2--colOne--book-two {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  margin: 6px 0;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-align: left;
+}
+

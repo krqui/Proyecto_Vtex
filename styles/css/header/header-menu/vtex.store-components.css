@@ -98,6 +98,13 @@
   margin-right: 4px;
 }
 
+.imageElement--desktop__foooter-b2--colOne--book-one {
+  width: 108px;
+  border: 1px solid #393939;
+  border-radius: 4px;
+
+}
+
 @media (min-width: 639px) {
   .logoContainer--mobile__header-info--logo 
   {
