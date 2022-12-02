@@ -103,27 +103,74 @@
   },
   "flex-layout.col#desktop__footer-b1--colThree":{
     "children":[
-      "flex-layout.row#form"
-    ]
-  },
-  "flex-layout.row#form": {
-    "children": [
-      "flex-layout.col#form"
-    ]
-  },
-  "flex-layout.col#form": {
-    "children": [
-      "form"
-    ]
-  },
-  "form": {
-    "props": {
-      "entity": "clients",
-      "schema": "person"
+      "flex-layout.row#desktop__footer-b1--form"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-b1--colThree"
     }
   },
+  "flex-layout.row#desktop__footer-b1--form": {
+    "children": [
+      "flex-layout.col#desktop__footer-b1--form"
+    ],
+    "props": {
+      "blockClass":"desktop__footer-b1--form"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--form":{
+    "children": [
+      "newsletter-form#desktop__footer-b1--form"
+    ],
+    "props": {
+      "blockClass":"desktop__footer-b1--form"
+    }
+  },
+  "newsletter-form#desktop__footer-b1--form": {
+    "children": [
+      "flex-layout.row#desktop__footer-form-one",
+      "flex-layout.row#desktop__footer-form-two"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-form"
+    }
+  },
+  "flex-layout.row#desktop__footer-form-one":{
+    "children":[
+      "newsletter-input-email#desktop__footer-b1--form",
+      "newsletter-submit#desktop__footer-b1--form"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-form-one"
+    }
 
-
+  },
+  "flex-layout.row#desktop__footer-form-two":{
+    "children":[
+      "newsletter-checkbox-confirmation#desktop__footer-form-two"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-form-two"
+    }
+  },
+  "newsletter-checkbox-confirmation#desktop__footer-form-two":{
+    "props":{
+      "checkboxLabel":"He leído y acepto la Política de Privacidad"      
+    }
+  }
+  ,
+  "newsletter-input-email#desktop__footer-b1--form": {
+    "props":{
+      "placeholderText":"Ingresa tu correo",
+      "blockClass":"desktop__footer-b1--form"
+    }
+  },
+  "newsletter-submit#desktop__footer-b1--form": {
+    "title":"form",
+    "props":{
+      "submitButtonLabel":"Suscribirme",
+      "blockClass":"desktop__footer-b1--form"
+    }
+  },
 
   "flex-layout.row#desktop__footer-b2": {
     "children": ["flex-layout.row#desktop__footer-b2--block"],
@@ -134,8 +181,9 @@
   "flex-layout.row#desktop__footer-b2--block": {
     "children":[
       "flex-layout.col#desktop__footer-b2--colOne",
-      "flex-layout.col#footer__container--col-three",
-      "flex-layout.col#footer__container--col-four"
+      "flex-layout.col#desktop__footer-b2--colTwo"
+      /*"flex-layout.col#footer__container--col-three",
+      "flex-layout.col#footer__container--col-four"*/
     ],
     "props":{
       "blockClass":"desktop__footer-b2--block"
@@ -143,14 +191,112 @@
   },
   "flex-layout.col#desktop__footer-b2--colOne": {
     "children": [
-      // aqui en vez del rich text, debe ir un menu container nav
-      //"rich-text#policies-title" 
-    //"menu#policies"
+      "menu#desktop__footer-b2--colOne"
   ],
     "props": {
       "blockClass":"desktop__footer-b2--colOne"
     }
   },
+  "menu#desktop__footer-b2--colOne": {
+    "children":[
+      "rich-text#desktop__footer-b2--colOne--title",
+      "flex-layout.row#desktop__footer-b2--colOne--row"
+            
+    ],
+    "props":{
+      "blockClass":"desktop__footer-b2--colOne"
+    }
+  },
+  "rich-text#desktop__footer-b2--colOne--title":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Nuestra Compañía",
+      "blockClass":"desktop__footer-b2--colOne--title"
+  }},
+  "flex-layout.row#desktop__footer-b2--colOne--row":{
+    "children": [
+      "menu-item#desktop__footer-b2--colOne--aboutus",
+      "menu-item#desktop__footer-b2--colOne--tiendas",
+      "rich-text#desktop__footer-b2--colOne--searchtiendas",
+      "flex-layout.row#desktop__footer-b2--colOne--book"
+
+    ],
+    "props": {
+      "blockClass":"desktop__footer-b2--colOne--row"
+    }
+  },
+  "menu-item#desktop__footer-b2--colOne--aboutus":{
+    "props": {
+      "id":"menu-terms-and-conds",
+      "type":"custom",
+      "itemProps":{
+        "href":"/aboutus",
+        "text":"Sobre Nosotros"
+      },
+      "blockClass":"desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colOne--tiendas":{
+    "props": {
+      "id":"menu-tieendas",
+      "type":"custom",
+      "itemProps":{
+        "href":"/tiendas",
+        "text":"Tiendas Urban Rider"
+      },
+      "blockClass":"desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "rich-text#desktop__footer-b2--colOne--searchtiendas": {
+    "props":{
+      
+      "text":"[Buscar Tiendas Coolbox](/localizador-tiendas)",
+      "blockClass":"desktop__footer-b2--colOne--searchtiendas"
+    }
+
+  },
+  "flex-layout.row#desktop__footer-b2--colOne--book": {
+    "children":["image#desktop__foooter-b2--colOne--book-one", "rich-text#desktop__footer-b2--colOne--book-two"],
+    "props": {
+      "blockClass":"desktop__footer-b2--colOne--book"
+    }
+  },
+  "image#desktop__foooter-b2--colOne--book-one": {
+    "props": {
+      "src": "assets/img/desktop__footer-b2--colOne--book.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/reclamationbook",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "blockClass": "desktop__foooter-b2--colOne--book-one"
+    }
+  },
+  "rich-text#desktop__footer-b2--colOne--book-two": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Libro de Reclamaciones",
+      "blockClass":"desktop__footer-b2--colOne--book-two"
+    }
+  },
+
+  "flex-layout.col#desktop__footer-b2--colTwo": {
+    "children": [
+      "menu#desktop__footer-b2--colTwo"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-b2--colOne"
+    }
+  },
+  "menu#desktop__footer-b2--colTwo":{
+
+  },
+
+
+
+
   "flex-layout.col#footer__container--col-three":{
     "children": ["rich-text#atencion-title", "menu#client"] 
   },
@@ -361,6 +507,8 @@
       }
     }
   },
+
+
 
   /*"social-networks": {
     "props": {

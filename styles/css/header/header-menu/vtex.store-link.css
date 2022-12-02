@@ -31,6 +31,14 @@
     border-radius:50px
 }
 
+.buttonLink--desktop__section-smartphones-link:hover {
+    background-color: #d70d27;
+}
+
+.label--desktop__section-smartphones-link:hover {
+    color:white
+}
+
 .link--desktop__section-smartphones-samsung {
     padding-right: 25px;
     padding-left: 25px;

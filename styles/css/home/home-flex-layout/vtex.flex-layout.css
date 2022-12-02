@@ -140,4 +140,24 @@
 .flexRow--desktop__footer-b2--block {
   border-top: 1px solid #fff;
   margin: 0 30px 40px;
+  max-width: 1440px;
+  padding-bottom: 10px;
+}
+
+
+.flexRow--desktop__footer-form-one {
+  display: inline-block;
+  width: 100%;
+}
+.flexRow--desktop__footer-form-one, .flexRow--desktop__footer-form-two{
+  padding: 10px 0
+}
+
+.flexRowContent--desktop__footer-b2--colOne--row {
+  display: block;
+}
+
+.flexRow--desktop__footer-b2--colOne--book {
+  flex-direction: row;
+  align-items: center;
 }
