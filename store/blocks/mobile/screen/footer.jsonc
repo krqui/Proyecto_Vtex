@@ -1,12 +1,29 @@
 {
   "footer-layout.mobile": {
-    "children": ["disclosure-layout-group#footer__menu--group", "drawer#mobile&tablet__header--menu-threelines"]
+    "children": [//"disclosure-layout-group#footer__menu--group", 
+    //"drawer#mobile&tablet__header--menu-threelines"
+  ]
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   "disclosure-layout-group#footer__menu--group": {
     "children": [
       "disclosure-layout#policies",
-      "disclosure-layout#about-us" /*,
-            "disclosure-layout#departments"*/
+      "disclosure-layout#about-us"
     ]
   },
   "disclosure-layout#policies": {
@@ -21,7 +38,8 @@
     }
   },
   "disclosure-content#policies": {
-    "children": ["menu#policies"]
+    "children": [//"menu#policies"
+  "menu#desktop__footer-b2--colTwo"]
   },
 
   "disclosure-layout#about-us": {

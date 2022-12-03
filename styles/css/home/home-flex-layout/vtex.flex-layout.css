@@ -161,3 +161,9 @@
   flex-direction: row;
   align-items: center;
 }
+
+.flexRow--desktop__footer-copyright {
+  background-color: #292929;
+  justify-content: center;
+  display: flex;
+}

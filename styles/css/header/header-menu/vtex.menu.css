@@ -86,11 +86,14 @@
 }
 
 .styledLink--desktop__footer-b2--colOne--tiendas {
-
   color:#fff;
   font-size: 14px;
   font-style: normal;
   margin: 6px 0;
   font-weight: 400;
   line-height: 1.29;
+}
+
+.styledLink--desktop__footer-b2--colOne--tiendas:hover {
+  color:#ababab
 }
