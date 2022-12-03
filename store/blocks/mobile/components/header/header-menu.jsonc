@@ -1,0 +1,292 @@
+{
+  "header-row#mobile__container-Img": {
+    "children": ["image#mobile__header__container-img"],
+    "props": {
+      "blockClass": "mobile__container-Img"
+    }
+  },
+
+  "header-row#mobile&tablet__header": {
+    "title": "Header superior (mobile and tablet)",
+    "children": [
+      "responsive-layout.mobile#mobile__header-info",
+      "responsive-layout.tablet#tablet__header-info",
+      "search-bar#global__search",
+      "modal-trigger#example"
+    ],
+    "props": {
+      "blockClass": "header__top--mobile"
+    }
+  },
+  "responsive-layout.mobile#mobile__header-info": {
+    "children": [
+      "logo#mobile__header-info--logo"
+    ]
+  },
+  "logo#mobile__header-info--logo": {
+    "title": "Logo",
+    "props": {
+      "url": "assets/logoMob.svg",
+      "width": 33.46,
+      "href": "/",
+      "blockClass":"mobile__header-info--logo"
+    }
+  },
+
+  "modal-trigger#example": {
+    "children": [
+      "logo#mobile&tablet__header-threedots",
+      "modal-layout#threedots"
+    ]
+  },
+
+  "image#threeDots":{
+    "title":"tres puntos",
+    "props": {
+      "src":"assets/threeDots.svg"
+    }
+
+  },
+  "modal-layout#threedots": {
+    "children": [
+      "flex-layout.row#global__ofertas",
+      "flex-layout.row#global__delivery",
+      "flex-layout.row#global__smarthome",
+      "flex-layout.row#global__bicisyscooters",
+      "flex-layout.row#global__chatea",
+      "flex-layout.row#global__zonaoutlet",
+      "flex-layout.row#global__tracking",
+      "flex-layout.row#global__sorteo"
+    ],
+    "props": {
+      "blockClass":"threedots"
+    }
+  },
+  "flex-layout.row#global__ofertas": {
+    "children": [
+      "link#global__ofertas"
+    ]
+  },
+  "flex-layout.row#global__delivery":{
+    "children": [
+      "link#global__delivery"
+    ]
+  },
+  "flex-layout.row#global__smarthome":{
+    "children": [
+      "link#global__smarthome"
+    ]
+  },
+  "flex-layout.row#global__bicisyscooters":{
+    "children": [
+      "link#global__bicisyscooters"
+    ]
+  },
+  "flex-layout.row#global__chatea":{
+    "children": [
+      "link#global__chatea"
+    ]
+  },
+  "flex-layout.row#global__zonaoutlet":{
+    "children": [
+      "link#global__zonaoutlet"
+    ]
+  },
+  "flex-layout.row#global__tracking": {
+    "children": [
+      "link#global__tracking"
+    ]
+  },
+  "flex-layout.row#global__sorteo": {
+    "children": [
+      "link#global__sorteo"
+    ]
+  },
+  "link#global__ofertas": {
+    "props": {
+      "href": "/ofertas/",
+      "blockClass":"global__ofertas"
+    },
+    "children": [
+      "image#global__ofertas",
+      "rich-text#global__ofertas"
+    ]
+  },
+  "image#global__ofertas":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669091665/coolb/cufcwxayi6tfda0vmsqj.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_oferta"
+    }
+  },
+  "rich-text#global__ofertas": {
+    "props": {
+      "text": "Ofertas destacadas",
+      "font":"t-body",
+      "blockClass":"global__ofertas"
+    }
+  },
+  "link#global__delivery": {
+    "props": {
+      "href": "/delivery/",
+      "blockClass":"global__delivery"
+    },
+    "children": [
+      "image#global__delivery",
+      "rich-text#global__delivery"
+    ]
+  },
+  "image#global__delivery":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099177/coolb/xkqoon2qqjzd8piwchkw.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_delivery"
+
+    }
+  },
+  "rich-text#global__delivery": {
+    "props": {
+      "text": "Delivery gratis",
+      "blockClass":"global__delivery"
+    }
+  },
+  "link#global__smarthome": {
+    "props": {
+      "href": "/smarthome/",
+      "blockClass":"global__smarthome"
+    },
+    "children": [
+      "image#global__smarthome",
+      "rich-text#global__smarthome"
+    ]
+  },
+  "image#global__smarthome":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099255/coolb/hh2jwxedmeom8jl114gy.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_smarthome"
+    }
+  },
+  "rich-text#global__smarthome": {
+    "props": {
+      "text": "Smart Home",
+      "blockClass":"global__smarthome"
+    }
+  },
+  "link#global__bicisyscooters": {
+    "props": {
+      "href": "/bicisyscooters/",
+      "blockClass":"global__bicisyscooters"
+    },
+    "children": [
+      "image#global__bicisyscooters",
+      "rich-text#global__bicisyscooters"
+    ]
+  },
+  "image#global__bicisyscooters":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099332/coolb/wzwgulqc8sryuxgckt1q.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_bicisyscooters"
+    }
+  },
+  "rich-text#global__bicisyscooters": {
+    "props": {
+      "text": "Bicis y Scooters",
+      "blockClass":"global__bicisyscooters"
+    }
+  },
+  "link#global__chatea": {
+    "props": {
+      "href": "/chatea/",
+      "blockClass":"global__chatea"
+    },
+    "children": [
+      "image#global__chatea",
+      "rich-text#global__chatea"
+    ]
+  },
+  "image#global__chatea":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099407/coolb/tmrgkdks3kqi9otyrqvo.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_chatea"
+    }
+  },
+  "rich-text#global__chatea": {
+    "props": {
+      "text": "Chatea con Nosotros",
+      "blockClass":"global__chatea"
+    }
+  },
+  "link#global__zonaoutlet": {
+    "props": {
+      "href": "/zonaoutlet/",
+      "blockClass":"global__zonaoutlet"
+    },
+    "children": [
+      "image#global__zonaoutlet",
+      "rich-text#global__zonaoutlet"
+    ]
+  },
+  "image#global__zonaoutlet":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669099547/coolb/wrn9ox3p97zdomc4pmm5.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_zonaoutlet"
+    }
+  },
+  "rich-text#global__zonaoutlet": {
+    "props": {
+      "text": "Zona Outlet",
+      "blockClass":"global__chatea"
+    }
+  },
+  "link#global__tracking": {
+    "props": {
+      "href": "/tracking",
+      "blockClass":"global__tracking"
+    },
+    "children": [
+      "image#global__tracking",
+      "rich-text#global__tracking"
+    ]
+  },
+  "image#global__tracking": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669140163/coolb/phsjurlvlampk4lcrgxv.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_tracking"
+    }
+  },
+  "rich-text#global__tracking":{
+    "props": {
+      "text":"Sigue tu pedido",
+      "blockClass":"global__tracking"
+    }
+  },
+  "link#global__sorteo": {
+    "props": {
+      "href": "/sorteo",
+      "blockClass":"global__sorteo"
+    },
+    "children": [
+      "image#global__sorteo",
+      "rich-text#global__sorteo"
+    ]
+  },
+  "image#global__sorteo": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669235916/coolb/arusmvidohvjhy5zmtw9.svg",
+      "maxHeight":24,
+      "blockClass":"imagen_sorteo"
+    }
+  },
+  "rich-text#global__sorteo": {
+    "props":{
+      "text": "SORTEO - Vive el Mundial",
+      "blockClass":"global__sorteo"
+    }
+  }
+  /*TENGO QUE HACER EL BANNER CON LAS IMAGENES PARA CELULAR*/
+}

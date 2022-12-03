@@ -1,0 +1,42 @@
+.openIconContainer {
+  padding: 0
+}
+
+.minicartIconContainer {
+  color: #fff!important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minicartIconContainer::after {
+  color: #fff !important;
+  margin-top: 9px;
+  content: "Mi Carrito";
+  font-size: 13px;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+/*.cartIcon {
+  width: 100px;
+  height: 100px;
+
+}*/
+
+.closeIconButton {
+  background-color: black;
+}
+
+.closeIcon {
+  color: white;
+}
+
+.closeIconButton:hover {
+  transition: 0.3s;
+  transform: scale(1.28);
+}
+
+.minicartEmptyStateContainer--minicart-empty-state {
+  background-color: rgb(143, 143, 143);
+}

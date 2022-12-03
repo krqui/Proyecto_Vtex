@@ -1,0 +1,46 @@
+{
+  "flex-layout.row#mobile__home-section--one": {
+    "children": [
+      "flex-layout.col#global__section-two--item1",
+      "flex-layout.col#global__section-two--item2",
+      "flex-layout.col#global__section-two--item3",
+      "flex-layout.col#global__section-two--item4"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#mobile__home-section--two": {
+    "children": [
+      "flex-layout.col#global__section-two--item5",
+      "flex-layout.col#global__section-two--item6",
+      "flex-layout.col#global__section-two--item7",
+      "flex-layout.col#global__section-two--item8"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#mobile__home-section--three": {
+    "children": [
+      "flex-layout.col#global__section-three--item9",
+      "flex-layout.col#global__section-three--item10",
+      "flex-layout.col#global__section-three--item11",
+      "flex-layout.col#global__section-three--item12"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  },
+  "flex-layout.row#mobile__home-section--four": {
+    "children": [
+      "flex-layout.col#global__section-three--item13",
+      "flex-layout.col#global__section-three--item14",
+      "flex-layout.col#global__section-three--item15",
+      "flex-layout.col#global__section-three--item16"
+    ],
+    "props": {
+        "preserveLayoutOnMobile":true
+    }
+  }
+}

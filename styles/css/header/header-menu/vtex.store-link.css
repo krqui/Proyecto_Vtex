@@ -1,0 +1,45 @@
+.label--butttoncategorias {
+    background-color: black;
+}
+
+.childrenContainer--global__ofertas, .childrenContainer--global__delivery, .childrenContainer--global__smarthome, .childrenContainer--global__bicisyscooters, .childrenContainer--global__chatea, .childrenContainer--global__zonaoutlet, .childrenContainer--global__tracking, .childrenContainer--global__delivery, .childrenContainer--global__smarthome, .childrenContainer--global__bicisyscooters, .childrenContainer--global__chatea, .childrenContainer--global__zonaoutlet, .childrenContainer--global__sorteo {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+}
+
+.link {
+    text-decoration: none;
+}
+/*.link--global__ofertas {
+    text-decoration: none;
+}*/
+.label--desktop__section-smartphones-link {
+    color:#1d1d1d;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.link--desktop__section-smartphones-link {
+    background-color: #f0f0f0;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius:50px
+}
+
+.buttonLink--desktop__section-smartphones-link:hover {
+    background-color: #d70d27;
+}
+
+.label--desktop__section-smartphones-link:hover {
+    color:white
+}
+
+.link--desktop__section-smartphones-samsung {
+    padding-right: 25px;
+    padding-left: 25px;
+}

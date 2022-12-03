@@ -1,0 +1,111 @@
+{
+  "responsive-layout.mobile#mobile__home": {
+    "title": "Componente Movil",
+    "children": [
+      "list-context.image-list#mobile__home-slider",
+      "list-context.image-list#mobile__home-slider2",
+      "flex-layout.row#mobile__container",
+      "list-context.image-list#mobile__home-slider3",
+      "slider-layout#global__home__sliderC--list",
+      "minicart.v2"
+    ]
+  },
+  "list-context.image-list#mobile__home-slider": {
+    "title": "Lista de imágenes",
+    "children": ["slider-layout#desktop__slider-main--list"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/bannerm1.webp",
+          "description": "Slide 1"
+        },
+        {
+          "image": "assets/img/bannerm2.webp",
+          "description": "Slide 2"
+        },
+        {
+          "image": "assets/img/bannerm3.webp",
+          "description": "Slide 3"
+        },
+        {
+          "image": "assets/img/bannerm4.webp",
+          "description": "Slide 4"
+        },
+        {
+          "image": "assets/img/bannerm5.webp",
+          "description": "Slide 5"
+        },
+        {
+          "image": "assets/img/bannerm6.webp",
+          "description": "Slide 6"
+        },
+        {
+          "image": "assets/img/bannerm7.webp",
+          "description": "Slide 7"
+        },
+        {
+          "image": "assets/img/bannerm8.webp",
+          "description": "Slide 8"
+        },
+        {
+          "image": "assets/img/bannerm9.webp",
+          "description": "Slide 9"
+        },
+        {
+          "image": "assets/img/bannerm10.webp",
+          "description": "Slide 10"
+        }
+      ]
+    }
+  },
+  "list-context.image-list#mobile__home-slider2": {
+    "title": "Lista de imágenes2",
+    "children": ["slider-layout#desktop__slider-main--list"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/disc1.png",
+          "description": "Slide 1m"
+        },
+        {
+          "image": "assets/img/disc2.png",
+          "description": "Slide 2m"
+        },
+        {
+          "image": "assets/img/disc3.png",
+          "description": "Slide 3m"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#mobile__container": {
+    "children": ["flex-layout.col#mobile__container"]
+  },
+  "flex-layout.col#mobile__container": {
+    "children": [
+      "flex-layout.row#mobile__home-section--one",
+      "flex-layout.row#mobile__home-section--two",
+      "flex-layout.row#mobile__home-section--three",
+      "flex-layout.row#mobile__home-section--four"
+    ]
+  },
+  "list-context.image-list#mobile__home-slider3": {
+    "title": "Lista de imágenes3",
+    "children": ["slider-layout#global__home--slider-B"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/slider3m-pic1.webp",
+          "description": "Slider 3 picture 1 mobile"
+        },
+        {
+          "image": "assets/img/slider3m-pic2.webp",
+          "description": "Slider 3 picture 2 mobile"
+        }
+      ]
+    }
+  }
+}

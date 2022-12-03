@@ -1,0 +1,188 @@
+{
+  "footer-layout.mobile": {
+    "children": [//"disclosure-layout-group#footer__menu--group", 
+    //"drawer#mobile&tablet__header--menu-threelines"
+  ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  "disclosure-layout-group#footer__menu--group": {
+    "children": [
+      "disclosure-layout#policies",
+      "disclosure-layout#about-us"
+    ]
+  },
+  "disclosure-layout#policies": {
+    "children": ["disclosure-trigger#policies", "disclosure-content#policies"]
+  },
+  "disclosure-trigger#policies": {
+    "children": ["rich-text#policies"]
+  },
+  "rich-text#policies": {
+    "props": {
+      "text": "Politicas de la tienda"
+    }
+  },
+  "disclosure-content#policies": {
+    "children": [//"menu#policies"
+  "menu#desktop__footer-b2--colTwo"]
+  },
+
+  "disclosure-layout#about-us": {
+    "children": ["disclosure-trigger#about-us", "disclosure-content#about-us"]
+  },
+  "disclosure-trigger#about-us": {
+    "children": ["rich-text#about-us"]
+  },
+  "rich-text#about-us": {
+    "props": {
+      "text": "about us"
+    }
+  },
+
+  "disclosure-content#about-us": {
+    "children": ["menu#about-us"]
+  },
+
+
+
+  "drawer#mobile&tablet__header--menu-threelines": {
+    "children": ["menu#header__menu"],
+    "blocks": ["drawer-trigger"],
+    "props": {
+      "blockClass":"mobileYtablet__header--menu-threelines"
+    }
+  },
+  "drawer-trigger": {
+    "children": ["logo#mobile&tablet__header-threedots"],
+    "props": {
+      "blockClass":"drawer-trigger"
+    }
+  },
+  "logo#mobile&tablet__header-threedots": {
+    "title": "three dots",
+    "props": {
+      "url": "assets/threeDots.svg",
+      "height": "24px",
+      "blockClass":"header__top__mobile--threedots"
+    }
+  },
+  "menu#header__menu": {
+    "children": [
+      "menu-item#department__one",
+      "menu-item#department__two",
+      "menu-item#department__three",
+      "menu-item#department__four",
+      "menu-item#department__five",
+      "menu-item#department__six",
+      "menu-item#department__seven"      
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#department__one": {
+    "props": {
+      "id": "department__one",
+      "type": "custom",
+      "itemProps": {
+        "type": "external",
+        "href": "https://diegoantonio--itgloberspartnercl.myvtex.com/ofertas-destacadas",
+        "noFollow": true, // desactivar link a externos,
+        "tagTitle": "Ofertas destacadas",
+        "text": "Ofertas destacadas"
+      }
+    },
+    "blocks": ["submenu.accordion#department__one"]
+  },
+  "submenu.accordion#department__one": {
+    "children": ["menu#department__one"]
+  },
+  "menu#department__one": {
+    "children": ["menu-item#category__one", "menu-item#category__two"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#category__one": {
+    "props": {
+      "id": "category-one",
+      "type": "custom",
+      "itemProps": {
+        "type": "external",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Google Drive",
+        "text": "Google Drive"
+      }
+    }
+  },
+
+  "menu-item#category__two": {
+    "props": {
+      "id": "category-two",
+      "type": "custom",
+      "itemProps": {
+        "type": "external",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Google Meet",
+        "text": "Google Meet"
+      }
+    }
+  },
+
+  "menu-item#department__two": {
+    "props": {
+      "id": "department__two",
+      "type": "custom",
+      "itemProps": {
+        "type": "external",
+        "href": "https://diegoantonio--itgloberspartnercl.myvtex.com/delivery-gratis",
+        "noFollow": true, // desactivar link a externos,
+        "tagTitle": "Delivery gratis",
+        "text": "Delivery gratis"
+      },
+      "blockClass": "department__two"
+    }
+  },
+  "menu-item#department__three": {
+    "props": {
+      "text": "Smart Home"
+    }
+  },
+  "menu-item#department__four": {
+    "props": {
+      "text": "Bicis y Scooters."
+    }
+  },
+  "menu-item#department__five": {
+    "props": {
+      "text": "Chatea con nosotros"
+    }
+  },
+  "menu-item#department__six": {
+    "props": {
+      "text": "Zona Outlet"
+    }
+  },
+  "menu-item#department__seven": {
+    "props": {
+      "text": "Sigue tu pedido"
+    }
+  }
+}

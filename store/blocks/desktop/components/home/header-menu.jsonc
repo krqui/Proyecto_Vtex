@@ -1,0 +1,254 @@
+{
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "header-row#desktop__container-Img",
+      "header-row#header__top--desktop",
+      "header-row#desktop__threedots"
+      /*"header-row#header__middle"*/
+    ]
+  },
+
+  "header-row#desktop__threedots": {
+    "children": [
+      "header-row#desktop__threedots-A",
+      "header-row#desktop__threedots-B"
+    ],
+    "props":{
+      "blockClass":"header__top--desktop"
+    }
+  },
+  "header-row#desktop__threedots-A":{
+    "children": [
+      "flex-layout.row#global__ofertas",
+      "flex-layout.row#global__delivery",
+      "flex-layout.row#global__smarthome",
+      "flex-layout.row#global__bicisyscooters",
+      "flex-layout.row#global__sorteo"
+    ],
+    "props": {
+      "blockClass":"destop__threedots-A"
+    }
+
+  },
+  "header-row#desktop__threedots-B":{
+    "children": [
+      "flex-layout.row#global__zonaoutlet",
+      "flex-layout.row#global__tracking"
+    ],
+    "props": {
+      "blockClass":"destop__threedots-B"
+    }
+
+  },
+  "header-row#desktop__container-Img": {
+    "children": ["image#header__container--image--desktop"],
+    "props": {
+      "blockClass": "mobile__container-Img"
+    }
+  },
+
+  "header-row#header__top--desktop": {
+    "title": "Header superior (desktop)",
+    "children": [
+      "responsive-layout.desktop#desktop__header-info",
+      "responsive-layout.desktop#desktop__header-categories",
+      "search-bar#global__search",
+      "menu#desktop__websites"
+    ],
+    "props": {
+      "blockClass": "header__top--mobile"
+    }
+  },
+  "responsive-layout.desktop#desktop__header-info": {
+    "children": ["logo#header__top--logo"]
+  },
+  "logo#header__top--logo": {
+    "title": "Logo",
+    "props": {
+      "url": "assets/logo.svg",
+      "width": 180,
+      "href": "/",
+      "blockClass": "header__top--logo"
+    }
+  },
+  "responsive-layout.desktop#desktop__header-categories": {
+    "children": ["menu#desktop__header-categories--button"]
+  },
+  "menu#desktop__header-categories--button": {
+    "children": [
+      "mega-menu#desktop",
+      "mega-menu-trigger-btn#lines"
+    ]
+  },
+  "mega-menu#desktop": {
+    "props": {
+      "openOnly": "horizontal"
+    }
+  },
+  "mega-menu-trigger-btn#lines": {
+    "props": {
+      "Drawer": "drawer",
+      "blockClass":"lines"
+    }
+  },
+  "mega-menu-trigger-btn#extra": {
+    "props": {
+      "Drawer": "drawer",
+      "blockClass":"extra"
+    }
+  },
+
+  "rich-text#bbb": {
+    "props":{
+      "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "Categories",
+    "textColor": "c-on-emphasis"
+    }
+  },
+
+  "menu#desktop__websites": {
+    "children": [
+      "menu-item#desktop__websites-tienda",
+      "menu-item#desktop__websites-ventas",
+      "menu-item#desktop__websites-ayuda",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "menu-item#desktop__websites-tienda": {
+    "props": {
+      "id": "menu-tiendas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "/localizador-tiendas",
+        "noFollow": false,
+        "tagTitle": "Tiendas",
+        "text": "Tiendas"
+      },
+      "iconToTheRight": true,
+      "blockClass": "desktop__websites-tienda"
+    }
+  },
+  "menu-item#desktop__websites-ventas": {
+    "props": {
+      "id": "menu-ventas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Venta Corp.",
+        "text": "Venta Corp."
+      },
+      "blockClass": "desktop__websites-ventas"
+    }
+  },
+  "menu-item#desktop__websites-ayuda": {
+    "props": {
+      "id": "menu-ayuda",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "¿Ayuda?",
+        "text": "Necesitas ayuda"
+      },
+      "blockClass": "desktop__websites-ayuda"
+    }
+  },
+  
+  "login": {
+    "props": {
+      "accessCodeTitle": "Access Code to log-in",
+      "emailPlaceholder": "e-mail",
+      "emailAndPasswordTitle": "LOG-IN",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": false,
+      "iconLabel":"Inicia sesión",
+      "hideIconLabel": false,
+      "termsAndConditions": "Al registrarte estas aceptando nuestros Términos y Condiciones y nuestras Políticas de Privacidad.",
+      "blockClass": "loginn"
+    }
+  },
+  /*"header-row#header__middle": {
+    "title": "Header medio",
+    "children": [
+      "header-force-center#header__middle",
+      "rich-text#test",
+          "header-spacer",
+          "rich-text#test"
+    ],
+    "props": {
+      "blockClass": "header__middle"
+    }
+  },*/
+  /* Para aprender a centrar un texto/imagen
+      "header-force-center#header__middle": {
+        "children" : [
+          //"rich-text#test"
+          "logo#header__top--logo"
+        ]
+      }*/
+  "minicart.v2": {
+    "props": {
+      //"MinicartIcon": "icon#home__link--text",
+      //"MinicartIcon": "icon-search",
+      //"variation": "popup",
+      "itemCountMode": "total",
+      "quantityDisplay": "always",
+      "customPixelEventName": "pageview",
+      "blockClass":"global__minicart"
+    }, // hasta esta linea, tenemos lo basico para un minicart,
+    // De aqui para abajo, ya es un minicart#customizado
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": ["minicart-product-list", "flex-layout.row#minicart__footer"]
+  },
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#minicart__empty"],
+    "props": {
+      "blockClass": "minicart-empty-state"
+    }
+  },
+  "flex-layout.row#minicart__empty": {
+    "children": ["flex-layout.col#minicart__empty"]
+  },
+  "flex-layout.col#minicart__empty": {
+    "children": [
+      "icon-cart#minicart__empty--icon",
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "blockClass": "minicart__empty--icon"
+    }
+  },
+  "icon-cart#minicart__empty--icon": {
+    "props": {
+      "size": 90
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Tú carrito está vacío. Haz click en añadir al carrito para ocupar esta sección.",
+      "textAlignment": "CENTER"
+      //"textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#minicart__footer": {
+    "children": [
+      "minicart-summary" /*,
+      "rich-text#promo"*/,
+      "minicart-checkout-button" //, "drawer-close-button"
+    ]
+  },
+  "rich-text#promo": {
+    "props": {
+      //"text": "No olvides participar en las promociones del dia sin IVA."
+      "text": "."
+    }
+  }
+}

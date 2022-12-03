@@ -1,0 +1,729 @@
+{
+  "footer": {
+    "title": "Footer",
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#desktop__footer-b1",
+      "flex-layout.row#desktop__footer-b2",
+      "flex-layout.row#desktop__footer-copyright"
+    ]
+  },
+  "flex-layout.row#desktop__footer-b1": {
+    "children": ["flex-layout.row#desktop__footer-b1--block"],
+    "props": {
+      "blockClass": "desktop__footer-b1"
+    }
+  },
+  "flex-layout.row#desktop__footer-b1--block": {
+    "children": [
+      "flex-layout.col#desktop__footer-b1--colOne",
+      "flex-layout.col#desktop__footer-b1--colTwo",
+      "flex-layout.col#desktop__footer-b1--colThree"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b1--block"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--colOne": {
+    "children": [
+      "logo#desktop__footer-b1--colOne",
+      "flex-layout.row#desktop__footer-b1--colOne-social"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b1--colOne"
+    }
+  },
+  "logo#desktop__footer-b1--colOne": {
+    "props": {
+      "title": "logo",
+      "url": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669849568/coolb/bslhzwp47m2wbe23rj8h.svg",
+      "href": "/",
+      "width": 200,
+      "blockClass": "desktop__footer-b1--colOne"
+    }
+  },
+  "flex-layout.row#desktop__footer-b1--colOne-social": {
+    "children": [
+      "image#desktop__footer-b1--colOne-facebook",
+      "image#desktop__footer-b1--colOne-instagram",
+      "image#desktop__footer-b1--colOne-youtube"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b1--colOne-social"
+    }
+  },
+  "image#desktop__footer-b1--colOne-facebook": {
+    "title": "Footer facebook",
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669850644/coolb/fs95jtauj9pq0f7mlf75.svg",
+      "title": "Footer facebook image",
+      "link": {
+        "url": "https://www.facebook.com/",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass": "desktop__footer-b1--colOne-facebook"
+    }
+  },
+  "image#desktop__footer-b1--colOne-instagram": {
+    "title": "Footer instagram",
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669850850/coolb/njjz6gr9zb3dtzhzynd4.svg",
+      "title": "Footer instagram image",
+      "link": {
+        "url": "https://www.instagram.com/",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass": "desktop__footer-b1--colOne-instagram"
+    }
+  },
+  "image#desktop__footer-b1--colOne-youtube": {
+    "title": "Footer youtube",
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669851874/coolb/xsoa4hqzdzhnwjfizomb.png",
+      "title": "Footer youtube image",
+      "link": {
+        "url": "https://www.youtube.com/",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "blockClass": "desktop__footer-b1--colOne-youtube"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--colTwo": {
+    "children": ["rich-text#desktop__footer-b1--colTwo-text"],
+    "props": {
+      "blockClass": "desktop__footer-b1--colTwo"
+    }
+  },
+  "rich-text#desktop__footer-b1--colTwo-text": {
+    "props": {
+      "text": "¡Suscríbete a nuestro newsletter \n y recibe las mejores ofertas!",
+      "blockClass": "desktop__footer-b1--colTwo-text"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--colThree": {
+    "children": ["flex-layout.row#desktop__footer-b1--form"],
+    "props": {
+      "blockClass": "desktop__footer-b1--colThree"
+    }
+  },
+  "flex-layout.row#desktop__footer-b1--form": {
+    "children": ["flex-layout.col#desktop__footer-b1--form"],
+    "props": {
+      "blockClass": "desktop__footer-b1--form"
+    }
+  },
+  "flex-layout.col#desktop__footer-b1--form": {
+    "children": ["newsletter-form#desktop__footer-b1--form"],
+    "props": {
+      "blockClass": "desktop__footer-b1--form"
+    }
+  },
+  "newsletter-form#desktop__footer-b1--form": {
+    "children": [
+      "flex-layout.row#desktop__footer-form-one",
+      "flex-layout.row#desktop__footer-form-two"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-form"
+    }
+  },
+  "flex-layout.row#desktop__footer-form-one": {
+    "children": [
+      "newsletter-input-email#desktop__footer-b1--form",
+      "newsletter-submit#desktop__footer-b1--form"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-form-one"
+    }
+  },
+  "flex-layout.row#desktop__footer-form-two": {
+    "children": ["newsletter-checkbox-confirmation#desktop__footer-form-two"],
+    "props": {
+      "blockClass": "desktop__footer-form-two"
+    }
+  },
+  "newsletter-checkbox-confirmation#desktop__footer-form-two": {
+    "props": {
+      "checkboxLabel": "He leído y acepto la Política de Privacidad"
+    }
+  },
+  "newsletter-input-email#desktop__footer-b1--form": {
+    "props": {
+      "placeholderText": "Ingresa tu correo",
+      "blockClass": "desktop__footer-b1--form"
+    }
+  },
+  "newsletter-submit#desktop__footer-b1--form": {
+    "title": "form",
+    "props": {
+      "submitButtonLabel": "Suscribirme",
+      "blockClass": "desktop__footer-b1--form"
+    }
+  },
+
+  "flex-layout.row#desktop__footer-b2": {
+    "children": ["flex-layout.row#desktop__footer-b2--block"],
+    "props": {
+      "blockClass": "desktop__footer-b2"
+    }
+  },
+  "flex-layout.row#desktop__footer-b2--block": {
+    "children": [
+      "flex-layout.col#desktop__footer-b2--colOne",
+      "flex-layout.col#desktop__footer-b2--colTwo",
+      "flex-layout.col#desktop__footer-b2--colThree",
+      "flex-layout.col#desktop__footer-b2--colFour",
+      "flex-layout.col#desktop__footer-b2--colFive"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b2--block"
+    }
+  },
+  "flex-layout.col#desktop__footer-b2--colOne": {
+    "children": ["menu#desktop__footer-b2--colOne"],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "menu#desktop__footer-b2--colOne": {
+    "children": [
+      "rich-text#desktop__footer-b2--colOne--title",
+      "flex-layout.col#desktop__footer-b2--colOne--row"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "rich-text#desktop__footer-b2--colOne--title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Nuestra Compañía",
+      "blockClass": "desktop__footer-b2--colOne--title"
+    }
+  },
+  "flex-layout.col#desktop__footer-b2--colOne--row": {
+    "children": [
+      "menu-item#desktop__footer-b2--colOne--aboutus",
+      "menu-item#desktop__footer-b2--colOne--tiendas",
+      "rich-text#desktop__footer-b2--colOne--searchtiendas",
+      "flex-layout.row#desktop__footer-b2--colOne--book"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne--row"
+    }
+  },
+  "menu-item#desktop__footer-b2--colOne--aboutus": {
+    "props": {
+      "id": "menu-terms-and-conds",
+      "type": "custom",
+      "itemProps": {
+        "href": "/aboutus",
+        "text": "Sobre Nosotros"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colOne--tiendas": {
+    "props": {
+      "id": "menu-tieendas",
+      "type": "custom",
+      "itemProps": {
+        "href": "/tiendas",
+        "text": "Tiendas Urban Rider"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "rich-text#desktop__footer-b2--colOne--searchtiendas": {
+    "props": {
+      "text": "[Buscar Tiendas Coolbox](/localizador-tiendas)",
+      "blockClass": "desktop__footer-b2--colOne--searchtiendas"
+    }
+  },
+  "flex-layout.row#desktop__footer-b2--colOne--book": {
+    "children": [
+      "image#desktop__foooter-b2--colOne--book-one",
+      "rich-text#desktop__footer-b2--colOne--book-two"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne--book"
+    }
+  },
+  "image#desktop__foooter-b2--colOne--book-one": {
+    "props": {
+      "src": "assets/img/desktop__footer-b2--colOne--book.webp",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/reclamationbook",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "blockClass": "desktop__foooter-b2--colOne--book-one"
+    }
+  },
+  "rich-text#desktop__footer-b2--colOne--book-two": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Libro de Reclamaciones",
+      "blockClass": "desktop__footer-b2--colOne--book-two"
+    }
+  },
+
+  "flex-layout.col#desktop__footer-b2--colTwo": {
+    "children": ["menu#desktop__footer-b2--colTwo"],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "menu#desktop__footer-b2--colTwo": {
+    "children": ["rich-text#desktop__footer-b2--colTwo--title", "flex-layout.row#desktop__footer-b2--colTwo--row"],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "rich-text#desktop__footer-b2--colTwo--title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Servicios al Cliente",
+      "blockClass": "desktop__footer-b2--colOne--title"
+    }
+  },
+  "flex-layout.row#desktop__footer-b2--colTwo--row": {
+    "children":[
+      "menu-item#desktop__footer-b2--colTwo--delivery",
+      "menu-item#desktop__footer-b2--colTwo--factura",
+      "menu-item#desktop__footer-b2--colTwo--certific",
+      "menu-item#desktop__footer-b2--colTwo--cambiosydev",
+      "menu-item#desktop__footer-b2--colTwo--terms",
+      "menu-item#desktop__footer-b2--colTwo--privacy",
+      "menu-item#desktop__footer-b2--colTwo--cookies",
+      "menu-item#desktop__footer-b2--colTwo--retiro",
+      "menu-item#desktop__footer-b2--colTwo--infdelivery",
+      "menu-item#desktop__footer-b2--colTwo--ourshops"
+    ],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne--row"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--delivery": {
+    "props": {
+      "id": "menu-delivery-protocols",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Protocolos Delivery",
+        "text": "Protocolos Delivery"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--factura": {
+    "props": {
+      "id": "menu-factura-elec",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Factura electrónica",
+        "text": "Factura electrónica"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--certific": {
+    "props": {
+      "id": "menu-certific-garan",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Certificado de garantía",
+        "text": "Certificado de garantía"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--cambiosydev": {
+    "props": {
+      "id": "menu-cambiosydev",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Política de Cambios y Devoluciones",
+        "text": "Política de Cambios y Devoluciones"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--terms": {
+    "props": {
+      "id": "menu-terms-and-conds",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--privacy": {
+    "props": {
+      "id": "menu-privacy-policies",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Políticas de privacidad",
+        "text": "Políticas de privacidad"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--cookies": {
+    "props": {
+      "id": "menu-cookies-policies",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Política de uso de Cookies",
+        "text": "Política de uso de Cookies"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--retiro": {
+    "props": {
+      "id": "menu-retiro-tienda",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Retiro en Tienda",
+        "text": "Retiro en Tienda"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--infdelivery": {
+    "props": {
+      "id": "menu-inf-deliv",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Información Delivery a Provincias",
+        "text": "Información Delivery a Provincias"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+  "menu-item#desktop__footer-b2--colTwo--ourshops": {
+    "props": {
+      "id": "menu-our-shops",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Información de Tiendas",
+        "text": "Información de Tiendas"
+      },
+      "blockClass": "desktop__footer-b2--colOne--tiendas"
+    }
+  },
+
+  "flex-layout.col#desktop__footer-b2--colThree": {
+    "children": ["menu#desktop__footer-b2--colThree"],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "menu#desktop__footer-b2--colThree": {
+    "children": ["rich-text#desktop__footer-b2--colThree--title","flex-layout.col#desktop__footer-b2--colThree--row"],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "rich-text#desktop__footer-b2--colThree--title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Atención al Cliente",
+      "blockClass": "desktop__footer-b2--colOne--title"
+    }
+  },
+  "flex-layout.col#desktop__footer-b2--colThree--row": {
+    "children":[
+      "rich-text#desktop__footer-b2--colThree--number",
+      "rich-text#desktop__footer-b2--colThree--schedule",
+      "rich-text#desktop__footer-b2--colThree--mail"
+    ],
+    "props": {
+      "blockClass":"desktop__footer-b2--colOne--row"
+    }
+  },
+  "rich-text#desktop__footer-b2--colThree--number":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"[+01 712 - 3212](tel:+017123212)",
+      "blockClass": "desktop__footer-b2-colThree--number"
+    }
+  },
+  "rich-text#desktop__footer-b2--colThree--schedule":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Lun. - Sáb. de 9:00 am a 6:00 pm",
+      "blockClass": "desktop__footer-b2-colThree--schedule"
+    }
+  },
+  "rich-text#desktop__footer-b2--colThree--mail":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "servicioalcliente@rashperu.com",
+      "blockClass": "desktop__footer-b2-colThree--mail"
+    }
+  },
+
+  "flex-layout.col#desktop__footer-b2--colFour": {
+    "children":["menu#desktop__footer-b2--colFour"],
+    "props": {
+      "blockClass":"desktop__footer-b2--colOne"
+    }
+  },
+  "menu#desktop__footer-b2--colFour": {
+    "children":["rich-text#desktop__footer-b2--colFour--title",
+    "flex-layout.col#desktop__footer-b2--colFour--row"],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "rich-text#desktop__footer-b2--colFour--title":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Ventas Corporativas",
+      "blockClass": "desktop__footer-b2--colOne--title"
+    }
+  },
+  "flex-layout.col#desktop__footer-b2--colFour--row":{
+    "children":[
+      "rich-text#desktop__footer-b2--colFour--num1",
+      "rich-text#desktop__footer-b2--colFour--num2",
+      "rich-text#desktop__footer-b2--colFour--num3",
+      "rich-text#desktop__footer-b2--colFour--num4",
+      "rich-text#desktop__footer-b2--colFour--mail"
+    ],
+    "props":{
+        "blockClass":"desktop__footer-b2--colOne--row"
+    }
+  },
+  "rich-text#desktop__footer-b2--colFour--num1":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"[996 192 014](/whatsappp)",
+      "blockClass":
+      "desktop__footer-b2-colFour--wsp"
+    }
+  },
+  "rich-text#desktop__footer-b2--colFour--num2":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"[996 192 017](/whatsappp)",
+      "blockClass":
+      "desktop__footer-b2-colFour--wsp"
+    }
+  },
+  "rich-text#desktop__footer-b2--colFour--num3":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"[954 950 318](/whatsappp)",
+      "blockClass":
+      "desktop__footer-b2-colFour--wsp"
+    }
+  },
+  "rich-text#desktop__footer-b2--colFour--num4":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"[954 050 517](/whatsappp)",
+      "blockClass":
+      "desktop__footer-b2-colFour--wsp"
+    }
+  },
+  "rich-text#desktop__footer-b2--colFour--mail":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "ventascoolbox@rashperu.com",
+      "blockClass": "desktop__footer-b2-colThree--mail"
+    }
+  },
+
+
+  "flex-layout.col#desktop__footer-b2--colFive": {
+    "children": ["menu#desktop__footer-b2--colFive"],
+    "props": {
+      "blockClass": "desktop__footer-b2--colOne"
+    }
+  },
+  "menu#desktop__footer-b2--colFive":{
+    "children":["rich-text#desktop__footer-b2--colFive--title",
+    "flex-layout.row#desktop__footer-b2--colFive--row"],
+    "props":{
+      "blockClass":"desktop__footer-b2--colOne"
+    }
+  },
+  "rich-text#desktop__footer-b2--colFive--title":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Realiza tus compras de forma segura",
+      "blockClass":"desktop__footer-b2--colOne--title"
+    }
+  },
+  "flex-layout.row#desktop__footer-b2--colFive--row":{
+    "children":[
+      "image#desktop__footer-b2--colFive-banks"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-b2--colOne--row"
+    }
+  },
+  "image#desktop__footer-b2--colFive-banks":{
+    "title": "Imagen banks",
+    "props": {
+      //"src": "assets/img/desktop__footer-b2--colFive-banks.PNG",
+      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1670017942/coolb/o7ap4kiodtbtw4jiqvtm.png",
+      "title": "Foto image banks",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/ofertas",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      }
+      //"blockClass":"desktop__footer-b2--colFive-banks"
+    }
+  },
+
+
+  "flex-layout.row#desktop__footer-copyright":{
+    "children":[
+      "rich-text#desktop__footer-copyright"
+    ],
+    "props":{
+      "blockClass":"desktop__footer-copyright"
+    }
+  },
+  "rich-text#desktop__footer-copyright":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "© 2022 Coolbox. Todos los derechos reservados.",
+      "blockClass":"desktop__footer-copyright"
+    }
+  },
+
+
+
+  
+
+
+
+
+  
+  "menu#about-us": {
+    "children": ["menu-item#about-us", "menu-item#about-us2"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-terms-and-conds",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Sobre nosotros",
+        "text": "Sobre nosotros"
+      }
+    }
+  },
+  "menu-item#about-us2": {
+    "props": {
+      "id": "menu-terms-and-conds",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Tiendas Urban Rider",
+        "text": "Tiendas Urban Rider"
+      }
+    }
+  },
+  "rich-text#policies-title": {
+    "props": {
+      "text": "Servicios al Cliente"
+    }
+  },
+  
+
+
+
+
+  
+  
+  "menu-item#phone-number": {
+    "props": {
+      "id": "menu-phone-number",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Numerodecelular",
+        "text": "+01 712 - 3212"
+      }
+    }
+  },
+
+  /*"social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "url": "https://www.facebook.com/",
+          "name": "Facebook"
+        },
+        {
+          "url": "https://www.twitter.com/",
+          "name": "Twitter"
+        },
+        {
+          "url": "https://www.youtube.com/",
+          "name": "Youtube"
+        }
+      ]
+    }
+  },*/
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"]
+    }
+  }
+}
+/*vtex workspace reset*/
