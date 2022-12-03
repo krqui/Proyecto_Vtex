@@ -12,8 +12,8 @@
       "flex-layout.row#desktop__slider-product--two",
       "flex-layout.row#desktop__section-discountsThree",
       "flex-layout.row#desktop__slider-product--three", 
-      "flex-layout.row#desktop__slider-product--four"
-      
+      "flex-layout.row#desktop__slider-product--four",
+      "flex-layout.row#desktop__container-benefits"   
       /*,
       "flex-layout.row#desktop__home-section--products"*/
 
@@ -278,6 +278,14 @@
       "textPosition": "CENTER",
       "text": "Lo Más Vendido",
       "blockClass": "desktop__productfour-title--container"
+    }
+  },
+  "flex-layout.row#desktop__container-benefits" :{
+    "children":["flex-layout.col#desktop__benefits"]
+  },
+  "flex-layout.col#desktop__benefits":{
+    "props":{
+      "blockClass":"flex-layout.col#desktop__benefits"
     }
   }
 }

@@ -1,9 +1,7 @@
 .menuContainerNav {
-    top:110px
-}
-
-.menuContainerNav {
+    top:110px;
     z-index: 1;
+    margin-left: 268px;
 }
 
 .triggerContainer {
