@@ -2,6 +2,11 @@
     padding: 0;
 }
 
-/*:global(.vtex-button){
-    background-color: rgb(246, 60, 60);
-}*/
+
+.openIconContainer--tablet__lowermenu {
+    padding: 0;
+}
+.drawerTriggerContainer--tablet__lowermenu {
+    margin-top: 16px;
+}
+

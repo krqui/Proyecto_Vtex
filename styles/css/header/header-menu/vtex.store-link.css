@@ -43,3 +43,27 @@
     padding-right: 25px;
     padding-left: 25px;
 }
+
+.link--tablet__lowermenu-two--contactus {
+    text-decoration: none;
+}
+
+.childrenContainer--tablet__lowermenu-two--contactus {
+    padding: 10px;
+}
+
+.link--tablet__lowermenu-three {
+    text-decoration: none;
+}
+
+.childrenContainer--tablet__lowermenu-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.link--tablet__lowermenu-column-five {
+    display: block;
+    margin-top: 2px;
+}
