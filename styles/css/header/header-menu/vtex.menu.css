@@ -1,3 +1,21 @@
+.menuContainerNav--tablet__lowermenu {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #0e0e0e;
+  height: 70px;
+  padding: 5px;
+}
+
+.menuContainer--tablet__lowermenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+
 .menuContainerNav--desktop__header-categories--button {
   border: 1px solid #fff;
   border-radius: 10px;

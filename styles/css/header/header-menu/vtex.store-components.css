@@ -105,6 +105,39 @@
 
 }
 
+.imageElement--tablet__lowermenu-two {
+  width: 35px;
+  padding: 8px 20px;
+}
+
+.imageElement--tablet__lowermenu-two--contactus {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.imageElement--tablet__lowermenu-three {
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.logoContainer--tablet__hamburguermenu {
+  padding-left: 50px;
+}
+
+.logoContainer--tablet__hamburguermenu::after {
+  display: inline-block;
+  content: "Menú";
+  color: #ffffff;
+  margin-left: 43px;
+  width: 100%;
+  font-size: 12px;
+}
+
+
+
+
+
 @media (min-width: 639px) {
   .logoContainer--mobile__header-info--logo 
   {
