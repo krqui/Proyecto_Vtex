@@ -115,3 +115,8 @@
 .styledLink--desktop__footer-b2--colOne--tiendas:hover {
   color:#ababab
 }
+
+.styledLinkContent--mobile__footer-item--text {
+  color: white;
+  margin-left: 35px;
+}

@@ -2,34 +2,160 @@
   "footer-layout.mobile": {
     "children": [//"disclosure-layout-group#footer__menu--group", 
     //"drawer#mobile&tablet__header--menu-threelines"
+    "flex-layout.row#mobile__footer-a1",
+    "flex-layout.row#mobile__footer-a2",
+    "flex-layout.row#mobile__footer-a3"
   ]
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  "disclosure-layout-group#footer__menu--group": {
-    "children": [
-      "disclosure-layout#policies",
-      "disclosure-layout#about-us"
-    ]
+  "flex-layout.row#mobile__footer-a1": {
+    "children":[
+      "flex-layout.row#mobile__footer-a1-a"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a1"
+    }
   },
+  "flex-layout.row#mobile__footer-a1-a":{
+    "children":[
+      "logo#desktop__footer-b1--colOne",
+      "flex-layout.row#mobile__footer-a1--colOne-social"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a1-a"
+    }
+  },
+  "flex-layout.row#mobile__footer-a1--colOne-social":{
+    "children":[
+      "image#desktop__footer-b1--colOne-facebook",
+      "image#desktop__footer-b1--colOne-instagram",
+      "image#desktop__footer-b1--colOne-youtube"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-b1--colOne-social"
+    }
+  },
+
+
+  "flex-layout.row#mobile__footer-a2": {
+    "children": [
+      "flex-layout.col#mobile__footer-a2"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a2"
+    }
+  },
+
+  "flex-layout.col#mobile__footer-a2": {
+    "children":[
+      "rich-text#mobile__footer-a2--text",
+      "newsletter-form#desktop__footer-b1--form"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a2"
+    }
+
+  },
+  "rich-text#mobile__footer-a2--text":{
+    "props": {
+      "text":"¡Suscríbete a nuestro newsletter y recibe las mejores ofertas!",
+      "blockClass":"mobile__footer-a2--text"
+    }
+  },
+
+
+  "flex-layout.row#mobile__footer-a3": {
+    "children": [
+      "flex-layout.col#mobile__footer-a3"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a3"
+    }
+  },
+  "flex-layout.col#mobile__footer-a3": {
+    "children": [
+      "disclosure-layout-group#mobile__footer-a3"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a3"
+    }
+  },
+
+  "disclosure-layout-group#mobile__footer-a3": {
+    "children": [
+      "disclosure-layout#aboutus",
+      "disclosure-layout#policies"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a3"
+    }
+  },
+
+  "disclosure-layout#aboutus": {
+    "children": ["disclosure-trigger#aboutus", "disclosure-content#about-us"]
+  },
+  "disclosure-trigger#aboutus": {
+    "props":{
+      "as":"div",
+      "blockClass":"aboutus"
+    },
+    "children": ["rich-text#aboutus"//aca debemos poner un svg
+  ]
+  },
+  "rich-text#aboutus": {
+    "props": {
+      "text": "Nuestra Compañía",
+      "blockClass":"mobile__text-aboutus"
+    }
+  },
+  "disclosure-content#about-us": {
+    "children": ["menu#about-us"],
+    "props":{
+      "blockClass":"mobile__aboutus"
+    }
+  },
+  "menu#about-us": {
+    "children": ["menu-item#about-us", "menu-item#about-us2"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-terms-and-conds",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Sobre nosotros",
+        "text": "Sobre nosotros"
+      },
+      "blockClass":"mobile__footer-item--text"
+    }
+  },
+  "menu-item#about-us2": {
+    "props": {
+      "id": "menu-terms-and-conds",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Tiendas Urban Rider",
+        "text": "Tiendas Urban Rider"
+      },
+      "blockClass":"mobile__footer-item--text"
+    }
+  },
+
+
+
+
   "disclosure-layout#policies": {
     "children": ["disclosure-trigger#policies", "disclosure-content#policies"]
   },
   "disclosure-trigger#policies": {
+    "props":{
+      "as":"div"
+    },
     "children": ["rich-text#policies"]
   },
   "rich-text#policies": {
@@ -42,21 +168,7 @@
   "menu#desktop__footer-b2--colTwo"]
   },
 
-  "disclosure-layout#about-us": {
-    "children": ["disclosure-trigger#about-us", "disclosure-content#about-us"]
-  },
-  "disclosure-trigger#about-us": {
-    "children": ["rich-text#about-us"]
-  },
-  "rich-text#about-us": {
-    "props": {
-      "text": "about us"
-    }
-  },
-
-  "disclosure-content#about-us": {
-    "children": ["menu#about-us"]
-  },
+  
 
 
 

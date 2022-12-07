@@ -1,0 +1,25 @@
+{
+  "responsive-layout.mobile#mobile__lowermenu": {
+    "children": ["flex-layout.row#mobile__lowermenu"],
+    "props": {
+      "blockClass": "mobile__lowermenu"
+    }
+  },
+  "flex-layout.row#mobile__lowermenu": {
+    "children": ["menu#mobile__lowermenu"],
+    "props": {
+      "blockClass": "mobile__lowermenu"
+    }
+  },
+  "menu#mobile__lowermenu": {
+    "children": [
+      "flex-layout.col#tablet__lowermenu-one",
+      "flex-layout.col#tablet__lowermenu-two",
+      "flex-layout.col#tablet__lowermenu-four",
+      "flex-layout.col#tablet__lowermenu-five"
+    ],
+    "props": {
+      "blockClass": "tablet__lowermenu"
+    }
+  }
+}

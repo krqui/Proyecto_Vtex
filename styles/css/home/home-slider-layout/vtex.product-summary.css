@@ -15,3 +15,20 @@
     height: 200px;
     width: 200px;
 }
+
+.container--mobile__shelf {
+    max-width:200px !important
+}
+
+.brandName--mobile__shelf-details {
+    font-size: 12px;
+}
+
+.imageWrapper--mobile__shelf {
+    display: block;
+    height: 230px;
+}
+
+.nameContainer--mobile__shelf-details {
+    padding: 0px 0px;
+}
