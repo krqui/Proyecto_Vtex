@@ -315,3 +315,30 @@
   color:#fff;
   font-size: 14px;
 }
+
+.paragraph--desktop__footer-b1--colTwo-text {
+  color: #fff;
+  font-size: 20px;
+  padding: 0 22px;
+  margin-top: 10px;
+}
+
+.paragraph--mobile__footer-a2--text {
+  color: #fff;
+  font-size: 20px;
+  padding: -1 22px;
+  margin-top: 10px;
+}
+
+.wrapper--mobile__text-aboutus {
+  margin-left: 40px;
+}
+
+.paragraph--mobile__text-aboutus {
+  color:white;
+  font-size: 18px;
+}
+
+.container--mobile__text-aboutus {
+  width: 90%;
+}

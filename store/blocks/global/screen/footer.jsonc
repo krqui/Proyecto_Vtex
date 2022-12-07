@@ -647,36 +647,7 @@
 
 
   
-  "menu#about-us": {
-    "children": ["menu-item#about-us", "menu-item#about-us2"],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-terms-and-conds",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "tagTitle": "Sobre nosotros",
-        "text": "Sobre nosotros"
-      }
-    }
-  },
-  "menu-item#about-us2": {
-    "props": {
-      "id": "menu-terms-and-conds",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "tagTitle": "Tiendas Urban Rider",
-        "text": "Tiendas Urban Rider"
-      }
-    }
-  },
+  
   "rich-text#policies-title": {
     "props": {
       "text": "Servicios al Cliente"

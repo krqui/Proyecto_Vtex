@@ -3,53 +3,100 @@
 }
 .paginationDot--desktop__slider-main--list {
   background-color: white;
-  height: 1rem!important;
-  width: 1rem!important;
+  height: 1rem !important;
+  width: 1rem !important;
   box-shadow: 0 1px 3px #212121;
 }
 .paginationDot--desktop__slider-main--list--isActive {
   background-color: rgb(220, 40, 83);
 }
 
-
 .imageElement--home__slider {
   max-height: initial !important;
 }
 
 .caretIcon--home__slider {
-  color:white;
+  color: white;
 }
 
 .sliderLayoutContainer--desktop__slider-main--list {
   max-width: 1600px;
-  margin: 10px auto!important;
+  margin: 10px auto !important;
   padding-bottom: 0;
 }
-/*.sliderArrows--home__slider{
-  background-color: green;
-}*/
+
 .caretIcon--desktop__slider-main--list {
-  color:#fff;
+  color: #fff;
   height: 16px;
   padding: 8px;
-  background: rgba(0,0,0,.18);
+  background: rgba(0, 0, 0, 0.18);
   border-radius: 4px;
 }
 
 .caretIcon--desktop__slider-product--one {
   background: #fff;
-  padding:8px;
+  padding: 8px;
   border-radius: 50px;
   box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
 }
 
 .paginationDotsContainer--desktop__slider-product--one {
-  /*margin-top: 14px;*/
   transform: translateY(-16px);
-  /*padding-top: 10px;*/
-  /*padding: bottom;*/
 }
 
 .sliderTrackContainer--desktop__slider-product--one {
   height: 444px;
+}
+
+/*.slide--mobile__slider-product--one--firstVisible {
+  width: 100px;
+}
+
+}*/
+
+.caretIcon--mobile__home-slider {
+  color: #fff;
+  height: 16px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+
+.paginationDotsContainer--mobile__home-slider {
+  bottom: 20px !important;
+}
+
+.paginationDot--mobile__home-slider {
+  background-color: #fff;
+  height: 0.85rem !important;
+  width: 0.85rem !important;
+  box-shadow: 0 1px 3px #212121;
+  margin: 0 0.35rem;
+}
+
+.paginationDot--mobile__home-slider--isActive {
+  background-color: #d70d27;
+}
+
+.sliderLayoutContainer--mobile__home-slider2,
+.sliderLayoutContainer--mobile__home-slider3,
+.sliderLayoutContainer--mobile__slider-product--one {
+  margin-bottom: 30px;
+}
+
+.paginationDotsContainer--mobile__home-slider2,
+.paginationDotsContainer--mobile__home-slider3,
+.paginationDotsContainer--mobile__slider-product--one {
+  bottom: -1.2rem;
+}
+.sliderLayoutContainer--mobile__home-slider3 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.caretIcon--mobile__slider-product--one {
+  background: #fff;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
 }
