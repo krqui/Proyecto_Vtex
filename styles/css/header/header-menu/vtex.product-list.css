@@ -1,0 +1,19 @@
+.productImageContainer {
+    width: 65px!important;
+    height: 73px;
+}
+
+.productImage {
+    border: 1px solid #efefef;
+}
+
+.productName {
+    font-size: 11px;
+    font-family: Ubuntu;
+    color:#000
+}
+
+
+:global(.vtex-dropdown__arrow) {
+    color: #d70d27;
+}

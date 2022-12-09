@@ -53,9 +53,7 @@
   background-color: rgb(255, 155, 61);
 } /*global solo se puede usar cuando haya un vtex por delante.*/
 /* pudeen haber varios global. No se recomienda usar global" */
-.flexColChild--minicart__empty--icon{
-  background-color: black;
-}
+
 
 .flexRow--desktop__section-temporal--one, .flexRow--desktop__section-temporal--two {
   margin: 0px auto;
@@ -124,6 +122,25 @@
   width: 1440px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
   margin: 0px auto;
+}
+@media (max-width:1440px) {
+  .flexRow--desktop__section-smartphones {
+    width: 1000px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .flexRow--desktop__slider-product--one {
+    width: 1000px;
+  }
+  .flexRow--desktop__slider-product--two {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .flexRow--desktop__slider-product--three {  
+    width: 1000px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
+    margin: 0px auto;
+  }
 }
 
 .flexRow--desktop__slider-product--four {
@@ -229,6 +246,11 @@
   width: 110px;
   margin-top: 6px;
 }
+
+.flexRowContent--mobile__footer-b1--colOne-social {
+  border-left: 1px solid #fff;
+}
+
 .flexRow--mobile__footer-a2 {
   background-color: #393939;
   padding: 10px 0;
@@ -254,4 +276,29 @@
   box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
   border-radius: 20px;
   padding: 10px;
+}
+
+
+.flexRowContent--mobile__footer-a3--libros .stretchChildrenWidth {
+  width: 36%!important;
+}
+
+.flexRowContent--mobile__footer-a3--libros {
+  display: flex;
+}
+
+@media (max-width:640px) {
+  .flexRowContent--mobile__footer-a3--libros .stretchChildrenWidth {
+    width: 50%;
+  }
+}
+/*.flexRowContent--mobile__footer-a3--libros:first-child {
+  width: 25%!important;
+}*/
+.flexRow--mobile__footer-a3--copyright{
+  background-color: #292929;
+}
+
+.flexRow--minicart__footer {
+  box-shadow: 0 0 12px rgb(0 0 0 / 15%);
 }
