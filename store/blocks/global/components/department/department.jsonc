@@ -1,0 +1,32 @@
+{
+    "store.search#electrodomesticos": {
+        "blocks": ["search-result-layout#electrodomesticos"]
+    },
+    "search-result-layout#electrodomesticos":{
+        "blocks": [
+            "search-result-layout.desktop#electrodomesticos",
+            "search-result-layout.mobile#electrodomesticos",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#electrodomesticos":{
+        "children": [
+            //"rich-text#desktop-response-electrodomesticos"
+        ]
+      },
+    "search-result-layout.mobile#electrodomesticos":{
+        "children": [
+            "rich-text#mobile-response-electrodomesticos"
+        ]
+      },
+    "rich-text#desktop-response-electrodomesticos": {
+        "props": {
+            "text": "# Desktop search Electrodomésticos"
+        }
+      },
+    "rich-text#mobile-response-electrodomesticos": {
+        "props": {
+            "text": "# Mobile search Electrodomésticos"
+        }
+      }
+}

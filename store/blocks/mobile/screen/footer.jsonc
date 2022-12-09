@@ -1,92 +1,89 @@
 {
   "footer-layout.mobile": {
-    "children": [//"disclosure-layout-group#footer__menu--group", 
-    //"drawer#mobile&tablet__header--menu-threelines"
-    "flex-layout.row#mobile__footer-a1",
-    "flex-layout.row#mobile__footer-a2",
-    "flex-layout.row#mobile__footer-a3"
-  ]
+    "children": [
+      //"disclosure-layout-group#footer__menu--group",
+      //"drawer#mobile&tablet__header--menu-threelines"
+      "flex-layout.row#mobile__footer-a1",
+      "flex-layout.row#mobile__footer-a2",
+      "flex-layout.row#mobile__footer-a3"
+    ]
   },
   "flex-layout.row#mobile__footer-a1": {
-    "children":[
-      "flex-layout.row#mobile__footer-a1-a"
-    ],
-    "props":{
-      "blockClass":"mobile__footer-a1"
+    "children": ["flex-layout.row#mobile__footer-a1-a"],
+    "props": {
+      "blockClass": "mobile__footer-a1"
     }
   },
-  "flex-layout.row#mobile__footer-a1-a":{
-    "children":[
+  "flex-layout.row#mobile__footer-a1-a": {
+    "children": [
       "logo#desktop__footer-b1--colOne",
       "flex-layout.row#mobile__footer-a1--colOne-social"
     ],
-    "props":{
-      "blockClass":"mobile__footer-a1-a"
+    "props": {
+      "blockClass": "mobile__footer-a1-a"
     }
   },
-  "flex-layout.row#mobile__footer-a1--colOne-social":{
-    "children":[
+  "flex-layout.row#mobile__footer-a1--colOne-social": {
+    "children": [
       "image#desktop__footer-b1--colOne-facebook",
       "image#desktop__footer-b1--colOne-instagram",
       "image#desktop__footer-b1--colOne-youtube"
     ],
-    "props":{
-      "blockClass":"mobile__footer-b1--colOne-social"
+    "props": {
+      "blockClass": "mobile__footer-b1--colOne-social"
     }
   },
 
-
   "flex-layout.row#mobile__footer-a2": {
-    "children": [
-      "flex-layout.col#mobile__footer-a2"
-    ],
-    "props":{
-      "blockClass":"mobile__footer-a2"
+    "children": ["flex-layout.col#mobile__footer-a2"],
+    "props": {
+      "blockClass": "mobile__footer-a2"
     }
   },
 
   "flex-layout.col#mobile__footer-a2": {
-    "children":[
+    "children": [
       "rich-text#mobile__footer-a2--text",
       "newsletter-form#desktop__footer-b1--form"
     ],
-    "props":{
-      "blockClass":"mobile__footer-a2"
-    }
-
-  },
-  "rich-text#mobile__footer-a2--text":{
     "props": {
-      "text":"¡Suscríbete a nuestro newsletter y recibe las mejores ofertas!",
-      "blockClass":"mobile__footer-a2--text"
+      "blockClass": "mobile__footer-a2"
     }
   },
-
+  "rich-text#mobile__footer-a2--text": {
+    "props": {
+      "text": "¡Suscríbete a nuestro newsletter y recibe las mejores ofertas!",
+      "blockClass": "mobile__footer-a2--text"
+    }
+  },
 
   "flex-layout.row#mobile__footer-a3": {
-    "children": [
-      "flex-layout.col#mobile__footer-a3"
-    ],
-    "props":{
-      "blockClass":"mobile__footer-a3"
+    "children": ["flex-layout.col#mobile__footer-a3"],
+    "props": {
+      "blockClass": "mobile__footer-a3"
     }
   },
   "flex-layout.col#mobile__footer-a3": {
     "children": [
-      "disclosure-layout-group#mobile__footer-a3"
+      "disclosure-layout-group#mobile__footer-a3",
+      "image#mobile__footer-a3",
+      "flex-layout.row#mobile__footer-a3--libros",
+      "flex-layout.row#mobile__footer-a3--copyright"
     ],
-    "props":{
-      "blockClass":"mobile__footer-a3"
+    "props": {
+      "blockClass": "mobile__footer-a3"
     }
   },
 
   "disclosure-layout-group#mobile__footer-a3": {
     "children": [
       "disclosure-layout#aboutus",
-      "disclosure-layout#policies"
+      "disclosure-layout#customerservice",
+      "disclosure-layout#customersupport",
+      "disclosure-layout#corporatesales"
     ],
-    "props":{
-      "blockClass":"mobile__footer-a3"
+    "props": {
+      "blockClass": "mobile__footer-a3"
     }
   },
 
@@ -94,23 +91,24 @@
     "children": ["disclosure-trigger#aboutus", "disclosure-content#about-us"]
   },
   "disclosure-trigger#aboutus": {
-    "props":{
-      "as":"div",
-      "blockClass":"aboutus"
+    "props": {
+      "as": "div",
+      "blockClass": "aboutus"
     },
-    "children": ["rich-text#aboutus"//aca debemos poner un svg
-  ]
+    "children": [
+      "rich-text#aboutus" //aca debemos poner un svg
+    ]
   },
   "rich-text#aboutus": {
     "props": {
       "text": "Nuestra Compañía",
-      "blockClass":"mobile__text-aboutus"
+      "blockClass": "mobile__text-aboutus"
     }
   },
   "disclosure-content#about-us": {
     "children": ["menu#about-us"],
-    "props":{
-      "blockClass":"mobile__aboutus"
+    "props": {
+      "blockClass": "mobile__aboutus"
     }
   },
   "menu#about-us": {
@@ -129,7 +127,7 @@
         "tagTitle": "Sobre nosotros",
         "text": "Sobre nosotros"
       },
-      "blockClass":"mobile__footer-item--text"
+      "blockClass": "mobile__footer-item--text"
     }
   },
   "menu-item#about-us2": {
@@ -142,33 +140,407 @@
         "tagTitle": "Tiendas Urban Rider",
         "text": "Tiendas Urban Rider"
       },
-      "blockClass":"mobile__footer-item--text"
+      "blockClass": "mobile__footer-item--text"
     }
   },
 
-
-
-
-  "disclosure-layout#policies": {
-    "children": ["disclosure-trigger#policies", "disclosure-content#policies"]
+  "disclosure-layout#customerservice": {
+    "children": [
+      "disclosure-trigger#customerservice",
+      "disclosure-content#customerservice"
+    ]
   },
-  "disclosure-trigger#policies": {
-    "props":{
-      "as":"div"
-    },
-    "children": ["rich-text#policies"]
-  },
-  "rich-text#policies": {
+  "disclosure-trigger#customerservice": {
     "props": {
-      "text": "Politicas de la tienda"
+      "as": "div",
+      "blockClass": "aboutus"
+    },
+    "children": ["rich-text#customerservice"]
+  },
+  "rich-text#customerservice": {
+    "props": {
+      "text": "Servicio al Cliente",
+      "blockClass": "mobile__text-aboutus"
     }
   },
-  "disclosure-content#policies": {
-    "children": [//"menu#policies"
-  "menu#desktop__footer-b2--colTwo"]
+  "disclosure-content#customerservice": {
+    "children": ["menu#customerservice"],
+    "props": {
+      "blockClass": "mobile__aboutus"
+    }
+  },
+  "menu#customerservice": {
+    "children": [
+      "menu-item#customerservice-1",
+      "menu-item#customerservice-2",
+      "menu-item#customerservice-3",
+      "menu-item#customerservice-4",
+      "menu-item#customerservice-5",
+      "menu-item#customerservice-6",
+      "menu-item#customerservice-7",
+      "menu-item#customerservice-8",
+      "menu-item#customerservice-9"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#customerservice-1": {
+    "props": {
+      "id": "protocols-delivery",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/delivery-protocols",
+        "tagTitle": "Protocolos Delivery",
+        "text": "Protocolos Delivery"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-2": {
+    "props": {
+      "id": "electronic-bill",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bill",
+        "tagTitle": "Factura Electrónica",
+        "text": "Factura Electrónica"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-3": {
+    "props": {
+      "id": "cambios-y-devoluciones",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cambios-y-devoluciones",
+        "tagTitle": "Política de Cambios y Devoluciones",
+        "text": "Política de Cambios y Devoluciones"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-4": {
+    "props": {
+      "id": "Terminos y condiciones",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/términos-y-condiciones",
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y Condiciones"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-5": {
+    "props": {
+      "id": "Privacy-policies",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/privacy-policies",
+        "tagTitle": "Políticas de Privacidad",
+        "text": "Políticas de Privacidad"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-6": {
+    "props": {
+      "id": "Cookies-policies",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/privacy-policies",
+        "tagTitle": "Política de uso de Cookies",
+        "text": "Política de uso de Cookies"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-7": {
+    "props": {
+      "id": "store-pickup",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/store-pickup",
+        "tagTitle": "Retiro en Tienda",
+        "text": "Retiro en Tienda"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-8": {
+    "props": {
+      "id": "delivery-outcity",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/info-delivery-provincias",
+        "tagTitle": "Información Delivery a Provincias",
+        "text": "Información Delivery a Provincias"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customerservice-9": {
+    "props": {
+      "id": "stores-information",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/stores-info",
+        "tagTitle": "Información de Tiendas",
+        "text": "Información de Tiendas"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "disclosure-layout#customersupport": {
+    "children": [
+      "disclosure-trigger#customersupport",
+      "disclosure-content#customersupport"
+    ]
+  },
+  "disclosure-trigger#customersupport": {
+    "props": {
+      "as": "div",
+      "blockClass": "aboutus"
+    },
+    "children": ["rich-text#customersupport"]
+  },
+  "rich-text#customersupport": {
+    "props": {
+      "text": "Atención al Cliente",
+      "blockClass": "mobile__text-aboutus"
+    }
   },
 
-  
+  "disclosure-content#customersupport": {
+    "children": ["menu#customersupport"],
+    "props": {
+      "blockClass": "customersupport"
+    }
+  },
+  "menu#customersupport": {
+    "children": [
+      "menu-item#customersupport-1",
+      "menu-item#customersupport-2",
+      "menu-item#customersupport-3"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#customersupport-1": {
+    "props": {
+      "title": "numero",
+      "id": "numerofijo",
+      "type": "custom",
+      "itemProps": {
+        "href": "/numero",
+        "type": "internal",
+        "tagTitle": "Horario de atención",
+        "text": "+01 712 - 3212"
+      },
+      "blockClass": "mobile__footer-item--number"
+    }
+  },
+  "menu-item#customersupport-2": {
+    "props": {
+      "title": "Horario de atención",
+      "id": "horariodeatencion",
+      "type": "custom",
+      "itemProps": {
+        "href": "/numero2",
+        "type": "internal",
+        "tagTitle": "Horario de atención",
+        "text": "Lun. - Sáb. de 9:00 am a 6:00 pm"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+  "menu-item#customersupport-3": {
+    "props": {
+      "title": "mail",
+      "id": "mail",
+      "type": "custom",
+      "itemProps": {
+        "href": "/coolbox-mail",
+        "type": "internal",
+        "tagTitle": "Mail",
+        "text": "servicioalcliente@rashperu.com"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+
+  "disclosure-layout#corporatesales": {
+    "children": [
+      "disclosure-trigger#corporatesales",
+      "disclosure-content#corporatesales"
+    ]
+  },
+  "disclosure-trigger#corporatesales": {
+    "props": {
+      "as": "div",
+      "blockClass": "aboutus"
+    },
+    "children": ["rich-text#corporatesales"]
+  },
+  "rich-text#corporatesales": {
+    "props": {
+      "text": "Ventas corporativas",
+      "blockClass": "mobile__text-aboutus"
+    }
+  },
+  "disclosure-content#corporatesales": {
+    "children": ["menu#corporatesales"]
+  },
+  "menu#corporatesales": {
+    "children": [
+      "menu-item#corporatesales-1",
+      "menu-item#corporatesales-2",
+      "menu-item#corporatesales-3",
+      "menu-item#corporatesales-4",
+      "menu-item#corporatesales-5"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#corporatesales-1": {
+    "props": {
+      "title": "whatsapp1",
+      "id": "whatsapp1",
+      "type": "custom",
+      "itemProps": {
+        "href": "/whatsapp1",
+        "type": "internal",
+        "tagTitle": "whatsapp1",
+        "text": "996 192 014"
+      },
+      "blockClass": "mobile__footer-item--wsp"
+    }
+  },
+  "menu-item#corporatesales-2": {
+    "props": {
+      "title": "whatsapp2",
+      "id": "whatsapp2",
+      "type": "custom",
+      "itemProps": {
+        "href": "/whatsapp2",
+        "type": "internal",
+        "tagTitle": "whatsapp2",
+        "text": "996 192 017"
+      },
+      "blockClass": "mobile__footer-item--wsp"
+    }
+  },
+  "menu-item#corporatesales-3": {
+    "props": {
+      "title": "whatsapp3",
+      "id": "whatsapp3",
+      "type": "custom",
+      "itemProps": {
+        "href": "/whatsapp3",
+        "type": "internal",
+        "tagTitle": "whatsapp3",
+        "text": "954 950 318"
+      },
+      "blockClass": "mobile__footer-item--wsp"
+    }
+  },
+  "menu-item#corporatesales-4": {
+    "props": {
+      "title": "whatsapp4",
+      "id": "whatsapp4",
+      "type": "custom",
+      "itemProps": {
+        "href": "/whatsapp4",
+        "type": "internal",
+        "tagTitle": "whatsapp4",
+        "text": "954 050 517"
+      },
+      "blockClass": "mobile__footer-item--wsp"
+    }
+  },
+  "menu-item#corporatesales-5": {
+    "props": {
+      "title": "mailsales",
+      "id": "mailsales",
+      "type": "custom",
+      "itemProps": {
+        "href": "/coolbox-mailsales",
+        "type": "internal",
+        "tagTitle": "Mail sales",
+        "text": "ventascoolbox@rashperu.com"
+      },
+      "blockClass": "mobile__footer-item--text"
+    }
+  },
+
+  "image#mobile__footer-a3": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1670477229/coolb/lwsrrtxm8taoz9wdocsv.png",
+      "title": "Imagen de los bancos",
+      "link": {
+        "url": "/formas-de-pago",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "blockClass": "mobile__footer-a3"
+    }
+  },
+  "flex-layout.row#mobile__footer-a3--libros": {
+    "children": [
+      "image#mobile__footer-a3--libros",
+      "rich-text#mobile__footer-a3--libros"
+    ],
+    "props": {
+      "blockClass": "mobile__footer-a3--libros"
+    }
+  },
+  "image#mobile__footer-a3--libros": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1669921158/coolb/egpcmp23pgdhnsl5ixbx.webp",
+      "title": "Imagen de libro de reclamaciones",
+      "link": {
+        "url": "/reclamation-book",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "blockClass": "mobile__footer-a3--libros"
+    }
+  },
+  "rich-text#mobile__footer-a3--libros": {
+    "props": {
+      "text": "Libro de Reclamaciones",
+      "blockClass": "mobile__footer-a3--libros"
+    }
+  },
+  "flex-layout.row#mobile__footer-a3--copyright":{
+    "children":[
+      "rich-text#mobile__footer-a3--copyright"
+    ],
+    "props":{
+      "blockClass":"mobile__footer-a3--copyright"
+    }
+  },
+  "rich-text#mobile__footer-a3--copyright":{
+    "props":{
+      "text":"© 2022 Coolbox. Todos los derechos reservados.",
+      "blockClass":"mobile__footer-a3--copyright"
+    }
+  },
+
+
 
 
 
@@ -176,13 +548,13 @@
     "children": ["menu#header__menu"],
     "blocks": ["drawer-trigger"],
     "props": {
-      "blockClass":"mobileYtablet__header--menu-threelines"
+      "blockClass": "mobileYtablet__header--menu-threelines"
     }
   },
   "drawer-trigger": {
     "children": ["logo#mobile&tablet__header-threedots"],
     "props": {
-      "blockClass":"drawer-trigger"
+      "blockClass": "drawer-trigger"
     }
   },
   "logo#mobile&tablet__header-threedots": {
@@ -190,7 +562,7 @@
     "props": {
       "url": "assets/threeDots.svg",
       "height": "24px",
-      "blockClass":"header__top__mobile--threedots"
+      "blockClass": "header__top__mobile--threedots"
     }
   },
   "menu#header__menu": {
@@ -201,7 +573,7 @@
       "menu-item#department__four",
       "menu-item#department__five",
       "menu-item#department__six",
-      "menu-item#department__seven"      
+      "menu-item#department__seven"
     ],
     "props": {
       "orientation": "vertical"
@@ -243,7 +615,6 @@
       }
     }
   },
-
   "menu-item#category__two": {
     "props": {
       "id": "category-two",

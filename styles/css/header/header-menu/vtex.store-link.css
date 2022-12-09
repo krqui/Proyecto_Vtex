@@ -1,69 +1,90 @@
 .label--butttoncategorias {
-    background-color: black;
+  background-color: black;
 }
 
-.childrenContainer--global__ofertas, .childrenContainer--global__delivery, .childrenContainer--global__smarthome, .childrenContainer--global__bicisyscooters, .childrenContainer--global__chatea, .childrenContainer--global__zonaoutlet, .childrenContainer--global__tracking, .childrenContainer--global__delivery, .childrenContainer--global__smarthome, .childrenContainer--global__bicisyscooters, .childrenContainer--global__chatea, .childrenContainer--global__zonaoutlet, .childrenContainer--global__sorteo {
-    display: flex;
-    align-items: center;
-    padding-left: 14px;
+.childrenContainer--global__ofertas,
+.childrenContainer--global__delivery,
+.childrenContainer--global__smarthome,
+.childrenContainer--global__bicisyscooters,
+.childrenContainer--global__chatea,
+.childrenContainer--global__zonaoutlet,
+.childrenContainer--global__tracking,
+.childrenContainer--global__delivery,
+.childrenContainer--global__smarthome,
+.childrenContainer--global__bicisyscooters,
+.childrenContainer--global__chatea,
+.childrenContainer--global__zonaoutlet,
+.childrenContainer--global__sorteo {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 /*.link--global__ofertas {
     text-decoration: none;
 }*/
 .label--desktop__section-smartphones-link {
-    color:#1d1d1d;
-    text-decoration: none;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: 600;
-
+  color: #1d1d1d;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .link--desktop__section-smartphones-link {
-    background-color: #f0f0f0;
-    padding-right: 40px;
-    padding-left: 40px;
-    border: 1px solid #c4c4c4;
-    border-radius:50px
+  background-color: #f0f0f0;
+  padding-right: 40px;
+  padding-left: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 50px;
 }
 
 .buttonLink--desktop__section-smartphones-link:hover {
-    background-color: #d70d27;
+  background-color: #d70d27;
 }
 
 .label--desktop__section-smartphones-link:hover {
-    color:white
+  color: white;
 }
 
 .link--desktop__section-smartphones-samsung {
-    padding-right: 25px;
-    padding-left: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .link--tablet__lowermenu-two--contactus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .childrenContainer--tablet__lowermenu-two--contactus {
-    padding: 10px;
+  padding: 10px;
 }
 
 .link--tablet__lowermenu-three {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .childrenContainer--tablet__lowermenu-three {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .link--tablet__lowermenu-column-five {
-    display: block;
-    margin-top: 2px;
+  display: block;
+  margin-top: 2px;
+}
+
+@media (max-width: 1440px) {
+  .link--desktop__section-smartphones-link {
+    background-color: #f0f0f0;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50px;
+  }
 }

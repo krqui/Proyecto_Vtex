@@ -113,6 +113,7 @@
         "mobile": 1
       },
       "infinite": true,
+      "showNavigationArrows": "never",
       "blockClass": "mobile__home-slider2",
       "autoplay": {
         "timeout": 3000,

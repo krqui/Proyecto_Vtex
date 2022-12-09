@@ -120,3 +120,36 @@
   color: white;
   margin-left: 35px;
 }
+
+.styledLinkContent--mobile__footer-item--number {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 9px;
+  /*margin-left: 18px;*/
+  margin-left: 35px;
+}
+
+.styledLinkContent--mobile__footer-item--wsp {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 9px;
+  margin-left: 35px;
+  justify-content: flex-start;
+}
+
+.styledLinkContent--mobile__footer-item--wsp::before {
+  background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1670007760/coolb/qaqrgj8vg3eunygdtkag.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  content: "";
+  display: block;
+  background-size: contain;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+
+.menuItem--mobile__footer-item--text {
+  margin: 5px 0px;
+}

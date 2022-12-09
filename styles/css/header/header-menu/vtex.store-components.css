@@ -134,9 +134,38 @@
   font-size: 12px;
 }
 
+.imageElementLink--global__home-image:hover {
+  background-color: #dfe7ec
+}
 
 
 
+.imageElement--mobile__footer-a3 {
+  margin: 4px;
+  padding-left: 20px;
+  max-width: 80%;
+}
+
+.imageElementLink--mobile__footer-a3--libros {
+  /*margin-left: 23px;*/
+  width: 180px !important;
+}
+.imageElement--mobile__footer-a3--libros {
+  /*width: 148px;*/
+  width: 68%;
+  border: 1px solid #393939;
+  border-radius: 4px;
+  margin: 10px 0 10px 0px;
+}
+
+
+
+@media (max-width:639px) {
+  .imageElementLink--mobile__footer-a3--libros {
+    margin-left: 18px;
+  }
+  
+}
 
 @media (min-width: 639px) {
   .logoContainer--mobile__header-info--logo 

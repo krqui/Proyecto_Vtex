@@ -5,7 +5,6 @@
       "header-row#desktop__container-Img",
       "header-row#header__top--desktop",
       "header-row#desktop__threedots"
-      /*"header-row#header__middle"*/
     ]
   },
 
@@ -172,30 +171,10 @@
       "blockClass": "loginn"
     }
   },
-  /*"header-row#header__middle": {
-    "title": "Header medio",
-    "children": [
-      "header-force-center#header__middle",
-      "rich-text#test",
-          "header-spacer",
-          "rich-text#test"
-    ],
-    "props": {
-      "blockClass": "header__middle"
-    }
-  },*/
-  /* Para aprender a centrar un texto/imagen
-      "header-force-center#header__middle": {
-        "children" : [
-          //"rich-text#test"
-          "logo#header__top--logo"
-        ]
-      }*/
+
   "minicart.v2": {
     "props": {
-      //"MinicartIcon": "icon#home__link--text",
-      //"MinicartIcon": "icon-search",
-      //"variation": "popup",
+      "MinicartIcon":"image#minicart-aicon",
       "itemCountMode": "total",
       "quantityDisplay": "always",
       "customPixelEventName": "pageview",
@@ -203,6 +182,12 @@
     }, // hasta esta linea, tenemos lo basico para un minicart,
     // De aqui para abajo, ya es un minicart#customizado
     "children": ["minicart-base-content"]
+  },
+  "image#minicart-aicon": {
+    "props": {
+      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1670529876/coolb/rhiv5avxu2c6nb9pqkac.svg",
+      "maxWidth":22
+    }
   },
   "minicart-base-content": {
     "blocks": ["minicart-empty-state"],
@@ -219,36 +204,99 @@
   },
   "flex-layout.col#minicart__empty": {
     "children": [
-      "icon-cart#minicart__empty--icon",
       "rich-text#minicart-default-empty-state"
     ],
     "props": {
       "blockClass": "minicart__empty--icon"
     }
   },
-  "icon-cart#minicart__empty--icon": {
-    "props": {
-      "size": 90
-    }
-  },
   "rich-text#minicart-default-empty-state": {
     "props": {
-      "text": "Tú carrito está vacío. Haz click en añadir al carrito para ocupar esta sección.",
-      "textAlignment": "CENTER"
-      //"textPosition": "CENTER"
+      "text": "Tu carrito está vacío",
+      "textAlignment": "CENTER",
+      "blockClass":"minicart-default-empty-state"
     }
   },
-  "flex-layout.row#minicart__footer": {
-    "children": [
-      "minicart-summary" /*,
-      "rich-text#promo"*/,
-      "minicart-checkout-button" //, "drawer-close-button"
+
+  "minicart-product-list":{
+    "blocks":[
+      "product-list#minicart"
     ]
   },
-  "rich-text#promo": {
+  "product-list#minicart":{
+    "blocks": [
+      "product-list-content-mobile"
+    ]
+  },
+  "product-list-content-mobile":{
+    "children": [
+      "flex-layout.row#minicart__row--mobile"
+    ]
+  },
+  "flex-layout.row#minicart__row--mobile": {
+    "children":[
+      "flex-layout.col#minicart__col--image",
+      "flex-layout.col#minicart__col--info",
+      "flex-layout.col#minicart__col--remove"
+    ]
+  },
+  "flex-layout.col#minicart__col--image":{
+    "children": [
+      "product-list-image"
+    ]
+  },
+  "flex-layout.col#minicart__col--info":{
+    "children":[
+      "vtex.product-list@0.x:product-name",
+      "flex-layout.row#global__minicart-quantity"
+    ]
+  },
+  "flex-layout.row#global__minicart-quantity":{
+    "children":["quantity-selector#minicart"
+    //,"product-list-price"
+  ]
+  },
+  "quantity-selector#minicart":{
+    "props":{
+      "mode":"dropdown"
+    }
+  },
+  "flex-layout.col#minicart__col--remove":{
+
+  },
+
+
+  
+
+
+
+
+
+  "flex-layout.row#minicart__footer": {
+    "children": [
+      "flex-layout.col#minicart__footer"
+    ],
+    "props":{
+      "blockClass":"minicart__footer"
+    }
+  },
+  "flex-layout.col#minicart__footer":{
+    "children":[
+      "minicart-summary",
+      "minicart-checkout-button",
+      "rich-text#minicart-footer"
+    ]
+  },
+  "minicart-checkout-button": {
     "props": {
-      //"text": "No olvides participar en las promociones del dia sin IVA."
-      "text": "."
+      "text":"hola",
+      "finishShoppingButtonLink": "/checkout/#/orderform"
+    }
+  },
+  "rich-text#minicart-footer": {
+    "props": {
+      "text": "COMPRA 100% SEGURA",
+      "blockClass":"minicart-footer"
     }
   }
 }
