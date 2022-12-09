@@ -18,7 +18,6 @@
       "flex-layout.row#desktop__home-section--products"*/
 
       //"list-context.image-list#desktop__slider--products"
-      //"slider-layout#home__slider--children"
     ],
     "props": {
       "blockClass": "desktop__home"
@@ -152,8 +151,8 @@
     "props": {
       "itemsPerPage": {
         "desktop": 5,
-        "tablet": 1,
-        "phone": 1
+        "tablet": 3,
+        "phone": 3
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
@@ -192,6 +191,7 @@
       "product-summary-description#global__price",
       "rich-text#global__price",
       "flex-layout.row#global__price"
+      //,"product-summary-buy-button"
     ],
     "props": {
       "blockClass": "global__shelf-details",

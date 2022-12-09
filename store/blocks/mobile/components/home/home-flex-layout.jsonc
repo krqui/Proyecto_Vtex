@@ -1,5 +1,5 @@
 {
-  "flex-layout.row#mobile__home-section--one": {
+  "flex-layout.row#mobile__home-products--one": {
     "children": [
       "flex-layout.col#global__section-two--item1",
       "flex-layout.col#global__section-two--item2",
@@ -10,7 +10,7 @@
         "preserveLayoutOnMobile":true
     }
   },
-  "flex-layout.row#mobile__home-section--two": {
+  "flex-layout.row#mobile__home-products--two": {
     "children": [
       "flex-layout.col#global__section-two--item5",
       "flex-layout.col#global__section-two--item6",
@@ -21,7 +21,7 @@
         "preserveLayoutOnMobile":true
     }
   },
-  "flex-layout.row#mobile__home-section--three": {
+  "flex-layout.row#mobile__home-products--three": {
     "children": [
       "flex-layout.col#global__section-three--item9",
       "flex-layout.col#global__section-three--item10",
@@ -32,7 +32,7 @@
         "preserveLayoutOnMobile":true
     }
   },
-  "flex-layout.row#mobile__home-section--four": {
+  "flex-layout.row#mobile__home-products--four": {
     "children": [
       "flex-layout.col#global__section-three--item13",
       "flex-layout.col#global__section-three--item14",

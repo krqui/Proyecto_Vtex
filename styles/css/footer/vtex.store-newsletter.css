@@ -9,9 +9,13 @@
     background-color: red;
 }*/
 
-:global(.vtex-button__label){
-    color:#fff
+.formSubmitContainer--desktop__footer-b1--form :global(.vtex-button) {
+    color:#fff;
+    background-color: red;
+    border-color: red;
 }
+
 :global(.vtex-checkbox__label){
     color:#fff
 }
+

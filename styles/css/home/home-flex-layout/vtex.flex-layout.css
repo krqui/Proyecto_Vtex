@@ -1,3 +1,46 @@
+.flexRow--tablet__lowermenu {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 14px 14px 14px 14px rgb(0 0 0 / 28%);
+  -webkit-box-shadow: 14px 14px 14px 14px rgb(0 0 0 / 28%);
+}
+
+.flexRow--mobile__lowermenu {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 14px 14px 14px 14px rgb(0 0 0 / 28%);
+  -webkit-box-shadow: 14px 14px 14px 14px rgb(0 0 0 / 28%);
+}
+@media (min-width:640px){
+  .flexRow--mobile__lowermenu {
+    display: none;
+  }
+}
+
+@media (max-width:639px){
+  .flexRow--tablet__lowermenu {
+    display: none;
+  }
+}
+
+
+.flexColChild--tablet__lowermenu-column-four {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.flexColChild--tablet__lowermenu-column-five {
+  display: flex;
+  justify-content: center;
+}
+
 .flexRowContent--desktop__section-temporal--one, .flexRowContent--desktop__section-temporal--two {
   justify-content: center;
 }
@@ -10,9 +53,7 @@
   background-color: rgb(255, 155, 61);
 } /*global solo se puede usar cuando haya un vtex por delante.*/
 /* pudeen haber varios global. No se recomienda usar global" */
-.flexColChild--minicart__empty--icon{
-  background-color: black;
-}
+
 
 .flexRow--desktop__section-temporal--one, .flexRow--desktop__section-temporal--two {
   margin: 0px auto;
@@ -81,6 +122,25 @@
   width: 1440px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
   margin: 0px auto;
+}
+@media (max-width:1440px) {
+  .flexRow--desktop__section-smartphones {
+    width: 1000px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .flexRow--desktop__slider-product--one {
+    width: 1000px;
+  }
+  .flexRow--desktop__slider-product--two {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .flexRow--desktop__slider-product--three {  
+    width: 1000px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
+    margin: 0px auto;
+  }
 }
 
 .flexRow--desktop__slider-product--four {
@@ -166,4 +226,79 @@
   background-color: #292929;
   justify-content: center;
   display: flex;
+}
+
+.flexRow--mobile__footer-a1 {
+  background-color: #393939;
+  padding: 20px 0;
+}
+
+.flexRow--mobile__footer-a1-a {
+  margin-left: 22px;
+}
+
+.flexRowContent--mobile__footer-a1-a {
+  display: flex;
+}
+
+.flexRowContent--mobile__footer-b1--colOne-social {
+  display: flex;
+  width: 110px;
+  margin-top: 6px;
+}
+
+.flexRowContent--mobile__footer-b1--colOne-social {
+  border-left: 1px solid #fff;
+}
+
+.flexRow--mobile__footer-a2 {
+  background-color: #393939;
+  padding: 10px 0;
+}
+
+.flexColChild--mobile__footer-a2 {
+  padding: 6px 26px;
+}
+
+
+
+.flexRow--mobile__footer-a3 {
+  padding: 16px 0 70px;
+  background-color: #393939;
+}
+
+.flexRow--mobile__home-products {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 22px;
+  margin-right: 18px;
+  border: 1px solid hsla(0,0%,76.9%,.5);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.flexRowContent--mobile__footer-a3--libros .stretchChildrenWidth {
+  width: 36%!important;
+}
+
+.flexRowContent--mobile__footer-a3--libros {
+  display: flex;
+}
+
+@media (max-width:640px) {
+  .flexRowContent--mobile__footer-a3--libros .stretchChildrenWidth {
+    width: 50%;
+  }
+}
+/*.flexRowContent--mobile__footer-a3--libros:first-child {
+  width: 25%!important;
+}*/
+.flexRow--mobile__footer-a3--copyright{
+  background-color: #292929;
+}
+
+.flexRow--minicart__footer {
+  box-shadow: 0 0 12px rgb(0 0 0 / 15%);
 }

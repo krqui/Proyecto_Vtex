@@ -1,106 +1,178 @@
 {
-  "slider-layout#home__slider--children": {
-    "title": "Slider con hijos declarados",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "mobile": 1
-      },
-      "infinite": true,
-      "blockClass": "home__slider",
-      "autoplay": {
-        "timeout": 3000,
-        "stopOnHover": true
-      }
-    },
-    "children": [
-      /*"flex-layout.row#home__slider--zero",*/
-      "image#home__slider--one",
-      "image#home__slider--two",
-      "image#home__slider--three",
-      "image#home__slider--four",
-      "image#home__slider--five"
-    ]
-  },
   "image#home__slider--one": {
     "props": {
-      "src": "assets/img/pic1.png"
+      "src": "assets/img/global__home-item--pic1.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--two": {
     "props": {
-      "src": "assets/img/pic2.png"
+      "src": "assets/img/global__home-item--pic2.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--three": {
     "props": {
-      "src": "assets/img/pic3.png"
+      "src": "assets/img/global__home-item--pic3.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--four": {
     "props": {
-      "src": "assets/img/pic4.png"
+      "src": "assets/img/global__home-item--pic4.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--five": {
     "props": {
-      "src": "assets/img/pic5.png"
+      "src": "assets/img/global__home-item--pic5.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--six": {
     "props": {
-      "src": "assets/img/pic6.png"
+      "src": "assets/img/global__home-item--pic6.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--seven": {
     "props": {
-      "src": "assets/img/pic7.png"
+      "src": "assets/img/global__home-item--pic7.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--eight": {
     "props": {
-      "src": "assets/img/pic8.png"
+      "src": "assets/img/global__home-item--pic8.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--nine": {
     "props": {
-      "src": "assets/img/pic9.png"
+      "src": "assets/img/global__home-item--pic9.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--ten": {
     "props": {
-      "src": "assets/img/pic10.png"
+      "src": "assets/img/global__home-item--pic10.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--eleventh": {
     "props": {
-      "src": "assets/img/pic11.png"
+      "src": "assets/img/global__home-item--pic11.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--twelve": {
     "props": {
-      "src": "assets/img/pic12.png"
+      "src": "assets/img/global__home-item--pic12.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--thirteen": {
     "props": {
-      "src": "assets/img/pic13.png"
+      "src": "assets/img/global__home-item--pic13.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--fourteen": {
     "props": {
-      "src": "assets/img/pic14.png"
+      "src": "assets/img/global__home-item--pic14.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--fifteen": {
     "props": {
-      "src": "assets/img/pic15.png"
+      "src": "assets/img/global__home-item--pic15.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
   "image#home__slider--sixteen": {
     "props": {
-      "src": "assets/img/pic16.png"
+      "src": "assets/img/global__home-item--pic16.png",
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/productsindiscounts",
+        "newTab": true,
+        "attributeNoFollow": true
+      },
+      "blockClass":"global__home-image"
     }
   },
 
@@ -114,7 +186,7 @@
   },
 
   "list-context.image-list#desktop__slider-main": {
-    "title": "Preloaded list of images for desktop",/*EL CONTENEDOR MAYOR EN HTML ES EL QUE tiene DATA-TEST-id*/
+    "title": "Preloaded list of images for desktop" /*EL CONTENEDOR MAYOR EN HTML ES EL QUE tiene DATA-TEST-id*/,
     "children": ["slider-layout#desktop__slider-main--list"],
     "props": {
       "preload": true,
@@ -204,47 +276,27 @@
       "blockClass": "desktop__slider-main--list",
       "autoplay": {
         "timeout": 3000,
-        "stopOnHover":true
+        "stopOnHover": true
       },
       "fullWidth": true
     }
   },
 
-  
-  "slider-layout#global__home--slider-B": {
+  "slider-layout#mobile__home-slider3": {
     "props": {
       "title": "Slider con lista B",
       "itemsPerPage": {
-        "desktop": 1,
         "tablet": 1,
         "mobile": 1
       },
       "infinite": true,
-      "blockClass": "home__slider",
-      "fullWidth": false
-    }
-  },
-  "slider-layout#global__home__sliderC--list": {
-    "props": {
-      "title": "Slider con lista C",
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "mobile": 2
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
       },
-      "infinite": true,
-      "blockClass": "home__slider",
-      "fullWidth": false
-    },
-    "children": [
-      /*Mi tarea pendiente aqui es crear "cards" de items con imagen, descripcion, precio, etc con las imagenes de slider 4 mobile*/
-      /*"flex-layout.row#home__slider--zero",*/
-      /*"rich-text#header__top--login",*/
-      "image#home__slider--one",
-      "image#home__slider--two",
-      "image#home__slider--three",
-      "image#home__slider--four",
-      "image#home__slider--five"
-    ]
+      "showNavigationArrows": "never",
+      "fullWidth": false,
+      "blockClass": "mobile__home-slider3"
+    }
   }
 }

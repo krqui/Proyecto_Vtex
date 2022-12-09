@@ -3,7 +3,9 @@
     "title": "Header Mobile",
     "children": [
       "header-row#mobile__container-Img",
-      "header-row#mobile&tablet__header"
+      "header-row#mobile&tablet__header",
+      "responsive-layout.tablet#tablet__lowermenu",
+      "responsive-layout.mobile#mobile__lowermenu"
     ]
   }
 }

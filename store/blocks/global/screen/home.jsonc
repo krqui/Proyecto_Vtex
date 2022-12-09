@@ -5,8 +5,7 @@
       "responsive-layout.mobile#mobile__home",
       "responsive-layout.tablet#tablet__home",
       "responsive-layout.desktop#desktop__home",
-      
-      "modal-trigger#home__modal--children",
+
       "modal-trigger#home__modal--event"
     ]
   }
