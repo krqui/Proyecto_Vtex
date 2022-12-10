@@ -203,8 +203,8 @@
     "children": [
       "product-summary-brand",
       "product-summary-name#mobile__shelf-details",
-      "rich-text#global__price",
-      "flex-layout.row#mobile__price"
+      "rich-text#global__price"
+      //,"flex-layout.row#mobile__price","product-summary-buy-button"
     ],
     "props": {
       "blockClass": "mobile__shelf-details"

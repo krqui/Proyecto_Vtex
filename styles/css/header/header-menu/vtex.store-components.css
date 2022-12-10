@@ -34,7 +34,8 @@
 
 
 .logoContainer--header__top__mobile--threedots {
-  padding: 0 14px;
+  display: contents;
+  /*padding: 0 14px;*/
 }
 .logoImage--header__top__mobile--threedots {
   padding: 0;
@@ -129,7 +130,7 @@
   display: inline-block;
   content: "Menú";
   color: #ffffff;
-  margin-left: 43px;
+  margin-left: 33px;
   width: 100%;
   font-size: 12px;
 }
