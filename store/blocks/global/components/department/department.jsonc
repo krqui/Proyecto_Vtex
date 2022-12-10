@@ -5,28 +5,112 @@
     "search-result-layout#electrodomesticos":{
         "blocks": [
             "search-result-layout.desktop#electrodomesticos",
-            "search-result-layout.mobile#electrodomesticos",
+            "search-result-layout.mobile#mobile__electrodomesticos",
             "search-not-found-layout"
         ]
     },
     "search-result-layout.desktop#electrodomesticos":{
         "children": [
             //"rich-text#desktop-response-electrodomesticos"
+            "flex-layout.row#department__breadcrumb"
         ]
       },
-    "search-result-layout.mobile#electrodomesticos":{
+      "flex-layout.row#department__breadcrumb":{
+        "children":[
+            "flex-layout.col#department__breadcrumb"
+        ]
+      },
+      "flex-layout.col#department__breadcrumb":{
+        "children":[
+            "breadcrumb.search"
+        ]
+      },
+    /*"search-result-layout.mobile#mobile__electrodomesticos":{
         "children": [
-            "rich-text#mobile-response-electrodomesticos"
+            //"rich-text#mobile-response-electrodomesticos"
+            //"flex-layout.row#electrodomesticos__breadcrumb",
+            "flex-layout.row#electrodomesticos__results"
         ]
       },
-    "rich-text#desktop-response-electrodomesticos": {
+      "flex-layout.row#electrodomesticos__results":{
+        "title":"Electrodomesticos Results",
+        "children": [
+            "gallery-layout-switcher"//,
+            //"search-content#phone"
+        ]
+      },
+      "gallery-layout-switcher":{
+        "children":[
+            "gallery-layout-option#grid__two-columns",
+            "gallery-layout-option#grid__one-column"
+        ]
+      },
+      "gallery-layout-option#grid__two-columns": {
         "props": {
-            "text": "# Desktop search Electrodomésticos"
+            "name": "grid-two-columns",
+            "blockClass": "grid__selector--two-columns"
         }
       },
-    "rich-text#mobile-response-electrodomesticos": {
-        "props": {
-            "text": "# Mobile search Electrodomésticos"
+      "gallery-layout-option#grid__one-column":{
+        "props":{
+            "name":"grid-one-column",
+            "blockClass":"grid__selector--one-column"
         }
-      }
+      }*/
+
+        "search-result-layout.mobile#mobile__electrodomesticos":{
+            "children": [
+                //"responsive-layout.tablet#tablet__department",
+                "responsive-layout.phone#phone__department"
+            ]
+        },
+        "responsive-layout.phone#phone__department": {
+            "children":[
+                "flex-layout.row#category__results"
+            ]
+        },
+        "flex-layout.row#category__results": {
+            "children": [
+                "flex-layout.col#category__results--filter",
+                "flex-layout.col#category__results--content"
+            ]
+        },
+        "flex-layout.col#category__results--filter":{
+            "children": [
+                "filter-navigator.v3"
+            ],
+            "props": {
+                "width":"25%"
+            }
+        },
+        "flex-layout.col#category__results--content":{
+            "children": [
+                "search-content#results__content--products"
+            ],
+            "props": {
+                "width":"75%"
+            }
+        },
+        "search-content#results__content--products":{
+            "blocks":[
+                "gallery#department",
+                "not-found"
+            ]
+        },
+        "gallery#department":{
+            "props":{
+                "layouts": [
+                    {
+                        "name":"general-grid",
+                        "component":"GeneralGrid",
+                        "itemsPerRow":{
+                            "desktop":4,
+                            "tablet":3,
+                            "phone":2
+                        }
+                    }
+                ],
+                "GeneralGrid":"product-summary.shelf"
+            }
+        }
 }
