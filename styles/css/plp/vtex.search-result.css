@@ -1,12 +1,176 @@
 .container--layout {
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
+@media only screen and (min-width: 1441px) {
+  .container--layout {
+    max-width: 1440px;
+    min-width: 1440px;
+    overflow: hidden;
+  }
+}
 
-@media only screen and (min-width:1441px) {
-    .container--layout {
-        max-width: 1440px;
-        min-width: 1440px;
-        overflow: hidden;
-    }   
+.galleryTitle--layout {
+  font-size: 13px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .totalProducts--layout {
+    display: flex;
+  }
+  .orderByDropdown--desktop__department-search--right-orderby {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .orderByButton {
+    min-width: 45px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 15px;
+  }
+}
+
+.totalProducts--layout {
+  border-top: none;
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #000;
+  width: auto;
+  padding: 0;
+}
+
+.totalProducts--layout::after {
+  content: "Productos";
+  margin-left: 5px;
+}
+
+.totalProductsMessage {
+  display: none;
+}
+
+.orderByDropdown--desktop__department-search--right-orderby {
+  padding: 0;
+}
+
+.orderByDropdown::before {
+  content: "Ordenar por:";
+  font-weight: 500;
+  font-size: 13px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.orderByButton {
+  border: 1px solid #e4e6e6;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 45px;
+  border-radius: 10px;
+  padding: 6px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterPopupTitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filterPopupTitle--desktop__department-search--right-orderby {
+  text-transform: none;
+  font-size: 13px;
+  color: #000;
+}
+
+.filterPopupTitle--desktop__department-search--right-orderby::before {
+  content: "";
+  background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1670982133/coolb/lacdftig5xlvypmxjuru.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  float: left;
+  width: 13px;
+  height: 13px;
+  transition: all 0.3s;
+  transform: rotate(0);
+}
+
+.orderByText {
+  display: none;
+}
+
+.filterPopupArrowIcon {
+  display: none;
+}
+
+.orderByButton--desktop__department-search--right-orderby:hover
+  :global(
+    .vtex-search-result-3-x-filterPopupTitle--desktop__department-search--right-orderby
+  )::before {
+  transform: rotate(180deg);
+}
+
+.orderByOptionsContainer {
+  top: 120%;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 2;
+  box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.orderByOptionItem--desktop__department-search--right-orderby {
+  font-size: 13px;
+  color: #000;
+  min-width: auto;
+  padding: 10px;
+}
+
+.galleryLayoutSwitcher {
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.galleryLayoutOptionButton {
+  padding: 6px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.galleryLayoutOptionButton:hover {
+  background-color: #e4e4e4;
+}
+
+@media only screen and (min-width: 1024px) {
+  .filters--layout {
+    padding: 20px;
+    background-color: #fff;
+  }
+}
+
+.filtersWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterMessage {
+  font-size: 26px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+:global(.vtex-checkbox__label) {
+  color:#3f3f40;
+  font-size: 13px;
+  font-weight: 200;
 }

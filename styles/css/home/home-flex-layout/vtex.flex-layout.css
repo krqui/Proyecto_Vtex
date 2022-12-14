@@ -17,18 +17,17 @@
   box-shadow: 14px 14px 14px 14px rgb(0 0 0 / 28%);
   -webkit-box-shadow: 14px 14px 14px 14px rgb(0 0 0 / 28%);
 }
-@media (min-width:640px){
+@media (min-width: 640px) {
   .flexRow--mobile__lowermenu {
     display: none;
   }
 }
 
-@media (max-width:639px){
+@media (max-width: 639px) {
   .flexRow--tablet__lowermenu {
     display: none;
   }
 }
-
 
 .flexColChild--tablet__lowermenu-column-four {
   display: flex;
@@ -41,7 +40,8 @@
   justify-content: center;
 }
 
-.flexRowContent--desktop__section-temporal--one, .flexRowContent--desktop__section-temporal--two {
+.flexRowContent--desktop__section-temporal--one,
+.flexRowContent--desktop__section-temporal--two {
   justify-content: center;
 }
 
@@ -54,8 +54,8 @@
 } /*global solo se puede usar cuando haya un vtex por delante.*/
 /* pudeen haber varios global. No se recomienda usar global" */
 
-
-.flexRow--desktop__section-temporal--one, .flexRow--desktop__section-temporal--two {
+.flexRow--desktop__section-temporal--one,
+.flexRow--desktop__section-temporal--two {
   margin: 0px auto;
   max-width: 1440px;
   padding-bottom: 10px;
@@ -69,19 +69,20 @@
 .flexRow--desktop__home-blockcontent-white {
   background-color: #fff;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 7%);
-
 }
 .flexRowContent--desktop__home-blockcontent-white {
-  -webkit-box-pack:justify;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
-.flexRow--desktop__section-discountsOne, .flexRow--desktop__section-discountsTwo {
+.flexRow--desktop__section-discountsOne,
+.flexRow--desktop__section-discountsTwo {
   margin: 0 auto;
   max-width: 1440px;
   padding-bottom: 10px;
 }
 
-.flexRowContent--desktop__section-discountsOne, .flexRowContent--desktop__section-discountsTwo {
+.flexRowContent--desktop__section-discountsOne,
+.flexRowContent--desktop__section-discountsTwo {
   justify-content: center;
   gap: 5px;
 }
@@ -112,18 +113,18 @@
   justify-content: flex-end;
 }
 
-.flexRow--desktop__slider-product--one {  
+.flexRow--desktop__slider-product--one {
   width: 1440px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
   margin: 40px auto;
 }
 
-.flexRow--desktop__slider-product--three {  
+.flexRow--desktop__slider-product--three {
   width: 1440px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
   margin: 0px auto;
 }
-@media (max-width:1440px) {
+@media (max-width: 1440px) {
   .flexRow--desktop__section-smartphones {
     width: 1000px;
     padding-left: 0px;
@@ -136,7 +137,7 @@
     width: 1000px;
     margin: 0 auto;
   }
-  .flexRow--desktop__slider-product--three {  
+  .flexRow--desktop__slider-product--three {
     width: 1000px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 7%);
     margin: 0px auto;
@@ -148,15 +149,15 @@
 }
 
 .flexColChild--global__shelf-details:nth-child(2n) {
-  height: 78px!important;
+  height: 78px !important;
 }
 
 .flexColChild--global__shelf-details:nth-child(4n) {
-  height: 20px!important;
+  height: 20px !important;
 }
 
 .flexCol--global__shelf-details {
-  height: auto!important;
+  height: auto !important;
   border: 2px solid transparent;
   margin: 0;
 }
@@ -164,7 +165,6 @@
 .flexCol--global__shelf-details:hover {
   border: 2px solid rgba(225, 225, 225, 0.559);
 }
-
 
 .flexRow--desktop__footer-b1 {
   background-color: #393939;
@@ -174,7 +174,7 @@
 .flexRow--desktop__footer-b1--block {
   max-width: 1440px;
   padding: 40px 0 14px 10px;
-  margin: auto
+  margin: auto;
 }
 
 .flexRowContent--desktop__footer-b1--block {
@@ -187,10 +187,10 @@
 }
 
 .flexRow--desktop__footer-b1--colOne-social {
-    display: flex;
-    margin-top: 5px;
-    border-left: 1px solid #fff;
-    padding-left: 16px;
+  display: flex;
+  margin-top: 5px;
+  border-left: 1px solid #fff;
+  padding-left: 16px;
 }
 
 .flexRow--desktop__footer-b2 {
@@ -204,13 +204,13 @@
   padding-bottom: 10px;
 }
 
-
 .flexRow--desktop__footer-form-one {
   display: inline-block;
   width: 100%;
 }
-.flexRow--desktop__footer-form-one, .flexRow--desktop__footer-form-two{
-  padding: 10px 0
+.flexRow--desktop__footer-form-one,
+.flexRow--desktop__footer-form-two {
+  padding: 10px 0;
 }
 
 .flexRowContent--desktop__footer-b2--colOne--row {
@@ -260,8 +260,6 @@
   padding: 6px 26px;
 }
 
-
-
 .flexRow--mobile__footer-a3 {
   padding: 16px 0 70px;
   background-color: #393939;
@@ -272,33 +270,75 @@
   margin-bottom: 20px;
   margin-left: 22px;
   margin-right: 18px;
-  border: 1px solid hsla(0,0%,76.9%,.5);
+  border: 1px solid hsla(0, 0%, 76.9%, 0.5);
   box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
   border-radius: 20px;
   padding: 10px;
 }
 
-
 .flexRowContent--mobile__footer-a3--libros .stretchChildrenWidth {
-  width: 36%!important;
+  width: 36% !important;
 }
 
 .flexRowContent--mobile__footer-a3--libros {
   display: flex;
 }
 
-@media (max-width:640px) {
+@media (max-width: 640px) {
   .flexRowContent--mobile__footer-a3--libros .stretchChildrenWidth {
     width: 50%;
   }
 }
-/*.flexRowContent--mobile__footer-a3--libros:first-child {
-  width: 25%!important;
-}*/
-.flexRow--mobile__footer-a3--copyright{
+
+.flexRow--mobile__footer-a3--copyright {
   background-color: #292929;
 }
 
 .flexRow--minicart__footer {
   box-shadow: 0 0 12px rgb(0 0 0 / 15%);
+}
+
+.flexRowContent--desktop__department-search {
+  justify-content: space-between !important;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 2px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 7%);
+  border-radius: 3px;
+}
+
+.flexRowContent--desktop__department-search
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: auto !important;
+}
+
+.flexRowContent--desktop__department-search--left,
+.flexRowContent--desktop__department-search--right {
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.flexRowContent--desktop__department-search--left
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: auto !important;
+}
+
+.flexCol--desktop__department-search--left-title {
+  width: 240px !important;
+}
+
+.flexCol--desktop__department-search--right-infochange {
+  margin-right: 20px;
+}
+
+.flexRowContent--global__search-results
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: auto !important;
+}
+
+.flexCol--global__filter-col {
+  max-width: 500px;
+  min-width: 240px;
+  margin-right: 10px;
 }

@@ -56,48 +56,164 @@
         }
       }*/
 
-    "search-result-layout.desktop#desktop__electrodomesticos":{
-        "children":[
-            "responsive-layout.desktop#desktop__department"
-        ]
-    },
-    "responsive-layout.desktop#desktop__department":{
-        "children":["flex-layout.row#category__results"]
-    },
-
-
+  "search-result-layout.desktop#desktop__electrodomesticos": {
+    "children": ["responsive-layout.desktop#desktop__department"]
+  },
+  "responsive-layout.desktop#desktop__department": {
+    "children": [
+      "flex-layout.row#department__breadcrumb",
+      "flex-layout.row#desktop__department-search",
+      "flex-layout.row#global__search-results"
+    ],
+    "props": {
+      "blockClass": "desktop__department"
+    }
+  },
+  "flex-layout.row#department__breadcrumb": {
+    "children": ["breadcrumb.search"],
+    "props": {
+      "blockClass": "department__breadcrumb"
+    }
+  },
+  "flex-layout.row#desktop__department-search": {
+    "children": [
+      "flex-layout.col#desktop__department-search--left",
+      "flex-layout.col#desktop__department-search--right"
+    ],
+    "props": {
+      "blockClass": "desktop__department-search"
+    }
+  },
+  "flex-layout.col#desktop__department-search--left": {
+    "children": ["flex-layout.row#desktop__department-search--left"]
+  },
+  "flex-layout.row#desktop__department-search--left": {
+    "children": [
+      "flex-layout.col#desktop__department-search--left-title",
+      "flex-layout.col#desktop__department-search--left-counter"
+    ],
+    "props": {
+      "blockClass": "desktop__department-search--left"
+    }
+  },
+  "flex-layout.col#desktop__department-search--left-title": {
+    "children": ["search-title.v2"],
+    "props": {
+      "blockClass": "desktop__department-search--left-title"
+    }
+  },
+  "flex-layout.col#desktop__department-search--left-counter": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "desktop__department-search--left-counter"
+    }
+  },
+  "flex-layout.col#desktop__department-search--right": {
+    "children": ["flex-layout.row#desktop__department-search--right"]
+  },
+  "flex-layout.row#desktop__department-search--right": {
+    "children": [
+      "flex-layout.col#desktop__department-search--right-orderby",
+      "flex-layout.col#desktop__department-search--right-infochange"
+    ],
+    "props": {
+      "blockClass": "desktop__department-search--right"
+    }
+  },
+  "flex-layout.col#desktop__department-search--right-orderby": {
+    "children": ["order-by.v2#desktop__department-search--right-orderby"],
+    "props": {
+      "blockClass": "desktop__department-search--right-orderby"
+    }
+  },
+  "order-by.v2#desktop__department-search--right-orderby": {
+    "props": {
+      "showOrderTitle": false,
+      "blockClass": "desktop__department-search--right-orderby"
+    }
+  },
+  "flex-layout.col#desktop__department-search--right-infochange": {
+    "children": ["gallery-layout-switcher#desktop__department-infochange"],
+    "props": {
+      "blockClass": "desktop__department-search--right-infochange"
+    }
+  },
+  "gallery-layout-switcher#desktop__department-infochange": {
+    "children": [
+      "rich-text#desktop__department-infochange",
+      "gallery-layout-option#viewgrid",
+      "gallery-layout-option#viewlist"
+    ]
+  },
+  "rich-text#desktop__department-infochange": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Vista:",
+      "blockClass": "desktop__department-infochange"
+    }
+  },
+  "gallery-layout-option#viewgrid": {
+    "children": ["image#viewgrid"],
+    "props": {
+      "name": "Switch to Grid Layout",
+      "blockClass": "viewgrid"
+    }
+  },
+  "image#viewgrid": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1670996329/coolb/fv2gswtqlsbtg5sejoct.svg",
+      "maxHeight": 24
+    }
+  },
+  "gallery-layout-option#viewlist": {
+    "children": ["image#viewlist"],
+    "props": {
+      "name": "Switch to List Layout",
+      "blockClass": "viewlist"
+    }
+  },
+  "image#viewlist": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1670996384/coolb/u6sl4arjfy3dcvylfjjc.svg",
+      "maxHeight": 24
+    }
+  },
 
   "search-result-layout.mobile#mobile__electrodomesticos": {
+    "title": "mobile electrodomesticos ",
     "children": [
       "responsive-layout.tablet#tablet__department",
       "responsive-layout.phone#phone__department"
     ]
   },
-  "responsive-layout.tablet#tablet__department":{
-    "children":["flex-layout.row#category__results"]
+  "responsive-layout.tablet#tablet__department": {
+    "children": ["flex-layout.row#global__search-results"]
   },
-
-
-
   "responsive-layout.phone#phone__department": {
-    "children": ["flex-layout.row#category__results"]
+    "children": ["flex-layout.row#global__search-results"]
   },
-  "flex-layout.row#category__results": {
+  "flex-layout.row#global__search-results": {
     "children": [
-      "flex-layout.col#category__results--filter",
-      "flex-layout.col#category__results--content"
-    ]
-  },
-  "flex-layout.col#category__results--filter": {
-    "children": ["filter-navigator.v3"],
+      "flex-layout.col#global__search-results--filter",
+      "flex-layout.col#global__search-results--content"
+    ],
     "props": {
-      "width": "25%"
+      "blockClass": "global__search-results"
     }
   },
-  "flex-layout.col#category__results--content": {
+  "flex-layout.col#global__search-results--filter": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "width": "auto",
+      "blockClass":"global__filter-col"
+    }
+  },
+  "flex-layout.col#global__search-results--content": {
     "children": ["search-content#results__content--products"],
     "props": {
-      "width": "75%"
+      "width": "auto",
+      "blockClass":"global__content-col"
     }
   },
   "search-content#results__content--products": {
@@ -107,7 +223,16 @@
     "props": {
       "layouts": [
         {
-          "name": "general-grid",
+          "name": "viewgrid",
+          "component": "GeneralGrid",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "viewlist",
           "component": "GeneralGrid",
           "itemsPerRow": {
             "desktop": 4,
