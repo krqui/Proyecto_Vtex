@@ -338,9 +338,9 @@
         "letterSpacing": "0"
       },
       "heading-3": {
-        "fontFamily": "opensans,Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
-        "fontWeight": "700",
-        "fontSize": "1.75rem",
+        "fontFamily": "Wolf Sans",
+        "fontWeight": "500",
+        "fontSize": "12px",
         "textTransform": "initial",
         "letterSpacing": "0"
       },

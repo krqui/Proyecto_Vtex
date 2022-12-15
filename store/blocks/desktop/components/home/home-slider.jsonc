@@ -1,5 +1,6 @@
 {
   "image#home__slider--one": {
+    "title":"Imagen clickeable 1",
     "props": {
       "src": "assets/img/global__home-item--pic1.png",
       "link": {
@@ -11,6 +12,7 @@
     }
   },
   "image#home__slider--two": {
+    "title":"Imagen clickeable 2",
     "props": {
       "src": "assets/img/global__home-item--pic2.png",
       "link": {
@@ -22,6 +24,7 @@
     }
   },
   "image#home__slider--three": {
+    "title":"Imagen clickeable 3",
     "props": {
       "src": "assets/img/global__home-item--pic3.png",
       "link": {
@@ -33,6 +36,7 @@
     }
   },
   "image#home__slider--four": {
+    "title":"Imagen clickeable 4",
     "props": {
       "src": "assets/img/global__home-item--pic4.png",
       "link": {
@@ -44,6 +48,7 @@
     }
   },
   "image#home__slider--five": {
+    "title":"Imagen clickeable 5",
     "props": {
       "src": "assets/img/global__home-item--pic5.png",
       "link": {
@@ -55,6 +60,7 @@
     }
   },
   "image#home__slider--six": {
+    "title":"Imagen clickeable 6",
     "props": {
       "src": "assets/img/global__home-item--pic6.png",
       "link": {
@@ -66,6 +72,7 @@
     }
   },
   "image#home__slider--seven": {
+    "title":"Imagen clickeable 7",
     "props": {
       "src": "assets/img/global__home-item--pic7.png",
       "link": {
@@ -77,6 +84,7 @@
     }
   },
   "image#home__slider--eight": {
+    "title":"Imagen clickeable 8",
     "props": {
       "src": "assets/img/global__home-item--pic8.png",
       "link": {
@@ -88,6 +96,7 @@
     }
   },
   "image#home__slider--nine": {
+    "title":"Imagen clickeable 9",
     "props": {
       "src": "assets/img/global__home-item--pic9.png",
       "link": {
@@ -99,6 +108,7 @@
     }
   },
   "image#home__slider--ten": {
+    "title":"Imagen clickeable 10",
     "props": {
       "src": "assets/img/global__home-item--pic10.png",
       "link": {
@@ -110,6 +120,7 @@
     }
   },
   "image#home__slider--eleventh": {
+    "title":"Imagen clickeable 11",
     "props": {
       "src": "assets/img/global__home-item--pic11.png",
       "link": {
@@ -121,6 +132,7 @@
     }
   },
   "image#home__slider--twelve": {
+    "title":"Imagen clickeable 12",
     "props": {
       "src": "assets/img/global__home-item--pic12.png",
       "link": {
@@ -132,6 +144,7 @@
     }
   },
   "image#home__slider--thirteen": {
+    "title":"Imagen clickeable 13",
     "props": {
       "src": "assets/img/global__home-item--pic13.png",
       "link": {
@@ -143,6 +156,7 @@
     }
   },
   "image#home__slider--fourteen": {
+    "title":"Imagen clickeable 14",
     "props": {
       "src": "assets/img/global__home-item--pic14.png",
       "link": {
@@ -154,6 +168,7 @@
     }
   },
   "image#home__slider--fifteen": {
+    "title":"Imagen clickeable 15",
     "props": {
       "src": "assets/img/global__home-item--pic15.png",
       "link": {
@@ -165,6 +180,7 @@
     }
   },
   "image#home__slider--sixteen": {
+    "title":"Imagen clickeable 16",
     "props": {
       "src": "assets/img/global__home-item--pic16.png",
       "link": {
@@ -176,14 +192,7 @@
     }
   },
 
-  "rich-text": {
-    "props": {
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
-  },
+ 
 
   "list-context.image-list#desktop__slider-main": {
     "title": "Preloaded list of images for desktop" /*EL CONTENEDOR MAYOR EN HTML ES EL QUE tiene DATA-TEST-id*/,
@@ -192,71 +201,81 @@
       "preload": true,
       "images": [
         {
-          "image": "assets/img/banner1.webp",
+          "image": "assets/img/desktop__slider-main--1.webp",
           "description": "Slide 1",
+          "title":"Imagen 1 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
           }
         },
         {
-          "image": "assets/img/banner2.webp",
+          "image": "assets/img/desktop__slider-main--2.webp",
           "description": "Slide 2",
+          "title":"Imagen 2 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/listos-para-el-mundial"
           }
         },
         {
-          "image": "assets/img/banner3.webp",
+          "image": "assets/img/desktop__slider-main--3.webp",
           "description": "Slide 3",
+          "title":"Imagen 3 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/celulares-y-accesorios/celulares"
           }
         },
         {
-          "image": "assets/img/banner4.webp",
+          "image": "assets/img/desktop__slider-main--4.webp",
           "description": "Slide 4",
+          "title":"Imagen 4 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/coleccion-renueva-tu-pc"
           }
         },
         {
-          "image": "assets/img/banner5.webp",
+          "image": "assets/img/desktop__slider-main--5.webp",
           "description": "Slide 5",
+          "title":"Imagen 5 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/laptops-monitores-y-tablets"
           }
         },
         {
-          "image": "assets/img/banner6.webp",
+          "image": "assets/img/desktop__slider-main--6.webp",
           "description": "Slide 6",
+          "title":"Imagen 6 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/blackweek-smarthome"
           }
         },
         {
-          "image": "assets/img/banner7.webp",
+          "image": "assets/img/desktop__slider-main--7.webp",
           "description": "Slide 7",
+          "title":"Imagen 7 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/vmps-y-accesorios"
           }
         },
         {
-          "image": "assets/img/banner8.webp",
+          "image": "assets/img/desktop__slider-main--8.webp",
           "description": "Slide 8",
+          "title":"Imagen 8 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
           }
         },
         {
-          "image": "assets/img/banner9.webp",
+          "image": "assets/img/desktop__slider-main--9.webp",
           "description": "Slide 9",
+          "title":"Imagen 9 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
           }
         },
         {
-          "image": "assets/img/banner10.webp",
+          "image": "assets/img/desktop__slider-main--10.webp",
           "description": "Slide 10",
+          "title":"Imagen 10 del slider principal en vista de escritorio",
           "link": {
             "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/collection-black-week"
           }

@@ -32,3 +32,13 @@
 .nameContainer--mobile__shelf-details {
     padding: 0px 0px;
 }
+
+.image--desktop__grid {
+    max-height: 200px;
+    height: 200px;
+    margin-bottom: 24px!important;
+}
+
+.imageContainer--desktop__grid {
+    height: 224px;
+}

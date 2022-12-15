@@ -1,17 +1,3 @@
 {
-    //"image#home__container--image":{
-    "image#home__image": {
-        /*"title": "Imagen de Home",
-        "props": {
-            "src":"assets/img/ecom.jpg",
-            //"maxWidth":600,
-            "title":"B2B Commerce",
-            "blockClass": "home__image",
-            "link": {
-                "url": "https://www.google.com",
-                "newTab": true,
-                "attributeNoFollow":true
-            }
-        }*/
-    }
+ 
 }

@@ -332,6 +332,10 @@
   margin-right: 20px;
 }
 
+.flexRow--global__search-results {
+  padding-top: 12px;
+}
+
 .flexRowContent--global__search-results
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   width: auto !important;
