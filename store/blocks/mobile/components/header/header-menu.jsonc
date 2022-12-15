@@ -1,6 +1,6 @@
 {
   "header-row#mobile__container-Img": {
-    "children": ["image#mobile__header__container-img"],
+    "children": ["image#mobile__header-container--img"],
     "props": {
       "blockClass": "mobile__container-Img"
     }

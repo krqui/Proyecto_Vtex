@@ -1,31 +1,3 @@
 {
-  "link#home__link--ancla": {
-    "props": {
-      "href": "/ofertas",
-      "label": "Ofertas aqui",
-      "displayMode":"anchor"
-      /*"scrollTo": "#footer"*/
-    }
-  },
-  "link#home__link--info": {
-    "children": [
-      "flex-layout.row#home__link--info"
-    ],
-    "props": {
-      "href": "/",
-      "scrollTo": "#footer",
-      "displayMode": "button"
-    }
-  },
-  "flex-layout.row#home__link--info" : {
-    "children":[
-      "icon#home__link--text",
-      "image#home__image"
-    ]
-  },
-  "icon#home__link--text":{
-    "props": {
-      "id":"hpa-cart"
-    }
-  }
+  
 }

@@ -169,7 +169,7 @@
   "gallery-layout-option#viewlist": {
     "children": ["image#viewlist"],
     "props": {
-      "name": "Switch to List Layout",
+      "name": "viewlist",
       "blockClass": "viewlist"
     }
   },
@@ -210,11 +210,16 @@
     }
   },
   "flex-layout.col#global__search-results--content": {
-    "children": ["search-content#results__content--products"],
+    "children": ["flex-layout.row#global__search-results--content"],
     "props": {
       "width": "auto",
       "blockClass":"global__content-col"
     }
+  },
+  "flex-layout.row#global__search-results--content":{
+    "children":[
+      "search-content#results__content--products"
+    ]
   },
   "search-content#results__content--products": {
     "blocks": ["gallery#department", "not-found"]
@@ -235,13 +240,45 @@
           "name": "viewlist",
           "component": "GeneralGrid",
           "itemsPerRow": {
-            "desktop": 4,
+            "desktop": 1,
             "tablet": 3,
             "phone": 2
           }
         }
       ],
-      "GeneralGrid": "product-summary.shelf"
+      "GeneralGrid": "product-summary.shelf#global__grid"
+    }
+  },
+  "product-summary.shelf#global__grid":{
+    "children":[
+      "product-summary-image#desktop__grid",
+      "product-summary-brand",
+      "product-summary-name",
+      "rich-text#desktop__grid-onlyweb",
+      "product-list-price",
+      "product-selling-price",
+      "rich-text#desktop__grid-seller"
+    ]
+  },
+  "product-summary-image#desktop__grid":{
+    "props":{
+      "blockClass":"desktop__grid"
+    }
+  },
+  "rich-text#desktop__grid-onlyweb":{
+    "props":{
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "font":"t-heading-3",
+      "text":"Precio Exclusivo Web"
+    }
+  },
+  "rich-text#desktop__grid-seller":{
+    "props":{
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "font":"t-heading-3",
+      "text":"Vendido por Coolbox"
     }
   }
 }

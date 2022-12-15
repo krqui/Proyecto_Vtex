@@ -1,8 +1,8 @@
 {
-  "image#header__container--image--desktop": {
-    "title": "Imagen header desktop",
+  "image#desktop__header-container--img": {
+    "title": "Imagen del header en vista de escritorio",
     "props": {
-      "src": "assets/img/BannerTopDesk.webp",
+      "src": "assets/img/desktop__header-container--img.webp",
       "title": "Foto image container desktop",
       "link": {
         "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/ofertas",

@@ -11,23 +11,20 @@
       "flex-layout.row#desktop__slider-product--one",
       "flex-layout.row#desktop__slider-product--two",
       "flex-layout.row#desktop__section-discountsThree",
-      "flex-layout.row#desktop__slider-product--three", 
+      "flex-layout.row#desktop__slider-product--three",
       "flex-layout.row#desktop__slider-product--four",
-      "flex-layout.row#desktop__container-benefits"   
-      /*,
-      "flex-layout.row#desktop__home-section--products"*/
-
-      //"list-context.image-list#desktop__slider--products"
+      "flex-layout.row#desktop__container-benefits"
     ],
     "props": {
       "blockClass": "desktop__home"
     }
   },
   "list-context.image-list#desktop__slider--products": {
-    "title": "Slider de productos",
+    "title": "Slider de productos en el home",
     "children": ["slider-layout#desktop__slider--products"]
   },
   "slider-layout#desktop__slider--products": {
+    "title": " Configuracion del slider de productos",
     "props": {
       "title": "Slider de productos",
       "itemsPerPage": {
@@ -38,97 +35,10 @@
       "fullWidth": false
     }
   },
-  "flex-layout.row#desktop__home-section--products": {
-    "children": ["flex-layout.col#desktop__home-section--products"],
-    "props": {
-      "blockClass": "desktop__home-section--products"
-    }
-  },
 
-  "flex-layout.col#desktop__home-section--products": {
-    "children": ["flex-layout.row#desktop__home-section-subproducts"],
-
-    "props": {
-      "blockClass": "desktop__home-section--products"
-    }
-  },
-  "flex-layout.row#desktop__home-section-subproducts": {
-    "children": ["flex-layout.col#desktop__home-section-subproducts"]
-  },
-  "flex-layout.col#desktop__home-section-subproducts": {
-    /*conste que el search es el tercer children. aun faltan los dos restantes anteriores.*/
-    "children": ["flex-layout.row#desktop__home-blockcontent-white"],
-    "props": {
-      "blockClass": "desktop__home-section-subproducts"
-    }
-  },
-  "flex-layout.row#desktop__home-blockcontent-white": {
-    "children": ["flex-layout.col#desktop__home-carousel"],
-    "props": {
-      "blockClass": "desktop__home-blockcontent-white"
-    }
-  },
-  "flex-layout.col#desktop__home-carousel": {
-    //ACA DEBEMOS IMPLEMENTAR EL SLIDER
-    //"children": ["product-summary.shelf"],
-    "children": ["search-result-layout.customQuery#home__search"],
-    "props": {
-      "blockClass": "desktop__home-carousel"
-    }
-  },
-
-  "search-result-layout.customQuery#home__search": {
-    "props": {
-      "querySchema": {
-        //"skusFilter": "ALL",
-        "skusFilter": "ALL_AVAILABLE",
-        //"simulationBehavior": "skip"
-        "simulationBehavior": "default"
-      }
-    },
-    "blocks": [
-      "search-result-layout.desktop#home__search--desktop",
-      "search-result-layout.mobile#home__search--mobile",
-      "search-not-found-layout"
-    ]
-  },
-  "search-result-layout.desktop#home__search--desktop": {
-    "props": {
-      "hiddenFacets": {
-        "brands": true
-      },
-      "blockClass": "home__search--desktop"
-    },
-    "children": ["flex-layout.row#home__results"]
-  },
-  "search-result-layout.mobile#home__search--mobile": {
-    "children": ["flex-layout.row#home__results"]
-  },
-  "flex-layout.row#home__results": {
-    "children": ["flex-layout.col#home__results--search"]
-  },
-  "flex-layout.col#home__results--search": {
-    "children": ["search-content#home__results--search"]
-  },
-  "search-content#home__results--search": {
-    "blocks": [
-      "gallery",
-      //"list-context.product-list#demo1",
-      "not-found"
-    ],
-    "props": {
-      "blockClass": "home__results--search"
-    }
-  },
-  "gallery": {
-    "blocks": ["product-summary.shelf#global__shelf"],
-    "props": {
-      "blockClass": "gallery"
-    }
-  },
-  
 
   "flex-layout.row#desktop__slider-product--one": {
+    "title":"Contenedor de slider de products numero 1",
     "children": ["list-context.product-list#desktop__slider-product--one"],
     "props": {
       "blockClass": "desktop__slider-product--one"
@@ -137,7 +47,6 @@
   "list-context.product-list#desktop__slider-product--one": {
     "blocks": ["product-summary.shelf#global__shelf"],
     "children": [
-      //"slider-layout#desktop__slider--products"
       "slider-layout#desktop__slider-product--one"
     ],
     "props": {
@@ -145,9 +54,11 @@
     }
   },
   "product-summary.shelf#global__shelf": {
+    "title":"Contenedor de los productos",
     "children": ["flex-layout.col#global__shelf"]
   },
   "slider-layout#desktop__slider-product--one": {
+    "title":" Configuracion del slider de productos numero 1",
     "props": {
       "itemsPerPage": {
         "desktop": 5,
@@ -164,6 +75,7 @@
     }
   },
   "flex-layout.col#global__shelf": {
+    "title":"Contenedor de propiedades del producto",
     "children": [
       "flex-layout.col#global__shelf-image",
       "flex-layout.col#global__shelf-details"
@@ -173,12 +85,14 @@
     }
   },
   "flex-layout.col#global__shelf-image": {
+    "title":"Contenedor de la imagen del producto",
     "children": ["product-summary-image#global__shelf"],
     "props": {
       "blockClass": "global__shelf-image"
     }
   },
   "product-summary-image#global__shelf": {
+    "title": "Imagen del producto",
     "props": {
       "showBadge": true,
       "aspectRatio": "1:1",
@@ -186,6 +100,7 @@
     }
   },
   "flex-layout.col#global__shelf-details": {
+    "title":"Contenedor de detalles del producto",
     "children": [
       "product-summary-name",
       "product-summary-description#global__price",
@@ -199,45 +114,54 @@
     }
   },
   "product-summary-description#global__price": {
+    "title":"Descripcion del producto",
     "props": {
       "blockClass": "global__price"
     }
   },
   "rich-text#global__price": {
+    "title":"Precio exclusivo web",
     "props": {
       "text": "Precio Exclusivo Web",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
+      "font": "t-heading-3",
       "blockClass": "global__price"
     }
   },
   "flex-layout.row#global__price": {
+    "title":"Contenedor del precio del producto",
     "children": ["product-list-price#global__price", "product-selling-price"],
     "props": {
       "blockClass": "global__price"
     }
   },
   "product-list-price#global__price": {
+    "title":"Precio de lista del producto",
     "props": {
       "blockClass": "global__price"
     }
   },
+
+
   "flex-layout.row#desktop__slider-product--two": {
-    "children": [
-      "flex-layout.col#desktop__slider-producttwo--title"
-    ],
+    "title":"Contenedor de slider de products numero 2",
+    "children": ["flex-layout.col#desktop__slider-producttwo--title"],
     "props": {
       "blockClass": "desktop__slider-product--two"
     }
   },
   "flex-layout.col#desktop__slider-producttwo--title": {
-    "children": ["rich-text#desktop__producttwo-title--container",
-    "flex-layout.row#desktop__slider-product--one"],
+    "children": [
+      "rich-text#desktop__producttwo-title--container",
+      "flex-layout.row#desktop__slider-product--one"
+    ],
     "props": {
       "blockClass": "desktop__slider-producttwo--title"
     }
   },
   "rich-text#desktop__producttwo-title--container": {
+    "title":"Subtitulo ultimos productos visitados",
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
@@ -246,33 +170,34 @@
     }
   },
   "flex-layout.col#desktop__slider-producttwo--carousel": {
-    "children":[
-      "flex-layout.row#desktop__slider-product--one"
-    ]
-
+    "title":"Productos del slider de productos 2",
+    "children": ["flex-layout.row#desktop__slider-product--one"]
   },
   "flex-layout.row#desktop__slider-product--three": {
+    "title":"Contenedor de slider de products numero 3",
     "children": ["list-context.product-list#desktop__slider-product--one"],
     "props": {
       "blockClass": "desktop__slider-product--three"
     }
   },
   "flex-layout.row#desktop__slider-product--four": {
-    "children": [
-      "flex-layout.col#desktop__slider-productfour--title"
-    ],
+    "title":"Contenedor de slider de products numero 4",
+    "children": ["flex-layout.col#desktop__slider-productfour--title"],
     "props": {
       "blockClass": "desktop__slider-product--four"
     }
   },
   "flex-layout.col#desktop__slider-productfour--title": {
-    "children": ["rich-text#desktop__productfour-title--container",
-    "flex-layout.row#desktop__slider-product--one"],
-    "props":{
+    "children": [
+      "rich-text#desktop__productfour-title--container",
+      "flex-layout.row#desktop__slider-product--one"
+    ],
+    "props": {
       "blockClass": "desktop__slider-productfour--title"
     }
   },
   "rich-text#desktop__productfour-title--container": {
+    "title":"Subtitulo lo mas vendido",
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
@@ -280,12 +205,16 @@
       "blockClass": "desktop__productfour-title--container"
     }
   },
-  "flex-layout.row#desktop__container-benefits" :{
-    "children":["flex-layout.col#desktop__benefits"]
+
+
+  "flex-layout.row#desktop__container-benefits": {
+    "title":"Contenedor de los beneficios",
+    "children": ["flex-layout.col#desktop__benefits"]
   },
-  "flex-layout.col#desktop__benefits":{
-    "props":{
-      "blockClass":"flex-layout.col#desktop__benefits"
+  "flex-layout.col#desktop__benefits": {
+    "title":"Beneficios de comprar en Coolbox",
+    "props": {
+      "blockClass": "flex-layout.col#desktop__benefits"
     }
   }
 }

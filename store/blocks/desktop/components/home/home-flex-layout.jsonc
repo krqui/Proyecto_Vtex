@@ -1,5 +1,6 @@
 {
   "flex-layout.row#desktop__section-temporal--one": {
+    "title": "Primera fila de elementos clickeables",
     "children": [
       "flex-layout.col#global__section-two--item1",
       "flex-layout.col#global__section-two--item2",
@@ -12,10 +13,11 @@
     ],
     "props": {
       "preserveLayoutOnMobile": true,
-      "blockClass":"desktop__section-temporal--one"
+      "blockClass": "desktop__section-temporal--one"
     }
   },
   "flex-layout.row#home__section--two": {
+    "title": "Segunda fila de elementos clickeables",
     "children": [
       "flex-layout.col#global__section-three--item9",
       "flex-layout.col#global__section-three--item10",
@@ -28,16 +30,19 @@
     ],
     "props": {
       "preserveLayoutOnMobile": true,
-      "blockClass":"desktop__section-temporal--two"
+      "blockClass": "desktop__section-temporal--two"
     }
   },
+
   "flex-layout.col#global__section-two--item1": {
+    "title": "Contenedor de la imagen clickeable 1",
     "children": ["image#home__slider--one"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-two--item2": {
+    "title": "Contenedor de la imagen clickeable 2",
     "children": ["image#home__slider--two"],
     "props": {
       "width": "20px",
@@ -45,86 +50,98 @@
     }
   },
   "flex-layout.col#global__section-two--item3": {
+    "title": "Contenedor de la imagen clickeable 3",
     "children": ["image#home__slider--three"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-two--item4": {
+    "title": "Contenedor de la imagen clickeable 4",
     "children": ["image#home__slider--four"],
     "props": {
       "width": "20px"
     }
   },
-
   "flex-layout.col#global__section-two--item5": {
+    "title": "Contenedor de la imagen clickeable 5",
     "children": ["image#home__slider--five"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-two--item6": {
+    "title": "Contenedor de la imagen clickeable 6",
     "children": ["image#home__slider--six"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-two--item7": {
+    "title": "Contenedor de la imagen clickeable 7",
     "children": ["image#home__slider--seven"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-two--item8": {
+    "title": "Contenedor de la imagen clickeable 8",
     "children": ["image#home__slider--eight"],
     "props": {
       "width": "20px"
     }
   },
-
   "flex-layout.col#global__section-three--item9": {
+    "title": "Contenedor de la imagen clickeable 9",
     "children": ["image#home__slider--nine"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-three--item10": {
+    "title": "Contenedor de la imagen clickeable 10",
     "children": ["image#home__slider--ten"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-three--item11": {
+    "title": "Contenedor de la imagen clickeable 11",
     "children": ["image#home__slider--eleventh"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-three--item12": {
+    "title": "Contenedor de la imagen clickeable 12",
     "children": ["image#home__slider--twelve"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-three--item13": {
+    "title": "Contenedor de la imagen clickeable 13",
     "children": ["image#home__slider--thirteen"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-three--item14": {
+    "title": "Contenedor de la imagen clickeable 14",
     "children": ["image#home__slider--fourteen"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-three--item15": {
+    "title": "Contenedor de la imagen clickeable 15",
     "children": ["image#home__slider--fifteen"],
     "props": {
       "width": "20px"
     }
   },
   "flex-layout.col#global__section-three--item16": {
+    "title": "Contenedor de la imagen clickeable 16",
     "children": ["image#home__slider--sixteen"],
     "props": {
       "width": "20px"
@@ -132,6 +149,7 @@
   },
 
   "flex-layout.row#desktop__section-discountsOne": {
+    "title": "Contenedor de imagenes de descuentos UNO",
     "children": [
       "image#desktop__section-discountsOne--one",
       "image#desktop__section-discountsOne--two",
@@ -142,6 +160,7 @@
     }
   },
   "image#desktop__section-discountsOne--one": {
+    "title": "Descuento 1 en descuentos UNO",
     "props": {
       "src": "assets/img/desktop__section-discountsOne--one.webp",
       "link": {
@@ -153,6 +172,7 @@
     }
   },
   "image#desktop__section-discountsOne--two": {
+    "title": "Descuento 2 en descuentos UNO",
     "props": {
       "src": "assets/img/desktop__section-discountsOne--two.webp",
       "link": {
@@ -164,6 +184,7 @@
     }
   },
   "image#desktop__section-discountsOne--three": {
+    "title": "Descuento 3 en descuentos UNO",
     "props": {
       "src": "assets/img/desktop__section-discountsOne--three.webp",
       "link": {
@@ -175,6 +196,7 @@
     }
   },
   "flex-layout.row#desktop__section-discountsTwo": {
+    "title": "Contenedor de imagenes de descuentos DOS",
     "children": [
       "image#desktop__section-discountsTwo--one",
       "image#desktop__section-discountsTwo--two"
@@ -184,6 +206,7 @@
     }
   },
   "image#desktop__section-discountsTwo--one": {
+    "title": "Descuento 1 en descuentos DOS",
     "props": {
       "src": "assets/img/desktop__section-discountsTwo--one.webp",
       "link": {
@@ -195,6 +218,7 @@
     }
   },
   "image#desktop__section-discountsTwo--two": {
+    "title": "Descuento 2 en descuentos DOS",
     "props": {
       "src": "assets/img/desktop__section-discountsTwo--two.webp",
       "link": {
@@ -205,7 +229,9 @@
       "blockClass": "desktop__section-discountsTwo--two"
     }
   },
+
   "flex-layout.row#desktop__section-discountsThree": {
+    "title": "Contenedor de imagenes de descuentos TRES",
     "children": [
       "image#desktop__section-discountsThree--one",
       "image#desktop__section-discountsThree--two",
@@ -216,6 +242,7 @@
     }
   },
   "image#desktop__section-discountsThree--one": {
+    "title": "Descuento 1 en descuentos TRES",
     "props": {
       "src": "assets/img/desktop__section-discountsThree--one.webp",
       "link": {
@@ -227,6 +254,7 @@
     }
   },
   "image#desktop__section-discountsThree--two": {
+    "title": "Descuento 2 en descuentos TRES",
     "props": {
       "src": "assets/img/desktop__section-discountsThree--two.webp",
       "link": {
@@ -238,6 +266,7 @@
     }
   },
   "image#desktop__section-discountsThree--three": {
+    "title": "Descuento 3 en descuentos TRES",
     "props": {
       "src": "assets/img/desktop__section-discountsThree--three.webp",
       "link": {
@@ -250,10 +279,8 @@
   },
 
 
-
-
-
   "flex-layout.row#desktop__section-smartphones": {
+    "title": "Contenedor de marcas de celulares",
     "children": [
       "flex-layout.col#desktop__section-smartphones--title",
       "flex-layout.col#desktop__section-smartphones--xiaomi",
@@ -267,51 +294,57 @@
     }
   },
   "flex-layout.col#desktop__section-smartphones--title": {
-    "children": [
-      "rich-text#desktop__section-smartphones--title"
-    ],
+    "title":"Contenedor del titul de la seccion de marcas de celulares",
+    "children": ["rich-text#desktop__section-smartphones--title"],
     "props": {
       "blockClass": "desktop__section-smartphones--title"
     }
   },
   "flex-layout.col#desktop__section-smartphones--xiaomi": {
+    "title":"Contenedor de la marca xiaomi",
     "children": ["link#desktop__section-smartphones--xiaomi"],
     "props": {
-      "blockClass":"desktop__section-smartphones--column"
+      "blockClass": "desktop__section-smartphones--column"
     }
   },
   "flex-layout.col#desktop__section-smartphones--apple": {
+    "title":"Contenedor de la marca apple",
     "children": ["link#desktop__section-smartphones--apple"],
     "props": {
-      "blockClass":"desktop__section-smartphones--column"
+      "blockClass": "desktop__section-smartphones--column"
     }
   },
   "flex-layout.col#desktop__section-smartphones--samsung": {
+    "title":"Contenedor de la marca samsung",
     "children": ["link#desktop__section-smartphones--samsung"],
     "props": {
-      "blockClass":"desktop__section-smartphones--column"
+      "blockClass": "desktop__section-smartphones--column"
     }
   },
   "flex-layout.col#desktop__section-smartphones--motorola": {
+    "title":"Contenedor de la marca motorola",
     "children": ["link#desktop__section-smartphones--motorola"],
     "props": {
-      "blockClass":"desktop__section-smartphones--column"
+      "blockClass": "desktop__section-smartphones--column"
     }
   },
   "flex-layout.col#desktop__section-smartphones--huawei": {
+    "title":"Contenedor de la marca huawei",
     "children": ["link#desktop__section-smartphones--huawei"],
     "props": {
-      "blockClass":"desktop__section-smartphones--column"
+      "blockClass": "desktop__section-smartphones--column"
     }
   },
 
   "rich-text#desktop__section-smartphones--title": {
+    "title":"Texto de Celulares",
     "props": {
       "text": "Celulares:",
       "blockClass": "desktop__section-smartphones--title"
     }
   },
   "link#desktop__section-smartphones--xiaomi": {
+    "title":"Marca xiaomi",
     "props": {
       "href": "/xiaomi",
       "label": "Xiaomi",
@@ -323,6 +356,7 @@
     }
   },
   "link#desktop__section-smartphones--apple": {
+    "title":"Marca apple",
     "props": {
       "href": "/apple",
       "label": "Apple",
@@ -334,6 +368,7 @@
     }
   },
   "link#desktop__section-smartphones--samsung": {
+    "title":"Marca samsung",
     "props": {
       "href": "/samsung",
       "label": "Samsung",
@@ -341,10 +376,14 @@
       "buttonProps": {
         "variant": "secondary"
       },
-      "blockClass": ["desktop__section-smartphones-link", "desktop__section-smartphones-samsung" 
-    ]}
+      "blockClass": [
+        "desktop__section-smartphones-link",
+        "desktop__section-smartphones-samsung"
+      ]
+    }
   },
   "link#desktop__section-smartphones--motorola": {
+    "title":"Marca motorola",
     "props": {
       "href": "/motorola",
       "label": "Motorola",
@@ -352,10 +391,14 @@
       "buttonProps": {
         "variant": "secondary"
       },
-      "blockClass": ["desktop__section-smartphones-link", "desktop__section-smartphones-samsung"]
+      "blockClass": [
+        "desktop__section-smartphones-link",
+        "desktop__section-smartphones-samsung"
+      ]
     }
   },
   "link#desktop__section-smartphones--huawei": {
+    "title":"Marca huawei",
     "props": {
       "href": "/huawei",
       "label": "Huawei",
