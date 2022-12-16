@@ -346,3 +346,26 @@
   min-width: 240px;
   margin-right: 10px;
 }
+
+.flexRowContent--desktop__list {
+  justify-content: space-between !important;
+}
+
+.flexCol--desktop__productlist-image {
+  width: 180px !important;
+  height: 200px !important;
+  margin: 10px 0 0 10px;
+  margin-right: 10px;
+}
+
+.flexCol--desktop__productlist-text {
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 440px !important;
+}
+
+.flexRowContent--desktop__productlist-text-row--title {
+  justify-content: flex-start;
+  align-items: center;
+}

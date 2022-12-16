@@ -206,20 +206,18 @@
     "children": ["filter-navigator.v3"],
     "props": {
       "width": "auto",
-      "blockClass":"global__filter-col"
+      "blockClass": "global__filter-col"
     }
   },
   "flex-layout.col#global__search-results--content": {
     "children": ["flex-layout.row#global__search-results--content"],
     "props": {
       "width": "auto",
-      "blockClass":"global__content-col"
+      "blockClass": "global__content-col"
     }
   },
-  "flex-layout.row#global__search-results--content":{
-    "children":[
-      "search-content#results__content--products"
-    ]
+  "flex-layout.row#global__search-results--content": {
+    "children": ["search-content#results__content--products"]
   },
   "search-content#results__content--products": {
     "blocks": ["gallery#department", "not-found"]
@@ -238,7 +236,7 @@
         },
         {
           "name": "viewlist",
-          "component": "GeneralGrid",
+          "component": "ListGrid",
           "itemsPerRow": {
             "desktop": 1,
             "tablet": 3,
@@ -246,11 +244,12 @@
           }
         }
       ],
-      "GeneralGrid": "product-summary.shelf#global__grid"
+      "GeneralGrid": "product-summary.shelf#global__grid",
+      "ListGrid": "product-summary.shelf#global__list"
     }
   },
-  "product-summary.shelf#global__grid":{
-    "children":[
+  "product-summary.shelf#global__grid": {
+    "children": [
       "product-summary-image#desktop__grid",
       "product-summary-brand",
       "product-summary-name",
@@ -260,25 +259,205 @@
       "rich-text#desktop__grid-seller"
     ]
   },
-  "product-summary-image#desktop__grid":{
-    "props":{
-      "blockClass":"desktop__grid"
+  "product-summary-image#desktop__grid": {
+    "props": {
+      "blockClass": "desktop__grid"
     }
   },
-  "rich-text#desktop__grid-onlyweb":{
-    "props":{
-      "textAlignment":"CENTER",
-      "textPosition":"CENTER",
-      "font":"t-heading-3",
-      "text":"Precio Exclusivo Web"
+  "rich-text#desktop__grid-onlyweb": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "text": "Precio Exclusivo Web"
     }
   },
-  "rich-text#desktop__grid-seller":{
+  "rich-text#desktop__grid-seller": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "text": "Vendido por Coolbox"
+    }
+  },
+  "product-summary.shelf#global__list": {
+    "children": ["flex-layout.row#global__list"],
+    "props": {
+      "blockClass": "global__list"
+    }
+  },
+  "flex-layout.row#global__list": {
+    "children": [
+      /*"product-summary-image#desktop__list",
+      "product-summary-brand",
+      "product-summary-name"*/
+      "flex-layout.col#global__list"
+    ]
+  },
+  "flex-layout.col#global__list": {
+    "children": ["flex-layout.row#desktop__list"]
+  },
+  "flex-layout.row#desktop__list": {
+    "children": [
+      "flex-layout.col#desktop__productlist-image",
+      "flex-layout.col#desktop__productlist-text"
+    ],
+    "props": {
+      "blockClass": "desktop__list"
+    }
+  },
+  "flex-layout.col#desktop__productlist-image": {
+    "children": ["product-summary-image#desktop__productlist-image"],
     "props":{
+      "blockClass":"desktop__productlist-image"
+    }
+  },
+  "product-summary-image#desktop__productlist-image":{
+    "props":{
+      "blockClass":"desktop__productlist-image"
+    }
+  },
+  "flex-layout.col#desktop__productlist-text":{
+    "children":[
+      "flex-layout.row#desktop__productlist-text-row--title",
+      "product-summary-name#desktop__productlist-text-grid",
+      "rich-text#desktop__productlist-seller",
+      "menu#desktop__productlist-custom"
+      //"flex-layout.row#desktop__productlist-custom"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-text"
+    }
+  },
+  "flex-layout.row#desktop__productlist-text-row--title":{
+    "children":[
+      "product-summary-brand#desktop__productlist-text-row--title",
+      "product-rating-summary"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-text-row--title"
+    }
+  },
+  "product-summary-brand#desktop__productlist-text-row--title":{
+    "props":{
+      "blockClass":"desktop__productlist-text-row--title"
+    }
+  },
+  "product-summary-name#desktop__productlist-text-grid":{
+    "props":{
+      "blockClass":"desktop__productlist-text-grid"
+    }
+
+  },
+  "rich-text#desktop__productlist-seller":{
+    "props":{
+      "text":"Vendido por Coolbox",
       "textAlignment":"CENTER",
       "textPosition":"CENTER",
-      "font":"t-heading-3",
-      "text":"Vendido por Coolbox"
+      "blockClass":"desktop__productlist-seller"
+    }
+  },
+  /*"flex-layout.row#desktop__productlist-custom":{
+    "children":[
+      "menu#desktop__productlist-custom"
+
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-custom"
+    }
+  },*/
+  "menu#desktop__productlist-custom":{
+    "children":[
+      "menu-item#desktop__productlist-custom--1",
+      "menu-item#desktop__productlist-custom--2",
+      "menu-item#desktop__productlist-custom--3",
+      "menu-item#desktop__productlist-custom--4",
+      "menu-item#desktop__productlist-custom--5",
+      "rich-text#desktop__productlist-custom--link"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-custom"
+    }
+  },
+  "menu-item#desktop__productlist-custom--1":{
+    "props": {
+      "id": "custom-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "respantalla",
+        "text": "Resolución de pantalla:"
+      },
+      "blockClass":"desktop__productlist-custom--1"
+    }
+  },
+  "menu-item#desktop__productlist-custom--2":{
+    "props": {
+      "id": "custom-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "dualSIM",
+        "text": "Dual SIM:"
+      },
+      "blockClass":"desktop__productlist-custom--2"
+    }
+  },
+  "menu-item#desktop__productlist-custom--3":{
+    "props": {
+      "id": "custom-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "cámaraPrincipal",
+        "text": "Cámara principal:"
+      },
+      "blockClass":"desktop__productlist-custom--3"
+    }
+  },
+  "menu-item#desktop__productlist-custom--4":{
+    "props": {
+      "id": "custom-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "cámaraFrontal",
+        "text": "Cámara frontal:"
+      },
+      "blockClass":"desktop__productlist-custom--4"
+    }
+  },
+  "menu-item#desktop__productlist-custom--5":{
+    "props": {
+      "id": "custom-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "sizeScreen",
+        "text": "Tamaño de pantalla:"
+      },
+      "blockClass":"desktop__productlist-custom--5"
+    }
+  },
+  "rich-text#desktop__productlist-custom--link":{
+    "props":{
+      "text":"[Ver más características](https://diegoantonio--itgloberspartnercl.myvtex.com/electrodomesticos/product)",
+      "blockClass":"desktop__productlist-custom--link"
     }
   }
 }

@@ -174,3 +174,9 @@
   font-size: 13px;
   font-weight: 200;
 }
+
+
+.gallery--viewlist {
+  background-color: #fff;
+  margin-top: 2px;
+}
