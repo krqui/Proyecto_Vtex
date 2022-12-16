@@ -1,5 +1,5 @@
-.imageElementLink--mobile__header__container-img{
-  width:100%;
+.imageElementLink--mobile__header__container-img {
+  width: 100%;
 }
 
 .imageElement--mobile__header__container-img {
@@ -8,30 +8,29 @@
 
 .container {
   max-width: none;
-  padding:0;
+  padding: 0;
 }
-.logoLink--mobile__header-info--logo, .logoLink--tablet__header-info--logo {
+.logoLink--mobile__header-info--logo,
+.logoLink--tablet__header-info--logo {
   background-color: rgb(0, 0, 0); /*left:10px*/
 }
 
-.logoContainer--mobile__header-info--logo, .logoContainer--tablet__header-info--logo {
+.logoContainer--mobile__header-info--logo,
+.logoContainer--tablet__header-info--logo {
   margin-right: 2vw;
   padding: 4px;
 }
 
 .logoLink--header__top--logo {
   min-width: 210px;
-
 }
 
 .searchBarContainer {
   max-width: 607px;
   margin-left: 10px;
-  padding-top:0.4rem;
-  padding-bottom:0.5rem
+  padding-top: 0.4rem;
+  padding-bottom: 0.5rem;
 }
-
-
 
 .logoContainer--header__top__mobile--threedots {
   display: contents;
@@ -46,33 +45,44 @@
   padding: 0;
 }
 
-:global(.vtex-input-prefix__group){
+:global(.vtex-input-prefix__group) {
   border-radius: 8px;
   border-style: none;
-
 }
 
 .imageElement--desktop__slider-main--list {
   border-radius: 12px;
 }
 
-.imageElementLink--desktop__section-discountsOne--one, .imageElementLink--desktop__section-discountsOne--two, .imageElementLink--desktop__section-discountsOne--three, .imageElementLink--desktop__section-discountsTwo--one, .imageElementLink--desktop__section-discountsTwo--two {
-  display:flex;
-  justify-content:center
+.imageElementLink--desktop__section-discountsOne--one,
+.imageElementLink--desktop__section-discountsOne--two,
+.imageElementLink--desktop__section-discountsOne--three,
+.imageElementLink--desktop__section-discountsTwo--one,
+.imageElementLink--desktop__section-discountsTwo--two {
+  display: flex;
+  justify-content: center;
 }
 
-.imageElement--desktop__section-discountsOne--one, .imageElement--desktop__section-discountsOne--two, .imageElement--desktop__section-discountsOne--three, .imageElement--desktop__section-discountsTwo--one, .imageElement--desktop__section-discountsTwo--two {
+.imageElement--desktop__section-discountsOne--one,
+.imageElement--desktop__section-discountsOne--two,
+.imageElement--desktop__section-discountsOne--three,
+.imageElement--desktop__section-discountsTwo--one,
+.imageElement--desktop__section-discountsTwo--two {
   display: block;
   width: 100%;
   border-radius: 12px;
 }
 
 .discountInsideContainer {
-  left:0;
-  right:auto
+  left: 0;
+  right: auto;
 }
 
-.imageElement--imagen_oferta, .imageElement--imagen_delivery, .imageElement--imagen_smarthome, .imageElement--imagen_bicisyscooters, .imageElement--imagen_sorteo {
+.imageElement--imagen_oferta,
+.imageElement--imagen_delivery,
+.imageElement--imagen_smarthome,
+.imageElement--imagen_bicisyscooters,
+.imageElement--imagen_sorteo {
   margin-right: 6px;
 }
 
@@ -80,15 +90,12 @@
   padding: 0 16px 0 0;
 }
 
-
 .imageElement--desktop__footer-b1--colOne-facebook {
-
   margin-left: 4px;
   margin-right: 4px;
 }
 
 .imageElement--desktop__footer-b1--colOne-instagram {
-
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -103,7 +110,6 @@
   width: 108px;
   border: 1px solid #393939;
   border-radius: 4px;
-
 }
 
 .imageElement--tablet__lowermenu-two {
@@ -136,10 +142,8 @@
 }
 
 .imageElementLink--global__home-image:hover {
-  background-color: #dfe7ec
+  background-color: #dfe7ec;
 }
-
-
 
 .imageElement--mobile__footer-a3 {
   margin: 4px;
@@ -159,19 +163,50 @@
   margin: 10px 0 10px 0px;
 }
 
-
-
-@media (max-width:639px) {
+@media (max-width: 639px) {
   .imageElementLink--mobile__footer-a3--libros {
     margin-left: 18px;
   }
-  
 }
 
 @media (min-width: 639px) {
-  .logoContainer--mobile__header-info--logo 
-  {
+  .logoContainer--mobile__header-info--logo {
     display: none;
     background-color: blue;
+  }
+}
+
+.discountInsideContainer {
+  top:10px;
+  left: 0;
+  right: auto;
+  background-color: #e53d52 !important;
+  /*top: 22px;*/
+  font-weight: 600 !important;
+  height: 30px !important;
+  width: 50px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px !important;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .discountInsideContainer {
+    font-size: 19px;
+    height: 26px;
+    width: 93px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .discountInsideContainer {
+    width: 63px;
+  }
+  .productBrandName {
+    font-size: 10px;
+    float:none;
+    margin-right: 0;
   }
 }
