@@ -341,10 +341,15 @@
   width: auto !important;
 }
 
+
 .flexCol--global__filter-col {
   max-width: 500px;
   min-width: 240px;
   margin-right: 10px;
+}
+
+.flexCol--global__content-col {
+  background-color: #fff;
 }
 
 .flexRowContent--desktop__list {
@@ -368,4 +373,71 @@
 .flexRowContent--desktop__productlist-text-row--title {
   justify-content: flex-start;
   align-items: center;
+}
+
+.flexCol--desktop__productlist-options {
+  text-align: left !important;
+  min-width: 360px !important;
+}
+
+.flexColChild--desktop__productlist-options {
+  height: auto !important;
+}
+
+.flexColChild--desktop__productlist-options--price {
+  height: auto !important;
+}
+
+.flexRowContent--desktop__productlist-options--button {
+  padding-top: 5px;
+  margin-top: 10px;
+}
+
+.flexRowContent--desktop__productlist-options--checkout {
+  padding: 5px 0;
+  width: 98%;
+  flex-direction: row-reverse;
+}
+
+.flexColChild--desktop__productlist-options
+  :global(.vtex-product-price-1-x-listPrice)
+  :global(.vtex-product-price-1-x-currencyCode) {
+  color: #000000;
+}
+
+.flexColChild--desktop__productlist-options
+  :global(.vtex-product-price-1-x-listPrice)
+  :global(.vtex-product-price-1-x-currencyLiteral) {
+  color: #000000;
+}
+
+.flexColChild--desktop__productlist-options
+  :global(.vtex-product-price-1-x-listPrice)
+  :global(.vtex-product-price-1-x-currencyInteger) {
+  color: #000000;
+}
+
+.flexColChild--desktop__productlist-options
+  :global(.vtex-product-price-1-x-listPrice)
+  :global(.vtex-product-price-1-x-currencyGroup) {
+  color: #000000;
+}
+
+.flexRowContent--desktop__productlist-options--checkout :global(.vtex-button) {
+  background-color: #fff;
+  border-radius: 30px;
+  border-color: #d5222e;
+  border-width: 1px;
+  /*height: 36px!important;*/
+  height: 30px!important;
+}
+
+.flexRowContent--desktop__productlist-options--checkout :global(.vtex-button__label) {
+  padding: 0 !important;
+  width: 210px;
+}
+
+
+.flexRowContent--global__search-results--content .stretchChildrenWidth {
+  width: 1200px !important;
 }

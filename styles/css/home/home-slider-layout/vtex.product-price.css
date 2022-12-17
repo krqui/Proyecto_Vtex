@@ -40,3 +40,7 @@
 .currencyInteger--mobile__price {
   color: black;
 }
+
+.currencyContainer--desktop__productlist-options--sellingp {
+  font-size: 18px;
+}

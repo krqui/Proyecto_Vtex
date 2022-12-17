@@ -180,3 +180,16 @@
   background-color: #fff;
   margin-top: 2px;
 }
+
+:global(.vtex-slider__selector) {
+  background-color: #ec1b2e;;
+}
+
+:global(.vtex-slider__base-internal){
+  background-color: #ec1b2e;
+}
+
+.gallery--viewgrid {
+  margin-top: 2px;
+  width: 55vw;
+}

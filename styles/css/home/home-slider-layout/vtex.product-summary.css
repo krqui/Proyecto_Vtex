@@ -92,3 +92,42 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
+.clearLink--global__grid {
+  text-decoration: none;
+}
+
+.imageWrapper--global__grid {
+  width: 100% !important;
+}
+
+.image--global__grid {
+  margin-bottom: 24px !important;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.productBrandContainer--desktop__productlist-text-row--title {
+  padding-top: 5px !important;
+}
+
+.nameContainer--global__grid-description {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 0;
+  height: 68px;
+  padding-top: 5px !important;
+}
+
+.productBrand--global__grid-description {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-transform: capitalize;
+}

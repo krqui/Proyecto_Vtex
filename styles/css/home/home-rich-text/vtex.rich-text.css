@@ -406,3 +406,21 @@
   color: #d5222e;
   font-size: 15px;
 }
+
+.wrapper--desktop__productlist-options--priceWeb {
+  color: #d5222e;
+}
+
+.paragraph--desktop__productlist-options--priceWeb {
+  line-height: 1;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.paragraph--desktop__grid-seller {
+  color: #a4a4a4;
+  margin: 5px 0;
+  font-size: 12px;
+}
