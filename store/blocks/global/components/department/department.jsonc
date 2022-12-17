@@ -22,39 +22,6 @@
   "flex-layout.col#department__breadcrumb": {
     "children": ["breadcrumb.search"]
   },*/
-  /*"search-result-layout.mobile#mobile__electrodomesticos":{
-
-        "children": [
-            //"rich-text#mobile-response-electrodomesticos"
-            //"flex-layout.row#electrodomesticos__breadcrumb",
-            "flex-layout.row#electrodomesticos__results"
-        ]
-      },
-      "flex-layout.row#electrodomesticos__results":{
-        "title":"Electrodomesticos Results",
-        "children": [
-            "gallery-layout-switcher"//,
-            //"search-content#phone"
-        ]
-      },
-      "gallery-layout-switcher":{
-        "children":[
-            "gallery-layout-option#grid__two-columns",
-            "gallery-layout-option#grid__one-column"
-        ]
-      },
-      "gallery-layout-option#grid__two-columns": {
-        "props": {
-            "name": "grid-two-columns",
-            "blockClass": "grid__selector--two-columns"
-        }
-      },
-      "gallery-layout-option#grid__one-column":{
-        "props":{
-            "name":"grid-one-column",
-            "blockClass":"grid__selector--one-column"
-        }
-      }*/
 
   "search-result-layout.desktop#desktop__electrodomesticos": {
     "children": ["responsive-layout.desktop#desktop__department"]
@@ -153,6 +120,7 @@
       "blockClass": "desktop__department-infochange"
     }
   },
+
   "gallery-layout-option#viewgrid": {
     "children": ["image#viewgrid"],
     "props": {
@@ -180,19 +148,9 @@
     }
   },
 
-  "search-result-layout.mobile#mobile__electrodomesticos": {
-    "title": "mobile electrodomesticos ",
-    "children": [
-      "responsive-layout.tablet#tablet__department",
-      "responsive-layout.phone#phone__department"
-    ]
-  },
-  "responsive-layout.tablet#tablet__department": {
-    "children": ["flex-layout.row#global__search-results"]
-  },
-  "responsive-layout.phone#phone__department": {
-    "children": ["flex-layout.row#global__search-results"]
-  },
+
+
+
   "flex-layout.row#global__search-results": {
     "children": [
       "flex-layout.col#global__search-results--filter",
@@ -203,10 +161,15 @@
     }
   },
   "flex-layout.col#global__search-results--filter": {
-    "children": ["filter-navigator.v3"],
+    "children": ["filter-navigator.v3#global__filter"],
     "props": {
       "width": "auto",
       "blockClass": "global__filter-col"
+    }
+  },
+  "filter-navigator.v3#global__filter":{
+    "props":{
+      "blockClass":"global__filter"
     }
   },
   "flex-layout.col#global__search-results--content": {
@@ -217,7 +180,10 @@
     }
   },
   "flex-layout.row#global__search-results--content": {
-    "children": ["search-content#results__content--products"]
+    "children": ["search-content#results__content--products"],
+    "props":{
+      "blockClass":"global__search-results--content"
+    }
   },
   "search-content#results__content--products": {
     "blocks": ["gallery#department", "not-found"]
@@ -250,14 +216,54 @@
   },
   "product-summary.shelf#global__grid": {
     "children": [
-      "product-summary-image#desktop__grid",
-      "product-summary-brand",
+      //"product-summary-image#desktop__grid",
+      "flex-layout.col#global__grid-image",
+      "flex-layout.col#global__grid-description",
+      /*"product-summary-brand",
       "product-summary-name",
       "rich-text#desktop__grid-onlyweb",
       "product-list-price",
-      "product-selling-price",
+      "product-selling-price",*/
       "rich-text#desktop__grid-seller"
-    ]
+    ],
+    "props":{
+      "blockClass":"global__grid"
+    }
+  },
+  "flex-layout.col#global__grid-image":{
+    "children":[
+      "product-summary-image#global__grid",
+      "product-rating-summary#global__grid-image"
+
+    ],
+    "props":{
+      "blockClass":"global__grid-image"
+    }
+  },
+  "product-summary-image#global__grid":{
+    "props":{
+      "blockClass":"global__grid"
+    }
+  },
+  "product-rating-summary#global__grid-image":{
+    "props":{
+      "blockClass":"global__grid-rating"
+    }
+  },
+  "flex-layout.col#global__grid-description":{
+    "children":[
+      "product-summary-brand#desktop__productlist-text-row--title",
+      "product-summary-name#global__grid-description"
+
+    ],
+    "props":{
+      "blockClass":"global__grid-description"
+    }
+  },
+  "product-summary-name#global__grid-description":{
+    "props":{
+      "blockClass":"global__grid-description"
+    }
   },
   "product-summary-image#desktop__grid": {
     "props": {
@@ -277,9 +283,15 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-3",
-      "text": "Vendido por Coolbox"
+      "text": "Vendido por Coolbox",
+      "blockClass":"desktop__grid-seller"
     }
   },
+
+
+
+
+
   "product-summary.shelf#global__list": {
     "children": ["flex-layout.row#global__list"],
     "props": {
@@ -288,9 +300,6 @@
   },
   "flex-layout.row#global__list": {
     "children": [
-      /*"product-summary-image#desktop__list",
-      "product-summary-brand",
-      "product-summary-name"*/
       "flex-layout.col#global__list"
     ]
   },
@@ -300,7 +309,9 @@
   "flex-layout.row#desktop__list": {
     "children": [
       "flex-layout.col#desktop__productlist-image",
-      "flex-layout.col#desktop__productlist-text"
+      "flex-layout.col#desktop__productlist-text",
+      "flex-layout.col#desktop__productlist-options"
+
     ],
     "props": {
       "blockClass": "desktop__list"
@@ -323,7 +334,6 @@
       "product-summary-name#desktop__productlist-text-grid",
       "rich-text#desktop__productlist-seller",
       "menu#desktop__productlist-custom"
-      //"flex-layout.row#desktop__productlist-custom"
     ],
     "props":{
       "blockClass":"desktop__productlist-text"
@@ -357,15 +367,6 @@
       "blockClass":"desktop__productlist-seller"
     }
   },
-  /*"flex-layout.row#desktop__productlist-custom":{
-    "children":[
-      "menu#desktop__productlist-custom"
-
-    ],
-    "props":{
-      "blockClass":"desktop__productlist-custom"
-    }
-  },*/
   "menu#desktop__productlist-custom":{
     "children":[
       "menu-item#desktop__productlist-custom--1",
@@ -459,5 +460,85 @@
       "text":"[Ver más características](https://diegoantonio--itgloberspartnercl.myvtex.com/electrodomesticos/product)",
       "blockClass":"desktop__productlist-custom--link"
     }
+  },
+  "flex-layout.col#desktop__productlist-options":{
+    "children":[
+      "rich-text#desktop__productlist-options--priceWeb",
+      "flex-layout.col#desktop__produclist-options--price",
+      "flex-layout.row#desktop__productlist-options--button"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options"
+    }
+  },
+  "rich-text#desktop__productlist-options--priceWeb":{
+    "props":{
+      "text":"Precio Exclusivo Web",
+      "textAlignment":"CENTER",
+      "textPosition":"LEFT",
+      "blockClass":"desktop__productlist-options--priceWeb"
+    }
+  },
+  "flex-layout.col#desktop__produclist-options--price":{
+    "children":[
+      "product-selling-price#desktop__productlist-options--sellingp",
+      "product-list-price"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options--price"
+    }
+  },
+  "product-selling-price#desktop__productlist-options--sellingp":{
+    "props":{
+      "blockClass":"desktop__productlist-options--sellingp"
+    }
+  },
+  "flex-layout.row#desktop__productlist-options--button":{
+    "children":[
+      "flex-layout.row#desktop__productlist-options--checkout"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options--button"
+    }
+  },
+  "flex-layout.row#desktop__productlist-options--checkout":{
+    "children":[
+      "flex-layout.col",
+      "flex-layout.col#desktop__productlist-options--checkout-button"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options--checkout"
+    }
+  },
+  "flex-layout.col#desktop__productlist-options--checkout-button":{
+    "children":[
+      "add-to-cart-button#desktop__productlist-options--checkout-button"
+    ]
+  },
+  "add-to-cart-button#desktop__productlist-options--checkout-button":{
+    "props":{
+      "blockClass":"desktop__productlist-options--checkout-button"
+    }
+  },
+
+
+
+
+
+
+
+
+  "search-result-layout.mobile#mobile__electrodomesticos": {
+    "title": "mobile electrodomesticos ",
+    "children": [
+      "responsive-layout.tablet#tablet__department",
+      "responsive-layout.phone#phone__department"
+    ]
+  },
+  "responsive-layout.tablet#tablet__department": {
+    //"children": ["flex-layout.row#global__search-results"]
+  },
+  "responsive-layout.phone#phone__department": {
+    //"children": ["flex-layout.row#global__search-results"]
   }
 }
