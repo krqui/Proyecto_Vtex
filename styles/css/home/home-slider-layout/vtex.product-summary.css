@@ -1,34 +1,133 @@
 .brandName {
-    text-transform: uppercase;
-    color:black
+  text-transform: uppercase;
+  color: black;
 }
 
 .description {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: medium;
-    color:black
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: medium;
+  color: black;
 }
 
 .imageContainer {
-    
-    height: 200px;
-    width: 200px;
+  height: 200px;
+  width: 200px;
 }
 
 .container--mobile__shelf {
-    max-width:200px !important
+  max-width: 200px !important;
 }
 
 .brandName--mobile__shelf-details {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .imageWrapper--mobile__shelf {
-    display: block;
-    height: 230px;
+  display: block;
+  height: 230px;
 }
 
 .nameContainer--mobile__shelf-details {
-    padding: 0px 0px;
+  padding: 0px 0px;
+}
+
+.image--desktop__grid {
+  max-height: 200px;
+  height: 200px;
+  margin-bottom: 24px !important;
+}
+
+.imageContainer--desktop__grid {
+  height: 224px;
+}
+
+.container--global__list {
+  max-width: 100% !important;
+  height: auto;
+  background-color: #fff;
+  padding-bottom: 10px;
+  border: 1px solid;
+  border-color: #fff #fff #f5f5f5;
+  position: relative;
+}
+
+.element--global__list {
+  padding-top: 0 !important;
+}
+
+.image--desktop__productlist-image {
+  margin-bottom: 24px !important;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .image--desktop__productlist-image {
+    margin-top: 12px;
+    height: 192px;
+  }
+}
+
+.productBrandName--desktop__productlist-text-row--title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.nameContainer--desktop__productlist-text-grid {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  justify-content: flex-start !important;
+  text-align: left;
+}
+
+.productBrand--desktop__productlist-text-grid {
+  font-size: 13px;
+  color: rgb(62, 62, 62);
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.clearLink--global__grid {
+  text-decoration: none;
+}
+
+.imageWrapper--global__grid {
+  width: 100% !important;
+}
+
+.image--global__grid {
+  margin-bottom: 24px !important;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.productBrandContainer--desktop__productlist-text-row--title {
+  padding-top: 5px !important;
+}
+
+.nameContainer--global__grid-description {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 0;
+  height: 68px;
+  padding-top: 5px !important;
+}
+
+.productBrand--global__grid-description {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-transform: capitalize;
 }

@@ -1,116 +1,544 @@
 {
-    "store.search#electrodomesticos": {
-        "blocks": ["search-result-layout#electrodomesticos"]
-    },
-    "search-result-layout#electrodomesticos":{
-        "blocks": [
-            "search-result-layout.desktop#electrodomesticos",
-            "search-result-layout.mobile#mobile__electrodomesticos",
-            "search-not-found-layout"
-        ]
-    },
-    "search-result-layout.desktop#electrodomesticos":{
-        "children": [
-            //"rich-text#desktop-response-electrodomesticos"
-            "flex-layout.row#department__breadcrumb"
-        ]
-      },
-      "flex-layout.row#department__breadcrumb":{
-        "children":[
-            "flex-layout.col#department__breadcrumb"
-        ]
-      },
-      "flex-layout.col#department__breadcrumb":{
-        "children":[
-            "breadcrumb.search"
-        ]
-      },
-    /*"search-result-layout.mobile#mobile__electrodomesticos":{
-        "children": [
-            //"rich-text#mobile-response-electrodomesticos"
-            //"flex-layout.row#electrodomesticos__breadcrumb",
-            "flex-layout.row#electrodomesticos__results"
-        ]
-      },
-      "flex-layout.row#electrodomesticos__results":{
-        "title":"Electrodomesticos Results",
-        "children": [
-            "gallery-layout-switcher"//,
-            //"search-content#phone"
-        ]
-      },
-      "gallery-layout-switcher":{
-        "children":[
-            "gallery-layout-option#grid__two-columns",
-            "gallery-layout-option#grid__one-column"
-        ]
-      },
-      "gallery-layout-option#grid__two-columns": {
-        "props": {
-            "name": "grid-two-columns",
-            "blockClass": "grid__selector--two-columns"
-        }
-      },
-      "gallery-layout-option#grid__one-column":{
-        "props":{
-            "name":"grid-one-column",
-            "blockClass":"grid__selector--one-column"
-        }
-      }*/
+  "store.search#electrodomesticos": {
+    "blocks": ["search-result-layout#electrodomesticos"]
+  },
+  "search-result-layout#electrodomesticos": {
+    "blocks": [
+      /*"search-result-layout.desktop#electrodomesticos",*/
+      "search-result-layout.desktop#desktop__electrodomesticos",
+      "search-result-layout.mobile#mobile__electrodomesticos",
+      "search-not-found-layout"
+    ]
+  },
+  /*"search-result-layout.desktop#electrodomesticos": {
+    "children": [
+      //"rich-text#desktop-response-electrodomesticos"
+      "flex-layout.row#department__breadcrumb"
+    ]
+  },
+  "flex-layout.row#department__breadcrumb": {
+    "children": ["flex-layout.col#department__breadcrumb"]
+  },
+  "flex-layout.col#department__breadcrumb": {
+    "children": ["breadcrumb.search"]
+  },*/
 
-        "search-result-layout.mobile#mobile__electrodomesticos":{
-            "children": [
-                //"responsive-layout.tablet#tablet__department",
-                "responsive-layout.phone#phone__department"
-            ]
+  "search-result-layout.desktop#desktop__electrodomesticos": {
+    "children": ["responsive-layout.desktop#desktop__department"]
+  },
+  "responsive-layout.desktop#desktop__department": {
+    "children": [
+      "flex-layout.row#department__breadcrumb",
+      "flex-layout.row#desktop__department-search",
+      "flex-layout.row#global__search-results"
+    ],
+    "props": {
+      "blockClass": "desktop__department"
+    }
+  },
+  "flex-layout.row#department__breadcrumb": {
+    "children": ["breadcrumb.search"],
+    "props": {
+      "blockClass": "department__breadcrumb"
+    }
+  },
+  "flex-layout.row#desktop__department-search": {
+    "children": [
+      "flex-layout.col#desktop__department-search--left",
+      "flex-layout.col#desktop__department-search--right"
+    ],
+    "props": {
+      "blockClass": "desktop__department-search"
+    }
+  },
+  "flex-layout.col#desktop__department-search--left": {
+    "children": ["flex-layout.row#desktop__department-search--left"]
+  },
+  "flex-layout.row#desktop__department-search--left": {
+    "children": [
+      "flex-layout.col#desktop__department-search--left-title",
+      "flex-layout.col#desktop__department-search--left-counter"
+    ],
+    "props": {
+      "blockClass": "desktop__department-search--left"
+    }
+  },
+  "flex-layout.col#desktop__department-search--left-title": {
+    "children": ["search-title.v2"],
+    "props": {
+      "blockClass": "desktop__department-search--left-title"
+    }
+  },
+  "flex-layout.col#desktop__department-search--left-counter": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "desktop__department-search--left-counter"
+    }
+  },
+  "flex-layout.col#desktop__department-search--right": {
+    "children": ["flex-layout.row#desktop__department-search--right"]
+  },
+  "flex-layout.row#desktop__department-search--right": {
+    "children": [
+      "flex-layout.col#desktop__department-search--right-orderby",
+      "flex-layout.col#desktop__department-search--right-infochange"
+    ],
+    "props": {
+      "blockClass": "desktop__department-search--right"
+    }
+  },
+  "flex-layout.col#desktop__department-search--right-orderby": {
+    "children": ["order-by.v2#desktop__department-search--right-orderby"],
+    "props": {
+      "blockClass": "desktop__department-search--right-orderby"
+    }
+  },
+  "order-by.v2#desktop__department-search--right-orderby": {
+    "props": {
+      "showOrderTitle": false,
+      "blockClass": "desktop__department-search--right-orderby"
+    }
+  },
+  "flex-layout.col#desktop__department-search--right-infochange": {
+    "children": ["gallery-layout-switcher#desktop__department-infochange"],
+    "props": {
+      "blockClass": "desktop__department-search--right-infochange"
+    }
+  },
+  "gallery-layout-switcher#desktop__department-infochange": {
+    "children": [
+      "rich-text#desktop__department-infochange",
+      "gallery-layout-option#viewgrid",
+      "gallery-layout-option#viewlist"
+    ]
+  },
+  "rich-text#desktop__department-infochange": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Vista:",
+      "blockClass": "desktop__department-infochange"
+    }
+  },
+
+  "gallery-layout-option#viewgrid": {
+    "children": ["image#viewgrid"],
+    "props": {
+      "name": "Switch to Grid Layout",
+      "blockClass": "viewgrid"
+    }
+  },
+  "image#viewgrid": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1670996329/coolb/fv2gswtqlsbtg5sejoct.svg",
+      "maxHeight": 24
+    }
+  },
+  "gallery-layout-option#viewlist": {
+    "children": ["image#viewlist"],
+    "props": {
+      "name": "viewlist",
+      "blockClass": "viewlist"
+    }
+  },
+  "image#viewlist": {
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1670996384/coolb/u6sl4arjfy3dcvylfjjc.svg",
+      "maxHeight": 24
+    }
+  },
+
+
+
+
+  "flex-layout.row#global__search-results": {
+    "children": [
+      "flex-layout.col#global__search-results--filter",
+      "flex-layout.col#global__search-results--content"
+    ],
+    "props": {
+      "blockClass": "global__search-results"
+    }
+  },
+  "flex-layout.col#global__search-results--filter": {
+    "children": ["filter-navigator.v3#global__filter"],
+    "props": {
+      "width": "auto",
+      "blockClass": "global__filter-col"
+    }
+  },
+  "filter-navigator.v3#global__filter":{
+    "props":{
+      "blockClass":"global__filter"
+    }
+  },
+  "flex-layout.col#global__search-results--content": {
+    "children": ["flex-layout.row#global__search-results--content"],
+    "props": {
+      "width": "auto",
+      "blockClass": "global__content-col"
+    }
+  },
+  "flex-layout.row#global__search-results--content": {
+    "children": ["search-content#results__content--products"],
+    "props":{
+      "blockClass":"global__search-results--content"
+    }
+  },
+  "search-content#results__content--products": {
+    "blocks": ["gallery#department", "not-found"]
+  },
+  "gallery#department": {
+    "props": {
+      "layouts": [
+        {
+          "name": "viewgrid",
+          "component": "GeneralGrid",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
         },
-        "responsive-layout.phone#phone__department": {
-            "children":[
-                "flex-layout.row#category__results"
-            ]
-        },
-        "flex-layout.row#category__results": {
-            "children": [
-                "flex-layout.col#category__results--filter",
-                "flex-layout.col#category__results--content"
-            ]
-        },
-        "flex-layout.col#category__results--filter":{
-            "children": [
-                "filter-navigator.v3"
-            ],
-            "props": {
-                "width":"25%"
-            }
-        },
-        "flex-layout.col#category__results--content":{
-            "children": [
-                "search-content#results__content--products"
-            ],
-            "props": {
-                "width":"75%"
-            }
-        },
-        "search-content#results__content--products":{
-            "blocks":[
-                "gallery#department",
-                "not-found"
-            ]
-        },
-        "gallery#department":{
-            "props":{
-                "layouts": [
-                    {
-                        "name":"general-grid",
-                        "component":"GeneralGrid",
-                        "itemsPerRow":{
-                            "desktop":4,
-                            "tablet":3,
-                            "phone":2
-                        }
-                    }
-                ],
-                "GeneralGrid":"product-summary.shelf"
-            }
+        {
+          "name": "viewlist",
+          "component": "ListGrid",
+          "itemsPerRow": {
+            "desktop": 1,
+            "tablet": 3,
+            "phone": 2
+          }
         }
+      ],
+      "GeneralGrid": "product-summary.shelf#global__grid",
+      "ListGrid": "product-summary.shelf#global__list"
+    }
+  },
+  "product-summary.shelf#global__grid": {
+    "children": [
+      //"product-summary-image#desktop__grid",
+      "flex-layout.col#global__grid-image",
+      "flex-layout.col#global__grid-description",
+      /*"product-summary-brand",
+      "product-summary-name",
+      "rich-text#desktop__grid-onlyweb",
+      "product-list-price",
+      "product-selling-price",*/
+      "rich-text#desktop__grid-seller"
+    ],
+    "props":{
+      "blockClass":"global__grid"
+    }
+  },
+  "flex-layout.col#global__grid-image":{
+    "children":[
+      "product-summary-image#global__grid",
+      "product-rating-summary#global__grid-image"
+
+    ],
+    "props":{
+      "blockClass":"global__grid-image"
+    }
+  },
+  "product-summary-image#global__grid":{
+    "props":{
+      "blockClass":"global__grid"
+    }
+  },
+  "product-rating-summary#global__grid-image":{
+    "props":{
+      "blockClass":"global__grid-rating"
+    }
+  },
+  "flex-layout.col#global__grid-description":{
+    "children":[
+      "product-summary-brand#desktop__productlist-text-row--title",
+      "product-summary-name#global__grid-description"
+
+    ],
+    "props":{
+      "blockClass":"global__grid-description"
+    }
+  },
+  "product-summary-name#global__grid-description":{
+    "props":{
+      "blockClass":"global__grid-description"
+    }
+  },
+  "product-summary-image#desktop__grid": {
+    "props": {
+      "blockClass": "desktop__grid"
+    }
+  },
+  "rich-text#desktop__grid-onlyweb": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "text": "Precio Exclusivo Web"
+    }
+  },
+  "rich-text#desktop__grid-seller": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "text": "Vendido por Coolbox",
+      "blockClass":"desktop__grid-seller"
+    }
+  },
+
+
+
+
+
+  "product-summary.shelf#global__list": {
+    "children": ["flex-layout.row#global__list"],
+    "props": {
+      "blockClass": "global__list"
+    }
+  },
+  "flex-layout.row#global__list": {
+    "children": [
+      "flex-layout.col#global__list"
+    ]
+  },
+  "flex-layout.col#global__list": {
+    "children": ["flex-layout.row#desktop__list"]
+  },
+  "flex-layout.row#desktop__list": {
+    "children": [
+      "flex-layout.col#desktop__productlist-image",
+      "flex-layout.col#desktop__productlist-text",
+      "flex-layout.col#desktop__productlist-options"
+
+    ],
+    "props": {
+      "blockClass": "desktop__list"
+    }
+  },
+  "flex-layout.col#desktop__productlist-image": {
+    "children": ["product-summary-image#desktop__productlist-image"],
+    "props":{
+      "blockClass":"desktop__productlist-image"
+    }
+  },
+  "product-summary-image#desktop__productlist-image":{
+    "props":{
+      "blockClass":"desktop__productlist-image"
+    }
+  },
+  "flex-layout.col#desktop__productlist-text":{
+    "children":[
+      "flex-layout.row#desktop__productlist-text-row--title",
+      "product-summary-name#desktop__productlist-text-grid",
+      "rich-text#desktop__productlist-seller",
+      "menu#desktop__productlist-custom"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-text"
+    }
+  },
+  "flex-layout.row#desktop__productlist-text-row--title":{
+    "children":[
+      "product-summary-brand#desktop__productlist-text-row--title",
+      "product-rating-summary"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-text-row--title"
+    }
+  },
+  "product-summary-brand#desktop__productlist-text-row--title":{
+    "props":{
+      "blockClass":"desktop__productlist-text-row--title"
+    }
+  },
+  "product-summary-name#desktop__productlist-text-grid":{
+    "props":{
+      "blockClass":"desktop__productlist-text-grid"
+    }
+
+  },
+  "rich-text#desktop__productlist-seller":{
+    "props":{
+      "text":"Vendido por Coolbox",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "blockClass":"desktop__productlist-seller"
+    }
+  },
+  "menu#desktop__productlist-custom":{
+    "children":[
+      "menu-item#desktop__productlist-custom--1",
+      "menu-item#desktop__productlist-custom--2",
+      "menu-item#desktop__productlist-custom--3",
+      "menu-item#desktop__productlist-custom--4",
+      "menu-item#desktop__productlist-custom--5",
+      "rich-text#desktop__productlist-custom--link"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-custom"
+    }
+  },
+  "menu-item#desktop__productlist-custom--1":{
+    "props": {
+      "id": "custom-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "respantalla",
+        "text": "Resolución de pantalla:"
+      },
+      "blockClass":"desktop__productlist-custom--1"
+    }
+  },
+  "menu-item#desktop__productlist-custom--2":{
+    "props": {
+      "id": "custom-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "dualSIM",
+        "text": "Dual SIM:"
+      },
+      "blockClass":"desktop__productlist-custom--2"
+    }
+  },
+  "menu-item#desktop__productlist-custom--3":{
+    "props": {
+      "id": "custom-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "cámaraPrincipal",
+        "text": "Cámara principal:"
+      },
+      "blockClass":"desktop__productlist-custom--3"
+    }
+  },
+  "menu-item#desktop__productlist-custom--4":{
+    "props": {
+      "id": "custom-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "cámaraFrontal",
+        "text": "Cámara frontal:"
+      },
+      "blockClass":"desktop__productlist-custom--4"
+    }
+  },
+  "menu-item#desktop__productlist-custom--5":{
+    "props": {
+      "id": "custom-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "sizeScreen",
+        "text": "Tamaño de pantalla:"
+      },
+      "blockClass":"desktop__productlist-custom--5"
+    }
+  },
+  "rich-text#desktop__productlist-custom--link":{
+    "props":{
+      "text":"[Ver más características](https://diegoantonio--itgloberspartnercl.myvtex.com/electrodomesticos/product)",
+      "blockClass":"desktop__productlist-custom--link"
+    }
+  },
+  "flex-layout.col#desktop__productlist-options":{
+    "children":[
+      "rich-text#desktop__productlist-options--priceWeb",
+      "flex-layout.col#desktop__produclist-options--price",
+      "flex-layout.row#desktop__productlist-options--button"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options"
+    }
+  },
+  "rich-text#desktop__productlist-options--priceWeb":{
+    "props":{
+      "text":"Precio Exclusivo Web",
+      "textAlignment":"CENTER",
+      "textPosition":"LEFT",
+      "blockClass":"desktop__productlist-options--priceWeb"
+    }
+  },
+  "flex-layout.col#desktop__produclist-options--price":{
+    "children":[
+      "product-selling-price#desktop__productlist-options--sellingp",
+      "product-list-price"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options--price"
+    }
+  },
+  "product-selling-price#desktop__productlist-options--sellingp":{
+    "props":{
+      "blockClass":"desktop__productlist-options--sellingp"
+    }
+  },
+  "flex-layout.row#desktop__productlist-options--button":{
+    "children":[
+      "flex-layout.row#desktop__productlist-options--checkout"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options--button"
+    }
+  },
+  "flex-layout.row#desktop__productlist-options--checkout":{
+    "children":[
+      "flex-layout.col",
+      "flex-layout.col#desktop__productlist-options--checkout-button"
+    ],
+    "props":{
+      "blockClass":"desktop__productlist-options--checkout"
+    }
+  },
+  "flex-layout.col#desktop__productlist-options--checkout-button":{
+    "children":[
+      "add-to-cart-button#desktop__productlist-options--checkout-button"
+    ]
+  },
+  "add-to-cart-button#desktop__productlist-options--checkout-button":{
+    "props":{
+      "blockClass":"desktop__productlist-options--checkout-button"
+    }
+  },
+
+
+
+
+
+
+
+
+  "search-result-layout.mobile#mobile__electrodomesticos": {
+    "title": "mobile electrodomesticos ",
+    "children": [
+      "responsive-layout.tablet#tablet__department",
+      "responsive-layout.phone#phone__department"
+    ]
+  },
+  "responsive-layout.tablet#tablet__department": {
+    //"children": ["flex-layout.row#global__search-results"]
+  },
+  "responsive-layout.phone#phone__department": {
+    //"children": ["flex-layout.row#global__search-results"]
+  }
 }

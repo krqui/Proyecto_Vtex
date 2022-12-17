@@ -7,48 +7,15 @@
       "header-row#desktop__threedots"
     ]
   },
-
-  "header-row#desktop__threedots": {
-    "children": [
-      "header-row#desktop__threedots-A",
-      "header-row#desktop__threedots-B"
-    ],
-    "props":{
-      "blockClass":"header__top--desktop"
-    }
-  },
-  "header-row#desktop__threedots-A":{
-    "children": [
-      "flex-layout.row#global__ofertas",
-      "flex-layout.row#global__delivery",
-      "flex-layout.row#global__smarthome",
-      "flex-layout.row#global__bicisyscooters",
-      "flex-layout.row#global__sorteo"
-    ],
-    "props": {
-      "blockClass":"destop__threedots-A"
-    }
-
-  },
-  "header-row#desktop__threedots-B":{
-    "children": [
-      "flex-layout.row#global__zonaoutlet",
-      "flex-layout.row#global__tracking"
-    ],
-    "props": {
-      "blockClass":"destop__threedots-B"
-    }
-
-  },
   "header-row#desktop__container-Img": {
-    "children": ["image#header__container--image--desktop"],
+    "title":"Contenedor de la imagen del header en vista de escritorio",
+    "children": ["image#desktop__header-container--img"],
     "props": {
       "blockClass": "mobile__container-Img"
     }
   },
-
   "header-row#header__top--desktop": {
-    "title": "Header superior (desktop)",
+    "title": "Contenedor de elementos del menu en el header.",
     "children": [
       "responsive-layout.desktop#desktop__header-info",
       "responsive-layout.desktop#desktop__header-categories",
@@ -60,10 +27,11 @@
     }
   },
   "responsive-layout.desktop#desktop__header-info": {
+    "title":"Contenedor del logo en el header.",
     "children": ["logo#header__top--logo"]
   },
   "logo#header__top--logo": {
-    "title": "Logo",
+    "title": "Logo en el header.",
     "props": {
       "url": "assets/logo.svg",
       "width": 180,
@@ -72,42 +40,30 @@
     }
   },
   "responsive-layout.desktop#desktop__header-categories": {
+    "title":"Contenedor del boton de las categorias en el header.",
     "children": ["menu#desktop__header-categories--button"]
   },
   "menu#desktop__header-categories--button": {
-    "children": [
-      "mega-menu#desktop",
-      "mega-menu-trigger-btn#lines"
-    ]
+    "title":"Boton de las categorias en el header.",
+    "children": ["mega-menu#desktop", "mega-menu-trigger-btn#lines"]
   },
   "mega-menu#desktop": {
+    "title":"Mega menu en la visualizacion de escritorio.",
     "props": {
       "openOnly": "horizontal"
     }
   },
   "mega-menu-trigger-btn#lines": {
+    "title":"Icono que abre el mega menu.",
     "props": {
       "Drawer": "drawer",
-      "blockClass":"lines"
-    }
-  },
-  "mega-menu-trigger-btn#extra": {
-    "props": {
-      "Drawer": "drawer",
-      "blockClass":"extra"
+      "blockClass": "lines"
     }
   },
 
-  "rich-text#bbb": {
-    "props":{
-      "textAlignment": "CENTER",
-    "textPosition": "CENTER",
-    "text": "Categories",
-    "textColor": "c-on-emphasis"
-    }
-  },
 
   "menu#desktop__websites": {
+    "title":"Contenedor de items del menu en el header",
     "children": [
       "menu-item#desktop__websites-tienda",
       "menu-item#desktop__websites-ventas",
@@ -117,6 +73,7 @@
     ]
   },
   "menu-item#desktop__websites-tienda": {
+    "title":"Tienda del header.",
     "props": {
       "id": "menu-tiendas",
       "type": "custom",
@@ -133,6 +90,7 @@
     }
   },
   "menu-item#desktop__websites-ventas": {
+    "title":"Ventas del header.",
     "props": {
       "id": "menu-ventas",
       "type": "custom",
@@ -145,6 +103,7 @@
     }
   },
   "menu-item#desktop__websites-ayuda": {
+    "title":"Ayuda del header",
     "props": {
       "id": "menu-ayuda",
       "type": "custom",
@@ -156,8 +115,8 @@
       "blockClass": "desktop__websites-ayuda"
     }
   },
-  
   "login#global": {
+    "title":"Login del header",
     "props": {
       "accessCodeTitle": "Access Code to log-in",
       "emailPlaceholder": "e-mail",
@@ -165,35 +124,38 @@
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,
       "showIconProfile": false,
-      "iconLabel":"Inicia sesión",
+      "iconLabel": "Inicia sesión",
       "hideIconLabel": false,
       "termsAndConditions": "Al registrarte estas aceptando nuestros Términos y Condiciones y nuestras Políticas de Privacidad.",
       "blockClass": "loginn"
     }
   },
-
   "minicart.v2": {
+    "title":"Minicart del header",
     "props": {
-      "MinicartIcon":"image#minicart-aicon",
+      "MinicartIcon": "image#minicart-aicon",
       "itemCountMode": "total",
       "quantityDisplay": "always",
       "customPixelEventName": "pageview",
-      "blockClass":"global__minicart"
+      "blockClass": "global__minicart"
     }, // hasta esta linea, tenemos lo basico para un minicart,
     // De aqui para abajo, ya es un minicart#customizado
     "children": ["minicart-base-content"]
   },
   "image#minicart-aicon": {
+    "title":"Imagen del minicart",
     "props": {
-      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1670529876/coolb/rhiv5avxu2c6nb9pqkac.svg",
-      "maxWidth":22
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1670529876/coolb/rhiv5avxu2c6nb9pqkac.svg",
+      "maxWidth": 22
     }
   },
   "minicart-base-content": {
+    "title":"Contenedor del minicart cuando tengo elementos.",
     "blocks": ["minicart-empty-state"],
     "children": ["minicart-product-list", "flex-layout.row#minicart__footer"]
   },
   "minicart-empty-state": {
+    "title":"Contenedor del minicart cuando no tengo elementos.",
     "children": ["flex-layout.row#minicart__empty"],
     "props": {
       "blockClass": "minicart-empty-state"
@@ -203,100 +165,127 @@
     "children": ["flex-layout.col#minicart__empty"]
   },
   "flex-layout.col#minicart__empty": {
-    "children": [
-      "rich-text#minicart-default-empty-state"
-    ],
+    "children": ["rich-text#minicart-default-empty-state"],
     "props": {
       "blockClass": "minicart__empty--icon"
     }
   },
   "rich-text#minicart-default-empty-state": {
+    "title":"Texto que indica que el minicart se encuentra vacio",
     "props": {
       "text": "Tu carrito está vacío",
       "textAlignment": "CENTER",
-      "blockClass":"minicart-default-empty-state"
+      "blockClass": "minicart-default-empty-state"
     }
   },
 
-  "minicart-product-list":{
-    "blocks":[
-      "product-list#minicart"
-    ]
+
+  "minicart-product-list": {
+    "title":"Contenedor de productos en el minicart",
+    "blocks": ["product-list#minicart"]
   },
-  "product-list#minicart":{
-    "blocks": [
-      "product-list-content-mobile"
-    ]
+  "product-list#minicart": {
+    "title":"Lista de productos en el minicart",
+    "blocks": ["product-list-content-mobile"]
   },
-  "product-list-content-mobile":{
-    "children": [
-      "flex-layout.row#minicart__row--mobile"
-    ]
+  "product-list-content-mobile": {
+    "children": ["flex-layout.row#minicart__row--mobile"]
   },
   "flex-layout.row#minicart__row--mobile": {
-    "children":[
-      "flex-layout.col#minicart__col--image",
-      "flex-layout.col#minicart__col--info",
-      "flex-layout.col#minicart__col--remove"
-    ]
-  },
-  "flex-layout.col#minicart__col--image":{
+    "title":"Contenedor de la informacion por cada producto",
     "children": [
-      "product-list-image"
+      "flex-layout.col#minicart__col--image",
+      "flex-layout.col#minicart__col--info"
     ]
   },
-  "flex-layout.col#minicart__col--info":{
-    "children":[
+  "flex-layout.col#minicart__col--image": {
+    "title":"Contenedor de la imagen del producto",
+    "children": ["product-list-image"]
+  },
+  "flex-layout.col#minicart__col--info": {
+    "title":"Contenedor de la informacion del producto",
+    "children": [
       "vtex.product-list@0.x:product-name",
       "flex-layout.row#global__minicart-quantity"
     ]
   },
-  "flex-layout.row#global__minicart-quantity":{
-    "children":["quantity-selector#minicart"
-    //,"product-list-price"
-  ]
+  "flex-layout.row#global__minicart-quantity": {
+    "title":"Cantidad del producto en el minicart",
+    "children": [
+      "quantity-selector#minicart"
+      //,"product-list-price"
+    ]
   },
-  "quantity-selector#minicart":{
-    "props":{
-      "mode":"dropdown"
+  "quantity-selector#minicart": {
+    "title":"Seleccionar la cantidad",
+    "props": {
+      "mode": "dropdown"
     }
   },
-  "flex-layout.col#minicart__col--remove":{
-
-  },
-
-
-  
-
-
-
 
 
   "flex-layout.row#minicart__footer": {
-    "children": [
-      "flex-layout.col#minicart__footer"
-    ],
-    "props":{
-      "blockClass":"minicart__footer"
+    "title":"Contenedor del menu del minicart",
+    "children": ["flex-layout.col#minicart__footer"],
+    "props": {
+      "blockClass": "minicart__footer"
     }
   },
-  "flex-layout.col#minicart__footer":{
-    "children":[
+  "flex-layout.col#minicart__footer": {
+    "title":"Subcontenedor del menu del minicart",
+    "children": [
       "minicart-summary",
       "minicart-checkout-button",
       "rich-text#minicart-footer"
     ]
   },
   "minicart-checkout-button": {
+    "title":"Boton de compra en el minicart",
     "props": {
-      "text":"hola",
+      "text": "hola",
       "finishShoppingButtonLink": "/checkout/#/orderform"
     }
   },
   "rich-text#minicart-footer": {
+    "title":"Texto de compra segura en el footer",
     "props": {
       "text": "COMPRA 100% SEGURA",
-      "blockClass":"minicart-footer"
+      "blockClass": "minicart-footer"
+    }
+  },
+
+
+  "header-row#desktop__threedots": {
+    "title": "Contenedor del menu 2 en el header",
+    "children": [
+      "header-row#desktop__threedots-A",
+      "header-row#desktop__threedots-B"
+    ],
+    "props": {
+      "blockClass": "header__top--desktop"
+    }
+  },
+  "header-row#desktop__threedots-A": {
+    "title": "Elementos del menu del header del lado izquierdo",
+    "children": [
+      "flex-layout.row#global__ofertas",
+      "flex-layout.row#global__delivery",
+      "flex-layout.row#global__smarthome",
+      "flex-layout.row#global__bicisyscooters",
+      "flex-layout.row#global__sorteo"
+    ],
+    "props": {
+      "blockClass": "destop__threedots-A"
+    }
+  },
+  "header-row#desktop__threedots-B": {
+    "title": "Elementos del menu del header del lado derecho",
+    "children": [
+      "flex-layout.row#global__zonaoutlet",
+      "flex-layout.row#global__tracking"
+    ],
+    "props": {
+      "blockClass": "destop__threedots-B"
     }
   }
 }

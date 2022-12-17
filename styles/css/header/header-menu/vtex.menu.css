@@ -153,3 +153,63 @@
 .menuItem--mobile__footer-item--text {
   margin: 5px 0px;
 }
+
+
+.menuContainerNav--desktop__productlist-custom {
+  background-color: #fafafa;
+}
+.menuContainer--desktop__productlist-custom {
+  flex-direction: column;
+  margin-left: 34px;
+  list-style-type: inherit;
+}
+
+.styledLinkContainer--desktop__productlist-custom--1, .styledLinkContainer--desktop__productlist-custom--2, .styledLinkContainer--desktop__productlist-custom--3, .styledLinkContainer--desktop__productlist-custom--4, .styledLinkContainer--desktop__productlist-custom--5 {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.styledLinkContent--desktop__productlist-custom--1 ,.styledLinkContent--desktop__productlist-custom--2, .styledLinkContent--desktop__productlist-custom--3, .styledLinkContent--desktop__productlist-custom--4, .styledLinkContent--desktop__productlist-custom--5 {
+  justify-content: flex-start;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: rgb(102, 101, 101);
+}
+
+.styledLinkContent--desktop__productlist-custom--1::after {
+  margin-left: 2px;
+  content:"2400 x 1080 píxeles (FHD+)";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.styledLinkContent--desktop__productlist-custom--2::after {
+  margin-left: 2px;
+  content:"Sí";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.styledLinkContent--desktop__productlist-custom--3::after {
+  margin-left: 2px;
+  content:"64 + 8 + 8 + 2 MP";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.styledLinkContent--desktop__productlist-custom--4::after {
+  margin-left: 2px;
+  content:"13 MP";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.styledLinkContent--desktop__productlist-custom--5::after {
+  margin-left: 2px;
+  content:'6.43"';
+  font-size: 14px;
+  font-weight: bold;
+}

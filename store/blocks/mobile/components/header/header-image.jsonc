@@ -1,8 +1,8 @@
 {
-  "image#mobile__header__container-img": {
+  "image#mobile__header-container--img": {
     "title": "Imagen header mobile",
     "props": {
-      "src": "assets/img/BannerTopMob.webp",
+      "src": "assets/img/mobile__header-container--img.webp",
       "title": "Foto image container mobile",
       "link": {
         "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/ofertas",

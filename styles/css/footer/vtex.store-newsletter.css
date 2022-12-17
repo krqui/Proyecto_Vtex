@@ -15,7 +15,10 @@
     border-color: red;
 }
 
-:global(.vtex-checkbox__label){
+/*:global(.vtex-checkbox__label){
+    color:#fff
+}*/
+
+.confirmationCheckboxContainer  :global(.vtex-checkbox__label) {
     color:#fff
 }
-

@@ -129,11 +129,11 @@
       "preload": true,
       "images": [
         {
-          "image": "assets/img/slider3m-pic1.webp",
+          "image": "assets/img/mobile__home-slider3--pic1.webp",
           "description": "Slider 3 picture 1 mobile"
         },
         {
-          "image": "assets/img/slider3m-pic2.webp",
+          "image": "assets/img/mobile__home-slider3--pic2.webp",
           "description": "Slider 3 picture 2 mobile"
         }
       ]

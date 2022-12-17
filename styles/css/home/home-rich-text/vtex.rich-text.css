@@ -231,7 +231,6 @@
   color: #fff;
   font-size: 22px;
   font-weight: 700;
-  font-family: Montserrat;
   letter-spacing: 0.5px;
   margin: 6px 0;
 }
@@ -247,7 +246,6 @@
   color: #fff;
   font-size: 22px;
   font-weight: 700;
-  font-family: Montserrat;
   letter-spacing: 0.5px;
   margin: 6px 0;
 }
@@ -363,7 +361,7 @@
   line-height: 1;
   font-family: Montserrat;
   font-size: 14px;
-  color: #000
+  color: #000;
 }
 
 .container--minicart-footer {
@@ -379,4 +377,50 @@
   color: #8a8a8e;
   display: flex;
   align-items: center;
+}
+
+.paragraph--desktop__department-infochange {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  color: #000;
+  margin: 0;
+}
+
+.container--desktop__productlist-seller {
+  justify-content: flex-start;
+}
+
+.paragraph--desktop__productlist-seller {
+  color: #a4a4a4;
+  margin: 5px 0;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.paragraph--desktop__productlist-custom--link {
+  line-height: 0;
+}
+
+.link--desktop__productlist-custom--link {
+  color: #d5222e;
+  font-size: 15px;
+}
+
+.wrapper--desktop__productlist-options--priceWeb {
+  color: #d5222e;
+}
+
+.paragraph--desktop__productlist-options--priceWeb {
+  line-height: 1;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.paragraph--desktop__grid-seller {
+  color: #a4a4a4;
+  margin: 5px 0;
+  font-size: 12px;
 }

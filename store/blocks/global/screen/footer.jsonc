@@ -477,6 +477,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
+      "font":"t-heading-3",
       "text":"[+01 712 - 3212](tel:+017123212)",
       "blockClass": "desktop__footer-b2-colThree--number"
     }
@@ -485,6 +486,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
+      "font":"t-heading-3",
       "text": "Lun. - Sáb. de 9:00 am a 6:00 pm",
       "blockClass": "desktop__footer-b2-colThree--schedule"
     }
@@ -493,6 +495,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
+      "font":"t-heading-3",
       "text": "servicioalcliente@rashperu.com",
       "blockClass": "desktop__footer-b2-colThree--mail"
     }
@@ -536,6 +539,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text":"[996 192 014](/whatsappp)",
+      "font":"t-heading-3",
       "blockClass":
       "desktop__footer-b2-colFour--wsp"
     }
@@ -545,6 +549,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text":"[996 192 017](/whatsappp)",
+      "font":"t-heading-3",
       "blockClass":
       "desktop__footer-b2-colFour--wsp"
     }
@@ -554,6 +559,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text":"[954 950 318](/whatsappp)",
+      "font":"t-heading-3",
       "blockClass":
       "desktop__footer-b2-colFour--wsp"
     }
@@ -563,6 +569,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text":"[954 050 517](/whatsappp)",
+      "font":"t-heading-3",
       "blockClass":
       "desktop__footer-b2-colFour--wsp"
     }
