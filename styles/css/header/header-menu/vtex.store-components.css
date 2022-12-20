@@ -17,7 +17,7 @@
 
 .logoContainer--mobile__header-info--logo,
 .logoContainer--tablet__header-info--logo {
-  margin-right: 2vw;
+  /*margin-right: 2vw;*/
   padding: 4px;
 }
 
@@ -26,7 +26,8 @@
 }
 
 .searchBarContainer {
-  max-width: 607px;
+  /*max-width: 607px;*/
+  width: 86vw;
   margin-left: 10px;
   padding-top: 0.4rem;
   padding-bottom: 0.5rem;
@@ -129,15 +130,22 @@
 }
 
 .logoContainer--tablet__hamburguermenu {
-  padding-left: 50px;
+  /*padding-left: 50px;*/
+  padding-left: 38px;
 }
 
 .logoContainer--tablet__hamburguermenu::after {
-  display: inline-block;
+  /*display: inline-block;
   content: "Menú";
   color: #ffffff;
   margin-left: 33px;
   width: 100%;
+  font-size: 12px;*/
+  display: flex;
+  content: "Menú";
+  color:#dfe7ec;
+  margin-left: 30px;
+  width: 30px;
   font-size: 12px;
 }
 
@@ -209,4 +217,9 @@
     float:none;
     margin-right: 0;
   }
+}
+
+
+.buyButtonText--tablet__list-toCart--button {
+  font-size: 14px;
 }

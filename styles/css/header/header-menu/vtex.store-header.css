@@ -3,12 +3,13 @@
   padding: 0;
 }
 
-.headerRow--header__top__mobile {
+/*.headerRow--header__top__mobile {
   margin-right: 10px;
-}
+}*/
 
 .headerRowContainer--header__top--mobile {
-  justify-content: center;
+  /*justify-content: center;*/
+  justify-content: flex-start;
 }
 
 .headerRowContainer--header__top--desktop {

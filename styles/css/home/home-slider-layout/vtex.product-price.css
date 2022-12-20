@@ -1,5 +1,5 @@
 .currencyContainer--global__price {
-  margin-left: 50px;
+  margin-left: 46px;
 }
 
 .sellingPrice--hasUnitMultiplier,
@@ -7,6 +7,8 @@
 .sellingPrice {
   text-align: start;
 }
+
+
 
 .currencyCode,
 .currencyLiteral,
@@ -25,12 +27,44 @@
   color: #000;
 }
 
+
+
+
+.currencyContainer--desktop__grid-price {
+  margin-right: 10px;
+}
+
+
+
+@media only screen and (max-width:640px) {
+  .sellingPrice--hasUnitMultiplier,
+  .sellingPrice--hasListPrice,
+  .sellingPrice {
+    text-align: center;
+  }
+  .currencyCode--desktop__grid-price,
+.currencyLiteral--desktop__grid-price,
+.currencyInteger--desktop__grid-price,
+.currencyGroup--desktop__grid-price {
+  font-size: 18px;
+  font-family: ui-serif;
+}
+}
+
+.currencyCode--desktop__grid-price,
+.currencyLiteral--desktop__grid-price,
+.currencyInteger--desktop__grid-price,
+.currencyGroup--desktop__grid-price {
+  color: #000;
+}
+
+
 .sellingPriceValue--mobile__price .currencyCode--mobile__price,
 .sellingPriceValue--mobile__price .currencyLiteral--mobile__price,
 .sellingPriceValue--mobile__price .currencyInteger--mobile__price,
 .sellingPriceValue--mobile__price .currencyGroup--mobile__price,
 .currencyInteger--mobile__price {
-  color: #d70d27
+  color: #d70d27;
 }
 
 .listPriceValue--mobile__price .currencyCode--mobile__price,

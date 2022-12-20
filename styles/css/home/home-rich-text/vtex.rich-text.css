@@ -424,3 +424,50 @@
   margin: 5px 0;
   font-size: 12px;
 }
+
+.paragraph--desktop__grid-onlyweb {
+  line-height: 0;
+  color: #d5222e;
+  font-size: 13px;
+}
+
+.paragraph--tablet__list-info--description--seller {
+  color: #c4c2c2;
+  font-size: 11px;
+  line-height: 0;
+}
+
+.paragraph--tablet__list-info--delivery {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.paragraph--tablet__list-info--description--priceweb {
+  line-height: 0;
+  color: #d5222e;
+}
+
+.paragraph--tablet__list-delivery {
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.paragraph--tablet__list-delivery::before {
+  background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1671479825/coolb/efaf7s4bgfqexehtuj6q.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  content: "";
+  display: block;
+  float: left;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.paragraph--phone__list-offerweb {
+  font-family: "Wolf Sans";
+  line-height: 1;
+  font-size: 11px;
+  color: #d5222e;
+}
