@@ -44,3 +44,12 @@
     content: "/";
     margin-right: 3px;
 }
+
+.term::before {
+    content:"/";
+    margin-right: 2px;
+}
+.term {
+    font-size: 12px;
+    color: #bf0c2a;
+}

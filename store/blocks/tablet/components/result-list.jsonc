@@ -1,0 +1,154 @@
+{
+  "responsive-layout.tablet#tablet__list": {
+    "children": ["flex-layout.row#tablet__list"]
+  },
+  "flex-layout.row#tablet__list": {
+    "children": ["flex-layout.col#tablet__list"],
+    "props": {
+      "blockClass": "tablet__list"
+    }
+  },
+  "flex-layout.col#tablet__list": {
+    "children": [
+      "flex-layout.row#tablet__listsub"
+    ]
+  },
+  "flex-layout.row#tablet__listsub": {
+    "children": [
+      "flex-layout.row#tablet__list-info",
+      "flex-layout.col#tablet__list-delivery",
+      "flex-layout.col#tablet__list-toCart"
+    ]
+  },
+  "flex-layout.row#tablet__list-info": {
+    "children": [
+      "product-summary-image#tablet__list-info",
+      "flex-layout.col#tablet__list-info--description"
+    ],
+    "props": {
+      "blockClass": "tablet__list-info"
+    }
+  },
+  "product-summary-image#tablet__list-info": {
+    "props": {
+      "blockClass": "tablet__list-info"
+    }
+  },
+  "flex-layout.col#tablet__list-info--description":{
+    "children":[
+        "flex-layout.row#tablet__list-info--description-brand",
+        "product-summary-name#tablet__list-info--description-name",
+        "rich-text#tablet__list-info--description--seller",
+        "rich-text#tablet__list-info--description--priceweb",
+        "flex-layout.row#tablet__list-info--description--price"
+    ],
+    "props":{
+        "blockClass":"tablet__list-info--description"
+    }
+  },
+  "flex-layout.row#tablet__list-info--description-brand":{
+    "children":[
+        "product-summary-brand#tablet__list-brand",
+        "product-rating-inline"
+    ],
+    "props":{
+      "blockClass":"tablet__list-info--description-brand"
+    }
+  },
+  "product-summary-brand#tablet__list-brand":{
+    "props":{
+      "blockClass":"tablet__list-brand"
+    }
+  },
+  
+  "product-summary-name#tablet__list-info--description-name":{
+    "props":{
+      "blockClass":"tablet__list-info--description--name"
+    }
+  },
+  "rich-text#tablet__list-info--description--seller":{
+    "props":{
+        "textAlignment":"CENTER",
+        "text":"Vendido por Coolbox",
+        "font": "t-heading-3",
+        "blockClass":"tablet__list-info--description--seller"
+    }
+  },
+  "rich-text#tablet__list-info--description--priceweb":{
+    "props":{
+        "textAlignment":"CENTER",
+        "text":"Precio Exclusivo Web",
+        "font": "t-heading-3",
+        "blockClass":"tablet__list-info--description--priceweb"
+    }
+  },
+  "flex-layout.row#tablet__list-info--description--price":{
+    "children":[
+        "flex-layout.col#tablet__list-info--prices",
+        "flex-layout.row#tablet__list-info--delivery"
+    ]
+  },
+  "flex-layout.col#tablet__list-info--prices":{
+    "children":[
+        "product-list-price",
+        "product-selling-price"
+    ],
+    "props":{
+        "blockClass":"tablet__list-info--prices"
+    }
+  },
+  "flex-layout.row#tablet__list-info--delivery":{
+    "children":[
+        "rich-text#tablet__list-info--delivery"
+    ],
+    "props":{
+        "blockClass":"tablet__list-info--delivery"
+    }
+  },
+  "rich-text#tablet__list-info--delivery":{
+    "props":{
+        "text":"Recíbelo hoy",
+        "textAlignment":"CENTER",
+        "textPosition":"CENTER",
+        "blockClass":"tablet__list-info--delivery"
+    }
+  },
+  "flex-layout.col#tablet__list-delivery":{
+    "children":[
+      "flex-layout.row#tablet__list-delivery"
+    ]
+  },
+  "flex-layout.row#tablet__list-delivery":{
+    "children":[
+      "rich-text#tablet__list-delivery"
+    ]
+  },
+  "rich-text#tablet__list-delivery":{
+    "props":{
+      "text":"Envio GRATIS Lima Metropolitana y Callao",
+      "blockClass":"tablet__list-delivery"
+    }
+  },
+  "flex-layout.col#tablet__list-toCart": {
+    "children":[
+      "flex-layout.row#tablet__list-toCart"
+    ],
+    "props": {
+      "blockClass": "tablet__list-toCart"
+    }
+  },
+  "flex-layout.row#tablet__list-toCart":{
+    "children":[
+      "buy-button#tablet__list-toCart"
+    ],
+    "props":{
+      "blockClass":"tablet__list-toCart"
+    }
+  },
+  "buy-button#tablet__list-toCart":{
+    "props":{
+      "showToast":true,
+      "blockClass":"tablet__list-toCart--button"
+    }
+  }
+}

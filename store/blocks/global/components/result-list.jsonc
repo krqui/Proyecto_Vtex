@@ -1,0 +1,69 @@
+{
+  "responsive-layout.phone#phone__list": {
+    "children":[
+        "flex-layout.row#phone__list"
+    ]
+  },
+  "flex-layout.row#phone__list":{
+    "children":[
+        "flex-layout.col#phone__list"
+    ],
+    "props":{
+        "blockClass":"tablet__list"
+    }
+  },
+  "flex-layout.col#phone__list":{
+    "children":[
+        "flex-layout.row#phone__list-info",
+        "flex-layout.row#tablet__list-toCart"
+    ]
+  },
+  "flex-layout.row#phone__list-info":{
+    "children":[
+        
+        "product-summary-image#phone__list-info",
+        //"flex-layout.row#tablet__list-info--description-brand"
+        "flex-layout.row#phone__list-info--description"
+    ],
+    "props":{
+        "blockClass":"phone__list-info"
+    }
+  },
+  "product-summary-image#phone__list-info":{
+    "props":{
+        "blockClass":"phone__list-info"
+    }
+  },
+  "flex-layout.row#phone__list-info--description":{
+    /*"children":[
+        "product-summary-brand#tablet__list-brand",
+        "product-rating-inline"
+    ]*/
+    "children":[
+        "flex-layout.row#phone__list-info--description-title",
+        "product-summary-name#tablet__list-info--description-name",
+        "rich-text#tablet__list-info--description--seller",
+        "rich-text#phone__list-info--description--offerweb",
+        "flex-layout.row#tablet__list-info--description--price"
+    ],
+    "props":{
+        "blockClass":"phone__list-info--description"
+    }
+    
+  },
+  "flex-layout.row#phone__list-info--description-title":{
+    "children":[
+        "product-summary-brand#tablet__list-brand",
+        "product-rating-inline"
+    ],
+    "props":{
+        "blockClass":"phone__list-info--description-title"
+    }
+  },
+  "rich-text#phone__list-info--description--offerweb":{
+    "props":{
+        "text":"Precio Exclusivo Web",
+        "blockClass":"phone__list-offerweb"
+    }
+  }
+}

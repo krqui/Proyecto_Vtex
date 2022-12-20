@@ -1,18 +1,14 @@
 {
   "store.product": {
     "children": [
-      "flex-layout.row#product__breadcrumb",
-      "flex-layout.row#product__info",
-      "flex-layout.row#product__tabs"
+      /*"flex-layout.row#product__breadcrumb",*/
+      "flex-layout.row#desktop__product"/*,
+      "flex-layout.row#product__tabs"*/
     ]
   },
-  "flex-layout.row#product__breadcrumb": {
-    "title": "Miga 1"
-  },
-  "flex-layout.row#product__info": {
-    "title": "Miga 2"
-  },
+  
+  
   "flex-layout.row#product__tabs": {
-    "title": "Miga 3"
+    "title": "Informacion adicional"
   }
 }
