@@ -12,7 +12,8 @@
       "responsive-layout.mobile#mobile__header-info",
       "responsive-layout.tablet#tablet__header-info",
       "search-bar#global__search",
-      "modal-trigger#example"
+      "flex-layout.row#mobile__header-threedots"/*,
+      "modal-trigger#example"*/
     ],
     "props": {
       "blockClass": "header__top--mobile"
@@ -33,6 +34,14 @@
     }
   },
 
+  "flex-layout.row#mobile__header-threedots":{
+    "children":[
+      "modal-trigger#example"
+    ],
+    "props":{
+      "blockClass":"mobile__header-threedots"
+    }
+  },
   "modal-trigger#example": {
     "children": [
       "logo#mobile&tablet__header-threedots",

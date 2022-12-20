@@ -1,0 +1,94 @@
+{
+  "flex-layout.row#desktop__product": {
+    "title": "Pagina general de PDP.",
+    "children": [
+        "flex-layout.col#desktop__product"
+      /*"flex-layout.col#product__info--image",
+      "flex-layout.col#product__info--data"*/
+    ],
+    "props":{
+        "blockClass":"desktop__product"
+    }
+  },
+  "flex-layout.col#desktop__product":{
+    "children":[
+        "flex-layout.row#product__breadcrumb",
+        "flex-layout.row#desktop__product-main",
+        "flex-layout.row#desktop__product-bottom"
+    ],
+    "props":{
+        "blockClass":"desktop__product"
+    }
+  },
+  "flex-layout.row#desktop__product-main":{
+    "children":[
+        "flex-layout.col#desktop__product-main"
+    ],
+    "props":{
+        "blockClass":"desktop__product-main"
+    }
+  },
+  "flex-layout.col#desktop__product-main":{
+    "children":[
+        "flex-layout.row#desktop__product-main--info",
+        "flex-layout.row#desktop__product-main--buy"
+    ],
+    "props":{
+        "blockClass":"desktop__product-main"
+    }
+  },
+  "flex-layout.row#desktop__product-main--info":{
+    "children":[
+        "flex-layout.col#desktop__product-main--info-left",
+        "flex-layout.col#desktop__product-main--info-right"
+    ],
+    "props":{
+        "blockClass":"desktop__product-main--info"
+    }
+  },
+  "flex-layout.col#desktop__product-main--info-left":{
+    "children":[
+        "product-images"
+    ],
+    "props":{
+        "blockClass":"desktop__product-main--info-left"
+    }
+  },
+  "flex-layout.col#desktop__product-main--info-right":{
+    "children":[
+        "product-price",
+        "product-quantity"
+    ],
+    "props":{
+        "blockClass":"desktop__product-main--info-right"
+    }
+  },
+
+  "flex-layout.row#desktop__product-main--buy":{
+    "props":{
+        "blockClass":"desktop__product-main--buy"
+    }
+  },
+  "flex-layout.row#desktop__product-bottom":{
+    "props":{
+        "blockClass":"desktop__product-bottom"
+    }
+  }
+
+
+  /*"flex-layout.col#product__info--image":{
+    "title":"Imagenes de Producto",
+    "children":[
+        "product-images"
+    ]
+
+  },
+  "flex-layout.col#product__info--data":{
+    "title":"Data de Producto",
+    "children":[
+        //"vtex.product-list@0.x:product-name",
+        "product-price",
+        "product-quantity"
+    ]
+  }*/
+}
