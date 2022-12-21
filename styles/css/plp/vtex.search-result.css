@@ -211,7 +211,8 @@
 .gallery--viewgrid {
   margin-top: 2px;
   /*width: 72vw !important;*/
-  width: 100vw !important;
+  /*width: 100vw !important;*/
+  width: 83vw;
 }
 
 .filterPopupTitle--tablet__department-header--bottom-right {

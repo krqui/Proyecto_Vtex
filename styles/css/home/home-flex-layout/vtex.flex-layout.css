@@ -506,6 +506,7 @@
 
 .flexRowContent--phone__list-info :nth-child(2n + 1) {
   width: 115px !important;
+  /*margin-right: 10px;*/
 }
 
 .flexRowContent--phone__list-info :nth-child(2n + 2) {
@@ -528,7 +529,9 @@
   margin: auto;
   padding-bottom: 10px;
 }
-
+.flexRow--desktop__product-main {
+  padding: 20px 15px;
+}
 .flexRowContent--desktop__product-main {
   background: #fff;
   border-radius: 2px;
@@ -545,7 +548,33 @@
 /*.flexRowContent--desktop__product-main--info :first-child {
   width: 45% !important;
 }*/
+.flexRow--desktop__product-stack .flexRowContent--desktop__product-main--info:first-child{
+  width: 45% !important;
+}
 
-/*.flexRowContent--desktop__product-main--info :nth-child(2n) {
-  width: 55% !important;
-}*/
+.flexRow--desktop__product-stack {
+  margin-top: 20px;
+}
+
+.flexRow--desktop__product-header {
+  margin-top: 12px;
+}
+
+.flexRowContent--desktop__product-header {
+  justify-content: space-between;
+}
+
+
+.flexColChild--desktop__product-main--info-right:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.flexRowContent--desktop__product-header .stretchChildrenWidth {
+  width: auto !important;
+}
+
+
+.flexRowContent--desktop__product-header--left .stretchChildrenWidth {
+  width: auto !important;
+}
+

@@ -471,3 +471,10 @@
   font-size: 11px;
   color: #d5222e;
 }
+
+.paragraph--desktop__product-comment {
+  line-height: 0;
+  margin-left: 4px;
+  color:#78aaf0;
+  font-size: 14.5px;
+}

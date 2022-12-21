@@ -88,3 +88,7 @@
     border-radius: 50px;
   }
 }
+
+.childrenContainer--desktop__product-rating {
+  display: flex;
+}

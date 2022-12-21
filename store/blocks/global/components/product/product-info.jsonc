@@ -2,79 +2,188 @@
   "flex-layout.row#desktop__product": {
     "title": "Pagina general de PDP.",
     "children": [
-        "flex-layout.col#desktop__product"
+      "flex-layout.col#desktop__product"
       /*"flex-layout.col#product__info--image",
       "flex-layout.col#product__info--data"*/
     ],
-    "props":{
-        "blockClass":"desktop__product"
+    "props": {
+      "blockClass": "desktop__product"
     }
   },
-  "flex-layout.col#desktop__product":{
+  "flex-layout.col#desktop__product": {
+    "children": [
+      "flex-layout.row#product__breadcrumb",
+      "flex-layout.row#desktop__product-main",
+      "flex-layout.row#desktop__product-bottom"
+    ],
+    "props": {
+      "blockClass": "desktop__product"
+    }
+  },
+  "flex-layout.row#desktop__product-main": {
+    "children": ["flex-layout.col#desktop__product-main"],
+    "props": {
+      "blockClass": "desktop__product-main"
+    }
+  },
+  "flex-layout.col#desktop__product-main": {
+    "children": [
+      "flex-layout.row#desktop__product-main--info",
+      "flex-layout.row#desktop__product-main--buy"
+    ],
+    "props": {
+      "blockClass": "desktop__product-main"
+    }
+  },
+  "flex-layout.row#desktop__product-main--info": {
+    "children": [
+      "flex-layout.col#desktop__product-main--info-left",
+      "flex-layout.col#desktop__product-main--info-right"
+    ],
+    "props": {
+      "blockClass": "desktop__product-main--info"
+    }
+  },
+  "flex-layout.col#desktop__product-main--info-left": {
+    "children": [
+      //"product-images"
+      "stack-layout#desktop__product-stack"
+    ],
+    "props": {
+      "blockClass": "desktop__product-main--info-left"
+    }
+  },
+  "stack-layout#desktop__product-stack": {
+    "children": ["flex-layout.row#desktop__product-stack"],
+    "props": {
+      "blockClass": "desktop__product-stack"
+    }
+  },
+  "flex-layout.row#desktop__product-stack": {
+    "children": ["flex-layout.col#desktop__product-stack--images"],
+    "props":{
+      "blockClass":"desktop__product-stack"
+    }
+  },
+  "flex-layout.col#desktop__product-stack--images": {
+    "children":["product-images#desktop__product-stack--images"],
+    "props":{
+      "blockClass":"desktop__product-stack--images"
+    }
+  },
+  "product-images#desktop__product-stack--images":{
+    "props":{
+      "showNavigationArrows":false,
+      "showPaginationDots":false,
+      "blockClass":"desktop__product-stack--images"
+    }
+  },
+  "flex-layout.col#desktop__product-main--info-right": {
+    "children": [
+      "flex-layout.row#desktop__product-header"
+      /*"vtex.store-components@3.x:product-brand",
+      "product-rating-inline",
+      //"reviews-and-ratings",
+      "vtex.store-components@3.x:product-name",
+      //"product-summary-description",
+      //"product-details",
+      "product-price",
+      "product-quantity"*/
+    ],
+    "props": {
+      "blockClass": "desktop__product-main--info-right"
+    }
+  },
+  "flex-layout.row#desktop__product-header":{
     "children":[
-        "flex-layout.row#product__breadcrumb",
-        "flex-layout.row#desktop__product-main",
-        "flex-layout.row#desktop__product-bottom"
+      "flex-layout.col#desktop__product-header--left",
+      "flex-layout.col#desktop__product-header--right"
     ],
     "props":{
-        "blockClass":"desktop__product"
+      "blockClass":"desktop__product-header"
     }
   },
-  "flex-layout.row#desktop__product-main":{
+  "flex-layout.col#desktop__product-header--left":{
     "children":[
-        "flex-layout.col#desktop__product-main"
+      "flex-layout.row#desktop__product-header--left"
     ],
     "props":{
-        "blockClass":"desktop__product-main"
+      "blockClass":"desktop__product-header--left"
     }
   },
-  "flex-layout.col#desktop__product-main":{
+  "flex-layout.row#desktop__product-header--left":{
     "children":[
-        "flex-layout.row#desktop__product-main--info",
-        "flex-layout.row#desktop__product-main--buy"
+      "vtex.store-components@3.x:product-brand#desktop__product-brand",
+      "link.product#desktop__product-rating"
     ],
     "props":{
-        "blockClass":"desktop__product-main"
+      "blockClass":"desktop__product-header--left"
     }
   },
-  "flex-layout.row#desktop__product-main--info":{
+  "vtex.store-components@3.x:product-brand#desktop__product-brand":{
+    "props":{
+      "blockClass":"desktop__product-brand"
+    }
+  },
+  "link.product#desktop__product-rating":{
     "children":[
-        "flex-layout.col#desktop__product-main--info-left",
-        "flex-layout.col#desktop__product-main--info-right"
+      "product-rating-summary#desktop__product-rating",
+      "rich-text#product"
     ],
     "props":{
-        "blockClass":"desktop__product-main--info"
+      "href":"/{slug}/p",
+      "blockClass":"desktop__product-rating"
     }
   },
-  "flex-layout.col#desktop__product-main--info-left":{
+  "product-rating-summary#desktop__product-rating":{
+    "props":{
+      "blockClass":"desktop__product-rating"
+    }
+  },
+  "rich-text#product":{
+    "props":{
+      "text":"Escribir un comentario",
+      "blockClass":"desktop__product-comment"
+    }
+  },
+  "flex-layout.col#desktop__product-header--right":{
     "children":[
-        "product-images"
+      "flex-layout.row#desktop__product-header--right"
     ],
     "props":{
-        "blockClass":"desktop__product-main--info-left"
+      "blockClass":"desktop__product-header--right"
     }
   },
-  "flex-layout.col#desktop__product-main--info-right":{
+  "flex-layout.row#desktop__product-header--right":{
     "children":[
-        "product-price",
-        "product-quantity"
+      "product-identifier.product",
+      "image#desktop__share"
     ],
     "props":{
-        "blockClass":"desktop__product-main--info-right"
+      "blockClass":"desktop__product-header--right"
     }
   },
-
-  "flex-layout.row#desktop__product-main--buy":{
+  "image#desktop__share":{
     "props":{
-        "blockClass":"desktop__product-main--buy"
+      "link": {
+        "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/share",
+        "attributeTitle": "", // disables the title option of the anchor tag
+        "newTab": true // the only way to open in new tab
+      },
+      "src":"https://coolboxpe.vtexassets.com/_v/public/assets/v1/published/coolboxpe.custom-store-components@0.2.519/public/react/cc9cce58b6c52cbe4e81ba4d769f6679.svg",
+      "blockClass":"desktop__share"
     }
   },
-  "flex-layout.row#desktop__product-bottom":{
-    "props":{
-        "blockClass":"desktop__product-bottom"
+  "flex-layout.row#desktop__product-main--buy": {
+    "props": {
+      "blockClass": "desktop__product-main--buy"
+    }
+  },
+  "flex-layout.row#desktop__product-bottom": {
+    "props": {
+      "blockClass": "desktop__product-bottom"
     }
   }
-
 
   /*"flex-layout.col#product__info--image":{
     "title":"Imagenes de Producto",
