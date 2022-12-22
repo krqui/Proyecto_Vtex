@@ -106,7 +106,6 @@
       "product-summary-description#global__price",
       "rich-text#global__price",
       "flex-layout.row#global__price"
-      //,"product-summary-buy-button"
     ],
     "props": {
       "blockClass": "global__shelf-details",

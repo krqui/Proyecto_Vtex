@@ -8,8 +8,6 @@
   text-align: start;
 }
 
-
-
 .currencyCode,
 .currencyLiteral,
 .currencyInteger,
@@ -27,28 +25,27 @@
   color: #000;
 }
 
-
-
+.currencyContainer--desktop__product-body--credit {
+  font-size: 24px;
+}
 
 .currencyContainer--desktop__grid-price {
   margin-right: 10px;
 }
 
-
-
-@media only screen and (max-width:640px) {
+@media only screen and (max-width: 640px) {
   .sellingPrice--hasUnitMultiplier,
   .sellingPrice--hasListPrice,
   .sellingPrice {
     text-align: center;
   }
   .currencyCode--desktop__grid-price,
-.currencyLiteral--desktop__grid-price,
-.currencyInteger--desktop__grid-price,
-.currencyGroup--desktop__grid-price {
-  font-size: 18px;
-  font-family: ui-serif;
-}
+  .currencyLiteral--desktop__grid-price,
+  .currencyInteger--desktop__grid-price,
+  .currencyGroup--desktop__grid-price {
+    font-size: 18px;
+    font-family: ui-serif;
+  }
 }
 
 .currencyCode--desktop__grid-price,
@@ -57,7 +54,6 @@
 .currencyGroup--desktop__grid-price {
   color: #000;
 }
-
 
 .sellingPriceValue--mobile__price .currencyCode--mobile__price,
 .sellingPriceValue--mobile__price .currencyLiteral--mobile__price,
@@ -77,4 +73,13 @@
 
 .currencyContainer--desktop__productlist-options--sellingp {
   font-size: 18px;
+}
+
+.listPrice--desktop__product-body--credit2,
+.currencyCode--desktop__product-body--credit2,
+.currencyLiteral--desktop__product-body--credit2,
+.currencyInteger--desktop__product-body--credit2,
+.currencyGroup--desktop__product-body--credit2 {
+  color: #979899;
+  font-size: 15px;
 }

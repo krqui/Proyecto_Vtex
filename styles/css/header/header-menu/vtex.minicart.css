@@ -78,3 +78,18 @@
   padding: 5px;
   margin-right: 20px;
 }
+
+.minicartCheckoutButton--desktop__product-body--buttons :global(.vtex-button) {
+  background-color: #d70d27;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.minicartCheckoutButton--desktop__product-body--buttons :global(.vtex-button) :global(.vtex-button__label)::after {
+  content:"Comprar";
+  margin-right: 32px;
+}
+
+.minicartCheckoutButton--desktop__product-body--buttons {
+  padding: 0px 6px;
+}

@@ -212,7 +212,7 @@
   margin-top: 2px;
   /*width: 72vw !important;*/
   /*width: 100vw !important;*/
-  width: 83vw;
+  width: 83vw !important;
 }
 
 .filterPopupTitle--tablet__department-header--bottom-right {

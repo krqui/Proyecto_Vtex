@@ -92,3 +92,18 @@
 .childrenContainer--desktop__product-rating {
   display: flex;
 }
+
+.link--desktop__product-savings {
+  margin-top: 14px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: #d70d27;
+  border-color: #d70d27;
+  min-height: 18px;
+  height: 30px;
+}
+
+.label--desktop__product-savings {
+  font-size: 12px;
+  padding: 0px 10px;
+}

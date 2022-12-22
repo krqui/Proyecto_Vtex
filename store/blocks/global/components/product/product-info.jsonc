@@ -80,7 +80,9 @@
   },
   "flex-layout.col#desktop__product-main--info-right": {
     "children": [
-      "flex-layout.row#desktop__product-header"
+      "flex-layout.row#desktop__product-header",
+      "flex-layout.row#desktop__product-name",
+      "flex-layout.row#desktop__product-body"
       /*"vtex.store-components@3.x:product-brand",
       "product-rating-inline",
       //"reviews-and-ratings",
@@ -165,12 +167,13 @@
   },
   "image#desktop__share":{
     "props":{
+      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1671609299/coolb/n3kzhvhckxr0sttaerjd.svg",
       "link": {
         "url": "https://diegoantonio--itgloberspartnercl.myvtex.com/share",
         "attributeTitle": "", // disables the title option of the anchor tag
         "newTab": true // the only way to open in new tab
       },
-      "src":"https://coolboxpe.vtexassets.com/_v/public/assets/v1/published/coolboxpe.custom-store-components@0.2.519/public/react/cc9cce58b6c52cbe4e81ba4d769f6679.svg",
+      "maxWidth":22,
       "blockClass":"desktop__share"
     }
   },
@@ -183,21 +186,336 @@
     "props": {
       "blockClass": "desktop__product-bottom"
     }
-  }
+  },
 
-  /*"flex-layout.col#product__info--image":{
-    "title":"Imagenes de Producto",
+
+
+  "flex-layout.row#desktop__product-name":{
     "children":[
-        "product-images"
-    ]
+      "vtex.store-components@3.x:product-name#desktop__product-name"
+    ],
+    "props":{
+      "blockClass":"desktop__product-name"
+    }
+  },
+  "vtex.store-components@3.x:product-name#desktop__product-name":{
+    "props":{
+      "blockClass":"desktop__product-name"
+    }
+  },
+
+  "flex-layout.row#desktop__product-body":{
+    "children":[
+      "flex-layout.col#desktop__product-body--menu",
+      //"menu#desktop__productlist-custom",
+      "flex-layout.col#desktop__product-body--credit"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body"
+    }
+  },
+  "flex-layout.col#desktop__product-body--menu":{
+    "children":[
+      "menu#desktop__productlist-custom"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--menu"
+    }
+  },
+  "flex-layout.col#desktop__product-body--credit":{
+    "children":[
+      "rich-text#desktop__product-body--credit",
+      "flex-layout.row#desktop__product-body--credit",
+      "flex-layout.row#desktop__product-body--delivery",
+      "flex-layout.row#desktop__product-body--payment",
+      "flex-layout.row#desktop__product-body--units",
+      "flex-layout.row#desktop__product-body--buttons",
+      "flex-layout.row#desktop__product-body--navidad"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--credit"
+    }
+  },
+  "rich-text#desktop__product-body--credit":{
+    "props":{
+      "text":"Precio Exclusivo Web",
+      "textAlignment":"CENTER",
+      "textPosition":"LEFT",
+      "font": "t-heading-3",
+      "blockClass":"desktop__product-body--credit"
+    }
+  },
+  "flex-layout.row#desktop__product-body--credit":{
+    "children":[
+      "flex-layout.row#desktop__product-body--credit-left",
+      "flex-layout.row#desktop__product-body--credit-right"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--credit"
+    }
+  },
+  "flex-layout.row#desktop__product-body--credit-left":{
+    "children":[
+      "product-selling-price#desktop__product-body--credit",
+      "product-list-price#desktop__product-body--credit"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--credit-left"
+    }
+  },
+  "product-selling-price#desktop__product-body--credit":{
+    "props":{
+      "blockClass":"desktop__product-body--credit"
+    }
+  },
+  "product-list-price#desktop__product-body--credit":{
+    "props":{
+      "blockClass":"desktop__product-body--credit2"
+    }
+  },
+  "flex-layout.row#desktop__product-body--credit-right":{
+    "children":[
+      "flex-layout.col#desktop__product-body--credit-right"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--credit-right"
+    }
+  },
+  "flex-layout.col#desktop__product-body--credit-right":{
+    "children":[
+      "link.product#desktop__product-savings",
+      "rich-text#desktop__product-payway"
+    ],
+    "props":{
+      "blockClass":"flex-layout.col#desktop__product-body--credit-right"
+    }
+  },
+  "link.product#desktop__product-savings":{
+    "props":{
+      "label":"-11%",
+      "displayMode":"button",
+      "blockClass":"desktop__product-savings"
+    }
+  },
+  "rich-text#desktop__product-payway":{
+    "props":{
+      "text":"Todos los medios de pago",
+      "blockClass":"desktop__product-payway"
+    }
+  },
+  "flex-layout.row#desktop__product-body--delivery":{
+    "children":[
+      /*"flex-layout.col#desktop__product-body--delivery"*/
+      "flex-layout.row#desktop__product-body--delivery-left",
+      "flex-layout.row#desktop__product-body--delivery-right"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--delivery"
+    }
+  },
+  "flex-layout.row#desktop__product-body--delivery-left":{
+    "children":[
+      "image#desktop__product-body--delivery-image"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--delivery-left"
+    }
+  },
+  "image#desktop__product-body--delivery-image":{
+    "props": {
+      "src": "https://res.cloudinary.com/dby5zzxin/image/upload/v1671671902/coolb/crqarctcyuc53rthrk0p.svg",
+      "maxHeight": 30
+    }
+  },
+  "flex-layout.row#desktop__product-body--delivery-right":{
+    "children":[
+      "flex-layout.col#desktop__product-body--delivery-right"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--delivery-right"
+    }
+  },
+  "flex-layout.col#desktop__product-body--delivery-right":{
+    "children":[
+      "rich-text#desktop__product-dateoffer",
+      "rich-text#desktop__product-placesoffer"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--delivery-right"
+    }
+  },
+  "rich-text#desktop__product-dateoffer":{
+    "props":{
+      "text":"¡Cómpralo hasta la 1:00 p.m. y recíbelo hoy!",
+      "blockClass":"desktop__product-dateoffer"
+    }
+  },
+  "rich-text#desktop__product-placesoffer":{
+    "props":{
+      "text":"Lima Metropolitana y Callao. [Ver distritos](https://diegoantonio--itgloberspartnercl.myvtex.com/distritos)",
+      "blockClass":"desktop__product-placesoffer"
+    }
+  },
+
+  "flex-layout.row#desktop__product-body--payment":{
+    "children":[
+      "flex-layout.col#desktop__product-body--payment"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--payment"
+    }
+  },
+  "flex-layout.col#desktop__product-body--payment":{
+    "children":[
+      "flex-layout.row#desktop__product-body--payment-1",
+      "flex-layout.row#desktop__product-body--payment-2",
+      "flex-layout.row#desktop__product-body--payment-3",
+      "flex-layout.row#desktop__product-body--payment-4"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--payment"
+    }
+  },
+  "flex-layout.row#desktop__product-body--payment-1":{
+    "children":["rich-text#desktop__product-body--payment-1"],
+    "props":{
+      "blockClass":"desktop__product-body--payment-1"
+    }
+  },
+  "rich-text#desktop__product-body--payment-1":{
+    "props":{
+      "font": "t-heading-3",
+      "text":"Hasta **6 CUOTAS de S/ 283.17 SIN INTERESES con**",
+      "blockClass":"desktop__product-body--payment-1"
+    }
+  },
+  "flex-layout.row#desktop__product-body--payment-2":{
+    "children":[
+      "image#desktop__product-body--payment-2--bbva",
+      "image#desktop__product-body--payment-2--banks"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--payment-2"
+    }
+  },
+  "image#desktop__product-body--payment-2--bbva":{
+    "props":{
+      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1671685873/coolb/u8cotnp9w86fidugkz5p.svg",
+      "blockClass":"desktop__product-body--payment-2--bbva"
+    }
+  },
+  "image#desktop__product-body--payment-2--banks":{
+    "props":{
+      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1671686009/coolb/syhmgqacilpt8j3otjbw.svg",
+      "blockClass":"desktop__product-body--payment-2--banks"
+    }
+  },
+  "flex-layout.row#desktop__product-body--payment-3":{
+    "children":[
+      "rich-text#desktop__product-body--payment-3"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--payment-3"
+    }
+  },
+  "rich-text#desktop__product-body--payment-3":{
+    "props":{
+      "font": "t-heading-3",
+      "text":"Hasta **12 CUOTAS de S/ 141.58 SIN INTERESES con**",
+      "blockClass":"desktop__product-body--payment-3"
+    }
+  },
+  "flex-layout.row#desktop__product-body--payment-4":{
+    "children":[
+      "image#desktop__product-body--payment-2--diners"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--payment-4"
+    }
+  },
+  "image#desktop__product-body--payment-2--diners":{
+    "props":{
+      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1671686107/coolb/q5o7dbehyj8kwt3kr5cu.svg",
+      "blockClass":"desktop__product-body--payment-2--diners"
+    }
+  },
+  "flex-layout.row#desktop__product-body--units":{
+    "children":[
+      "product-quantity#desktop__product-body--units"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--units"
+    }
+  },
+  "product-quantity#desktop__product-body--units":{
+    "props":{
+      "showLabel":false,
+      "blockClass":"desktop__product-body--units"
+    }
+  },
+  "flex-layout.row#desktop__product-body--buttons":{
+    "children":[
+      "add-to-cart-button#desktop__product-body--add",
+      "minicart-checkout-button#desktop__product-body--buttons"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--buttons"
+    }
+  },
+  "add-to-cart-button#desktop__product-body--add":{
+    "props":{
+      "blockClass":"desktop__product-body--add"
+    }
+  },
+  "minicart-checkout-button#desktop__product-body--buttons":{
+    "props":{
+      "blockClass":"desktop__product-body--buttons"
+    }
+  },
+  "flex-layout.row#desktop__product-body--navidad":{
+    "children":["flex-layout.row#desktop__product-body--navidad-sub"],
+    "props":{
+      "blockClass":"desktop__product-body--navidad"
+    }
+  },
+  "flex-layout.row#desktop__product-body--navidad-sub":{
+    "children":[
+      "image#desktop__product-body--navidad-sub",
+      "flex-layout.col#desktop__product-body--navidad-sub"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--navidad-sub"
+    }
+  },
+  "image#desktop__product-body--navidad-sub":{
+    "props":{
+      "src":"https://res.cloudinary.com/dby5zzxin/image/upload/v1671697801/coolb/t7vigayys2p4hctuaew0.png",
+      "blockClass":"desktop__product-body--navidad-sub"
+    }
+  },
+  "flex-layout.col#desktop__product-body--navidad-sub":{
+    "children":[
+      "rich-text#desktop__product-body--navidad-sub1",
+      "rich-text#desktop__product-body--navidad-sub2"
+    ],
+    "props":{
+      "blockClass":"desktop__product-body--navidad-sub"
+    }
+  },
+  "rich-text#desktop__product-body--navidad-sub1":{
+    "props":{
+      "text":"¡TU PEDIDO LLEGARÁ ANTES DE NAVIDAD!",
+      "font": "t-heading-3",
+      "blockClass":"desktop__product-body--navidad-sub1"
+    }
 
   },
-  "flex-layout.col#product__info--data":{
-    "title":"Data de Producto",
-    "children":[
-        //"vtex.product-list@0.x:product-name",
-        "product-price",
-        "product-quantity"
-    ]
-  }*/
+  "rich-text#desktop__product-body--navidad-sub2":{
+    "props":{
+      "text":"Válido en Lima Metropolitana y Callao. \n [**Ver condiciones**](https://diegoantonio--itgloberspartnercl.myvtex.com/navidad)",
+      "font": "t-heading-3",
+      "blockClass":"desktop__product-body--navidad-sub2"
+    }
+
+  }
 }

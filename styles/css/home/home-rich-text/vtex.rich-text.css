@@ -472,9 +472,56 @@
   color: #d5222e;
 }
 
+.link--desktop__product-placesoffer {
+  color:#d20000
+}
 .paragraph--desktop__product-comment {
   line-height: 0;
   margin-left: 4px;
   color:#78aaf0;
   font-size: 14.5px;
+}
+
+.container--desktop__product-body--credit {
+  margin-bottom: 10px;
+}
+
+.paragraph--desktop__product-body--credit {
+  color: #d70d27;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0;
+}
+
+.paragraph--desktop__product-payway {
+  font-size: 13px;
+}
+
+.paragraph--desktop__product-dateoffer, .paragraph--desktop__product-placesoffer {
+  line-height: 1;
+  font-size: 11px;
+  margin: 3px 0px;
+}
+
+
+.paragraph--desktop__product-body--payment-1, .paragraph--desktop__product-body--payment-3 {
+  margin: 0px;
+}
+
+.strong--desktop__product-body--payment-1, .strong--desktop__product-body--payment-3 {
+  font-size: 13px;
+}
+
+.paragraph--desktop__product-body--navidad-sub1 {
+  color: #fff;
+  line-height: 0;
+}
+
+.paragraph--desktop__product-body--navidad-sub2 {
+  color: #fff;
+  margin: 0
+}
+
+.link--desktop__product-body--navidad-sub2 {
+  color: #fff;
 }
