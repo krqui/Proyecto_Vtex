@@ -1,5 +1,6 @@
 {
   "store.custom#about-uss": {
-        "path": "/abooo"
+    "title": "Ruta de about-us",
+    "path": "/quienes-somos"
   }
 }

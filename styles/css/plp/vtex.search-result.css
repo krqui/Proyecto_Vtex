@@ -211,7 +211,8 @@
 .gallery--viewgrid {
   margin-top: 2px;
   /*width: 72vw !important;*/
-  width: 100vw !important;
+  /*width: 100vw !important;*/
+  width: 83vw !important;
 }
 
 .filterPopupTitle--tablet__department-header--bottom-right {
@@ -246,7 +247,10 @@
   font-family: sans-serif;
 }
 
-.filterClearButtonWrapper--tablet__department-header--bottom-right :global(.vtex-button) , .filterApplyButtonWrapper--tablet__department-header--bottom-right :global(.vtex-button) {
+.filterClearButtonWrapper--tablet__department-header--bottom-right
+  :global(.vtex-button),
+.filterApplyButtonWrapper--tablet__department-header--bottom-right
+  :global(.vtex-button) {
   font-size: 13px;
   color: #000;
   font-family: sans-serif;

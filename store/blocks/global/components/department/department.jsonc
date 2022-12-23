@@ -1,32 +1,21 @@
 {
-  "store.search#electrodomesticos": {
+  /*"store.search#electrodomesticos": {
     "blocks": ["search-result-layout#electrodomesticos"]
   },
   "search-result-layout#electrodomesticos": {
+    "title":"Busqueda por departamento",
     "blocks": [
-      /*"search-result-layout.desktop#electrodomesticos",*/
       "search-result-layout.desktop#desktop__electrodomesticos",
       "search-result-layout.mobile#mobile__electrodomesticos",
       "search-not-found-layout"
     ]
-  },
-  /*"search-result-layout.desktop#electrodomesticos": {
-    "children": [
-      //"rich-text#desktop-response-electrodomesticos"
-      "flex-layout.row#department__breadcrumb"
-    ]
-  },
-  "flex-layout.row#department__breadcrumb": {
-    "children": ["flex-layout.col#department__breadcrumb"]
-  },
-  "flex-layout.col#department__breadcrumb": {
-    "children": ["breadcrumb.search"]
   },*/
-
   "search-result-layout.desktop#desktop__electrodomesticos": {
+    "title":"Busqueda por departamento version desktop",
     "children": ["responsive-layout.desktop#desktop__department"]
   },
   "responsive-layout.desktop#desktop__department": {
+    "title":"Contenedor de elementos en la busqueda por departamento ",
     "children": [
       "flex-layout.row#department__breadcrumb",
       "flex-layout.row#desktop__department-search",
@@ -37,17 +26,20 @@
     }
   },
   "flex-layout.row#department__breadcrumb": {
+    "title":"Contenedor del Breadcrumb",
     "children": ["breadcrumb.search"],
     "props": {
       "blockClass": "department__breadcrumb"
     }
   },
   "breadcrumb.search":{
+    "title":"Breadcrumb",
     "props": {
       "showOnMobile": true
     }
   },
   "flex-layout.row#desktop__department-search": {
+    "title":"Busqueda de elementos por departamento ",
     "children": [
       "flex-layout.col#desktop__department-search--left",
       "flex-layout.col#desktop__department-search--right"
@@ -57,9 +49,11 @@
     }
   },
   "flex-layout.col#desktop__department-search--left": {
+    "title":"Busqueda de elementos por departamento lado izquierdo contenedor",
     "children": ["flex-layout.row#desktop__department-search--left"]
   },
   "flex-layout.row#desktop__department-search--left": {
+    "title":"Busqueda de elementos por departamento lado izquierdo",
     "children": [
       "flex-layout.col#desktop__department-search--left-title",
       "flex-layout.col#desktop__department-search--left-counter"
@@ -69,21 +63,25 @@
     }
   },
   "flex-layout.col#desktop__department-search--left-title": {
+    "title":"Busqueda de elementos por departamento lado izquierdo titulo",
     "children": ["search-title.v2"],
     "props": {
       "blockClass": "desktop__department-search--left-title"
     }
   },
   "flex-layout.col#desktop__department-search--left-counter": {
+    "title":"Cantidad de productos por departamento",
     "children": ["total-products.v2"],
     "props": {
       "blockClass": "desktop__department-search--left-counter"
     }
   },
   "flex-layout.col#desktop__department-search--right": {
+    "title":"Busqueda de elementos por departamento lado derecho contenedor",
     "children": ["flex-layout.row#desktop__department-search--right"]
   },
   "flex-layout.row#desktop__department-search--right": {
+    "title":"Busqueda de elementos por departamento lado derecho",
     "children": [
       "flex-layout.col#desktop__department-search--right-orderby",
       "flex-layout.col#desktop__department-search--right-infochange"
@@ -93,17 +91,21 @@
     }
   },
   "flex-layout.col#desktop__department-search--right-orderby": {
+    "title":"Contenedor del ordenador de elementos por departamento",
     "children": ["order-by.v2#desktop__department-search--right-orderby"],
     "props": {
       "blockClass": "desktop__department-search--right-orderby"
     }
   },
   "order-by.v2#desktop__department-search--right-orderby": {
+    "title":"Ordenador de los elementos por departamento",
     "props": {
       "showOrderTitle": false,
       "blockClass": "desktop__department-search--right-orderby"
     }
   },
+
+
   "flex-layout.col#desktop__department-search--right-infochange": {
     "children": ["gallery-layout-switcher#desktop__department-infochange"],
     "props": {
@@ -210,8 +212,6 @@
           "component": "ListGrid",
           "itemsPerRow": {
             "desktop": 1
-            /*"tablet": 1,
-            "phone": 1*/
           }
         }
       ],

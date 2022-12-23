@@ -1,52 +1,39 @@
 .container {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .profileIcon--loginn {
-    margin-top: 12px;
-    margin-left: 10px;
+  margin-top: 12px;
+  margin-left: 10px;
 }
 
-:global(.vtex-button__label){
-    padding-left:0.5rem;
-    padding-right:0.5rem
-
+:global(.vtex-button__label) {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-
-
-
 
 .label {
-    text-transform: none;
-    display: flex;
-    color: #fff;
-    /*margin-top: 0.5px;*/
-    text-align: left;
-    align-items: center;
-    font-size: 13px;
-    padding: 3px 0 0;
-    flex-direction: column;
-    font-weight: 600;
-    white-space: nowrap;
+  text-transform: none;
+  display: flex;
+  color: #fff;
+  text-align: left;
+  align-items: center;
+  font-size: 13px;
+  padding: 3px 0 0;
+  flex-direction: column;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .label::before {
-    content: "";
-    display: block;
-    float:left;
-    background-size: contain;
-    background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1669776257/coolb/ccr5529vobcox2kpnd1y.svg);
-    background-repeat: no-repeat;
-    height: 24px;
-    width: 24px;
-    margin-bottom: 2px;
+  content: "";
+  display: block;
+  float: left;
+  background-size: contain;
+  background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1669776257/coolb/ccr5529vobcox2kpnd1y.svg);
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  margin-bottom: 2px;
 }
-/*.container ::after{
-    content: "Iniciar sesión";
-    color: #fff
-}*/
-/*.button {
-    display: flex;
-    flex-direction: column;
-}*/

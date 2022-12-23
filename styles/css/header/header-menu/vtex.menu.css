@@ -15,7 +15,6 @@
   gap: 10px;
 }
 
-
 .menuContainerNav--desktop__header-categories--button {
   border: 1px solid #fff;
   border-radius: 10px;
@@ -24,7 +23,7 @@
   padding-left: 10px;
 }
 .styledLinkContainer--desktop__header-categories--button {
-  margin: 0!important;
+  margin: 0 !important;
   padding: 4px 8px;
   display: flex;
 }
@@ -40,7 +39,9 @@
   align-items: center;
 }
 
-.styledLinkContainer--desktop__websites-tienda, .styledLinkContainer--desktop__websites-ventas, .styledLinkContainer--desktop__websites-ayuda {
+.styledLinkContainer--desktop__websites-tienda,
+.styledLinkContainer--desktop__websites-ventas,
+.styledLinkContainer--desktop__websites-ayuda {
   margin-left: 0.8rem;
   margin-right: 0.3rem;
 }
@@ -82,14 +83,18 @@
   margin-left: 39px;
   margin-bottom: 2.5px;
 }
-.styledLink--desktop__websites-tienda, .styledLink--desktop__websites-ventas, .styledLink--desktop__websites-ayuda {
+.styledLink--desktop__websites-tienda,
+.styledLink--desktop__websites-ventas,
+.styledLink--desktop__websites-ayuda {
   font-size: 13px;
   color: #fff;
   align-items: center;
   font-weight: 600;
 }
 
-.styledLinkContent--desktop__websites-tienda, .styledLinkContent--desktop__websites-ventas, .styledLinkContent--desktop__websites-ayuda {
+.styledLinkContent--desktop__websites-tienda,
+.styledLinkContent--desktop__websites-ventas,
+.styledLinkContent--desktop__websites-ayuda {
   flex-direction: column;
 }
 
@@ -104,7 +109,7 @@
 }
 
 .styledLink--desktop__footer-b2--colOne--tiendas {
-  color:#fff;
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   margin: 6px 0;
@@ -113,7 +118,7 @@
 }
 
 .styledLink--desktop__footer-b2--colOne--tiendas:hover {
-  color:#ababab
+  color: #ababab;
 }
 
 .styledLinkContent--mobile__footer-item--text {
@@ -125,7 +130,6 @@
   color: white;
   font-size: 23px;
   margin-bottom: 9px;
-  /*margin-left: 18px;*/
   margin-left: 35px;
 }
 
@@ -149,11 +153,9 @@
   margin-top: 3px;
 }
 
-
 .menuItem--mobile__footer-item--text {
   margin: 5px 0px;
 }
-
 
 .menuContainerNav--desktop__productlist-custom {
   background-color: #fafafa;
@@ -164,14 +166,22 @@
   list-style-type: inherit;
 }
 
-.styledLinkContainer--desktop__productlist-custom--1, .styledLinkContainer--desktop__productlist-custom--2, .styledLinkContainer--desktop__productlist-custom--3, .styledLinkContainer--desktop__productlist-custom--4, .styledLinkContainer--desktop__productlist-custom--5 {
+.styledLinkContainer--desktop__productlist-custom--1,
+.styledLinkContainer--desktop__productlist-custom--2,
+.styledLinkContainer--desktop__productlist-custom--3,
+.styledLinkContainer--desktop__productlist-custom--4,
+.styledLinkContainer--desktop__productlist-custom--5 {
   margin-left: 0px;
   margin-right: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-.styledLinkContent--desktop__productlist-custom--1 ,.styledLinkContent--desktop__productlist-custom--2, .styledLinkContent--desktop__productlist-custom--3, .styledLinkContent--desktop__productlist-custom--4, .styledLinkContent--desktop__productlist-custom--5 {
+.styledLinkContent--desktop__productlist-custom--1,
+.styledLinkContent--desktop__productlist-custom--2,
+.styledLinkContent--desktop__productlist-custom--3,
+.styledLinkContent--desktop__productlist-custom--4,
+.styledLinkContent--desktop__productlist-custom--5 {
   justify-content: flex-start;
   font-size: 14px;
   font-family: sans-serif;
@@ -181,35 +191,48 @@
 
 .styledLinkContent--desktop__productlist-custom--1::after {
   margin-left: 2px;
-  content:"2400 x 1080 píxeles (FHD+)";
+  content: "2400 x 1080px (FHD)";
   font-size: 14px;
   font-weight: bold;
+  color: black;
 }
 
 .styledLinkContent--desktop__productlist-custom--2::after {
   margin-left: 2px;
-  content:"Sí";
+  content: "Sí";
   font-size: 14px;
   font-weight: bold;
+  color: black;
 }
 
 .styledLinkContent--desktop__productlist-custom--3::after {
   margin-left: 2px;
-  content:"64 + 8 + 8 + 2 MP";
+  content: "64 + 8 + 8 + 2 MP";
   font-size: 14px;
   font-weight: bold;
+  color: black;
 }
 
 .styledLinkContent--desktop__productlist-custom--4::after {
   margin-left: 2px;
-  content:"13 MP";
+  content: "13 MP";
   font-size: 14px;
   font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 .styledLinkContent--desktop__productlist-custom--5::after {
   margin-left: 2px;
-  content:'6.43"';
+  content: '6.43"';
   font-size: 14px;
   font-weight: bold;
+  color: black;
+}
+
+.menuItem--desktop__productlist-custom--1,
+.menuItem--desktop__productlist-custom--2,
+.menuItem--desktop__productlist-custom--3,
+.menuItem--desktop__productlist-custom--4,
+.menuItem--desktop__productlist-custom--5 {
+  list-style-type: initial;
 }

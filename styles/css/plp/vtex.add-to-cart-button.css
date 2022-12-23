@@ -1,5 +1,9 @@
 .buttonText--desktop__productlist-options--checkout-button {
-    color: #d5222e;
-    font-weight: 600;
-    font-size: 14px;
+  color: #d5222e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.buttonText--desktop__product-body--add {
+  font-size: 14px;
 }

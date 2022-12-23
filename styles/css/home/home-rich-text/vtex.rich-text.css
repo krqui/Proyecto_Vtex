@@ -432,15 +432,27 @@
 }
 
 .paragraph--tablet__list-info--description--seller {
+  margin-left: 10px;
   color: #c4c2c2;
   font-size: 11px;
   line-height: 0;
 }
 
 .paragraph--tablet__list-info--delivery {
+  display: flex;
   font-size: 12px;
-  text-align: left;
   margin-left: 10px;
+}
+
+.paragraph--tablet__list-info--delivery::before {
+  display: block;
+  content:"";
+  background-size: contain;
+  background-image: url(https://res.cloudinary.com/dby5zzxin/image/upload/v1671786469/coolb/ghdsfaw69kivhjunwsdc.svg);
+  width: 12px;
+  height: 7px;
+  margin-top: 16px;
+
 }
 
 .paragraph--tablet__list-info--description--priceweb {
@@ -470,4 +482,134 @@
   line-height: 1;
   font-size: 11px;
   color: #d5222e;
+  margin: 0px;
+}
+
+.link--desktop__product-placesoffer {
+  color: #d20000;
+}
+.paragraph--desktop__product-comment {
+  line-height: 0;
+  margin-left: 4px;
+  color: #78aaf0;
+  font-size: 14.5px;
+}
+
+.container--desktop__product-body--credit {
+  margin-bottom: 10px;
+}
+
+.paragraph--desktop__product-body--credit {
+  color: #d70d27;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0;
+}
+
+.paragraph--desktop__product-payway {
+  font-size: 13px;
+}
+
+.paragraph--desktop__product-dateoffer,
+.paragraph--desktop__product-placesoffer {
+  line-height: 1;
+  font-size: 11px;
+  margin: 3px 0px;
+}
+
+.paragraph--desktop__product-body--payment-1,
+.paragraph--desktop__product-body--payment-3 {
+  margin: 0px;
+}
+
+.strong--desktop__product-body--payment-1,
+.strong--desktop__product-body--payment-3 {
+  font-size: 13px;
+}
+
+.paragraph--desktop__product-body--navidad-sub1 {
+  color: #fff;
+  line-height: 0;
+}
+
+.paragraph--desktop__product-body--navidad-sub2 {
+  color: #fff;
+  margin: 0;
+}
+
+.link--desktop__product-body--navidad-sub2 {
+  color: #fff;
+}
+
+.container--desktop__product-body--location-nogps {
+  justify-content: flex-start;
+}
+.container--desktop__product-body--location-inputgps {
+  justify-content: flex-end;
+}
+
+.link--desktop__product-body--location-inputgps {
+  color: #d70d27;
+}
+
+.paragraph--desktop__product-body--location-nogps {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.paragraph--desktop__product-body--location-inputgps {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.paragraph--desktop__product-body--location-registergps1 {
+  margin-left: 7px;
+}
+
+.paragraph--phone__list-info--description--seller {
+  color: grey;
+  margin: 4px 0px;
+}
+
+.container--global__about-uss--title {
+  justify-content: center;
+}
+
+.paragraph--global__about-uss--title {
+  color: #d70d27;
+  display: block !important;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 50px auto 20px;
+  text-align: center;
+  width: 100% !important;
+}
+
+.paragraph--global__about-uss--subtitle {
+  color: #161417;
+  display: block !important;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5 !important;
+  margin: 25px auto 20px;
+  text-align: center;
+  width: 100% !important;
+}
+
+.paragraph--global__about-uss--textblock {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.paragraph--global__about-uss--contents {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.strong--global__about-uss--contents {
+  font-family: "opensans";
 }

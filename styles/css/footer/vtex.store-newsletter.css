@@ -1,24 +1,13 @@
-
-
-.newsletterForm--desktop__footer-form{
-    flex-direction: column;
+.newsletterForm--desktop__footer-form {
+  flex-direction: column;
 }
-
-
-/*:global(.vtex-button){
-    background-color: red;
-}*/
 
 .formSubmitContainer--desktop__footer-b1--form :global(.vtex-button) {
-    color:#fff;
-    background-color: red;
-    border-color: red;
+  color: #fff;
+  background-color: red;
+  border-color: red;
 }
 
-/*:global(.vtex-checkbox__label){
-    color:#fff
-}*/
-
-.confirmationCheckboxContainer  :global(.vtex-checkbox__label) {
-    color:#fff
+.confirmationCheckboxContainer :global(.vtex-checkbox__label) {
+  color: #fff;
 }

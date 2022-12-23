@@ -223,7 +223,7 @@
       "id": "menu-terms-and-conds",
       "type": "custom",
       "itemProps": {
-        "href": "/aboutus",
+        "href": "/quienes-somos",
         "text": "Sobre Nosotros"
       },
       "blockClass": "desktop__footer-b2--colOne--tiendas"

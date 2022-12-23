@@ -1,21 +1,15 @@
-
 .headerRowBackground--mobile__container-Img {
   padding: 0;
 }
 
-/*.headerRow--header__top__mobile {
-  margin-right: 10px;
-}*/
-
 .headerRowContainer--header__top--mobile {
-  /*justify-content: center;*/
   justify-content: flex-start;
 }
 
 .headerRowContainer--header__top--desktop {
   justify-content: space-around;
   box-shadow: 0 4px 20px rgb(51 51 51 / 10%);
-  -webkit-box-shadow: 0 4px 20px rgb(51 51 51 / 10%)
+  -webkit-box-shadow: 0 4px 20px rgb(51 51 51 / 10%);
 }
 
 .headerRowContainer--mobile__container-Img {
@@ -35,8 +29,8 @@
   max-width: 100%;
 }
 
-.styledLinkContent--department__two{
-  background-color:blue
+.styledLinkContent--department__two {
+  background-color: blue;
 }
 
 /* cesar arango*/

@@ -12,12 +12,11 @@
 }
 .logoLink--mobile__header-info--logo,
 .logoLink--tablet__header-info--logo {
-  background-color: rgb(0, 0, 0); /*left:10px*/
+  background-color: rgb(0, 0, 0);
 }
 
 .logoContainer--mobile__header-info--logo,
 .logoContainer--tablet__header-info--logo {
-  /*margin-right: 2vw;*/
   padding: 4px;
 }
 
@@ -26,7 +25,6 @@
 }
 
 .searchBarContainer {
-  /*max-width: 607px;*/
   width: 86vw;
   margin-left: 10px;
   padding-top: 0.4rem;
@@ -35,7 +33,6 @@
 
 .logoContainer--header__top__mobile--threedots {
   display: contents;
-  /*padding: 0 14px;*/
 }
 .logoImage--header__top__mobile--threedots {
   padding: 0;
@@ -130,20 +127,13 @@
 }
 
 .logoContainer--tablet__hamburguermenu {
-  /*padding-left: 50px;*/
   padding-left: 38px;
 }
 
 .logoContainer--tablet__hamburguermenu::after {
-  /*display: inline-block;
-  content: "Menú";
-  color: #ffffff;
-  margin-left: 33px;
-  width: 100%;
-  font-size: 12px;*/
   display: flex;
   content: "Menú";
-  color:#dfe7ec;
+  color: #dfe7ec;
   margin-left: 30px;
   width: 30px;
   font-size: 12px;
@@ -160,7 +150,6 @@
 }
 
 .imageElementLink--mobile__footer-a3--libros {
-  /*margin-left: 23px;*/
   width: 180px !important;
 }
 .imageElement--mobile__footer-a3--libros {
@@ -185,11 +174,10 @@
 }
 
 .discountInsideContainer {
-  top:10px;
+  top: 10px;
   left: 0;
   right: auto;
   background-color: #e53d52 !important;
-  /*top: 22px;*/
   font-weight: 600 !important;
   height: 30px !important;
   width: 50px !important;
@@ -214,12 +202,135 @@
   }
   .productBrandName {
     font-size: 10px;
-    float:none;
+    float: none;
     margin-right: 0;
   }
 }
 
-
 .buyButtonText--tablet__list-toCart--button {
   font-size: 14px;
+}
+
+.carouselGaleryThumbs {
+  margin-left: 12px;
+  width: 16% !important;
+}
+
+.productImagesThumb--desktop__product-stack--images {
+  border: 1px solid #d9d9d9;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.productImagesThumbActive--desktop__product-stack--images {
+  border: 1px solid #d70d27;
+}
+
+.productImageTag--desktop__product-stack--images {
+  border-right: 1px solid #d8d8d8;
+  padding-right: 16px;
+  width: 88% !important;
+}
+
+.productBrandContainer--desktop__product-brand {
+  padding-top: 6px;
+  width: auto !important;
+}
+
+.productBrandName--desktop__product-brand {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.imageElement--desktop__share {
+  width: 22px;
+}
+
+.productNameContainer--desktop__product-name {
+  all: unset;
+}
+
+@media only screen and (min-width: 1024px) {
+  .productNameContainer--desktop__product-name {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dedede;
+    margin: 5px 0 0;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .productNameContainer--desktop__product-name {
+    border-bottom: none;
+  }
+}
+
+.productBrand--desktop__product-name {
+  all: unset;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.imageElement--desktop__product-body--payment-2--bbva {
+  height: 12px;
+  width: 28px;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 4px 2px;
+}
+
+.imageElement--desktop__product-body--payment-2--banks {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 4px 2px;
+}
+
+.imageElement--desktop__product-body--payment-2--diners {
+  height: 12px;
+  width: 47px;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 4px 2px;
+}
+
+:global(.vtex-numeric-stepper__input) {
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #d5222e !important;
+  background: #fff;
+  margin: 0 5px;
+  width: 3rem !important;
+  font-weight: 600;
+}
+
+:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-numeric-stepper__minus-button) {
+  color: #000;
+  border-radius: 5px !important;
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  font-weight: 600;
+}
+
+.imageElement--desktop__product-body--navidad-sub {
+  height: 41px;
+  width: 46px;
+  margin-right: 6px;
+}
+
+.imageElement--desktop__product-body--location-registergps1 {
+  margin-left: 2px;
+}
+
+.imageElement--desktop__product-body--location-registergps1,
+.imageElement--desktop__product-body--location-registergps2 {
+  width: 53px;
 }
