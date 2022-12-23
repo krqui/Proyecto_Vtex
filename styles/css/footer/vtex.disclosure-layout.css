@@ -1,11 +1,11 @@
 .content--mobile__aboutus {
-    background-color: #424242;
+  background-color: #424242;
 }
 
 .trigger--aboutus {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    outline: 0;
-    border-bottom: 3px solid #4a4a4a;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: 0;
+  border-bottom: 3px solid #4a4a4a;
 }

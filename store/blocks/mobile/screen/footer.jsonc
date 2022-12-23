@@ -1,8 +1,6 @@
 {
   "footer-layout.mobile": {
     "children": [
-      //"disclosure-layout-group#footer__menu--group",
-      //"drawer#mobile&tablet__header--menu-threelines"
       "flex-layout.row#mobile__footer-a1",
       "flex-layout.row#mobile__footer-a2",
       "flex-layout.row#mobile__footer-a3"

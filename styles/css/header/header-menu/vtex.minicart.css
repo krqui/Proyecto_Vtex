@@ -64,12 +64,11 @@
   font-weight: 500;
 }
 
-.minicartCheckoutButton :global(.vtex-button__label){
+.minicartCheckoutButton :global(.vtex-button__label) {
   visibility: hidden;
-  
 }
 
-.minicartCheckoutButton :global(.vtex-button__label)::after{
+.minicartCheckoutButton :global(.vtex-button__label)::after {
   content: "Comprar";
   display: block;
   width: 40px;
@@ -85,8 +84,10 @@
   color: #fff;
 }
 
-.minicartCheckoutButton--desktop__product-body--buttons :global(.vtex-button) :global(.vtex-button__label)::after {
-  content:"Comprar";
+.minicartCheckoutButton--desktop__product-body--buttons
+  :global(.vtex-button)
+  :global(.vtex-button__label)::after {
+  content: "Comprar";
   margin-right: 32px;
 }
 

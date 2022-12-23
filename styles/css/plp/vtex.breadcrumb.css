@@ -1,6 +1,6 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 1024px) {
   .container {
@@ -10,46 +10,46 @@
 }
 
 .link {
-    font-size: 9px;
-    color:grey;
-    font-family: Ubuntu;
-    width: max-content!important;
+  font-size: 9px;
+  color: grey;
+  font-family: Ubuntu;
+  width: max-content !important;
 }
 
 .homeIcon {
-    display: none;
+  display: none;
 }
 
 .homeLink::after {
-    font-size: 9px;
-    color: grey;
-    font-family: Ubuntu;
-    content: "COOLBOX"
+  font-size: 9px;
+  color: grey;
+  font-family: Ubuntu;
+  content: "COOLBOX";
 }
 
 .arrow {
-    display: flex;
-    padding: 0;
+  display: flex;
+  padding: 0;
 }
 
 .caretIcon {
-    display: none;
+  display: none;
 }
 
 .link:last-child {
-    color:#bf0c2a
+  color: #bf0c2a;
 }
 
 .link:not(:first-child)::before {
-    content: "/";
-    margin-right: 3px;
+  content: "/";
+  margin-right: 3px;
 }
 
 .term::before {
-    content:"/";
-    margin-right: 2px;
+  content: "/";
+  margin-right: 2px;
 }
 .term {
-    font-size: 12px;
-    color: #bf0c2a;
+  font-size: 12px;
+  color: #bf0c2a;
 }

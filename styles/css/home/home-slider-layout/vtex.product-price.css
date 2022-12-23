@@ -83,3 +83,11 @@
   color: #979899;
   font-size: 15px;
 }
+
+
+.currencyCode--mobile__list-info--price-productlist,
+.currencyLiteral--mobile__list-info--price-productlist,
+.currencyInteger--mobile__list-info--price-productlist,
+.currencyGroup--mobile__list-info--price-productlist {
+  color: rgb(71, 71, 71);
+}

@@ -432,7 +432,6 @@
   border-radius: 30px;
   border-color: #d5222e;
   border-width: 1px;
-  /*height: 36px!important;*/
   height: 30px !important;
 }
 
@@ -441,10 +440,6 @@
   padding: 0 !important;
   width: 210px;
 }
-
-/*.flexRowContent--global__search-results--content .stretchChildrenWidth {
-  width: 1200px !important;
-}*/
 
 .flexRowContent--desktop__grid-price {
   justify-content: center;
@@ -504,13 +499,11 @@
   display: flex;
 }
 
-.flexRowContent--phone__list-info :nth-child(2n + 1) {
-  width: 115px !important;
-  /*margin-right: 10px;*/
+.flexRowContent--phone__list-info .stretchChildrenWidth {
+  width: auto !important;
 }
 
 .flexRowContent--phone__list-info :nth-child(2n + 2) {
-  width: 200px !important;
   justify-content: flex-start;
 }
 
@@ -545,9 +538,6 @@
   padding: 5px 0;
 }
 
-/*.flexRowContent--desktop__product-main--info :first-child {
-  width: 45% !important;
-}*/
 .flexRow--desktop__product-stack
   .flexRowContent--desktop__product-main--info:first-child {
   width: 45% !important;
@@ -601,9 +591,6 @@
 }
 .flexColChild--desktop__product-body--credit {
   margin-bottom: 10px;
-}
-.flexRowContent--desktop__product-body--credit .stretchChildrenWidth {
-  width: auto !important;
 }
 
 .flexRowContent--desktop__product-body--credit-right
@@ -676,4 +663,41 @@
 
 .flexRowContent--desktop__product-body--navidad-sub .stretchChildrenWidth {
   width: auto !important;
+}
+
+.flexRow--desktop__product-body--location {
+  margin-right: 10px;
+}
+
+.flexColChild--desktop__product-body--location {
+  border: 1px solid #efefef;
+  border-radius: 5px;
+}
+.flexRow--desktop__products-location-gps {
+  background-color: #f5f5f5;
+}
+
+.flexRowContent--desktop__product-body--location-registergps1
+  .stretchChildrenWidth,
+.flexRowContent--desktop__product-body--location-registergps2
+  .stretchChildrenWidth {
+  width: auto !important;
+}
+
+.flexRow--global__about-uss {
+  height: 1942px;
+}
+
+.flexCol--global__about-uss {
+  margin: 30px auto;
+  display: block;
+  width: 80% !important;
+}
+
+.flexColChild--global__about-uss {
+  height: auto !important;
+}
+
+.flexRowContent--phone__list-info--description--price {
+  display: flex;
 }

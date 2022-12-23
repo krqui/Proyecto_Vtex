@@ -130,7 +130,6 @@
   color: white;
   font-size: 23px;
   margin-bottom: 9px;
-  /*margin-left: 18px;*/
   margin-left: 35px;
 }
 
@@ -195,7 +194,7 @@
   content: "2400 x 1080px (FHD)";
   font-size: 14px;
   font-weight: bold;
-  color:black
+  color: black;
 }
 
 .styledLinkContent--desktop__productlist-custom--2::after {
@@ -203,7 +202,7 @@
   content: "Sí";
   font-size: 14px;
   font-weight: bold;
-  color:black
+  color: black;
 }
 
 .styledLinkContent--desktop__productlist-custom--3::after {
@@ -211,7 +210,7 @@
   content: "64 + 8 + 8 + 2 MP";
   font-size: 14px;
   font-weight: bold;
-  color:black
+  color: black;
 }
 
 .styledLinkContent--desktop__productlist-custom--4::after {
@@ -219,7 +218,7 @@
   content: "13 MP";
   font-size: 14px;
   font-weight: bold;
-  color:rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 
 .styledLinkContent--desktop__productlist-custom--5::after {
@@ -227,7 +226,7 @@
   content: '6.43"';
   font-size: 14px;
   font-weight: bold;
-  color:black
+  color: black;
 }
 
 .menuItem--desktop__productlist-custom--1,

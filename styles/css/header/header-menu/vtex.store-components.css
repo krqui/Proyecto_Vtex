@@ -12,12 +12,11 @@
 }
 .logoLink--mobile__header-info--logo,
 .logoLink--tablet__header-info--logo {
-  background-color: rgb(0, 0, 0); /*left:10px*/
+  background-color: rgb(0, 0, 0);
 }
 
 .logoContainer--mobile__header-info--logo,
 .logoContainer--tablet__header-info--logo {
-  /*margin-right: 2vw;*/
   padding: 4px;
 }
 
@@ -26,7 +25,6 @@
 }
 
 .searchBarContainer {
-  /*max-width: 607px;*/
   width: 86vw;
   margin-left: 10px;
   padding-top: 0.4rem;
@@ -35,7 +33,6 @@
 
 .logoContainer--header__top__mobile--threedots {
   display: contents;
-  /*padding: 0 14px;*/
 }
 .logoImage--header__top__mobile--threedots {
   padding: 0;
@@ -130,17 +127,10 @@
 }
 
 .logoContainer--tablet__hamburguermenu {
-  /*padding-left: 50px;*/
   padding-left: 38px;
 }
 
 .logoContainer--tablet__hamburguermenu::after {
-  /*display: inline-block;
-  content: "Menú";
-  color: #ffffff;
-  margin-left: 33px;
-  width: 100%;
-  font-size: 12px;*/
   display: flex;
   content: "Menú";
   color: #dfe7ec;
@@ -160,7 +150,6 @@
 }
 
 .imageElementLink--mobile__footer-a3--libros {
-  /*margin-left: 23px;*/
   width: 180px !important;
 }
 .imageElement--mobile__footer-a3--libros {
@@ -189,7 +178,6 @@
   left: 0;
   right: auto;
   background-color: #e53d52 !important;
-  /*top: 22px;*/
   font-weight: 600 !important;
   height: 30px !important;
   width: 50px !important;
@@ -228,20 +216,6 @@
   width: 16% !important;
 }
 
-/*.productImagesThumbActive--desktop__product-stack--images::before {
-  width: 0;
-  height: 0;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-right: 4px solid #d70d27;
-  content: "";
-  display: block;
-}*/
-
-/*.productImagesThumbActive--desktop__product-stack--images .figure--desktop__product-stack--images {
-  border-left: 3px solid #d70d27;
-  margin: 0;
-}*/
 .productImagesThumb--desktop__product-stack--images {
   border: 1px solid #d9d9d9;
   border-radius: 7px;
@@ -254,6 +228,7 @@
 
 .productImageTag--desktop__product-stack--images {
   border-right: 1px solid #d8d8d8;
+  padding-right: 16px;
   width: 88% !important;
 }
 
@@ -336,7 +311,8 @@
   font-weight: 600;
 }
 
-:global(.vtex-numeric-stepper__plus-button), :global(.vtex-numeric-stepper__minus-button){
+:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-numeric-stepper__minus-button) {
   color: #000;
   border-radius: 5px !important;
   border: 1px solid #f2f2f2;
@@ -348,4 +324,13 @@
   height: 41px;
   width: 46px;
   margin-right: 6px;
+}
+
+.imageElement--desktop__product-body--location-registergps1 {
+  margin-left: 2px;
+}
+
+.imageElement--desktop__product-body--location-registergps1,
+.imageElement--desktop__product-body--location-registergps2 {
+  width: 53px;
 }

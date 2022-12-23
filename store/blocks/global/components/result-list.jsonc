@@ -1,69 +1,100 @@
 {
   "responsive-layout.phone#phone__list": {
-    "children":[
-        "flex-layout.row#phone__list"
+    "children": ["flex-layout.row#phone__list"]
+  },
+  "flex-layout.row#phone__list": {
+    "children": ["flex-layout.col#phone__list"],
+    "props": {
+      "blockClass": "tablet__list"
+    }
+  },
+  "flex-layout.col#phone__list": {
+    "children": [
+      "flex-layout.row#phone__list-info",
+      "flex-layout.row#tablet__list-toCart"
     ]
   },
-  "flex-layout.row#phone__list":{
-    "children":[
-        "flex-layout.col#phone__list"
+  "flex-layout.row#phone__list-info": {
+    "children": [
+      "product-summary-image#phone__list-info",
+      //"flex-layout.row#tablet__list-info--description-brand"
+      "flex-layout.row#phone__list-info--description"
     ],
-    "props":{
-        "blockClass":"tablet__list"
+    "props": {
+      "blockClass": "phone__list-info"
     }
   },
-  "flex-layout.col#phone__list":{
-    "children":[
-        "flex-layout.row#phone__list-info",
-        "flex-layout.row#tablet__list-toCart"
+  "product-summary-image#phone__list-info": {
+    "props": {
+      "blockClass": "phone__list-info"
+    }
+  },
+  "flex-layout.row#phone__list-info--description": {
+    "children": [
+      "flex-layout.row#phone__list-info--description-title",
+      "product-summary-name#phone__list-info--description--name",
+      "rich-text#phone__list-info--description--seller",
+      "rich-text#phone__list-info--description--offerweb",
+      //"flex-layout.row#tablet__list-info--description--price"
+      "flex-layout.row#phone__list-info--description--price"
+    ],
+    "props": {
+      "blockClass": "phone__list-info--description"
+    }
+  },
+  "flex-layout.row#phone__list-info--description-title": {
+    "children": [
+      "product-summary-brand#tablet__list-brand",
+      "product-rating-inline"
+    ],
+    "props": {
+      "blockClass": "phone__list-info--description-title"
+    }
+  },
+  "product-summary-name#phone__list-info--description--name": {
+    "props": {
+      "blockClass": "phone__list-info--description--name"
+    }
+  },
+  "rich-text#phone__list-info--description--seller": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Vendido por Coolbox",
+      "blockClass": "phone__list-info--description--seller"
+    }
+  },
+  "rich-text#phone__list-info--description--offerweb": {
+    "props": {
+      "text": "Precio Exclusivo Web",
+      "blockClass": "phone__list-offerweb"
+    }
+  },
+  "flex-layout.row#phone__list-info--description--price": {
+    "children": [
+      //"flex-layout.col#tablet__list-info--prices",
+      "flex-layout.col#mobile__list-info--prices",
+      "flex-layout.row#tablet__list-info--delivery"
+    ],
+    "props": {
+      "blockClass": "phone__list-info--description--price"
+    }
+  },
+  "flex-layout.col#mobile__list-info--prices": {
+    "children": [
+      "product-list-price#mobile__list-info--prices",
+      "product-selling-price#mobile__list-info--prices"
     ]
   },
-  "flex-layout.row#phone__list-info":{
-    "children":[
-        
-        "product-summary-image#phone__list-info",
-        //"flex-layout.row#tablet__list-info--description-brand"
-        "flex-layout.row#phone__list-info--description"
-    ],
+  "product-list-price#mobile__list-info--prices":{
     "props":{
-        "blockClass":"phone__list-info"
+      "blockClass":"mobile__list-info--price-productlist"
     }
+
   },
-  "product-summary-image#phone__list-info":{
+  "product-selling-price#mobile__list-info--prices":{
     "props":{
-        "blockClass":"phone__list-info"
+      "blockClass":"mobile__list-info--price-productselling"
     }
-  },
-  "flex-layout.row#phone__list-info--description":{
-    /*"children":[
-        "product-summary-brand#tablet__list-brand",
-        "product-rating-inline"
-    ]*/
-    "children":[
-        "flex-layout.row#phone__list-info--description-title",
-        "product-summary-name#tablet__list-info--description-name",
-        "rich-text#tablet__list-info--description--seller",
-        "rich-text#phone__list-info--description--offerweb",
-        "flex-layout.row#tablet__list-info--description--price"
-    ],
-    "props":{
-        "blockClass":"phone__list-info--description"
-    }
-    
-  },
-  "flex-layout.row#phone__list-info--description-title":{
-    "children":[
-        "product-summary-brand#tablet__list-brand",
-        "product-rating-inline"
-    ],
-    "props":{
-        "blockClass":"phone__list-info--description-title"
-    }
-  },
-  "rich-text#phone__list-info--description--offerweb":{
-    "props":{
-        "text":"Precio Exclusivo Web",
-        "blockClass":"phone__list-offerweb"
-    }
+
   }
 }
