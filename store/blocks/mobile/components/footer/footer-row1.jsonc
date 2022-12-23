@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#mobile__footer-a1": {
+    "children": ["flex-layout.row#mobile__footer-a1-a"],
+    "props": {
+      "blockClass": "mobile__footer-a1"
+    }
+  },
+  "flex-layout.row#mobile__footer-a1-a": {
+    "children": [
+      "logo#desktop__footer-b1--colOne",
+      "flex-layout.row#mobile__footer-a1--colOne-social"
+    ],
+    "props": {
+      "blockClass": "mobile__footer-a1-a"
+    }
+  },
+  "flex-layout.row#mobile__footer-a1--colOne-social": {
+    "children": [
+      "image#desktop__footer-b1--colOne-facebook",
+      "image#desktop__footer-b1--colOne-instagram",
+      "image#desktop__footer-b1--colOne-youtube"
+    ],
+    "props": {
+      "blockClass": "mobile__footer-b1--colOne-social"
+    }
+  }
+}

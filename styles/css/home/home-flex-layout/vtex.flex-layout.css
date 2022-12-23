@@ -688,6 +688,12 @@
   height: 1942px;
 }
 
+@media (max-width:840px) {
+  .flexRow--global__about-uss {
+    height: 2200px;
+  }
+}
+
 .flexCol--global__about-uss {
   margin: 30px auto;
   display: block;
