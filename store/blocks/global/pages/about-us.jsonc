@@ -1,17 +1,18 @@
 {
   "store.custom#about-uss": {
-    "blocks": ["flex-layout.row#global__about-uss"]
+    "title": "Pagina estatica about us",
+    "blocks": ["flex-layout.row#global__about-uss", "pdf-reader"]
   },
-  "flex-layout.row#global__about-uss":{
-    "children":[
-      "flex-layout.col#global__about-uss"
-    ],
-    "props":{
-      "blockClass":"global__about-uss"
+  "flex-layout.row#global__about-uss": {
+    "title": "Pagina estatica about us",
+    "children": ["flex-layout.col#global__about-uss"],
+    "props": {
+      "blockClass": "global__about-uss"
     }
   },
-  "flex-layout.col#global__about-uss":{
-    "children":[
+  "flex-layout.col#global__about-uss": {
+    "title": "Contenedor de todo el texto de la pagina about us",
+    "children": [
       "rich-text#global__about-uss--title",
       "rich-text#global__about-uss--subtitle",
       "rich-text#global__about-uss--textblock",
@@ -56,286 +57,316 @@
       "rich-text#global__about-uss--textblock20-content",
       "rich-text#global__about-uss--bottomtitle"
     ],
-    "props":{
-      "blockClass":"global__about-uss"
+    "props": {
+      "blockClass": "global__about-uss"
     }
   },
-  "rich-text#global__about-uss--title":{
-    "props":{
-      "text":"¿QUIÉNES SOMOS?",
-      "blockClass":"global__about-uss--title"
+  "rich-text#global__about-uss--title": {
+    "title": "Titulo de la pagina about us",
+    "props": {
+      "text": "¿QUIÉNES SOMOS?",
+      "blockClass": "global__about-uss--title"
     }
   },
-  "rich-text#global__about-uss--subtitle":{
-    "props":{
-      "text":"ESPECIALISTAS EN TECNOLOGÍA Y ELECTRÓNICA",
-      "blockClass":"global__about-uss--subtitle"
+  "rich-text#global__about-uss--subtitle": {
+    "title": "Subitulo de la pagina about us",
+    "props": {
+      "text": "ESPECIALISTAS EN TECNOLOGÍA Y ELECTRÓNICA",
+      "blockClass": "global__about-uss--subtitle"
     }
   },
-  "rich-text#global__about-uss--textblock":{
-    "props":{
-      "text":"1997: teníamos la idea de difundir nuestra pasión por la tecnología",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock": {
+    "title": "Texto n°1",
+    "props": {
+      "text": "1997: teníamos la idea de difundir nuestra pasión por la tecnología",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock-content":{
-    "props":{
+  "rich-text#global__about-uss--textblock-content": {
+    "props": {
       "font": "t-heading-3",
-      "text":"Quizás pocos recuerden que abrimos como Radioshack dentro de las tiendas Ace Home Center, luego vinieron las primeras tiendas en Piura y Arequipa, y desde ahí no hemos parado de crecer hasta transformarnos en Coolbox en el 2015.",
-      "blockClass":"global__about-uss--contents"
+      "text": "Quizás pocos recuerden que abrimos como Radioshack dentro de las tiendas Ace Home Center, luego vinieron las primeras tiendas en Piura y Arequipa, y desde ahí no hemos parado de crecer hasta transformarnos en Coolbox en el 2015.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss-textblock2":{
-    "props":{
-      "text":"Democratizamos la tecnología y la calidad en Perú",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss-textblock2": {
+    "title": "Texto n2°",
+    "props": {
+      "text": "Democratizamos la tecnología y la calidad en Perú",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss-textblock2-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"a través de precios accesibles y más de 150 tiendas a lo largo de Lima y provincias. Además de un ecommerce que te permite tener todo al alcance en un solo clic. \n **Arequipa, Ayacucho, Barranca, Cajamarca, Chiclayo, Cañete, Chimbote, Chincha, Cusco, Huacho, Huancayo, Huánuco, Huaral, Huaraz, Ica, Ilo, Iquitos, Jaén, Juliaca, Piura, Pisco, Pucallpa, Puno, Puerto Maldonado, Tacna, Tarapoto, Tarma, Trujillo, Tumbes, Sullana, Lima y Callao.**",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss-textblock2-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "a través de precios accesibles y más de 150 tiendas a lo largo de Lima y provincias. Además de un ecommerce que te permite tener todo al alcance en un solo clic. \n **Arequipa, Ayacucho, Barranca, Cajamarca, Chiclayo, Cañete, Chimbote, Chincha, Cusco, Huacho, Huancayo, Huánuco, Huaral, Huaraz, Ica, Ilo, Iquitos, Jaén, Juliaca, Piura, Pisco, Pucallpa, Puno, Puerto Maldonado, Tacna, Tarapoto, Tarma, Trujillo, Tumbes, Sullana, Lima y Callao.**",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock3":{
-    "props":{
-      "text":"Somos más de 800 colaboradores",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock3": {
+    "title": "Texto n°3",
+    "props": {
+      "text": "Somos más de 800 colaboradores",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock3-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"enfocados en la atención al cliente compartiendo el mismo gusto y pasión por la tecnología, por eso entendemos sus necesidades y les damos solución de forma oportuna.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock3-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "enfocados en la atención al cliente compartiendo el mismo gusto y pasión por la tecnología, por eso entendemos sus necesidades y les damos solución de forma oportuna.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock4":{
-    "props":{
-      "text":"Existimos para enriquecer la vida con tecnología",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock4": {
+    "title": "Texto n°4",
+    "props": {
+      "text": "Existimos para enriquecer la vida con tecnología",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock4-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"por eso estamos comprometidos con brindar las mejores soluciones, garantía y productos tecnológicos con las últimas novedades.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock4-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "por eso estamos comprometidos con brindar las mejores soluciones, garantía y productos tecnológicos con las últimas novedades.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock5":{
-    "props":{
-      "text":"Nuestra mirada está en",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock5": {
+    "title": "Texto n°5",
+    "props": {
+      "text": "Nuestra mirada está en",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock5-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"ser líderes en el retail omnicanal especializado en tecnología y electrónica de consumo en el Perú.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock5-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "ser líderes en el retail omnicanal especializado en tecnología y electrónica de consumo en el Perú.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock6":{
-    "props":{
-      "text":"Nuestros esfuerzos diarios buscan",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock6": {
+    "title": "Texto n°6",
+    "props": {
+      "text": "Nuestros esfuerzos diarios buscan",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock6-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"ofrecer variedad, calidad y garantía en productos con una experiencia de compra que nos defina como expertos, todo eso al mejor precio.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock6-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "ofrecer variedad, calidad y garantía en productos con una experiencia de compra que nos defina como expertos, todo eso al mejor precio.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock7":{
-    "props":{
-      "text":"La tecnología es nuestro ADN.",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock7": {
+    "title": "Texto n°7",
+    "props": {
+      "text": "La tecnología es nuestro ADN.",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock7-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Es nuestra pasión. Todo lo que vendemos crea nexos con nuestros clientes, brindándoles las mejores soluciones tecnológicas para su día a día.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock7-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Es nuestra pasión. Todo lo que vendemos crea nexos con nuestros clientes, brindándoles las mejores soluciones tecnológicas para su día a día.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock8":{
-    "props":{
-      "text":"Audífonos y parlantes Bluetooth",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock8": {
+    "title": "Texto n°8",
+    "props": {
+      "text": "Audífonos y parlantes Bluetooth",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock8-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Lo que se necesite escuchar tendrá la mejor fidelidad y potencia: para bailar, para acompañar tu día, para trabajar, para hacer deporte, para todo.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock8-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Lo que se necesite escuchar tendrá la mejor fidelidad y potencia: para bailar, para acompañar tu día, para trabajar, para hacer deporte, para todo.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock9":{
-    "props":{
-      "text":"Teléfonos Celulares y accesorios",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock9": {
+    "title": "Texto n°9",
+    "props": {
+      "text": "Teléfonos Celulares y accesorios",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock9-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Le damos importancia a la comunicación entre las personas. Y la facilitamos.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock9-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Le damos importancia a la comunicación entre las personas. Y la facilitamos.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock10":{
-    "props":{
-      "text":"Cámaras de Seguridad y equipos de grabación de video",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock10": {
+    "title": "Texto n°10",
+    "props": {
+      "text": "Cámaras de Seguridad y equipos de grabación de video",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock10-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Verlo todo en muchos formatos, dejando que tus mejores momentos queden registrados en imágenes perfectas.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock10-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Verlo todo en muchos formatos, dejando que tus mejores momentos queden registrados en imágenes perfectas.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock11":{
-    "props":{
-      "text":"Pilas y Powerbanks",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock11": {
+    "title": "Texto n°",
+    "props": {
+      "text": "Pilas y Powerbanks",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock11-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Poder llevar energía a todos lados es importante en un mundo acostumbrado a nunca parar y siempre estar en constante cambio.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock11-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Poder llevar energía a todos lados es importante en un mundo acostumbrado a nunca parar y siempre estar en constante cambio.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock12":{
-    "props":{
-      "text":"Videojuegos, consolas y accesorios",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock12": {
+    "title": "Texto n°11",
+    "props": {
+      "text": "Videojuegos, consolas y accesorios",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock12-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"La tecnología y nosotros estamos al servicio de tu entretenimiento.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock12-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "La tecnología y nosotros estamos al servicio de tu entretenimiento.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock13":{
-    "props":{
-      "text":"Cables de Audio y Video",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock13": {
+    "title": "Texto n°12",
+    "props": {
+      "text": "Cables de Audio y Video",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock13-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Tenemos la mayor variedad de cables del mercado, porque nuestras necesidades de conexión son infinitas y nuestras soluciones, las mejores.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock13-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Tenemos la mayor variedad de cables del mercado, porque nuestras necesidades de conexión son infinitas y nuestras soluciones, las mejores.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock14":{
-    "props":{
-      "text":"Accesorios de cómputo",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock14": {
+    "title": "Texto n°13",
+    "props": {
+      "text": "Accesorios de cómputo",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock14-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Ofrecemos todo lo que sume y se adapte a la funcionalidad y comodidad de tu computadora.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock14-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Ofrecemos todo lo que sume y se adapte a la funcionalidad y comodidad de tu computadora.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock15":{
-    "props":{
-      "text":"Tablets y accesorios",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock15": {
+    "title": "Texto n°14",
+    "props": {
+      "text": "Tablets y accesorios",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock15-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Tenemos la mejor gama de tablets, junto a todo lo necesario para complementarlas y potenciarlas.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock15-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Tenemos la mejor gama de tablets, junto a todo lo necesario para complementarlas y potenciarlas.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock16":{
-    "props":{
-      "text":"Las marcas exclusivas que nadie tiene y acercan la tecnología a todos",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock16": {
+    "title": "Texto n°15",
+    "props": {
+      "text": "Las marcas exclusivas que nadie tiene y acercan la tecnología a todos",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock16-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Coolbox, Teraware, Teraware 4 Gaming, Radioshack, Roadtrip, Westminster, GMobile, Richards, SEC, Izuum y Decibel.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock16-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Coolbox, Teraware, Teraware 4 Gaming, Radioshack, Roadtrip, Westminster, GMobile, Richards, SEC, Izuum y Decibel.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock17":{
-    "props":{
-      "text":"Las marcas comerciales que existen y todos tenemos",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock17": {
+    "title": "Texto n°17",
+    "props": {
+      "text": "Las marcas comerciales que existen y todos tenemos",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock17-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Skullcandy, Sony, Google, Panasonic, Funko, Altec Lasing, JBL, Bose, Baretone, Nintendo PS4, Wester Digital, Huawei, Xiaomi, Lenovo, Sandisk, Energizer, Phillips, Schoch, TP Link, Motorola, Advance, Targus, hHyperx, CaseLogic, Anker, Samsung, Gopro, Epson, HP, Toshiba, Apple MC, Dodo, Maxell, LG, Roku, Casio, Nintendo, Duracell.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock17-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Skullcandy, Sony, Google, Panasonic, Funko, Altec Lasing, JBL, Bose, Baretone, Nintendo PS4, Wester Digital, Huawei, Xiaomi, Lenovo, Sandisk, Energizer, Phillips, Schoch, TP Link, Motorola, Advance, Targus, hHyperx, CaseLogic, Anker, Samsung, Gopro, Epson, HP, Toshiba, Apple MC, Dodo, Maxell, LG, Roku, Casio, Nintendo, Duracell.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock18":{
-    "props":{
-      "text":"Nuestra venta no termina en la venta",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock18": {
+    "title": "Texto n°18",
+    "props": {
+      "text": "Nuestra venta no termina en la venta",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock18-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Acompañamos la experiencia de nuestros clientes con un servicio post venta que además de soluciones da confianza. Estamos respaldados por Certificados de Garantía bien estructurados y Políticas de cambio y devolución claras. Conócelas [aquí](https://diegoantonio--itgloberspartnercl.myvtex.com/policies)",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock18-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Acompañamos la experiencia de nuestros clientes con un servicio post venta que además de soluciones da confianza. Estamos respaldados por Certificados de Garantía bien estructurados y Políticas de cambio y devolución claras. Conócelas [aquí](https://diegoantonio--itgloberspartnercl.myvtex.com/policies)",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock19":{
-    "props":{
-      "text":"Somos responsables de nuestras ventas, pero también somos responsables socialmente",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock19": {
+    "title": "Texto n°19",
+    "props": {
+      "text": "Somos responsables de nuestras ventas, pero también somos responsables socialmente",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock19-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"Somos partners de Make-A-Wish, organización que, mediante el cumplimiento de deseos, busca enriquecer con esperanza, fortaleza y alegría las vidas de niños y adolescentes con enfermedades que amenazan severamente su salud",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock19-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "Somos partners de Make-A-Wish, organización que, mediante el cumplimiento de deseos, busca enriquecer con esperanza, fortaleza y alegría las vidas de niños y adolescentes con enfermedades que amenazan severamente su salud",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--textblock20":{
-    "props":{
-      "text":"Acciones:",
-      "blockClass":"global__about-uss--textblock"
+  "rich-text#global__about-uss--textblock20": {
+    "title": "Texto n°20",
+    "props": {
+      "text": "Acciones:",
+      "blockClass": "global__about-uss--textblock"
     }
   },
-  "rich-text#global__about-uss--textblock20-content":{
-    "props":{
-      "font":"t-heading-3",
-      "text":"-Convertimos nuestras cajas a nivel nacional en canales de donación a través del vuelto de nuestros clientes. Si visitas Coolbox puedes donar tu vuelto y ser parte del deseo de un niño \n -Vendemos productos y donamos a Make-A-Wish un porcentaje del valor del producto, para seguir contribuyendo con esta linda causa.",
-      "blockClass":"global__about-uss--contents"
+  "rich-text#global__about-uss--textblock20-content": {
+    "props": {
+      "font": "t-heading-3",
+      "text": "-Convertimos nuestras cajas a nivel nacional en canales de donación a través del vuelto de nuestros clientes. Si visitas Coolbox puedes donar tu vuelto y ser parte del deseo de un niño \n -Vendemos productos y donamos a Make-A-Wish un porcentaje del valor del producto, para seguir contribuyendo con esta linda causa.",
+      "blockClass": "global__about-uss--contents"
     }
   },
-  "rich-text#global__about-uss--bottomtitle":{
-    "props":{
-      "text":"¡Ayúdanos a transformar vidas!",
-      "blockClass":"global__about-uss--title"
+  "rich-text#global__about-uss--bottomtitle": {
+    "title": "Subitulo del pre footer",
+    "props": {
+      "text": "¡Ayúdanos a transformar vidas!",
+      "blockClass": "global__about-uss--title"
+    }
+  },
+  "pdf-reader": {
+    "props": {
+      "pdfUrl": "assets/documents/trial.pdf",
+      "width": 500,
+      "height": 800
     }
   }
 }

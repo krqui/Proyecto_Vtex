@@ -9,12 +9,12 @@
       "challenge": "challenge.profile"
     }
   },
-
   "store.login": {
     "blocks": ["login-content#default"]
   },
 
   "login-content#default": {
+    "title":"Contenido de login por default",
     "props": {
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,

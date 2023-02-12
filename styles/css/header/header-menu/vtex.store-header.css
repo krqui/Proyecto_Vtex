@@ -3,7 +3,7 @@
 }
 
 .headerRowContainer--header__top--mobile {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .headerRowContainer--header__top--desktop {

@@ -246,6 +246,10 @@
   display: flex;
 }
 
+.flexRowContent--mobile__footer-a1-a .stretchChildrenWidth {
+  width: 220px !important;
+}
+
 .flexRowContent--mobile__footer-b1--colOne-social {
   display: flex;
   width: 110px;
@@ -685,7 +689,14 @@
 }
 
 .flexRow--global__about-uss {
-  height: 1942px;
+  /*height: 1942px;*/
+  height: 1780px;
+}
+
+@media (max-width:840px) {
+  .flexRow--global__about-uss {
+    height: 2200px;
+  }
 }
 
 .flexCol--global__about-uss {

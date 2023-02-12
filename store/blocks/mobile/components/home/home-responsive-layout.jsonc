@@ -3,6 +3,7 @@
     "title": "Componente Movil",
     "children": [
       "list-context.image-list#mobile__home-slider",
+      /*"list-context.bullet-group#mobile",*/
       "flex-layout.row#mobile__home-products",
       "list-context.image-list#mobile__home-slider2",
       "list-context.image-list#mobile__home-slider3",
