@@ -2,6 +2,8 @@
   "responsive-layout.desktop#desktop__home": {
     "title": "Componente Desktop",
     "children": [
+      "whatsapp-button",
+      "quick-order",
       "list-context.image-list#desktop__slider-main",
       "flex-layout.row#desktop__section-temporal--one",
       "flex-layout.row#home__section--two",
@@ -19,6 +21,14 @@
       "blockClass": "desktop__home"
     }
   },
+  "whatsapp-button": {
+    "props": {
+      "logo": "assets/img/whatsapp-icon.png",
+      "phone": "10510201",
+      "message": "VTEX  URLZ"
+    }
+  },
+  
   "list-context.image-list#desktop__slider--products": {
     "title": "Slider de productos en el home",
     "children": ["slider-layout#desktop__slider--products"]
@@ -36,9 +46,8 @@
     }
   },
 
-
   "flex-layout.row#desktop__slider-product--one": {
-    "title":"Contenedor de slider de products numero 1",
+    "title": "Contenedor de slider de products numero 1",
     "children": ["list-context.product-list#desktop__slider-product--one"],
     "props": {
       "blockClass": "desktop__slider-product--one"
@@ -46,19 +55,17 @@
   },
   "list-context.product-list#desktop__slider-product--one": {
     "blocks": ["product-summary.shelf#global__shelf"],
-    "children": [
-      "slider-layout#desktop__slider-product--one"
-    ],
+    "children": ["slider-layout#desktop__slider-product--one"],
     "props": {
       "blockClass": "desktop__slider-product--one"
     }
   },
   "product-summary.shelf#global__shelf": {
-    "title":"Contenedor de los productos",
+    "title": "Contenedor de los productos",
     "children": ["flex-layout.col#global__shelf"]
   },
   "slider-layout#desktop__slider-product--one": {
-    "title":" Configuracion del slider de productos numero 1",
+    "title": " Configuracion del slider de productos numero 1",
     "props": {
       "itemsPerPage": {
         "desktop": 5,
@@ -75,7 +82,7 @@
     }
   },
   "flex-layout.col#global__shelf": {
-    "title":"Contenedor de propiedades del producto",
+    "title": "Contenedor de propiedades del producto",
     "children": [
       "flex-layout.col#global__shelf-image",
       "flex-layout.col#global__shelf-details"
@@ -85,7 +92,7 @@
     }
   },
   "flex-layout.col#global__shelf-image": {
-    "title":"Contenedor de la imagen del producto",
+    "title": "Contenedor de la imagen del producto",
     "children": ["product-summary-image#global__shelf"],
     "props": {
       "blockClass": "global__shelf-image"
@@ -100,13 +107,12 @@
     }
   },
   "flex-layout.col#global__shelf-details": {
-    "title":"Contenedor de detalles del producto",
+    "title": "Contenedor de detalles del producto",
     "children": [
       "product-summary-name",
       "product-summary-description#global__price",
       "rich-text#global__price",
       "flex-layout.row#global__price"
-      //,"product-summary-buy-button"
     ],
     "props": {
       "blockClass": "global__shelf-details",
@@ -114,13 +120,13 @@
     }
   },
   "product-summary-description#global__price": {
-    "title":"Descripcion del producto",
+    "title": "Descripcion del producto",
     "props": {
       "blockClass": "global__price"
     }
   },
   "rich-text#global__price": {
-    "title":"Precio exclusivo web",
+    "title": "Precio exclusivo web",
     "props": {
       "text": "Precio Exclusivo Web",
       "textAlignment": "CENTER",
@@ -130,22 +136,21 @@
     }
   },
   "flex-layout.row#global__price": {
-    "title":"Contenedor del precio del producto",
+    "title": "Contenedor del precio del producto",
     "children": ["product-list-price#global__price", "product-selling-price"],
     "props": {
       "blockClass": "global__price"
     }
   },
   "product-list-price#global__price": {
-    "title":"Precio de lista del producto",
+    "title": "Precio de lista del producto",
     "props": {
       "blockClass": "global__price"
     }
   },
 
-
   "flex-layout.row#desktop__slider-product--two": {
-    "title":"Contenedor de slider de products numero 2",
+    "title": "Contenedor de slider de products numero 2",
     "children": ["flex-layout.col#desktop__slider-producttwo--title"],
     "props": {
       "blockClass": "desktop__slider-product--two"
@@ -161,7 +166,7 @@
     }
   },
   "rich-text#desktop__producttwo-title--container": {
-    "title":"Subtitulo ultimos productos visitados",
+    "title": "Subtitulo ultimos productos visitados",
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
@@ -170,18 +175,18 @@
     }
   },
   "flex-layout.col#desktop__slider-producttwo--carousel": {
-    "title":"Productos del slider de productos 2",
+    "title": "Productos del slider de productos 2",
     "children": ["flex-layout.row#desktop__slider-product--one"]
   },
   "flex-layout.row#desktop__slider-product--three": {
-    "title":"Contenedor de slider de products numero 3",
+    "title": "Contenedor de slider de products numero 3",
     "children": ["list-context.product-list#desktop__slider-product--one"],
     "props": {
       "blockClass": "desktop__slider-product--three"
     }
   },
   "flex-layout.row#desktop__slider-product--four": {
-    "title":"Contenedor de slider de products numero 4",
+    "title": "Contenedor de slider de products numero 4",
     "children": ["flex-layout.col#desktop__slider-productfour--title"],
     "props": {
       "blockClass": "desktop__slider-product--four"
@@ -197,7 +202,7 @@
     }
   },
   "rich-text#desktop__productfour-title--container": {
-    "title":"Subtitulo lo mas vendido",
+    "title": "Subtitulo lo mas vendido",
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
@@ -206,13 +211,12 @@
     }
   },
 
-
   "flex-layout.row#desktop__container-benefits": {
-    "title":"Contenedor de los beneficios",
+    "title": "Contenedor de los beneficios",
     "children": ["flex-layout.col#desktop__benefits"]
   },
   "flex-layout.col#desktop__benefits": {
-    "title":"Beneficios de comprar en Coolbox",
+    "title": "Beneficios de comprar en Coolbox",
     "props": {
       "blockClass": "flex-layout.col#desktop__benefits"
     }

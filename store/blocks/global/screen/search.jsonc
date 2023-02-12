@@ -1,37 +1,37 @@
 {
   "store.search": {
     "blocks": ["search-result-layout"],
-    "props":{
-      "context":{
-        "skusFilter":"ALL",
-        "simulationBehavior":"default"
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#category": {
     "blocks": ["search-result-layout"],
-    "props":{
-      "context":{
-        "skusFilter":"FIRST_AVAILABLE",
-        "simulationBehavior":"default"
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#subcategory": {
     "blocks": ["search-result-layout"],
-    "props":{
-      "context":{
-        "skusFilter":"FIRST_AVAILABLE",
-        "simulationBehavior":"default"
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#brand": {
     "blocks": ["search-result-layout"],
-    "props":{
-      "context":{
-        "skusFilter":"FIRST_AVAILABLE",
-        "simulationBehavior":"default"
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
       }
     }
   },
@@ -46,46 +46,47 @@
       "add-to-cart-button"
     ]
   },
-  "product-summary-name":{
-    "props":{
-      "tag":"h3"
+  "product-summary-name": {
+    "props": {
+      "tag": "h3"
     }
   },
-  "product-summary-sku-selector":{
+  "product-summary-sku-selector": {
     "props": {
-      "hideImpossibleCombinations":"false"/*,
+      "hideImpossibleCombinations": "false" /*,
       "visibility":"more-than-one"*/
       /*"displayMode":"select"*/
     }
   },
 
-
-
   "search-result-layout": {
     "blocks": [
-        "search-result-layout.desktop",
-        "search-result-layout.mobile",
-        "search-not-found-layout"
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
     ]
   },
-  "search-result-layout.desktop":{
+  "search-result-layout.desktop": {
     "children": [
-        "rich-text#dekstop-response"
+      /*"rich-text#dekstop-response"*/
+      "responsive-layout.desktop#desktop__department"
     ]
   },
-  "search-result-layout.mobile":{
+  "search-result-layout.mobile": {
     "children": [
-        "rich-text#mobile-response"
+      /*"rich-text#mobile-response"*/
+      "responsive-layout.tablet#tablet__department",
+      "responsive-layout.phone#phone__department"
     ]
   },
-  "rich-text#dekstop-response": {
+  /*"rich-text#dekstop-response": {
     "props": {
-        "text": "# Desktop search"
+        "text": "# Desktop busqueda"
     }
-  },
+  },*/
   "rich-text#mobile-response": {
     "props": {
-        "text": "# Mobile search"
+      "text": "# Mobile search"
     }
   }
 }

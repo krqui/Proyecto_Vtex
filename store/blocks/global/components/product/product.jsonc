@@ -1,9 +1,7 @@
 {
   "store.product": {
     "children": [
-      /*"flex-layout.row#product__breadcrumb",*/
-      "flex-layout.row#desktop__product"/*,
-      "flex-layout.row#product__tabs"*/
+      "flex-layout.row#desktop__product"
     ]
   },
   

@@ -1,0 +1,24 @@
+{
+  "flex-layout.row#mobile__footer-a2": {
+    "children": ["flex-layout.col#mobile__footer-a2"],
+    "props": {
+      "blockClass": "mobile__footer-a2"
+    }
+  },
+
+  "flex-layout.col#mobile__footer-a2": {
+    "children": [
+      "rich-text#mobile__footer-a2--text",
+      "newsletter-form#desktop__footer-b1--form"
+    ],
+    "props": {
+      "blockClass": "mobile__footer-a2"
+    }
+  },
+  "rich-text#mobile__footer-a2--text": {
+    "props": {
+      "text": "¡Suscríbete a nuestro newsletter y recibe las mejores ofertas!",
+      "blockClass": "mobile__footer-a2--text"
+    }
+  }
+}

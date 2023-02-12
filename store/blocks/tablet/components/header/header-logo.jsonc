@@ -1,0 +1,17 @@
+{
+  "header-row#header__top--tablet": {
+    "title": "Header superior (tablet)",
+    "children": ["logo#tablet__header-info--logo"],
+    "props": {
+      "blockClass": "header__top__mobile"
+    }
+  },
+  "logo#tablet__header-info--logo": {
+    "title": "Logo",
+    "props": {
+      "url": "assets/logoTablet.svg",
+      "href": "/",
+      "blockClass": "tablet__header-info--logo"
+    }
+  }
+}

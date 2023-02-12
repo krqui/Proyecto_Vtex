@@ -137,36 +137,53 @@
   height: auto;
 }
 
-
 .image--tablet__list-info {
   width: 115px;
   height: 115px;
-  margin-top: 20px!important;
+  margin-top: 20px !important;
+}
+
+.productBrandContainer--tablet__list-brand {
+  margin-top: 4px;
 }
 
 .productBrandName--tablet__list-brand {
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 .productBrand--tablet__list-info--description--name {
   font-size: 13px;
   font-family: sans-serif;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 .nameContainer--tablet__list-info--description--name {
-  padding: 0px
+  padding: 0px;
+  justify-content: flex-start;
 }
 .productNameContainer--tablet__list-info--description--name {
   text-align: left;
 }
 
-.imageWrapper--phone__list-info, .imageContainer--phone__list-info{
-  width: 100%;
-  height: 100%;
+.nameContainer--phone__list-info--description--name {
+  justify-content: flex-start;
+  padding: 0;
 }
 
-.image--phone__list-info{
+.imageWrapper--phone__list-info,
+.imageContainer--phone__list-info {
+  width: 100%;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.image--phone__list-info {
   width: 115px;
+}
+
+.brandName--phone__list-info--description--name {
+  font-size: 12px;
+  font-family: "Wolf Sans";
+  text-transform: capitalize !important;
 }

@@ -58,11 +58,17 @@
     "vtex.store-form": "0.x",
     "vtex.store-newsletter": "1.x",
     "vtex.product-list": "0.x",
-    "vtex.product-context": "0.x"
+    "vtex.product-context": "0.x",
+    "itgloberspartnercl.whatsapp-button": "0.x",
+    "itgloberspartnercl.bullets-diagramation": "0.x",
+    "itgloberspartnercl.add-to-cart-info": "0.x",
+    "itgloberspartnercl.custom-department-search": "0.x",
+    "itgloberspartnercl.pdf-reader": "0.x",
+    "itgloberspartnercl.context-test": "0.x",
+    "itgloberspartnercl.quick-order": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
   "peerDependencies": {
-    "vtex.mega-menu": "2.x",
-    "vtex.reviews-and-ratings": "3.x"
+    "vtex.mega-menu": "2.x"
   }
 }
