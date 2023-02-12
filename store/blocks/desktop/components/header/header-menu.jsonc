@@ -4,7 +4,8 @@
     "children": [
       "header-row#desktop__container-Img",
       "header-row#header__top--desktop",
-      "header-row#desktop__threedots"
+      "header-row#desktop__threedots",
+      "header-row#desktop__department-search"
     ]
   },
   "header-row#desktop__container-Img": {
@@ -25,6 +26,11 @@
     "props": {
       "blockClass": "header__top--mobile"
     }
+  },
+  "header-row#desktop__department-search":{
+    "children":[
+      "department-search"
+    ]
   },
   "responsive-layout.desktop#desktop__header-info": {
     "title":"Contenedor del logo en el header.",
